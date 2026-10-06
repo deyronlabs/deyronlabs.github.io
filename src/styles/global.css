@@ -733,22 +733,28 @@ ul.plain {
 }
 .share-list a,
 .share-list button {
-  display: inline-block;
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0;
   font: inherit;
-  font-size: var(--step--1);
-  font-weight: 650;
-  color: var(--ink);
+  color: var(--ink-2);
   background: var(--bg);
   border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, transform 0.15s;
 }
 .share-list a:hover,
 .share-list button:hover {
   border-color: var(--accent);
-  color: var(--mint);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+.share-list [hidden] {
+  display: none;
 }
 .article-aside .share-status {
   min-height: 1.2em;
