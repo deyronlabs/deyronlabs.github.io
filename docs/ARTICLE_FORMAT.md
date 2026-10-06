@@ -52,3 +52,9 @@ Verifică folderul/limba, câmpurile principale, lungimea rezumatului, sursa pri
 ## Publicare
 
 Commit pe ramura `main` → GitHub Actions construiește și publică site-ul în 1-2 minute. Sitemap, RSS și `llms.txt` se actualizează singure.
+
+## Imagine de partajare automată
+
+Dacă un articol nu are `image`, site-ul generează la build o copertă 1200x630 (logo, primul topic, titlul, data) la `/covers/<limbă>/<slug>.png`; ea este folosită ca imagine Open Graph/Twitter și în datele structurate. Nu trebuie făcut nimic manual. Pagina articolului afișează totuși imaginea doar când `image` sau `video` este setat.
+
+Butoanele de partajare (X, Facebook, LinkedIn, WhatsApp, Telegram, Reddit, e-mail, copiere link) apar automat în panoul din dreapta al fiecărui articol.

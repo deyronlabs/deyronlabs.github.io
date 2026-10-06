@@ -38,3 +38,7 @@ export const lastChange = (a: Article): Date => a.data.updatedAt ?? a.data.publi
 /** Actualizat vizibil doar dacă schimbarea e la cel puțin o oră după publicare. */
 export const wasUpdated = (a: Article): boolean =>
   !!a.data.updatedAt && a.data.updatedAt.valueOf() - a.data.publishedAt.valueOf() > 3600_000;
+
+/** Imaginea de partajare: cea proprie sau coperta generată automat. */
+export const shareImageOf = (a: Article): string =>
+  a.data.image ?? `/covers/${a.data.lang}/${slugOf(a)}.png`;

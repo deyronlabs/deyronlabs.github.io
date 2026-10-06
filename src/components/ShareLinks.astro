@@ -1,0 +1,64 @@
+---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../site';
+
+interface Props {
+  url: string;
+  title: string;
+  lang: Lang;
+}
+const { url, title, lang } = Astro.props;
+const t = useTranslations(lang);
+const u = encodeURIComponent(url);
+const tt = encodeURIComponent(title);
+const targets = [
+  { name: 'X', href: `https://twitter.com/intent/tweet?text=${tt}&url=${u}` },
+  { name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${u}` },
+  { name: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}` },
+  { name: 'WhatsApp', href: `https://wa.me/?text=${encodeURIComponent(`${title} ${url}`)}` },
+  { name: 'Telegram', href: `https://t.me/share/url?url=${u}&text=${tt}` },
+  { name: 'Reddit', href: `https://www.reddit.com/submit?url=${u}&title=${tt}` },
+];
+---
+
+<section class="share" aria-labelledby="share-h" data-share data-url={url} data-title={title} data-copied={t('share.copied')}>
+  <h3 id="share-h">{t('share.title')}</h3>
+  <ul class="share-list">
+    {
+      targets.map((s) => (
+        <li>
+          <a href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`${t('share.on')} ${s.name}`}>
+            {s.name}
+          </a>
+        </li>
+      ))
+    }
+    <li><a href={`mailto:?subject=${tt}&body=${u}`}>{t('share.email')}</a></li>
+    <li><button type="button" data-copy>{t('share.copy')}</button></li>
+    <li hidden data-native-item><button type="button" data-native>{t('share.native')}</button></li>
+  </ul>
+  <p class="share-status" role="status" aria-live="polite" data-status></p>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-share]').forEach((box) => {
+    const url = box.dataset.url ?? location.href;
+    const title = box.dataset.title ?? document.title;
+    const status = box.querySelector<HTMLElement>('[data-status]');
+    box.querySelector('[data-copy]')?.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(url);
+        if (status) status.textContent = box.dataset.copied ?? '';
+      } catch {
+        window.prompt('', url);
+      }
+    });
+    if (typeof navigator.share === 'function') {
+      const item = box.querySelector<HTMLElement>('[data-native-item]');
+      if (item) item.hidden = false;
+      box.querySelector('[data-native]')?.addEventListener('click', () => {
+        navigator.share({ title, url }).catch(() => {});
+      });
+    }
+  });
+</script>

@@ -1,6 +1,7 @@
 ---
 import { render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
+import ShareLinks from '../../../components/ShareLinks.astro';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
 import { youtubeId, posterFallback } from '../../../lib/video';
 import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
@@ -12,6 +13,7 @@ import {
   pathOf,
   wasUpdated,
   lastChange,
+  shareImageOf,
 } from '../../../lib/articles';
 import { newsArticleLd } from '../../../lib/seo';
 
@@ -48,7 +50,7 @@ const ld = newsArticleLd({
   topics: d.topics,
   video: d.video,
   videoPublishedAt: d.videoPublishedAt,
-  image: d.image,
+  image: shareImageOf(article),
 });
 ---
 
@@ -62,7 +64,7 @@ const ld = newsArticleLd({
   jsonLd={[ld]}
   publishedTime={d.publishedAt}
   modifiedTime={lastChange(article)}
-  image={d.image}
+  image={shareImageOf(article)}
 >
   <div class="wrap">
     <header class="article-head">
@@ -157,6 +159,7 @@ const ld = newsArticleLd({
             )
           }
         </dl>
+        <ShareLinks url={SITE.url + path} title={d.title} lang={lang} />
         <p>{t('article.aiNotice')}</p>
         <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
       </aside>

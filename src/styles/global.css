@@ -657,3 +657,49 @@ ul.plain {
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
 }
+
+/* ---------- Partajare ---------- */
+
+.share {
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.article-aside .share h3 {
+  font-size: var(--step--1);
+  color: var(--ink-2);
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+}
+.share-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.share-list a,
+.share-list button {
+  display: inline-block;
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 650;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.share-list a:hover,
+.share-list button:hover {
+  border-color: var(--accent);
+  color: var(--mint);
+}
+.article-aside .share-status {
+  min-height: 1.2em;
+  margin: 0.5rem 0 0;
+  color: var(--mint);
+}
