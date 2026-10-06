@@ -23,11 +23,11 @@ export const SITE = {
 
 // Verifică aceste adrese înainte de lansare (handle-ul presupus: deyronlabs).
 export const SOCIALS = [
-  { name: 'YouTube', url: 'https://www.youtube.com/@deyronlabs' },
-  { name: 'X', url: 'https://x.com/deyronlabs' },
-  { name: 'Instagram', url: 'https://www.instagram.com/deyronlabs' },
-  { name: 'TikTok', url: 'https://www.tiktok.com/@deyronlabs' },
-  { name: 'Facebook', url: 'https://www.facebook.com/deyronlabs' },
+  { name: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/@deyronlabs' },
+  { name: 'X', icon: 'x', url: 'https://x.com/deyronlabs' },
+  { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/deyronlabs' },
+  { name: 'TikTok', icon: 'tiktok', url: 'https://www.tiktok.com/@deyronlabs' },
+  { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/deyronlabs' },
 ];
 
 export const absUrl = (path: string): string => new URL(path, SITE.url).toString();

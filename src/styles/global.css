@@ -552,8 +552,60 @@ ul.plain {
 }
 .foot {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1.7fr 1fr 1fr 1.2fr;
+  gap: 2.5rem 2rem;
+}
+.foot-tagline {
+  color: var(--ink-2);
+  max-width: 30ch;
+  margin: 1rem 0 1.2rem;
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social li {
+  margin: 0;
+}
+.social a {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-2);
+  transition: color 0.15s, border-color 0.15s, transform 0.15s;
+}
+.social a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.foot-h {
+  color: var(--ink-2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+.foot-legal {
+  margin: 2.5rem 0 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-2);
+}
+@media (max-width: 62rem) {
+  .foot {
+    grid-template-columns: 1fr 1fr;
+  }
+  .foot-about {
+    grid-column: 1 / -1;
+  }
 }
 .foot-brand {
   font-weight: 800;
@@ -571,7 +623,7 @@ ul.plain {
 }
 @media (max-width: 40rem) {
   .foot {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .nav {
     gap: 1rem;

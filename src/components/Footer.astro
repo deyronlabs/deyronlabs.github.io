@@ -1,5 +1,6 @@
 ---
 import { SITE, SOCIALS, type Lang } from '../site';
+import { SOCIAL_ICONS } from '../lib/social-icons';
 import { useTranslations } from '../i18n/utils';
 
 interface Props {
@@ -8,29 +9,64 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 const year = new Date().getFullYear();
+const explore = [
+  { href: `/${lang}/news/`, label: t('nav.news') },
+  { href: `/${lang}/about/`, label: t('nav.about') },
+  { href: `/${lang}/author/deyron-labs/`, label: t('author.title') },
+];
 ---
 
 <footer class="site-footer">
-  <div class="wrap foot">
-    <div class="foot-about">
-      <p class="foot-brand">Deyron Labs</p>
-      <p>{t('footer.about')}</p>
-      <p class="muted">© {year} {SITE.name}. {t('footer.rights')}</p>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-about">
+        <a class="brand" href={`/${lang}/`} aria-label="Deyron Labs">
+          <svg class="mark" viewBox="-130 -176 260 326" width="30" height="38" aria-hidden="true">
+            <g stroke="#1a1a1a" stroke-width="9" stroke-linejoin="round">
+              <polygon points="-121,-70 0,0 0,140 -121,70" fill="#15803d"></polygon>
+              <polygon points="0,0 121,-70 121,70 0,140" fill="#22c55e"></polygon>
+              <polygon points="0,-166 121,-96 0,-26 -121,-96" fill="#86efac"></polygon>
+            </g>
+          </svg>
+          <span class="brand-name">DEYRON<span class="brand-labs">LABS</span></span>
+        </a>
+        <p class="foot-tagline">{t('footer.about')}</p>
+        <ul class="social" aria-label={t('footer.follow')}>
+          {
+            SOCIALS.map((s) => (
+              <li>
+                <a href={s.url} rel="me noopener" target="_blank" aria-label={s.name} title={s.name}>
+                  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <path d={SOCIAL_ICONS[s.icon]} fill="currentColor" />
+                  </svg>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <nav aria-labelledby="foot-explore">
+        <h2 class="foot-h" id="foot-explore">{t('footer.explore')}</h2>
+        <ul class="plain">
+          {explore.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+      <div>
+        <h2 class="foot-h">{t('footer.feeds')}</h2>
+        <ul class="plain">
+          <li><a href={`/${lang}/rss.xml`}>{t('footer.rss')}</a></li>
+          <li><a href="/sitemap.xml">{t('footer.sitemap')}</a></li>
+          <li><a href="/llms.txt">{t('footer.llms')}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">{t('footer.contact')}</h2>
+        <ul class="plain">
+          <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
+          <li><a href={`mailto:${SITE.collabEmail}`}>{SITE.collabEmail}</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h2 class="foot-h">{t('footer.follow')}</h2>
-      <ul class="plain">
-        {SOCIALS.map((s) => <li><a href={s.url} rel="me noopener">{s.name}</a></li>)}
-      </ul>
-    </div>
-    <div>
-      <h2 class="foot-h">{t('footer.feeds')}</h2>
-      <ul class="plain">
-        <li><a href={`/${lang}/rss.xml`}>{t('footer.rss')}</a></li>
-        <li><a href="/sitemap.xml">{t('footer.sitemap')}</a></li>
-        <li><a href="/llms.txt">{t('footer.llms')}</a></li>
-        <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
-      </ul>
-    </div>
+    <p class="foot-legal">© {year} {SITE.name}. {t('footer.rights')}</p>
   </div>
 </footer>
