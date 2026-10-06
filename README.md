@@ -43,3 +43,8 @@ Fiecare commit pe `main` rulează `.github/workflows/deploy.yml` și publică si
 **Atenție la email:** în cPanel, MX-ul poate arăta spre `deyronlabs.com` însuși. Dacă e așa, mută întâi MX pe `mail.deyronlabs.com` (care are propriul A către serverul Romarg), altfel emailurile se opresc când schimbi A-ul domeniului.
 
 Apoi, în GitHub: Settings → Pages → Custom domain: `deyronlabs.com` → bifează **Enforce HTTPS** (apare după ce DNS-ul se propagă, de la câteva minute la câteva ore).
+
+## Adrese
+
+- Previzualizare: https://deyronlabs.github.io/en/
+- Producție (după DNS): https://deyronlabs.com/en/
