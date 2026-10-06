@@ -21,13 +21,16 @@ export const SITE = {
   themeColor: '#1a1a1a',
 };
 
-// Verifică aceste adrese înainte de lansare (handle-ul presupus: deyronlabs).
+// Adresele conturilor oficiale (confirmate de proprietar).
 export const SOCIALS = [
   { name: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/@deyronlabs' },
   { name: 'X', icon: 'x', url: 'https://x.com/deyronlabs' },
-  { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/deyronlabs' },
+  { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/deyronlabs/' },
   { name: 'TikTok', icon: 'tiktok', url: 'https://www.tiktok.com/@deyronlabs' },
-  { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/deyronlabs' },
+  { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/deyronlabs/' },
+  { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/deyronlabs/' },
+  { name: 'Pinterest', icon: 'pinterest', url: 'https://www.pinterest.com/deyronlabs/' },
+  { name: 'Reddit', icon: 'reddit', url: 'https://www.reddit.com/user/DeyronLabs/' },
 ];
 
 export const absUrl = (path: string): string => new URL(path, SITE.url).toString();
