@@ -27,7 +27,7 @@ export function organizationLd(socials: string[]) {
     '@id': ORG_ID,
     name: SITE.name,
     url: SITE.url,
-    logo: absUrl('/favicon.svg'),
+    logo: absUrl('/logo.png'),
     email: SITE.contactEmail,
     sameAs: socials,
   };

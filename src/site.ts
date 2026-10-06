@@ -18,7 +18,7 @@ export const SITE = {
   contactEmail: 'contact@deyronlabs.com',
   collabEmail: 'collab@deyronlabs.com',
   ogImage: '/og-default.png',
-  themeColor: '#2B44FF',
+  themeColor: '#1a1a1a',
 };
 
 // Verifică aceste adrese înainte de lansare (handle-ul presupus: deyronlabs).

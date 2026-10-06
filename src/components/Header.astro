@@ -23,11 +23,14 @@ const others = alternates.filter((a) => a.lang !== lang && ENABLED_LANGS.include
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href={`/${lang}/`} aria-label="Deyron Labs">
-      <svg class="mark" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
-        <path d="M4 3h7.5a9 9 0 0 1 0 18H4z" fill="currentColor"></path>
-        <circle cx="12" cy="12" r="2.6" fill="var(--flag)"></circle>
+      <svg class="mark" viewBox="-130 -176 260 326" width="30" height="38" aria-hidden="true">
+        <g stroke="#1a1a1a" stroke-width="9" stroke-linejoin="round">
+          <polygon points="-121,-70 0,0 0,140 -121,70" fill="#15803d"></polygon>
+          <polygon points="0,0 121,-70 121,70 0,140" fill="#22c55e"></polygon>
+          <polygon points="0,-166 121,-96 0,-26 -121,-96" fill="#86efac"></polygon>
+        </g>
       </svg>
-      <span class="brand-name">Deyron Labs</span>
+      <span class="brand-name">DEYRON<span class="brand-labs">LABS</span></span>
     </a>
     <nav class="nav" aria-label={t('nav.main')}>
       {

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 1440" width="2560" height="1440">
+  <defs>
+    <filter id="ambient" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="140"/>
+    </filter>
+    <clipPath id="bannerClip">
+      <rect width="2560" height="1440"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fundal -->
+  <rect width="2560" height="1440" fill="#1a1a1a"/>
+  <ellipse cx="1280" cy="720" rx="900" ry="420" fill="#22c55e" opacity="0.05" filter="url(#ambient)"/>
+
+  <!-- Grid foarte subtil -->
+  <g opacity="0.035" stroke="#22c55e" stroke-width="1" clip-path="url(#bannerClip)">
+    <line x1="0" y1="360" x2="2560" y2="360"/>
+    <line x1="0" y1="720" x2="2560" y2="720"/>
+    <line x1="0" y1="1080" x2="2560" y2="1080"/>
+    <line x1="426" y1="0" x2="426" y2="1440"/>
+    <line x1="853" y1="0" x2="853" y2="1440"/>
+    <line x1="1280" y1="0" x2="1280" y2="1440"/>
+    <line x1="1706" y1="0" x2="1706" y2="1440"/>
+    <line x1="2133" y1="0" x2="2133" y2="1440"/>
+  </g>
+
+  <!-- Cuburi decorative mari, discrete, pe laterale (în afara zonei sigure) -->
+  <g transform="translate(250,720) scale(2.4)" opacity="0.10" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round">
+    <polygon points="-121,-70 0,0 0,140 -121,70" fill="#15803d"/>
+    <polygon points="0,0 121,-70 121,70 0,140" fill="#22c55e"/>
+    <polygon points="0,-166 121,-96 0,-26 -121,-96" fill="#86efac"/>
+  </g>
+  <g transform="translate(2310,720) scale(2.4)" opacity="0.10" stroke="#1a1a1a" stroke-width="5" stroke-linejoin="round">
+    <polygon points="-121,-70 0,0 0,140 -121,70" fill="#15803d"/>
+    <polygon points="0,0 121,-70 121,70 0,140" fill="#22c55e"/>
+    <polygon points="0,-166 121,-96 0,-26 -121,-96" fill="#86efac"/>
+  </g>
+
+  <!-- ===== LOCKUP CENTRAT (în zona sigură YouTube 662–1898 / 551–889) ===== -->
+
+  <!-- Simbol -->
+  <g transform="translate(890,720) scale(0.9)" stroke="#1a1a1a" stroke-width="8" stroke-linejoin="round">
+    <polygon points="-121,-70 0,0 0,140 -121,70" fill="#15803d"/>
+    <polygon points="0,0 121,-70 121,70 0,140" fill="#22c55e"/>
+    <polygon points="0,-166 121,-96 0,-26 -121,-96" fill="#86efac"/>
+  </g>
+
+  <!-- DEYRON -->
+  <text x="1050" y="712"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="170" font-weight="900" fill="#ffffff"
+        letter-spacing="-3">DEYRON</text>
+
+  <!-- Separator -->
+  <rect x="1054" y="734" width="720" height="2.5" fill="#22c55e" opacity="0.5"/>
+
+  <!-- LABS -->
+  <text x="1054" y="796"
+        font-family="'Courier New', Courier, monospace"
+        font-size="52" fill="#22c55e" letter-spacing="30">LABS</text>
+
+  <!-- Tagline -->
+  <text x="1054" y="852"
+        font-family="'Courier New', Courier, monospace"
+        font-size="24" fill="#ffffff" letter-spacing="6" opacity="0.4">AI TOOLS · WORKFLOWS · STRATEGIES</text>
+
+  <!-- Handle -->
+  <text x="2440" y="1390"
+        font-family="'Courier New', Courier, monospace"
+        font-size="24" fill="#22c55e" text-anchor="end" letter-spacing="3" opacity="0.2">@DeyronLabs</text>
+</svg>
