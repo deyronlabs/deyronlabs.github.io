@@ -552,7 +552,7 @@ ul.plain {
 }
 .foot {
   display: grid;
-  grid-template-columns: 1.7fr 1fr 1fr 1.2fr;
+  grid-template-columns: 2.2fr 1fr 1fr 1.3fr;
   gap: 2.5rem 2rem;
 }
 .foot-tagline {
@@ -563,7 +563,7 @@ ul.plain {
 .social {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -574,8 +574,8 @@ ul.plain {
 .social a {
   display: grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.3rem;
   border-radius: 50%;
   border: 1px solid var(--rule);
   background: var(--surface);
