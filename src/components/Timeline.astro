@@ -1,0 +1,44 @@
+---
+import type { Article } from '../lib/articles';
+import { pathOf, wasUpdated } from '../lib/articles';
+import { formatDate, isoDate, useTranslations } from '../i18n/utils';
+import type { Lang } from '../site';
+
+interface Props {
+  articles: Article[];
+  lang: Lang;
+}
+const { articles, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<ol class="timeline">
+  {
+    articles.map((a) => {
+      const updated = wasUpdated(a);
+      return (
+        <li class={updated ? 'is-updated' : undefined}>
+          <time class="tl-date" datetime={isoDate(a.data.publishedAt)}>
+            {formatDate(a.data.publishedAt, lang, 'short')}
+          </time>
+          <span class="tl-node" aria-hidden="true" />
+          <article class="tl-body">
+            <h3>
+              <a href={pathOf(a)}>{a.data.title}</a>
+            </h3>
+            <p>{a.data.summary}</p>
+            <p class="tl-meta">
+              {updated && (
+                <span class="flag">
+                  {t('article.updated')} {formatDate(a.data.updatedAt!, lang, 'short')}
+                </span>
+              )}
+              {a.data.topics.length > 0 && <span>{a.data.topics.join(', ')}</span>}
+              <span>{a.data.sources.length} {t('article.sourcesCount')}</span>
+            </p>
+          </article>
+        </li>
+      );
+    })
+  }
+</ol>

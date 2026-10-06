@@ -1,0 +1,53 @@
+---
+import { ENABLED_LANGS, type Lang } from '../site';
+import { useTranslations } from '../i18n/utils';
+import { ui } from '../i18n/ui';
+import type { Alternate } from '../lib/seo';
+
+interface Props {
+  lang: Lang;
+  path: string;
+  alternates: Alternate[];
+}
+const { lang, path, alternates } = Astro.props;
+const t = useTranslations(lang);
+
+const nav = [
+  { href: `/${lang}/news/`, label: t('nav.news') },
+  { href: `/${lang}/about/`, label: t('nav.about') },
+];
+const current = (href: string) => path === href || (href !== `/${lang}/` && path.startsWith(href));
+const others = alternates.filter((a) => a.lang !== lang && ENABLED_LANGS.includes(a.lang));
+---
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={`/${lang}/`} aria-label="Deyron Labs">
+      <svg class="mark" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path d="M4 3h7.5a9 9 0 0 1 0 18H4z" fill="currentColor"></path>
+        <circle cx="12" cy="12" r="2.6" fill="var(--flag)"></circle>
+      </svg>
+      <span class="brand-name">Deyron Labs</span>
+    </a>
+    <nav class="nav" aria-label={t('nav.main')}>
+      {
+        nav.map((n) => (
+          <a href={n.href} aria-current={current(n.href) ? 'page' : undefined}>
+            {n.label}
+          </a>
+        ))
+      }
+      {
+        others.length > 0 && (
+          <span class="langs" aria-label={t('nav.language')}>
+            {others.map((a) => (
+              <a href={a.path} hreflang={a.lang} lang={a.lang}>
+                {ui[a.lang]['lang.name']}
+              </a>
+            ))}
+          </span>
+        )
+      }
+    </nav>
+  </div>
+</header>

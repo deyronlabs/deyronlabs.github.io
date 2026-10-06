@@ -1,0 +1,19 @@
+---
+import { absUrl, DEFAULT_LANG } from '../site';
+const target = `/${DEFAULT_LANG}/`;
+---
+
+<!doctype html>
+<html lang={DEFAULT_LANG}>
+  <head>
+    <meta charset="utf-8" />
+    <title>Deyron Labs</title>
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={absUrl(target)} />
+    <link rel="alternate" hreflang="x-default" href={absUrl(target)} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <p><a href={target}>Deyron Labs</a></p>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ENABLED_LANGS, SITE, type Lang } from '../../site';
+import { langPaths, useTranslations } from '../../i18n/utils';
+import { staticAlternates } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const how = t('about.how.body');
+---
+
+<Base
+  title={t('about.title')}
+  description={t('about.description')}
+  lang={lang}
+  path={`/${lang}/about/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'about/')}
+>
+  <div class="wrap page">
+    <h1>{t('about.title')}</h1>
+    <p class="lead">{t('about.lead')}</p>
+    <div class="prose">
+      <h2>{t('about.how.title')}</h2>
+      <ul>
+        {how.map((p) => <li>{p}</li>)}
+      </ul>
+      <p>{t('article.aiNotice')}</p>
+
+      <h2>{t('about.corrections.title')}</h2>
+      <p>{t('about.corrections.body')}</p>
+
+      <h2>{t('about.contact.title')}</h2>
+      <ul>
+        <li>{t('about.contact.general')}: <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
+        <li>{t('about.contact.collab')}: <a href={`mailto:${SITE.collabEmail}`}>{SITE.collabEmail}</a></li>
+      </ul>
+    </div>
+  </div>
+</Base>

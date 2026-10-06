@@ -1,0 +1,41 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Timeline from '../../../components/Timeline.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations } from '../../../i18n/utils';
+import { getArticles } from '../../../lib/articles';
+import { staticAlternates } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const articles = await getArticles(lang);
+const body = t('author.body');
+---
+
+<Base
+  title={t('author.title')}
+  description={t('author.description')}
+  lang={lang}
+  path={`/${lang}/author/deyron-labs/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'author/deyron-labs/')}
+>
+  <div class="wrap page">
+    <h1>{t('author.title')}</h1>
+    <div class="prose">
+      {body.map((p) => <p>{p}</p>)}
+      <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
+    </div>
+    {
+      articles.length > 0 && (
+        <section class="section" aria-labelledby="by-desk">
+          <div class="section-head"><h2 id="by-desk">{t('author.stories')}</h2></div>
+          <Timeline articles={articles} lang={lang} />
+        </section>
+      )
+    }
+  </div>
+</Base>

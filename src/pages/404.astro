@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { DEFAULT_LANG } from '../site';
+import { useTranslations } from '../i18n/utils';
+
+const lang = DEFAULT_LANG;
+const t = useTranslations(lang);
+---
+
+<Base title={t('404.title')} description={t('404.body')} lang={lang} path="/404.html" noindex>
+  <div class="wrap page">
+    <h1>{t('404.title')}</h1>
+    <p class="lead">{t('404.body')}</p>
+    <p><a href={`/${lang}/news/`}>{t('404.cta')}</a></p>
+  </div>
+</Base>

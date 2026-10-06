@@ -1,0 +1,36 @@
+---
+import { SITE, SOCIALS, type Lang } from '../site';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div class="foot-about">
+      <p class="foot-brand">Deyron Labs</p>
+      <p>{t('footer.about')}</p>
+      <p class="muted">© {year} {SITE.name}. {t('footer.rights')}</p>
+    </div>
+    <div>
+      <h2 class="foot-h">{t('footer.follow')}</h2>
+      <ul class="plain">
+        {SOCIALS.map((s) => <li><a href={s.url} rel="me noopener">{s.name}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h2 class="foot-h">{t('footer.feeds')}</h2>
+      <ul class="plain">
+        <li><a href={`/${lang}/rss.xml`}>{t('footer.rss')}</a></li>
+        <li><a href="/sitemap.xml">{t('footer.sitemap')}</a></li>
+        <li><a href="/llms.txt">{t('footer.llms')}</a></li>
+        <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

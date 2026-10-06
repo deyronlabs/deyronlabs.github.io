@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Timeline from '../../../components/Timeline.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations } from '../../../i18n/utils';
+import { getArticles } from '../../../lib/articles';
+import { staticAlternates } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const articles = await getArticles(lang);
+---
+
+<Base
+  title={t('news.title')}
+  description={t('news.description')}
+  lang={lang}
+  path={`/${lang}/news/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'news/')}
+>
+  <div class="wrap page">
+    <h1>{t('news.title')}</h1>
+    <p class="lead">{t('news.intro')}</p>
+    {articles.length > 0 ? <Timeline articles={articles} lang={lang} /> : <p class="empty">{t('home.empty')}</p>}
+  </div>
+</Base>

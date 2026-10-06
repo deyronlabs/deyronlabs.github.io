@@ -1,0 +1,68 @@
+---
+import Base from '../../layouts/Base.astro';
+import Timeline from '../../components/Timeline.astro';
+import { ENABLED_LANGS, type Lang } from '../../site';
+import { langPaths, useTranslations, formatDate, isoDate } from '../../i18n/utils';
+import { getArticles, pathOf, wasUpdated } from '../../lib/articles';
+import { staticAlternates } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const articles = await getArticles(lang);
+const [lede, ...rest] = articles;
+const latest = rest.slice(0, 8);
+---
+
+<Base
+  title={t('meta.home.title')}
+  description={t('meta.home.description')}
+  lang={lang}
+  path={`/${lang}/`}
+  alternates={staticAlternates(ENABLED_LANGS, '')}
+>
+  <div class="wrap">
+    <div class="home-top">
+      <h1 class="sr-only">{t('home.h1')}</h1>
+      <p class="tagline">{t('home.tagline')}</p>
+      {
+        lede ? (
+          <article class="lede">
+            <h2>
+              <a href={pathOf(lede)}>{lede.data.title}</a>
+            </h2>
+            <p class="lede-summary">{lede.data.summary}</p>
+            <p class="meta">
+              <time datetime={isoDate(lede.data.publishedAt)}>
+                {formatDate(lede.data.publishedAt, lang)}
+              </time>
+              {wasUpdated(lede) && (
+                <span>
+                  {t('article.updated')} {formatDate(lede.data.updatedAt!, lang)}
+                </span>
+              )}
+              <span>{lede.data.sources.length} {t('article.sourcesCount')}</span>
+            </p>
+          </article>
+        ) : (
+          <p class="empty">{t('home.empty')}</p>
+        )
+      }
+    </div>
+
+    {
+      latest.length > 0 && (
+        <section class="section" aria-labelledby="latest-h">
+          <div class="section-head">
+            <h2 id="latest-h">{t('home.latest')}</h2>
+            <a href={`/${lang}/news/`}>{t('home.all')}</a>
+          </div>
+          <Timeline articles={latest} lang={lang} />
+        </section>
+      )
+    }
+  </div>
+</Base>

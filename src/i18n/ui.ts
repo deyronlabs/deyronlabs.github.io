@@ -1,0 +1,144 @@
+import type { Lang } from '../site';
+
+const en = {
+  'lang.name': 'English',
+  'meta.home.title': 'Deyron Labs: AI news with primary sources',
+  'meta.home.description':
+    'Fast, verified AI news. Every story starts with a short summary and links to its primary source.',
+  'nav.news': 'News',
+  'nav.about': 'About',
+  'nav.main': 'Main navigation',
+  'nav.language': 'Language',
+  'nav.skip': 'Skip to content',
+  'home.h1': 'Deyron Labs: AI news with primary sources',
+  'home.tagline': 'What changed in AI, in three paragraphs, with the source one click away.',
+  'home.latest': 'Latest stories',
+  'home.all': 'All stories',
+  'home.empty': 'The first stories are on their way. Subscribe on YouTube or follow the RSS feed.',
+  'news.title': 'AI news',
+  'news.description': 'Every Deyron Labs story, newest first. Each one links to its primary source.',
+  'news.intro': 'Every story, newest first. Each one links to its primary source.',
+  'article.published': 'Published',
+  'article.updated': 'Updated',
+  'article.sources': 'Sources',
+  'article.sourcesCount': 'sources',
+  'article.primary': 'Primary source',
+  'article.watch': 'Watch the short',
+  'article.facts': 'About this story',
+  'article.by': 'By',
+  'article.aiNotice':
+    'This article was written with AI assistance and checked by the Deyron Labs editorial team against the primary sources before publication.',
+  'article.aiNoticeLink': 'How we work',
+  'article.readMore': 'Read the story',
+  'article.related': 'Topics',
+  'about.title': 'About Deyron Labs',
+  'about.description':
+    'Deyron Labs is an independent AI news publication. Stories are written with AI assistance and checked by editors against primary sources.',
+  'about.lead':
+    'Deyron Labs explains what changed in AI: new models, tools, policies and research. We keep each story short and link to the primary source so you can check it yourself.',
+  'about.how.title': 'How stories are made',
+  'about.how.body': [
+    'We monitor primary sources: company announcements, research papers, official documentation and regulator filings.',
+    'Stories are drafted with AI assistance. An editor then checks the facts, figures and headline against the primary source. Nothing is published without that check.',
+    'Every story separates what is confirmed from what is reported or rumored, and says so.',
+  ],
+  'about.corrections.title': 'Corrections',
+  'about.corrections.body':
+    'If you find a mistake, write to us. We fix it, mark the story as updated and show the date of the change.',
+  'about.contact.title': 'Contact',
+  'about.contact.general': 'General questions and corrections',
+  'about.contact.collab': 'Collaborations and sponsors',
+  'author.title': 'Deyron Labs Editorial Desk',
+  'author.description':
+    'The Deyron Labs editorial desk writes and checks every story on this site. Stories are drafted with AI assistance and verified by an editor.',
+  'author.body': [
+    'The editorial desk is the byline on every Deyron Labs story. It covers AI models, tools, policy and research, and publishes with a link to the primary source.',
+    'Drafts are prepared with AI assistance. An editor checks each story before it goes live.',
+  ],
+  'author.stories': 'Stories by the desk',
+  'footer.about': 'Independent AI news. Written with AI assistance, checked by editors.',
+  'footer.follow': 'Follow',
+  'footer.feeds': 'For readers and machines',
+  'footer.rss': 'RSS feed',
+  'footer.sitemap': 'Sitemap',
+  'footer.llms': 'llms.txt',
+  'footer.rights': 'All rights reserved.',
+  '404.title': 'Page not found',
+  '404.body': 'This page does not exist or has moved. Try the latest stories.',
+  '404.cta': 'Go to the latest stories',
+};
+
+export type Dict = typeof en;
+export type UiKey = keyof Dict;
+
+const es: Dict = {
+  'lang.name': 'Español',
+  'meta.home.title': 'Deyron Labs: noticias de IA con fuentes primarias',
+  'meta.home.description':
+    'Noticias de IA rápidas y verificadas. Cada historia empieza con un resumen corto y enlaza a su fuente primaria.',
+  'nav.news': 'Noticias',
+  'nav.about': 'Acerca de',
+  'nav.main': 'Navegación principal',
+  'nav.language': 'Idioma',
+  'nav.skip': 'Saltar al contenido',
+  'home.h1': 'Deyron Labs: noticias de IA con fuentes primarias',
+  'home.tagline': 'Qué cambió en la IA, en tres párrafos, con la fuente a un clic.',
+  'home.latest': 'Últimas historias',
+  'home.all': 'Todas las historias',
+  'home.empty': 'Las primeras historias están en camino. Suscríbete en YouTube o sigue el feed RSS.',
+  'news.title': 'Noticias de IA',
+  'news.description':
+    'Todas las historias de Deyron Labs, de la más reciente a la más antigua. Cada una enlaza a su fuente primaria.',
+  'news.intro':
+    'Todas las historias, de la más reciente a la más antigua. Cada una enlaza a su fuente primaria.',
+  'article.published': 'Publicado',
+  'article.updated': 'Actualizado',
+  'article.sources': 'Fuentes',
+  'article.sourcesCount': 'fuentes',
+  'article.primary': 'Fuente primaria',
+  'article.watch': 'Ver el short',
+  'article.facts': 'Sobre esta historia',
+  'article.by': 'Por',
+  'article.aiNotice':
+    'Este artículo fue escrito con ayuda de IA y revisado por el equipo editorial de Deyron Labs frente a las fuentes primarias antes de publicarse.',
+  'article.aiNoticeLink': 'Cómo trabajamos',
+  'article.readMore': 'Leer la historia',
+  'article.related': 'Temas',
+  'about.title': 'Acerca de Deyron Labs',
+  'about.description':
+    'Deyron Labs es una publicación independiente de noticias de IA. Las historias se escriben con ayuda de IA y los editores las revisan frente a fuentes primarias.',
+  'about.lead':
+    'Deyron Labs explica qué cambió en la IA: modelos, herramientas, políticas e investigación. Mantenemos cada historia breve y enlazamos la fuente primaria para que puedas comprobarla.',
+  'about.how.title': 'Cómo se hacen las historias',
+  'about.how.body': [
+    'Seguimos fuentes primarias: anuncios de empresas, artículos de investigación, documentación oficial y documentos de reguladores.',
+    'Las historias se redactan con ayuda de IA. Después, un editor comprueba los hechos, las cifras y el titular frente a la fuente primaria. No se publica nada sin esa revisión.',
+    'Cada historia separa lo confirmado de lo que se informa o se rumorea, y lo dice.',
+  ],
+  'about.corrections.title': 'Correcciones',
+  'about.corrections.body':
+    'Si encuentras un error, escríbenos. Lo corregimos, marcamos la historia como actualizada y mostramos la fecha del cambio.',
+  'about.contact.title': 'Contacto',
+  'about.contact.general': 'Preguntas generales y correcciones',
+  'about.contact.collab': 'Colaboraciones y patrocinadores',
+  'author.title': 'Redacción de Deyron Labs',
+  'author.description':
+    'La redacción de Deyron Labs escribe y revisa cada historia de este sitio. Las historias se redactan con ayuda de IA y las verifica un editor.',
+  'author.body': [
+    'La redacción firma todas las historias de Deyron Labs. Cubre modelos, herramientas, políticas e investigación en IA, y publica con un enlace a la fuente primaria.',
+    'Los borradores se preparan con ayuda de IA. Un editor revisa cada historia antes de que se publique.',
+  ],
+  'author.stories': 'Historias de la redacción',
+  'footer.about': 'Noticias de IA independientes. Escritas con ayuda de IA y revisadas por editores.',
+  'footer.follow': 'Síguenos',
+  'footer.feeds': 'Para lectores y máquinas',
+  'footer.rss': 'Feed RSS',
+  'footer.sitemap': 'Mapa del sitio',
+  'footer.llms': 'llms.txt',
+  'footer.rights': 'Todos los derechos reservados.',
+  '404.title': 'Página no encontrada',
+  '404.body': 'Esta página no existe o se movió. Prueba con las últimas historias.',
+  '404.cta': 'Ir a las últimas historias',
+};
+
+export const ui: Record<Lang, Dict> = { en, es };

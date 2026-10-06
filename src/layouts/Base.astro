@@ -1,0 +1,106 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE, SOCIALS, ENABLED_LANGS, DEFAULT_LANG, OG_LOCALE, absUrl, type Lang } from '../site';
+import { useTranslations } from '../i18n/utils';
+import {
+  organizationLd,
+  websiteLd,
+  authorLd,
+  serializeJsonLd,
+  type Alternate,
+} from '../lib/seo';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  /** Calea canonică, cu slash la final, ex. /en/news/ */
+  path: string;
+  /** Versiunile pe limbi ale paginii (include pagina curentă). */
+  alternates?: Alternate[];
+  type?: 'website' | 'article';
+  jsonLd?: object[];
+  publishedTime?: Date;
+  modifiedTime?: Date;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  lang,
+  path,
+  alternates = [{ lang, path }],
+  type = 'website',
+  jsonLd = [],
+  publishedTime,
+  modifiedTime,
+  noindex = false,
+} = Astro.props;
+
+const t = useTranslations(lang);
+const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+const canonical = absUrl(path);
+const ogImage = absUrl(SITE.ogImage);
+const defaultAlt = alternates.find((a) => a.lang === DEFAULT_LANG);
+const graph = serializeJsonLd([
+  organizationLd(SOCIALS.map((s) => s.url)),
+  websiteLd(lang),
+  authorLd(lang),
+  ...jsonLd,
+]);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {
+      alternates.length > 1 &&
+        alternates.map((a) => <link rel="alternate" hreflang={a.lang} href={absUrl(a.path)} />)
+    }
+    {defaultAlt && alternates.length > 1 && <link rel="alternate" hreflang="x-default" href={absUrl(defaultAlt.path)} />}
+    <link rel="alternate" type="application/rss+xml" title={`${SITE.name} RSS`} href={`/${lang}/rss.xml`} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content={SITE.themeColor} />
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={OG_LOCALE[lang]} />
+    {alternates.filter((a) => a.lang !== lang).map((a) => <meta property="og:locale:alternate" content={OG_LOCALE[a.lang]} />)}
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..700&display=swap"
+    />
+
+    <script type="application/ld+json" set:html={graph} />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t('nav.skip')}</a>
+    <Header lang={lang} path={path} alternates={alternates} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

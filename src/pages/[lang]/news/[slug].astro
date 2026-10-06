@@ -1,0 +1,150 @@
+---
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
+import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
+import {
+  getArticles,
+  getTranslations,
+  slugOf,
+  pathOf,
+  wasUpdated,
+  lastChange,
+} from '../../../lib/articles';
+import { newsArticleLd } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of ENABLED_LANGS) {
+    for (const article of await getArticles(lang)) {
+      paths.push({ params: { lang, slug: slugOf(article) }, props: { article } });
+    }
+  }
+  return paths;
+}
+
+const { article } = Astro.props;
+const lang = article.data.lang as Lang;
+const t = useTranslations(lang);
+const { Content } = await render(article);
+const d = article.data;
+const path = pathOf(article);
+const translations = await getTranslations(article);
+const alternates = [{ lang, path }, ...translations.map((a) => ({ lang: a.data.lang as Lang, path: pathOf(a) }))];
+const updated = wasUpdated(article);
+const primary = d.sources.filter((s) => s.primary);
+const ld = newsArticleLd({
+  title: d.title,
+  summary: d.summary,
+  lang,
+  path,
+  publishedAt: d.publishedAt,
+  updatedAt: d.updatedAt,
+  sources: d.sources,
+  entities: d.entities,
+  topics: d.topics,
+  video: d.video,
+});
+---
+
+<Base
+  title={d.title}
+  description={d.summary}
+  lang={lang}
+  path={path}
+  alternates={alternates}
+  type="article"
+  jsonLd={[ld]}
+  publishedTime={d.publishedAt}
+  modifiedTime={lastChange(article)}
+>
+  <div class="wrap">
+    <header class="article-head">
+      <h1>{d.title}</h1>
+      <p class="article-summary">{d.summary}</p>
+      <p class="meta">
+        <span>
+          {t('article.by')} <a href={`/${lang}/author/deyron-labs/`}>{SITE.authorName}</a>
+        </span>
+        <span>
+          {t('article.published')}
+          <time datetime={isoDate(d.publishedAt)}>{formatDate(d.publishedAt, lang)}</time>
+        </span>
+        {
+          updated && (
+            <span>
+              {t('article.updated')}
+              <time datetime={isoDate(d.updatedAt!)}>{formatDate(d.updatedAt!, lang)}</time>
+            </span>
+          )
+        }
+      </p>
+    </header>
+
+    <div class="article-grid">
+      <article class="article-body">
+        <Content />
+
+        <h2 id="sources">{t('article.sources')}</h2>
+        <ol class="sources-list">
+          {
+            d.sources.map((s) => (
+              <li class={s.primary ? 'primary' : undefined}>
+                <a href={s.url} rel="noopener">{s.title}</a>
+                <small>
+                  {s.primary ? `${t('article.primary')}` : ''}
+                  {s.primary && s.publisher ? ', ' : ''}
+                  {s.publisher ?? ''}
+                </small>
+              </li>
+            ))
+          }
+        </ol>
+      </article>
+
+      <aside class="article-aside" aria-labelledby="facts-h">
+        <h2 id="facts-h">{t('article.facts')}</h2>
+        <dl>
+          <dt>{t('article.published')}</dt>
+          <dd>{formatDate(d.publishedAt, lang)}</dd>
+          {
+            updated && (
+              <>
+                <dt>{t('article.updated')}</dt>
+                <dd>{formatDate(d.updatedAt!, lang)}</dd>
+              </>
+            )
+          }
+          {
+            primary.length > 0 && (
+              <>
+                <dt>{t('article.primary')}</dt>
+                <dd>
+                  <a href={primary[0].url} rel="noopener">{primary[0].publisher ?? primary[0].title}</a>
+                </dd>
+              </>
+            )
+          }
+          {
+            d.topics.length > 0 && (
+              <>
+                <dt>{t('article.related')}</dt>
+                <dd>{d.topics.join(', ')}</dd>
+              </>
+            )
+          }
+          {
+            d.video && (
+              <>
+                <dt>Video</dt>
+                <dd><a href={d.video} rel="noopener">{t('article.watch')}</a></dd>
+              </>
+            )
+          }
+        </dl>
+        <p>{t('article.aiNotice')}</p>
+        <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
+      </aside>
+    </div>
+  </div>
+</Base>
