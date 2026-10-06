@@ -32,10 +32,17 @@ const news = defineCollection({
     topics: z.array(z.string()).default([]),
     // Aceeași valoare în en și es pentru același articol; folosită la hreflang.
     translationKey: z.string().optional(),
-    // Link YouTube Short (opțional).
+    // Link YouTube (video complet sau Short), opțional. Se afișează player cu încărcare la click.
     video: z.string().url().optional(),
+    // Data publicării videoclipului (pentru schema.org); implicit data articolului.
+    videoPublishedAt: z.coerce.date().optional(),
+    // Imagine pentru articol și partajare: cale din public/, ex. /images/news/slug.jpg (16:9, min. 1200 px lățime).
+    image: z.string().startsWith('/').optional(),
+    imageAlt: z.string().optional(),
     // draft: true = vizibil doar în `npm run dev`, nu în build-ul de producție.
     draft: z.boolean().default(false),
+  }).refine((d) => !d.image || !!d.imageAlt, {
+    message: 'imageAlt este obligatoriu când image este setat',
   }),
 });
 

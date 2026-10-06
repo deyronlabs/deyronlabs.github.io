@@ -592,3 +592,68 @@ ul.plain {
   margin-bottom: clamp(1.5rem, 4vw, 2.75rem);
   border: 1px solid var(--rule);
 }
+
+/* ---------- Video și imagine în articol ---------- */
+
+.video-embed,
+.article-figure {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 2.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #000;
+}
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+.video-play:focus-visible {
+  outline-offset: -4px;
+}
+.video-embed img,
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #0b1f12;
+  box-shadow: 0 0 0 6px rgba(26, 26, 26, 0.65);
+}
+.video-play:hover .video-btn {
+  background: var(--mint);
+}
+.video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.video-fallback {
+  position: absolute;
+  inset: auto 1rem 1rem auto;
+  background: var(--bg);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}

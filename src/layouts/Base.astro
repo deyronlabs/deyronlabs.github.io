@@ -25,6 +25,8 @@ interface Props {
   publishedTime?: Date;
   modifiedTime?: Date;
   noindex?: boolean;
+  /** Imagine de partajare (cale din public/); implicit imaginea site-ului. */
+  image?: string;
 }
 
 const {
@@ -38,12 +40,13 @@ const {
   publishedTime,
   modifiedTime,
   noindex = false,
+  image,
 } = Astro.props;
 
 const t = useTranslations(lang);
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const canonical = absUrl(path);
-const ogImage = absUrl(SITE.ogImage);
+const ogImage = absUrl(image ?? SITE.ogImage);
 const defaultAlt = alternates.find((a) => a.lang === DEFAULT_LANG);
 const graph = serializeJsonLd([
   organizationLd(SOCIALS.map((s) => s.url)),

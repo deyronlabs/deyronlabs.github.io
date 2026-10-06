@@ -1,7 +1,7 @@
 // Verificare rapidă (fără dependențe) pentru articolele din src/content/news.
 // Rulează: npm run check
 // Validarea completă a câmpurilor o face schema Zod din src/content.config.ts la build.
-import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 
 const ROOT = new URL('../src/content/news/', import.meta.url).pathname;
@@ -47,6 +47,11 @@ for (const file of files) {
   if (summary && (summary.length < 80 || summary.length > 420)) fail(rel, `summary are ${summary.length} caractere (80-420)`);
   if (!/^sources:/m.test(fm)) fail(rel, 'lipsește sources');
   if (!/primary:\s*true/.test(fm)) fail(rel, 'nicio sursă cu primary: true');
+  const img = field(fm, 'image');
+  if (img) {
+    if (!existsSync(new URL(`../public${img}`, import.meta.url).pathname)) fail(rel, `imaginea ${img} nu există în public/`);
+    if (!field(fm, 'imageAlt')) fail(rel, 'imageAlt este obligatoriu când image este setat');
+  }
   for (const h of HEADINGS[lang] ?? []) {
     if (!new RegExp(`^##\\s+${h}\\s*$`, 'm').test(body)) fail(rel, `lipsește secțiunea "## ${h}"`);
   }

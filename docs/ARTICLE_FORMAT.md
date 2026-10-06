@@ -16,7 +16,10 @@ Slug-ul din numele fișierului devine URL-ul: `src/content/news/en/acme-releases
 | `entities` | nu | companii, produse, modele menționate (intră în schema.org `about`) |
 | `topics` | nu | etichete scurte |
 | `translationKey` | nu | aceeași valoare în `en` și `es` pentru același articol (hreflang) |
-| `video` | nu | link YouTube Short |
+| `video` | nu | link YouTube (video sau Short); apare ca player cu încărcare la click și în schema `VideoObject` |
+| `videoPublishedAt` | nu | data publicării videoclipului (implicit data articolului) |
+| `image` | nu | cale din `public/`, ex. `/images/news/<slug>.jpg`, 16:9, minim 1200 px lățime; apare în capul articolului și la partajare |
+| `imageAlt` | da, dacă există `image` | descriere scurtă a imaginii |
 | `draft` | nu | `true` = nu se publică |
 
 ## Corpul

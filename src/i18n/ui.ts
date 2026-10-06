@@ -23,7 +23,8 @@ const en = {
   'article.sources': 'Sources',
   'article.sourcesCount': 'sources',
   'article.primary': 'Primary source',
-  'article.watch': 'Watch the short',
+  'article.watch': 'Watch the video',
+  'article.playVideo': 'Play video',
   'article.facts': 'About this story',
   'article.by': 'By',
   'article.aiNotice':
@@ -96,7 +97,8 @@ const es: Dict = {
   'article.sources': 'Fuentes',
   'article.sourcesCount': 'fuentes',
   'article.primary': 'Fuente primaria',
-  'article.watch': 'Ver el short',
+  'article.watch': 'Ver el video',
+  'article.playVideo': 'Reproducir video',
   'article.facts': 'Sobre esta historia',
   'article.by': 'Por',
   'article.aiNotice':

@@ -1,6 +1,8 @@
 ---
 import { render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import { youtubeId, posterFallback } from '../../../lib/video';
 import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
 import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
 import {
@@ -32,6 +34,7 @@ const path = pathOf(article);
 const translations = await getTranslations(article);
 const alternates = [{ lang, path }, ...translations.map((a) => ({ lang: a.data.lang as Lang, path: pathOf(a) }))];
 const updated = wasUpdated(article);
+const videoId = d.video ? youtubeId(d.video) : null;
 const primary = d.sources.filter((s) => s.primary);
 const ld = newsArticleLd({
   title: d.title,
@@ -44,6 +47,8 @@ const ld = newsArticleLd({
   entities: d.entities,
   topics: d.topics,
   video: d.video,
+  videoPublishedAt: d.videoPublishedAt,
+  image: d.image,
 });
 ---
 
@@ -57,6 +62,7 @@ const ld = newsArticleLd({
   jsonLd={[ld]}
   publishedTime={d.publishedAt}
   modifiedTime={lastChange(article)}
+  image={d.image}
 >
   <div class="wrap">
     <header class="article-head">
@@ -83,6 +89,15 @@ const ld = newsArticleLd({
 
     <div class="article-grid">
       <article class="article-body">
+        {
+          videoId ? (
+            <VideoEmbed id={videoId} poster={d.image ?? posterFallback(videoId)} title={d.title} lang={lang} />
+          ) : d.image ? (
+            <figure class="article-figure">
+              <img src={d.image} alt={d.imageAlt} width="1280" height="720" decoding="async" />
+            </figure>
+          ) : null
+        }
         <Content />
 
         <h2 id="sources">{t('article.sources')}</h2>

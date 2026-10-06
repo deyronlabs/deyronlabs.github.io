@@ -1,5 +1,6 @@
 // Funcții pure pentru SEO / schema.org (fără dependențe de Astro, ca să poată fi testate).
 import { SITE, absUrl, type Lang } from '../site';
+import { youtubeId, schemaEmbedUrl } from './video';
 
 export interface Alternate {
   lang: Lang;
@@ -17,6 +18,8 @@ export interface ArticleLd {
   entities: string[];
   topics: string[];
   video?: string;
+  videoPublishedAt?: Date;
+  image?: string;
 }
 
 const ORG_ID = `${SITE.url}/#organization`;
@@ -54,6 +57,20 @@ export function authorLd(lang: Lang) {
   };
 }
 
+function videoLd(a: ArticleLd) {
+  const id = a.video ? youtubeId(a.video) : null;
+  if (!id) return null;
+  return {
+    '@type': 'VideoObject',
+    name: a.title,
+    description: a.summary,
+    embedUrl: schemaEmbedUrl(id),
+    thumbnailUrl: [absUrl(a.image ?? SITE.ogImage)],
+    uploadDate: (a.videoPublishedAt ?? a.publishedAt).toISOString(),
+    inLanguage: a.lang,
+  };
+}
+
 export function newsArticleLd(a: ArticleLd) {
   const url = absUrl(a.path);
   return {
@@ -66,7 +83,7 @@ export function newsArticleLd(a: ArticleLd) {
     dateModified: (a.updatedAt ?? a.publishedAt).toISOString(),
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     url,
-    image: [absUrl(SITE.ogImage)],
+    image: [absUrl(a.image ?? SITE.ogImage)],
     isAccessibleForFree: true,
     author: { '@id': `${SITE.url}/#editorial-desk` },
     publisher: { '@id': ORG_ID },
@@ -78,7 +95,7 @@ export function newsArticleLd(a: ArticleLd) {
       url: s.url,
       ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}),
     })),
-    ...(a.video ? { video: { '@type': 'VideoObject', name: a.title, description: a.summary, embedUrl: a.video, uploadDate: a.publishedAt.toISOString(), thumbnailUrl: absUrl(SITE.ogImage) } } : {}),
+    ...(videoLd(a) ? { video: videoLd(a) } : {}),
   };
 }
 

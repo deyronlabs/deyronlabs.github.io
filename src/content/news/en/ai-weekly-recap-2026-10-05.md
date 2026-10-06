@@ -22,6 +22,10 @@ topics:
   - Policy
   - AI safety
 translationKey: ai-weekly-recap-2026-10-05
+video: "https://www.youtube.com/watch?v=W60x4aWAHRc"
+videoPublishedAt: 2026-10-05
+image: /images/news/ai-weekly-recap-2026-10-05.jpg
+imageAlt: "Deyron Labs weekly AI news: OpenAI scraps GPT-6.1 Astra and Google locks Gemini 4 Argon"
 sources:
   - title: "DevDay 2026 Recap"
     url: "https://openai.com/index/devday-2026-recap/"

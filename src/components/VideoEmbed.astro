@@ -1,0 +1,42 @@
+---
+import { embedSrc, watchUrl } from '../lib/video';
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../site';
+
+interface Props {
+  id: string;
+  poster: string;
+  title: string;
+  lang: Lang;
+}
+const { id, poster, title, lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class="video-embed" data-video-embed data-src={embedSrc(id)} data-title={title}>
+  <button type="button" class="video-play" aria-label={`${t('article.playVideo')}: ${title}`}>
+    <img src={poster} alt="" width="1280" height="720" decoding="async" />
+    <span class="video-btn" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"></path></svg>
+    </span>
+  </button>
+  <noscript><a class="video-fallback" href={watchUrl(id)}>{t('article.watch')}</a></noscript>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-video-embed]').forEach((el) => {
+    const button = el.querySelector('button');
+    if (!button) return;
+    button.addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      frame.src = el.dataset.src ?? '';
+      frame.title = el.dataset.title ?? 'YouTube video';
+      frame.allow =
+        'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      el.replaceChildren(frame);
+      frame.focus();
+    });
+  });
+</script>
