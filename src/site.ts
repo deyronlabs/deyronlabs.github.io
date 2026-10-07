@@ -28,6 +28,7 @@ export const SOCIALS = [
   { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/deyronlabs/' },
   { name: 'TikTok', icon: 'tiktok', url: 'https://www.tiktok.com/@deyronlabs' },
   { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/deyronlabs/' },
+  { name: 'Threads', icon: 'threads', url: 'https://www.threads.com/@deyronlabs' },
   { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/deyronlabs/' },
   { name: 'Pinterest', icon: 'pinterest', url: 'https://www.pinterest.com/deyronlabs/' },
   { name: 'Reddit', icon: 'reddit', url: 'https://www.reddit.com/user/DeyronLabs/' },
