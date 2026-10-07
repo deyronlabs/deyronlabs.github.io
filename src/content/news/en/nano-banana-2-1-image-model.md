@@ -17,6 +17,8 @@ topics:
   - Image generation
   - Pricing
 translationKey: nano-banana-2-1-image-model
+video: "https://www.youtube.com/shorts/mvlga-asVzI"
+videoPublishedAt: 2026-10-07
 image: /images/news/nano-banana-2-1-2026-10-06.jpg
 imageAlt: "Deyron Labs graphic: Nano Banana 2.1 costs about half as much per image as Nano Banana 2, and its scores come from Google's own model card"
 sources:
