@@ -106,5 +106,12 @@ const graph = serializeJsonLd([
       <slot />
     </main>
     <Footer lang={lang} />
+    <!-- Cloudflare Web Analytics (fără cookie-uri) -->
+    <script
+      is:inline
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "fb1df0f6a8384d7baf0c83fd1cff1425"}'></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
