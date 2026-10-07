@@ -2,7 +2,7 @@
 title: "Google releases Nano Banana 2.1 and cuts its image API prices by up to half"
 summary: "Google released Nano Banana 2.1, an image generation and editing model built on Gemini 3.6 Flash, on 6 October 2026. Its API price is $0.0336 per 1K image, about half the $0.067 of Nano Banana 2 at 1K and 2K, and about a quarter lower at 4K. The quality scores come from Google's own model card."
 lang: en
-publishedAt: 2026-10-07T15:10:00Z
+publishedAt: 2026-10-07T15:25:00Z
 entities:
   - Google
   - Google DeepMind
