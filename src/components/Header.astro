@@ -1,5 +1,6 @@
 ---
 import { ENABLED_LANGS, type Lang } from '../site';
+import { HEART_ICON } from '../lib/social-icons';
 import { useTranslations } from '../i18n/utils';
 import { ui } from '../i18n/ui';
 import type { Alternate } from '../lib/seo';
@@ -40,6 +41,10 @@ const others = alternates.filter((a) => a.lang !== lang && ENABLED_LANGS.include
           </a>
         ))
       }
+      <a class="support-pill" href={`/${lang}/support/`} aria-current={path === `/${lang}/support/` ? 'page' : undefined}>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d={HEART_ICON} fill="currentColor"></path></svg>
+        <span class="support-pill-label">{t('nav.support')}</span>
+      </a>
       {
         others.length > 0 && (
           <span class="langs" aria-label={t('nav.language')}>

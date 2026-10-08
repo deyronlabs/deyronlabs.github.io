@@ -1,0 +1,25 @@
+---
+import { SUPPORT, type Lang } from '../site';
+import { HEART_ICON } from '../lib/social-icons';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<aside class="support-box" aria-labelledby="support-box-h">
+  <svg class="support-box-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+    <path d={HEART_ICON} fill="currentColor"></path>
+  </svg>
+  <div>
+    <h2 id="support-box-h">{t('support.box.title')}</h2>
+    <p>{t('support.box.body')}</p>
+    <p class="support-box-actions">
+      <a class="btn" href={SUPPORT.kofiUrl} target="_blank" rel="noopener">{t('support.box.cta')}</a>
+      <a href={`/${lang}/support/`}>{t('support.box.more')}</a>
+    </p>
+  </div>
+</aside>

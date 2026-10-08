@@ -7,6 +7,7 @@ const en = {
     'Fast, verified AI news. Every story starts with a short summary and links to its primary source.',
   'nav.news': 'News',
   'nav.about': 'About',
+  'nav.support': 'Support',
   'nav.main': 'Main navigation',
   'nav.language': 'Language',
   'nav.skip': 'Skip to content',
@@ -72,6 +73,116 @@ const en = {
   'footer.sitemap': 'Sitemap',
   'footer.llms': 'llms.txt',
   'footer.rights': 'All rights reserved.',
+  'footer.project': 'The project',
+  'footer.supportCta': 'Support Deyron Labs',
+  'support.title': 'Support Deyron Labs',
+  'support.description':
+    'Deyron Labs is independent and reader-supported. Here is how to help, what the money pays for, and what it does not buy.',
+  'support.lead':
+    'Deyron Labs is an independent project. If our stories and tutorials save you time, you can help keep them coming with a small, one-time contribution.',
+  'support.cta': 'Support on Ko-fi',
+  'support.ctaNote': 'Opens Ko-fi in a new tab. Payments are handled by Ko-fi and PayPal.',
+  'support.goes.title': 'What your support pays for',
+  'support.goes.body': [
+    'Voice generation for our videos.',
+    'The subscriptions and credits we use to test AI tools before we show them to you.',
+    'The domain, email and other running costs of the site and the channel.',
+  ],
+  'support.promise.title': 'What it does not buy',
+  'support.promise.body': [
+    'Coverage. Contributions never decide which stories we publish, how we rate them or what we say about a product.',
+    'Perks or exclusive content. For now, a contribution is a thank-you, not a purchase.',
+    'Contributions are voluntary and are not tax-deductible.',
+  ],
+  'support.other.title': 'Other ways to help',
+  'support.other.body': [
+    'Subscribe on YouTube and share a story you found useful.',
+    'Send us a correction or a tip at the address below. Corrections make every story better.',
+    'Brands and organizations: see our sponsorship page.',
+  ],
+  'support.sponsorsLink': 'Sponsorship and partnerships',
+  'support.youtube': 'Deyron Labs on YouTube',
+  'support.box.title': 'Found this useful?',
+  'support.box.body': 'Deyron Labs is independent and reader-supported. A small contribution helps us keep testing AI tools.',
+  'support.box.cta': 'Support on Ko-fi',
+  'support.box.more': 'How support works',
+  'sponsors.title': 'Sponsorship and partnerships',
+  'sponsors.description':
+    'How brands can work with Deyron Labs, and the independence rules that apply to every sponsor.',
+  'sponsors.lead':
+    'Deyron Labs is a small, independent publication about AI tools. We are open to sponsors who fit our audience, on terms that keep our reporting independent.',
+  'sponsors.who.title': 'Who we reach',
+  'sponsors.who.body':
+    'Our readers and viewers are people who use AI tools at work and at home and want to know what changed, what is worth trying and what to skip. We publish news stories on this site and videos on YouTube, in English.',
+  'sponsors.rules.title': 'Our independence rules',
+  'sponsors.rules.body': [
+    'Sponsors never choose, review or influence which stories we cover, how we assess them or what we conclude.',
+    'Paid content is always labeled as sponsored, in the video and in its description or article. We do not publish paid content that looks like reporting.',
+    'We do not promise positive coverage, and we do not accept payment to remove or soften coverage.',
+    'If we receive a product, access or credits for free, we say so. Receiving them does not buy coverage.',
+    'We disclose relationships that could affect our work. We use Claude, made by Anthropic, to help produce our stories, and stories about Anthropic carry a notice saying so.',
+  ],
+  'sponsors.formats.title': 'What we can discuss',
+  'sponsors.formats.body': [
+    'A clearly labeled sponsored segment in a video.',
+    'A sponsored tutorial about a tool you make, with the limits and drawbacks we find stated honestly.',
+    'Longer-term partnerships, once the channel has the audience to justify them.',
+  ],
+  'sponsors.formats.note':
+    'We are early. We do not publish a rate card yet, and we are not accepting paid placements inside news stories.',
+  'sponsors.contact.title': 'Get in touch',
+  'sponsors.contact.body': 'Write to us with who you are, what you make and what you have in mind.',
+  'privacy.title': 'Privacy',
+  'privacy.description':
+    'What Deyron Labs collects when you visit, what we do not collect and which third-party services are involved.',
+  'privacy.lead':
+    'We collect as little as we can. We do not run ads, we do not use advertising or tracking cookies, and we do not ask you to create an account.',
+  'privacy.updated': 'Last updated: 8 October 2026',
+  'privacy.sections': [
+    {
+      title: 'Visit statistics',
+      body: [
+        'We use Cloudflare Web Analytics to see which pages are read, from which countries and sources, and on what kind of device. It does not use cookies and does not follow you across sites. We see aggregate numbers, not who you are.',
+      ],
+    },
+    {
+      title: 'Hosting and fonts',
+      body: [
+        'The site is hosted on GitHub Pages, which, like any web host, processes technical data such as your IP address to serve pages. Page text uses a typeface loaded from Google Fonts, which means your browser contacts Google to download it.',
+      ],
+    },
+    {
+      title: 'Videos',
+      body: [
+        'Videos load only when you press play, using YouTube’s privacy-enhanced embed (youtube-nocookie.com). Until then, your browser loads nothing from YouTube except, on the few pages without their own image, the video’s preview picture. After you press play, YouTube’s own privacy policy applies.',
+      ],
+    },
+    {
+      title: 'Support links and other sites',
+      body: [
+        'The Support button links to Ko-fi. We do not load Ko-fi code on this site. If you contribute, your payment is handled by Ko-fi and its payment providers under their terms. We do not see or store your payment details. Links to social networks and sources also leave this site and follow those sites’ policies.',
+      ],
+    },
+    {
+      title: 'Email',
+      body: [
+        'If you write to us, we use your message and address only to reply and, if needed, to correct a story. We do not sell or share them.',
+      ],
+    },
+    {
+      title: 'Your rights',
+      body: [
+        'Under EU data protection law you can ask what personal data we hold about you, and ask us to correct or delete it. Write to the contact address below. We hold very little, mostly emails you send us.',
+      ],
+    },
+    {
+      title: 'Changes',
+      body: [
+        'If this page changes in a way that matters, we update the date at the top. If we add a service that uses cookies, such as advertising, we will say so here first.',
+      ],
+    },
+  ],
+  'privacy.contact': 'Questions about privacy',
   '404.title': 'Page not found',
   '404.body': 'This page does not exist or has moved. Try the latest stories.',
   '404.cta': 'Go to the latest stories',
@@ -87,6 +198,7 @@ const es: Dict = {
     'Noticias de IA rápidas y verificadas. Cada historia empieza con un resumen corto y enlaza a su fuente primaria.',
   'nav.news': 'Noticias',
   'nav.about': 'Acerca de',
+  'nav.support': 'Apoyar',
   'nav.main': 'Navegación principal',
   'nav.language': 'Idioma',
   'nav.skip': 'Saltar al contenido',
@@ -154,6 +266,117 @@ const es: Dict = {
   'footer.sitemap': 'Mapa del sitio',
   'footer.llms': 'llms.txt',
   'footer.rights': 'Todos los derechos reservados.',
+  'footer.project': 'El proyecto',
+  'footer.supportCta': 'Apoya a Deyron Labs',
+  'support.title': 'Apoya a Deyron Labs',
+  'support.description':
+    'Deyron Labs es independiente y se sostiene con el apoyo de sus lectores. Cómo ayudar, en qué se usa el dinero y qué no compra.',
+  'support.lead':
+    'Deyron Labs es un proyecto independiente. Si nuestras historias y tutoriales te ahorran tiempo, puedes ayudarnos a seguir con una pequeña contribución puntual.',
+  'support.cta': 'Apoyar en Ko-fi',
+  'support.ctaNote': 'Se abre Ko-fi en una pestaña nueva. Los pagos los gestionan Ko-fi y PayPal.',
+  'support.goes.title': 'En qué se usa tu apoyo',
+  'support.goes.body': [
+    'La generación de voz de nuestros videos.',
+    'Las suscripciones y créditos que usamos para probar herramientas de IA antes de mostrártelas.',
+    'El dominio, el correo y otros gastos de funcionamiento del sitio y del canal.',
+  ],
+  'support.promise.title': 'Qué no compra',
+  'support.promise.body': [
+    'Cobertura. Las contribuciones nunca deciden qué historias publicamos, cómo las valoramos ni qué decimos de un producto.',
+    'Ventajas o contenido exclusivo. Por ahora, una contribución es un agradecimiento, no una compra.',
+    'Las contribuciones son voluntarias y no son deducibles de impuestos.',
+  ],
+  'support.other.title': 'Otras formas de ayudar',
+  'support.other.body': [
+    'Suscríbete en YouTube y comparte una historia que te haya servido.',
+    'Envíanos una corrección o una pista a la dirección de abajo. Las correcciones mejoran cada historia.',
+    'Marcas y organizaciones: consulta nuestra página de patrocinio.',
+  ],
+  'support.sponsorsLink': 'Patrocinio y colaboraciones',
+  'support.youtube': 'Deyron Labs en YouTube',
+  'support.box.title': '¿Te ha resultado útil?',
+  'support.box.body':
+    'Deyron Labs es independiente y se sostiene con el apoyo de sus lectores. Una pequeña contribución nos ayuda a seguir probando herramientas de IA.',
+  'support.box.cta': 'Apoyar en Ko-fi',
+  'support.box.more': 'Cómo funciona el apoyo',
+  'sponsors.title': 'Patrocinio y colaboraciones',
+  'sponsors.description':
+    'Cómo pueden trabajar las marcas con Deyron Labs y las reglas de independencia que se aplican a todo patrocinador.',
+  'sponsors.lead':
+    'Deyron Labs es una publicación pequeña e independiente sobre herramientas de IA. Estamos abiertos a patrocinadores afines a nuestra audiencia, en condiciones que mantengan independiente nuestro trabajo.',
+  'sponsors.who.title': 'A quién llegamos',
+  'sponsors.who.body':
+    'Nuestros lectores y espectadores usan herramientas de IA en el trabajo y en casa, y quieren saber qué cambió, qué merece la pena probar y qué descartar. Publicamos noticias en este sitio y videos en YouTube, en inglés.',
+  'sponsors.rules.title': 'Nuestras reglas de independencia',
+  'sponsors.rules.body': [
+    'Los patrocinadores nunca eligen, revisan ni influyen en qué historias cubrimos, cómo las valoramos ni qué concluimos.',
+    'El contenido de pago siempre se etiqueta como patrocinado, en el video y en su descripción o artículo. No publicamos contenido de pago que parezca información periodística.',
+    'No prometemos una cobertura positiva ni aceptamos pagos para retirar o suavizar una cobertura.',
+    'Si recibimos gratis un producto, acceso o créditos, lo decimos. Recibirlos no compra cobertura.',
+    'Declaramos las relaciones que podrían afectar nuestro trabajo. Usamos Claude, de Anthropic, para ayudar a producir nuestras historias, y las historias sobre Anthropic llevan un aviso que lo indica.',
+  ],
+  'sponsors.formats.title': 'De qué podemos hablar',
+  'sponsors.formats.body': [
+    'Un segmento patrocinado, claramente etiquetado, dentro de un video.',
+    'Un tutorial patrocinado sobre una herramienta tuya, en el que decimos con honestidad los límites y los inconvenientes que encontremos.',
+    'Colaboraciones a más largo plazo, cuando el canal tenga la audiencia que las justifique.',
+  ],
+  'sponsors.formats.note':
+    'Estamos empezando. Todavía no publicamos tarifas y no aceptamos emplazamientos de pago dentro de las noticias.',
+  'sponsors.contact.title': 'Contacto',
+  'sponsors.contact.body': 'Escríbenos con quién eres, qué haces y qué tienes en mente.',
+  'privacy.title': 'Privacidad',
+  'privacy.description':
+    'Qué datos recoge Deyron Labs cuando visitas el sitio, cuáles no recoge y qué servicios de terceros intervienen.',
+  'privacy.lead':
+    'Recogemos lo mínimo posible. No mostramos anuncios, no usamos cookies publicitarias ni de seguimiento y no te pedimos crear una cuenta.',
+  'privacy.updated': 'Última actualización: 8 de octubre de 2026',
+  'privacy.sections': [
+    {
+      title: 'Estadísticas de visitas',
+      body: [
+        'Usamos Cloudflare Web Analytics para saber qué páginas se leen, desde qué países y fuentes y en qué tipo de dispositivo. No usa cookies ni te sigue entre sitios. Vemos cifras agregadas, no quién eres.',
+      ],
+    },
+    {
+      title: 'Alojamiento y tipografías',
+      body: [
+        'El sitio está alojado en GitHub Pages que, como cualquier alojamiento web, trata datos técnicos como tu dirección IP para servir las páginas. El texto usa una tipografía cargada desde Google Fonts, por lo que tu navegador contacta con Google para descargarla.',
+      ],
+    },
+    {
+      title: 'Videos',
+      body: [
+        'Los videos se cargan solo cuando pulsas reproducir, con el reproductor de YouTube con privacidad mejorada (youtube-nocookie.com). Hasta entonces tu navegador no carga nada de YouTube, salvo, en las pocas páginas sin imagen propia, la imagen de vista previa del video. Después, se aplica la política de privacidad de YouTube.',
+      ],
+    },
+    {
+      title: 'Enlaces de apoyo y otros sitios',
+      body: [
+        'El botón de apoyo enlaza a Ko-fi. No cargamos código de Ko-fi en este sitio. Si contribuyes, tu pago lo gestionan Ko-fi y sus proveedores de pago según sus condiciones. No vemos ni guardamos tus datos de pago. Los enlaces a redes sociales y a fuentes también salen de este sitio y siguen las políticas de esos sitios.',
+      ],
+    },
+    {
+      title: 'Correo electrónico',
+      body: [
+        'Si nos escribes, usamos tu mensaje y tu dirección solo para responder y, si hace falta, corregir una historia. No los vendemos ni los compartimos.',
+      ],
+    },
+    {
+      title: 'Tus derechos',
+      body: [
+        'Según la normativa de protección de datos de la UE, puedes preguntarnos qué datos personales tenemos sobre ti y pedirnos que los corrijamos o eliminemos. Escribe a la dirección de contacto de abajo. Guardamos muy pocos datos, sobre todo los correos que nos envías.',
+      ],
+    },
+    {
+      title: 'Cambios',
+      body: [
+        'Si esta página cambia de forma relevante, actualizamos la fecha de arriba. Si añadimos un servicio que use cookies, como publicidad, lo diremos aquí antes.',
+      ],
+    },
+  ],
+  'privacy.contact': 'Preguntas sobre privacidad',
   '404.title': 'Página no encontrada',
   '404.body': 'Esta página no existe o se movió. Prueba con las últimas historias.',
   '404.cta': 'Ir a las últimas historias',

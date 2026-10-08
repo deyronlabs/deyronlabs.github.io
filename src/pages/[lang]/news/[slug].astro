@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import ShareLinks from '../../../components/ShareLinks.astro';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
+import SupportBox from '../../../components/SupportBox.astro';
 import { youtubeId, posterFallback } from '../../../lib/video';
 import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
 import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
@@ -117,6 +118,8 @@ const ld = newsArticleLd({
             ))
           }
         </ol>
+
+        <SupportBox lang={lang} />
       </article>
 
       <aside class="article-aside" aria-labelledby="facts-h">

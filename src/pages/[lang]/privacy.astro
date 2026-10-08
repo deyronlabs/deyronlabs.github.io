@@ -1,0 +1,40 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ENABLED_LANGS, SITE, type Lang } from '../../site';
+import { langPaths, useTranslations } from '../../i18n/utils';
+import { staticAlternates } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const sections = t('privacy.sections');
+---
+
+<Base
+  title={t('privacy.title')}
+  description={t('privacy.description')}
+  lang={lang}
+  path={`/${lang}/privacy/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'privacy/')}
+>
+  <div class="wrap page">
+    <h1>{t('privacy.title')}</h1>
+    <p class="lead">{t('privacy.lead')}</p>
+    <p class="muted">{t('privacy.updated')}</p>
+    <div class="prose">
+      {
+        sections.map((s) => (
+          <>
+            <h2>{s.title}</h2>
+            {s.body.map((p) => <p>{p}</p>)}
+          </>
+        ))
+      }
+      <h2>{t('privacy.contact')}</h2>
+      <p><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></p>
+    </div>
+  </div>
+</Base>

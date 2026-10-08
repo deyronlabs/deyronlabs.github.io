@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ENABLED_LANGS, SITE, SUPPORT, type Lang } from '../../site';
+import { langPaths, useTranslations } from '../../i18n/utils';
+import { staticAlternates } from '../../lib/seo';
+import { HEART_ICON } from '../../lib/social-icons';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const goes = t('support.goes.body');
+const promise = t('support.promise.body');
+const other = t('support.other.body');
+---
+
+<Base
+  title={t('support.title')}
+  description={t('support.description')}
+  lang={lang}
+  path={`/${lang}/support/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'support/')}
+>
+  <div class="wrap page">
+    <h1>{t('support.title')}</h1>
+    <p class="lead">{t('support.lead')}</p>
+    <p class="cta-row">
+      <a class="btn btn-lg" href={SUPPORT.kofiUrl} target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d={HEART_ICON} fill="currentColor"></path></svg>
+        {t('support.cta')}
+      </a>
+      <small class="muted">{t('support.ctaNote')}</small>
+    </p>
+    <div class="prose">
+      <h2>{t('support.goes.title')}</h2>
+      <ul>{goes.map((p) => <li>{p}</li>)}</ul>
+
+      <h2>{t('support.promise.title')}</h2>
+      <ul>{promise.map((p) => <li>{p}</li>)}</ul>
+
+      <h2>{t('support.other.title')}</h2>
+      <ul>
+        {other.map((p) => <li>{p}</li>)}
+      </ul>
+      <p>
+        <a href={`/${lang}/sponsors/`}>{t('support.sponsorsLink')}</a> ·
+        <a href="https://www.youtube.com/@deyronlabs" rel="noopener">{t('support.youtube')}</a> ·
+        <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>
+      </p>
+    </div>
+  </div>
+</Base>

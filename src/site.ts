@@ -21,6 +21,11 @@ export const SITE = {
   themeColor: '#1a1a1a',
 };
 
+// Pagina de susținere (donații voluntare). Nu intră în SOCIALS, ca să nu apară în schema sameAs.
+export const SUPPORT = {
+  kofiUrl: 'https://ko-fi.com/deyronlabs',
+};
+
 // Adresele conturilor oficiale (confirmate de proprietar).
 export const SOCIALS = [
   { name: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/@deyronlabs' },

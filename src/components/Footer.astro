@@ -1,6 +1,6 @@
 ---
 import { SITE, SOCIALS, type Lang } from '../site';
-import { SOCIAL_ICONS } from '../lib/social-icons';
+import { SOCIAL_ICONS, HEART_ICON } from '../lib/social-icons';
 import { useTranslations } from '../i18n/utils';
 
 interface Props {
@@ -13,6 +13,11 @@ const explore = [
   { href: `/${lang}/news/`, label: t('nav.news') },
   { href: `/${lang}/about/`, label: t('nav.about') },
   { href: `/${lang}/author/deyron-labs/`, label: t('author.title') },
+];
+const project = [
+  { href: `/${lang}/support/`, label: t('nav.support') },
+  { href: `/${lang}/sponsors/`, label: t('sponsors.title') },
+  { href: `/${lang}/privacy/`, label: t('privacy.title') },
 ];
 ---
 
@@ -44,11 +49,19 @@ const explore = [
             ))
           }
         </ul>
+        <a class="foot-support" href={`/${lang}/support/`}>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d={HEART_ICON} fill="currentColor"></path></svg>
+          {t('footer.supportCta')}
+        </a>
       </div>
       <nav aria-labelledby="foot-explore">
         <h2 class="foot-h" id="foot-explore">{t('footer.explore')}</h2>
         <ul class="plain">
           {explore.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        </ul>
+        <h2 class="foot-h foot-h-gap">{t('footer.project')}</h2>
+        <ul class="plain">
+          {project.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
         </ul>
       </nav>
       <div>

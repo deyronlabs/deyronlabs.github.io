@@ -8,7 +8,7 @@ export const GET: APIRoute = async () => {
   const newest = articles.length ? lastChange(articles.reduce((a, b) => (lastChange(a) > lastChange(b) ? a : b))) : undefined;
 
   const entries: SitemapEntry[] = [];
-  for (const sub of ['', 'news/', 'about/', 'author/deyron-labs/']) {
+  for (const sub of ['', 'news/', 'about/', 'author/deyron-labs/', 'support/', 'sponsors/', 'privacy/']) {
     const alternates = ENABLED_LANGS.map((lang) => ({ lang, path: `/${lang}/${sub}` }));
     for (const lang of ENABLED_LANGS) {
       entries.push({

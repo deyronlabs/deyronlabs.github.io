@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ENABLED_LANGS, SITE, type Lang } from '../../site';
+import { langPaths, useTranslations } from '../../i18n/utils';
+import { staticAlternates } from '../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const rules = t('sponsors.rules.body');
+const formats = t('sponsors.formats.body');
+---
+
+<Base
+  title={t('sponsors.title')}
+  description={t('sponsors.description')}
+  lang={lang}
+  path={`/${lang}/sponsors/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'sponsors/')}
+>
+  <div class="wrap page">
+    <h1>{t('sponsors.title')}</h1>
+    <p class="lead">{t('sponsors.lead')}</p>
+    <div class="prose">
+      <h2>{t('sponsors.who.title')}</h2>
+      <p>{t('sponsors.who.body')}</p>
+
+      <h2>{t('sponsors.rules.title')}</h2>
+      <ul>{rules.map((p) => <li>{p}</li>)}</ul>
+      <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
+
+      <h2>{t('sponsors.formats.title')}</h2>
+      <ul>{formats.map((p) => <li>{p}</li>)}</ul>
+      <p>{t('sponsors.formats.note')}</p>
+
+      <h2>{t('sponsors.contact.title')}</h2>
+      <p>{t('sponsors.contact.body')}</p>
+      <p><a href={`mailto:${SITE.collabEmail}`}>{SITE.collabEmail}</a></p>
+    </div>
+  </div>
+</Base>
