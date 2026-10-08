@@ -1,0 +1,29 @@
+---
+import { NEWSLETTER, type Lang } from '../site';
+import { MAIL_ICON } from '../lib/social-icons';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+  /** Id unic al titlului, pentru accesibilitate, dacă apar două casete pe aceeași pagină. */
+  idSuffix?: string;
+}
+const { lang, idSuffix = '' } = Astro.props;
+const t = useTranslations(lang);
+const headingId = `newsletter-box-h${idSuffix}`;
+---
+
+<aside class="support-box newsletter-box" aria-labelledby={headingId}>
+  <svg class="support-box-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+    <path d={MAIL_ICON} fill="currentColor"></path>
+  </svg>
+  <div>
+    <h2 id={headingId}>{t('newsletter.box.title')}</h2>
+    <p>{t('newsletter.box.body')}</p>
+    <p class="support-box-actions">
+      <a class="btn" href={NEWSLETTER.url} target="_blank" rel="noopener">{t('newsletter.cta')}</a>
+      <small class="muted">{t('newsletter.note')}</small>
+      <a href={`/${lang}/privacy/`}>{t('newsletter.more')}</a>
+    </p>
+  </div>
+</aside>

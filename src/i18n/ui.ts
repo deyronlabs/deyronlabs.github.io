@@ -74,6 +74,13 @@ const en = {
   'footer.llms': 'llms.txt',
   'footer.rights': 'All rights reserved.',
   'footer.project': 'The project',
+  'newsletter.box.title': 'Get The Lab Report by email',
+  'newsletter.box.body':
+    'One short email every Friday: the week in AI, each story linked to its primary source. A three-minute read.',
+  'newsletter.cta': 'Subscribe',
+  'newsletter.note': 'Free. You confirm by email and can unsubscribe at any time.',
+  'newsletter.more': 'How we handle your email',
+  'footer.newsletterCta': 'Get The Lab Report by email',
   'footer.supportCta': 'Support Deyron Labs',
   'support.title': 'Support Deyron Labs',
   'support.description':
@@ -161,6 +168,13 @@ const en = {
       title: 'Support links and other sites',
       body: [
         'The Support button links to Ko-fi. We do not load Ko-fi code on this site. If you contribute, your payment is handled by Ko-fi and its payment providers under their terms. We do not see or store your payment details. Links to social networks and sources also leave this site and follow those sites’ policies.',
+      ],
+    },
+    {
+      title: 'Newsletter',
+      body: [
+        'If you subscribe to The Lab Report, our weekly newsletter, we collect your email address. We send it with beehiiv, which stores your address and may process it outside the EU under its own terms and privacy policy. When you subscribe, beehiiv sends you an email to confirm. beehiiv also records whether an email was opened and which links were clicked, and makes that information available to us.',
+        'We use your address only to send the newsletter and to reply to you. We do not sell or share it. Every edition has an unsubscribe link, and you can ask us to delete your address at any time at the contact address below. The subscribe page is hosted by beehiiv; this site only links to it and loads none of its code.',
       ],
     },
     {
@@ -267,6 +281,13 @@ const es: Dict = {
   'footer.llms': 'llms.txt',
   'footer.rights': 'Todos los derechos reservados.',
   'footer.project': 'El proyecto',
+  'newsletter.box.title': 'Recibe The Lab Report por correo',
+  'newsletter.box.body':
+    'Un correo breve cada viernes: la semana en IA, con cada historia enlazada a su fuente primaria. Tres minutos de lectura.',
+  'newsletter.cta': 'Suscribirme',
+  'newsletter.note': 'Gratis. Confirmas por correo y puedes darte de baja cuando quieras.',
+  'newsletter.more': 'Cómo tratamos tu correo',
+  'footer.newsletterCta': 'Recibe The Lab Report por correo',
   'footer.supportCta': 'Apoya a Deyron Labs',
   'support.title': 'Apoya a Deyron Labs',
   'support.description':
@@ -355,6 +376,13 @@ const es: Dict = {
       title: 'Enlaces de apoyo y otros sitios',
       body: [
         'El botón de apoyo enlaza a Ko-fi. No cargamos código de Ko-fi en este sitio. Si contribuyes, tu pago lo gestionan Ko-fi y sus proveedores de pago según sus condiciones. No vemos ni guardamos tus datos de pago. Los enlaces a redes sociales y a fuentes también salen de este sitio y siguen las políticas de esos sitios.',
+      ],
+    },
+    {
+      title: 'Newsletter',
+      body: [
+        'Si te suscribes a The Lab Report, nuestro boletín semanal, recogemos tu dirección de correo. Lo enviamos con beehiiv, que guarda tu dirección y puede tratarla fuera de la UE según sus propias condiciones y política de privacidad. Al suscribirte, beehiiv te envía un correo para confirmar. beehiiv también registra si un correo se abrió y en qué enlaces se hizo clic, y nos pone esa información a disposición.',
+        'Usamos tu dirección solo para enviar el boletín y para responderte. No la vendemos ni la compartimos. Cada edición lleva un enlace para darte de baja y puedes pedirnos que eliminemos tu dirección en cualquier momento, en la dirección de contacto de abajo. La página de suscripción está alojada en beehiiv; este sitio solo enlaza a ella y no carga nada de su código.',
       ],
     },
     {

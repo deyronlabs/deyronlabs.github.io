@@ -26,6 +26,13 @@ export const SUPPORT = {
   kofiUrl: 'https://ko-fi.com/deyronlabs',
 };
 
+// Newsletter „The Lab Report” (beehiiv, plan gratuit). Abonarea se face pe pagina găzduită de beehiiv:
+// pe site nu se încarcă niciun script sau formular de la ei, doar un link.
+export const NEWSLETTER = {
+  name: 'The Lab Report',
+  url: 'https://deyronlabs.beehiiv.com/',
+};
+
 // Adresele conturilor oficiale (confirmate de proprietar).
 export const SOCIALS = [
   { name: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/@deyronlabs' },

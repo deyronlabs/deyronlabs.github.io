@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Timeline from '../../components/Timeline.astro';
+import NewsletterBox from '../../components/NewsletterBox.astro';
 import { ENABLED_LANGS, type Lang } from '../../site';
 import { langPaths, useTranslations, formatDate, isoDate } from '../../i18n/utils';
 import { getArticles, pathOf, wasUpdated } from '../../lib/articles';
@@ -72,5 +73,9 @@ const latest = rest.slice(0, 8);
         </section>
       )
     }
+
+    <section class="section" aria-label={t('newsletter.box.title')}>
+      <NewsletterBox lang={lang} idSuffix="-home" />
+    </section>
   </div>
 </Base>

@@ -875,3 +875,22 @@ ul.plain {
   gap: 0.6rem 1.2rem;
   margin: 0;
 }
+
+.foot-support-2 {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.foot-about .foot-support {
+  display: flex;
+  width: fit-content;
+}
+.newsletter-box {
+  margin-top: 3rem;
+}
+.newsletter-box + .support-box {
+  margin-top: 1rem;
+}
+.section > .newsletter-box {
+  margin-top: 0;
+  max-width: 44rem;
+}
