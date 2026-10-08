@@ -18,6 +18,8 @@ interface Props {
   lang: Lang;
   /** Calea canonică, cu slash la final, ex. /en/news/ */
   path: string;
+  /** Adresa canonică dacă diferă de `path` (ex. „/” pentru pagina principală). */
+  canonicalPath?: string;
   /** Versiunile pe limbi ale paginii (include pagina curentă). */
   alternates?: Alternate[];
   type?: 'website' | 'article';
@@ -34,6 +36,7 @@ const {
   description,
   lang,
   path,
+  canonicalPath,
   alternates = [{ lang, path }],
   type = 'website',
   jsonLd = [],
@@ -45,7 +48,7 @@ const {
 
 const t = useTranslations(lang);
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
-const canonical = absUrl(path);
+const canonical = absUrl(canonicalPath ?? path);
 const ogImage = absUrl(image ?? SITE.ogImage);
 const defaultAlt = alternates.find((a) => a.lang === DEFAULT_LANG);
 const graph = serializeJsonLd([

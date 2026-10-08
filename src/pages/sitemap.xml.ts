@@ -13,7 +13,7 @@ export const GET: APIRoute = async () => {
     for (const lang of ENABLED_LANGS) {
       entries.push({
         lang,
-        path: `/${lang}/${sub}`,
+        path: sub === '' && lang === DEFAULT_LANG ? '/' : `/${lang}/${sub}`,
         alternates,
         lastmod: sub === '' || sub === 'news/' ? newest : undefined,
       });
