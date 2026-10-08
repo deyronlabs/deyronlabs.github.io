@@ -1,0 +1,61 @@
+---
+import Base from '../../../layouts/Base.astro';
+import NewsletterBox from '../../../components/NewsletterBox.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations, formatDate, isoDate } from '../../../i18n/utils';
+import { getEpisodes, episodeUrlPath } from '../../../lib/lab';
+import { staticAlternates } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const episodes = await getEpisodes(lang);
+---
+
+<Base
+  title={t('lab.title')}
+  description={t('lab.description')}
+  lang={lang}
+  path={`/${lang}/lab-sessions/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'lab-sessions/')}
+>
+  <div class="wrap page">
+    <h1>{t('lab.title')}</h1>
+    <p class="lead">{t('lab.intro')}</p>
+    {
+      episodes.length > 0 ? (
+        <ul class="lab-list">
+          {episodes.map((e) => (
+            <li class="lab-card">
+              <a class="lab-thumb" href={episodeUrlPath(e)} tabindex="-1" aria-hidden="true">
+                <img src={e.data.image} alt="" width="1280" height="720" loading="lazy" decoding="async" />
+              </a>
+              <div class="lab-info">
+                <p class="lab-kicker">
+                  {t('lab.episode')} {e.data.episode} ·{' '}
+                  <time datetime={isoDate(e.data.publishedAt)}>{formatDate(e.data.publishedAt, lang)}</time>
+                </p>
+                <h2>
+                  <a href={episodeUrlPath(e)}>{e.data.title}</a>
+                </h2>
+                <p>{e.data.summary}</p>
+                <p class="lab-meta">
+                  <span>{Math.round(e.data.durationSeconds / 60)} min</span>
+                  <span>{e.data.level}</span>
+                  {e.data.tools.length > 0 && <span>{e.data.tools.join(', ')}</span>}
+                </p>
+                <a class="lab-cta" href={episodeUrlPath(e)}>{t('lab.read')}</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="empty">{t('lab.empty')}</p>
+      )
+    }
+    <NewsletterBox lang={lang} idSuffix="-lab" />
+  </div>
+</Base>

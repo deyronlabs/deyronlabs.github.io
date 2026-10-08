@@ -894,3 +894,90 @@ ul.plain {
   margin-top: 0;
   max-width: 44rem;
 }
+
+/* ---------- Lab Sessions ---------- */
+
+.lab-list {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 3rem;
+  display: grid;
+  gap: 2rem;
+}
+.lab-card {
+  display: grid;
+  grid-template-columns: minmax(0, 22rem) minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.lab-thumb {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+.lab-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.lab-kicker {
+  font-size: var(--step--1);
+  font-weight: 650;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin: 0 0 0.5rem;
+}
+.lab-kicker a {
+  color: inherit;
+}
+.lab-info h2 {
+  font-size: var(--step-2);
+  font-weight: 780;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 0.6rem;
+}
+.lab-info h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.lab-info h2 a:hover {
+  color: var(--mint);
+}
+.lab-info p {
+  margin: 0 0 0.8rem;
+  color: var(--ink-2);
+}
+.lab-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-size: var(--step--1);
+}
+.lab-cta {
+  font-weight: 650;
+}
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+.chapter-list li {
+  margin: 0 0 0.45rem;
+}
+.chapter-list time {
+  font-family: var(--mono);
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+.home-lab .lab-list {
+  margin: 1.5rem 0 0;
+}
+@media (max-width: 40rem) {
+  .lab-card {
+    grid-template-columns: 1fr;
+  }
+}

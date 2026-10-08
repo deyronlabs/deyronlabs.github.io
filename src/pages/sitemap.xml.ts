@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { DEFAULT_LANG, ENABLED_LANGS } from '../site';
+import { getAllEnabledEpisodes, episodeUrlPath } from '../lib/lab';
 import { getAllEnabledArticles, getTranslations, lastChange, pathOf } from '../lib/articles';
 import { buildSitemap, type SitemapEntry } from '../lib/feeds';
 
@@ -8,7 +9,7 @@ export const GET: APIRoute = async () => {
   const newest = articles.length ? lastChange(articles.reduce((a, b) => (lastChange(a) > lastChange(b) ? a : b))) : undefined;
 
   const entries: SitemapEntry[] = [];
-  for (const sub of ['', 'news/', 'about/', 'author/deyron-labs/', 'support/', 'sponsors/', 'privacy/']) {
+  for (const sub of ['', 'news/', 'lab-sessions/', 'about/', 'author/deyron-labs/', 'support/', 'sponsors/', 'privacy/']) {
     const alternates = ENABLED_LANGS.map((lang) => ({ lang, path: `/${lang}/${sub}` }));
     for (const lang of ENABLED_LANGS) {
       entries.push({
@@ -26,6 +27,14 @@ export const GET: APIRoute = async () => {
       path: pathOf(a),
       lastmod: lastChange(a),
       alternates: [a, ...translations].map((x) => ({ lang: x.data.lang, path: pathOf(x) })),
+    });
+  }
+  for (const e of await getAllEnabledEpisodes()) {
+    entries.push({
+      lang: e.data.lang,
+      path: episodeUrlPath(e),
+      lastmod: e.data.updatedAt ?? e.data.publishedAt,
+      alternates: [{ lang: e.data.lang, path: episodeUrlPath(e) }],
     });
   }
   return new Response(buildSitemap(entries, DEFAULT_LANG), {

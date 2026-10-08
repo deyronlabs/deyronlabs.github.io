@@ -46,4 +46,30 @@ const news = defineCollection({
   }),
 });
 
-export const collections = { news };
+// Lab Sessions: tutoriale video pas cu pas, cu ghid scris. Un episod = un fișier în src/content/lab/<limba>/<slug>.md
+const lab = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/lab' }),
+  schema: z.object({
+    title: z.string().min(10).max(120),
+    summary: z.string().min(80).max(420),
+    lang: z.enum(['en', 'es']),
+    episode: z.number().int().positive(),
+    publishedAt: z.coerce.date(),
+    updatedAt: z.coerce.date().optional(),
+    video: z.string().url(),
+    // Durata videoclipului în secunde (pentru schema.org).
+    durationSeconds: z.number().int().positive(),
+    image: z.string().startsWith('/'),
+    imageAlt: z.string(),
+    // Unelte/produse folosite în episod.
+    tools: z.array(z.string()).default([]),
+    level: z.string().default('Beginner'),
+    // Capitole: timp "m:ss" + titlu.
+    chapters: z.array(z.object({ at: z.string().regex(/^\d{1,2}:\d{2}$/), title: z.string() })).default([]),
+    topics: z.array(z.string()).default([]),
+    translationKey: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { news, lab };

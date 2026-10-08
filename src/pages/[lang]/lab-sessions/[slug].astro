@@ -1,0 +1,126 @@
+---
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ShareLinks from '../../../components/ShareLinks.astro';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import SupportBox from '../../../components/SupportBox.astro';
+import NewsletterBox from '../../../components/NewsletterBox.astro';
+import { youtubeId } from '../../../lib/video';
+import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
+import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
+import { getEpisodes, episodeSlug, episodePath, episodeUrlPath, toSeconds, videoAt } from '../../../lib/lab';
+import { labEpisodeLd } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of ENABLED_LANGS) {
+    for (const episode of await getEpisodes(lang)) {
+      paths.push({ params: { lang, slug: episodeSlug(episode) }, props: { episode } });
+    }
+  }
+  return paths;
+}
+
+const { episode } = Astro.props;
+const d = episode.data;
+const lang = d.lang as Lang;
+const t = useTranslations(lang);
+const { Content } = await render(episode);
+const path = episodeUrlPath(episode);
+const videoId = youtubeId(d.video)!;
+const chapters = d.chapters.map((c) => ({ at: toSeconds(c.at), label: c.at, title: c.title }));
+const ld = labEpisodeLd({
+  title: d.title,
+  summary: d.summary,
+  lang,
+  path,
+  publishedAt: d.publishedAt,
+  updatedAt: d.updatedAt,
+  video: d.video,
+  durationSeconds: d.durationSeconds,
+  image: d.image,
+  tools: d.tools,
+  topics: d.topics,
+  chapters: chapters.map((c) => ({ at: c.at, title: c.title })),
+});
+const mins = Math.floor(d.durationSeconds / 60);
+const secs = String(d.durationSeconds % 60).padStart(2, '0');
+---
+
+<Base
+  title={d.title}
+  description={d.summary}
+  lang={lang}
+  path={path}
+  alternates={[{ lang, path: episodePath(lang, episodeSlug(episode)) }]}
+  type="article"
+  jsonLd={ld}
+  publishedTime={d.publishedAt}
+  modifiedTime={d.updatedAt ?? d.publishedAt}
+  image={d.image}
+>
+  <div class="wrap">
+    <header class="article-head">
+      <p class="lab-kicker"><a href={`/${lang}/lab-sessions/`}>{t('lab.title')}</a> · {t('lab.episode')} {d.episode}</p>
+      <h1>{d.title}</h1>
+      <p class="article-summary">{d.summary}</p>
+      <p class="meta">
+        <span>
+          {t('article.by')} <a href={`/${lang}/author/deyron-labs/`}>{SITE.authorName}</a>
+        </span>
+        <span>
+          {t('article.published')}
+          <time datetime={isoDate(d.publishedAt)}>{formatDate(d.publishedAt, lang)}</time>
+        </span>
+      </p>
+    </header>
+
+    <div class="article-grid">
+      <article class="article-body">
+        <VideoEmbed id={videoId} poster={d.image} title={d.title} lang={lang} />
+        <Content />
+        <NewsletterBox lang={lang} />
+        <SupportBox lang={lang} />
+      </article>
+
+      <aside class="article-aside" aria-labelledby="facts-h">
+        <h2 id="facts-h">{t('article.facts')}</h2>
+        <dl>
+          <dt>{t('lab.length')}</dt>
+          <dd>{mins}:{secs}</dd>
+          <dt>{t('lab.level')}</dt>
+          <dd>{d.level}</dd>
+          {
+            d.tools.length > 0 && (
+              <>
+                <dt>{t('lab.tools')}</dt>
+                <dd>{d.tools.join(', ')}</dd>
+              </>
+            )
+          }
+          <dt>Video</dt>
+          <dd><a href={d.video} rel="noopener">{t('lab.watch')}</a></dd>
+        </dl>
+        {
+          chapters.length > 0 && (
+            <>
+              <h2 id="chapters-h">{t('lab.chapters')}</h2>
+              <ol class="chapter-list" aria-labelledby="chapters-h">
+                {chapters.map((c) => (
+                  <li>
+                    <a href={videoAt(d.video, c.at)} rel="noopener">
+                      <time>{c.label}</time> {c.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )
+        }
+        <ShareLinks url={SITE.url + path} title={d.title} lang={lang} />
+        <p>{t('lab.aiNotice')}</p>
+        <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
+      </aside>
+    </div>
+  </div>
+</Base>

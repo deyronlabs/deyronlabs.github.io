@@ -111,3 +111,68 @@ export function serializeJsonLd(nodes: object[]): string {
 export function staticAlternates(langs: Lang[], sub: string): Alternate[] {
   return langs.map((lang) => ({ lang, path: `/${lang}/${sub}` }));
 }
+
+export interface LabLd {
+  title: string;
+  summary: string;
+  lang: Lang;
+  path: string;
+  publishedAt: Date;
+  updatedAt?: Date;
+  video: string;
+  durationSeconds: number;
+  image: string;
+  tools: string[];
+  topics: string[];
+  chapters: { at: number; title: string }[];
+}
+
+/** Episod Lab Sessions: articol-ghid cu VideoObject (și capitole) atașat. */
+export function labEpisodeLd(a: LabLd) {
+  const url = absUrl(a.path);
+  const id = youtubeId(a.video);
+  const m = Math.floor(a.durationSeconds / 60);
+  const duration = `PT${m}M${a.durationSeconds % 60}S`;
+  const video = id
+    ? {
+        '@type': 'VideoObject',
+        '@id': `${url}#video`,
+        name: a.title,
+        description: a.summary,
+        embedUrl: schemaEmbedUrl(id),
+        contentUrl: `https://www.youtube.com/watch?v=${id}`,
+        thumbnailUrl: [absUrl(a.image)],
+        uploadDate: a.publishedAt.toISOString(),
+        duration,
+        inLanguage: a.lang,
+        hasPart: a.chapters.map((c, i) => ({
+          '@type': 'Clip',
+          name: c.title,
+          startOffset: c.at,
+          endOffset: a.chapters[i + 1]?.at ?? a.durationSeconds,
+          url: `https://www.youtube.com/watch?v=${id}&t=${c.at}s`,
+        })),
+      }
+    : null;
+  return [
+    {
+      '@type': 'TechArticle',
+      '@id': `${url}#article`,
+      headline: a.title,
+      description: a.summary,
+      inLanguage: a.lang,
+      datePublished: a.publishedAt.toISOString(),
+      dateModified: (a.updatedAt ?? a.publishedAt).toISOString(),
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      url,
+      image: [absUrl(a.image)],
+      isAccessibleForFree: true,
+      author: { '@id': `${SITE.url}/#editorial-desk` },
+      publisher: { '@id': ORG_ID },
+      ...(a.topics.length ? { keywords: a.topics.join(', ') } : {}),
+      ...(a.tools.length ? { about: a.tools.map((name) => ({ '@type': 'SoftwareApplication', name })) } : {}),
+      ...(video ? { video: { '@id': `${url}#video` } } : {}),
+    },
+    ...(video ? [video] : []),
+  ];
+}
