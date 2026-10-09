@@ -7,17 +7,19 @@ import type { Lang } from '../site';
 interface Props {
   articles: Article[];
   lang: Lang;
+  /** Dacă e setat, doar primele `visible` apar; restul sunt în HTML, ascunse, pentru „Load more”. */
+  visible?: number;
 }
-const { articles, lang } = Astro.props;
+const { articles, lang, visible = Infinity } = Astro.props;
 const t = useTranslations(lang);
 ---
 
 <ol class="timeline">
   {
-    articles.map((a) => {
+    articles.map((a, i) => {
       const updated = wasUpdated(a);
       return (
-        <li class={updated ? 'is-updated' : undefined}>
+        <li class={updated ? 'is-updated' : undefined} hidden={i >= visible} data-more={i >= visible ? '' : undefined}>
           <time class="tl-date" datetime={isoDate(a.data.publishedAt)}>
             {formatDate(a.data.publishedAt, lang, 'short')}
           </time>

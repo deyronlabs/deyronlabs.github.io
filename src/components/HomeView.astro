@@ -18,7 +18,8 @@ const t = useTranslations(lang);
 const articles = await getArticles(lang);
 const episodes = (await getEpisodes(lang)).slice(0, 1);
 const [lede, ...rest] = articles;
-const latest = rest.slice(0, 8);
+const BATCH = 8;
+const latest = rest;
 ---
 
 <Base
@@ -73,7 +74,15 @@ const latest = rest.slice(0, 8);
             <h2 id="latest-h">{t('home.latest')}</h2>
             <a href={`/${lang}/news/`}>{t('home.all')}</a>
           </div>
-          <Timeline articles={latest} lang={lang} />
+          <Timeline articles={latest} lang={lang} visible={BATCH} />
+          {latest.length > BATCH && (
+            <div class="load-more" data-load-more data-batch={BATCH}>
+              <button type="button" hidden>{t('home.more')}</button>
+              <noscript>
+                <a class="load-more-link" href={`/${lang}/news/`}>{t('home.all')}</a>
+              </noscript>
+            </div>
+          )}
         </section>
       )
     }
@@ -109,3 +118,21 @@ const latest = rest.slice(0, 8);
     </section>
   </div>
 </Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-load-more]').forEach((box) => {
+    const button = box.querySelector('button');
+    const list = box.previousElementSibling as HTMLElement | null;
+    if (!button || !list) return;
+    const batch = Number(box.dataset.batch) || 8;
+    const pending = () => Array.from(list.querySelectorAll<HTMLElement>('li[data-more][hidden]'));
+    if (pending().length === 0) return;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      const items = pending();
+      items.slice(0, batch).forEach((li) => (li.hidden = false));
+      (items[0]?.querySelector('a') as HTMLElement | null)?.focus();
+      if (items.length <= batch) button.hidden = true;
+    });
+  });
+</script>

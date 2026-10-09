@@ -47,6 +47,7 @@ const en = {
   'home.tagline': 'What changed in AI, in three paragraphs, with the source one click away.',
   'home.latest': 'Latest stories',
   'home.all': 'All stories',
+  'home.more': 'Load more stories',
   'home.empty': 'The first stories are on their way. Subscribe on YouTube or follow the RSS feed.',
   'news.title': 'AI news',
   'news.description': 'Every Deyron Labs story, newest first. Each one links to its primary source.',
@@ -285,6 +286,7 @@ const es: Dict = {
   'home.tagline': 'Qué cambió en la IA, en tres párrafos, con la fuente a un clic.',
   'home.latest': 'Últimas historias',
   'home.all': 'Todas las historias',
+  'home.more': 'Cargar más historias',
   'home.empty': 'Las primeras historias están en camino. Suscríbete en YouTube o sigue el feed RSS.',
   'news.title': 'Noticias de IA',
   'news.description':
