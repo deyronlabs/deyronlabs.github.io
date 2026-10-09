@@ -29,6 +29,10 @@ interface Props {
   noindex?: boolean;
   /** Imagine de partajare (cale din public/); implicit imaginea site-ului. */
   image?: string;
+  /** Text alternativ al imaginii de partajare. */
+  imageAlt?: string;
+  /** Dimensiunile imaginii de partajare, dacă se știu. */
+  imageSize?: { w: number; h: number };
 }
 
 const {
@@ -44,12 +48,16 @@ const {
   modifiedTime,
   noindex = false,
   image,
+  imageAlt,
+  imageSize,
 } = Astro.props;
 
 const t = useTranslations(lang);
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const canonical = absUrl(canonicalPath ?? path);
 const ogImage = absUrl(image ?? SITE.ogImage);
+const ogAlt = imageAlt ?? (image ? fullTitle : `${SITE.name}: independent AI news with primary sources`);
+const ogSize = imageSize ?? (image ? undefined : { w: 1200, h: 630 });
 const defaultAlt = alternates.find((a) => a.lang === DEFAULT_LANG);
 const graph = serializeJsonLd([
   organizationLd(SOCIALS.map((s) => s.url)),
@@ -86,6 +94,9 @@ const graph = serializeJsonLd([
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={ogAlt} />
+    {ogSize && <meta property="og:image:width" content={String(ogSize.w)} />}
+    {ogSize && <meta property="og:image:height" content={String(ogSize.h)} />}
     <meta property="og:locale" content={OG_LOCALE[lang]} />
     {alternates.filter((a) => a.lang !== lang).map((a) => <meta property="og:locale:alternate" content={OG_LOCALE[a.lang]} />)}
     {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
@@ -94,6 +105,7 @@ const graph = serializeJsonLd([
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={ogAlt} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

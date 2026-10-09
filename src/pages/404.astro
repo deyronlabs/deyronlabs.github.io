@@ -11,6 +11,11 @@ const t = useTranslations(lang);
   <div class="wrap page">
     <h1>{t('404.title')}</h1>
     <p class="lead">{t('404.body')}</p>
+    <form class="search-form" role="search" action={`/${lang}/search/`} method="get">
+      <label class="sr-only" for="q404">{t('search.label')}</label>
+      <input id="q404" name="q" type="search" placeholder={t('search.placeholder')} autocomplete="off" />
+      <button type="submit">{t('search.button')}</button>
+    </form>
     <p><a href={`/${lang}/news/`}>{t('404.cta')}</a></p>
   </div>
 </Base>

@@ -77,6 +77,8 @@ const crumbs = [
   publishedTime={d.publishedAt}
   modifiedTime={lastChange(article)}
   image={shareImageOf(article)}
+  imageAlt={d.imageAlt ?? d.title}
+  imageSize={d.image ? undefined : { w: 1200, h: 630 }}
 >
   <div class="wrap">
     <Breadcrumbs items={crumbs} lang={lang} />
