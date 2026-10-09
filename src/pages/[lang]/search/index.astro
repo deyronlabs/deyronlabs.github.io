@@ -1,0 +1,114 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations } from '../../../i18n/utils';
+import { staticAlternates } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const labels = {
+  none: t('search.none'),
+  count: t('search.count'),
+  news: t('search.kind.news'),
+  lab: t('search.kind.lab'),
+  hint: t('search.hint'),
+};
+---
+
+<Base
+  title={t('search.title')}
+  description={t('search.description')}
+  lang={lang}
+  path={`/${lang}/search/`}
+  alternates={staticAlternates(ENABLED_LANGS, 'search/')}
+  noindex
+>
+  <div class="wrap page search-page">
+    <h1>{t('search.title')}</h1>
+    <form class="search-form" role="search" action={`/${lang}/search/`} method="get">
+      <label class="sr-only" for="q">{t('search.label')}</label>
+      <input id="q" name="q" type="search" placeholder={t('search.placeholder')} autocomplete="off" autofocus />
+      <button type="submit">{t('search.button')}</button>
+    </form>
+    <p id="search-status" class="search-status" aria-live="polite"></p>
+    <ol id="search-results" class="search-results"></ol>
+    <noscript><p>{t('search.noscript')}</p></noscript>
+  </div>
+  <script is:inline define:vars={{ lang, labels }}>
+    (function () {
+      var input = document.getElementById('q');
+      var status = document.getElementById('search-status');
+      var list = document.getElementById('search-results');
+      var data = null;
+      var loading = null;
+      var norm = function (s) {
+        return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+      };
+      function load() {
+        if (!loading) {
+          loading = fetch('/' + lang + '/search-index.json')
+            .then(function (r) { return r.json(); })
+            .then(function (items) {
+              items.forEach(function (i) { i._t = norm(i.t); i._x = norm(i.x); i._s = norm(i.s); });
+              data = items;
+            });
+        }
+        return loading;
+      }
+      function score(i, words) {
+        var total = 0;
+        for (var w = 0; w < words.length; w++) {
+          var word = words[w], s = 0;
+          if (i._t.indexOf(word) !== -1) s += 6;
+          if (i._x.indexOf(word) !== -1) s += 3;
+          if (i._s.indexOf(word) !== -1) s += 1;
+          if (!s) return 0;
+          total += s;
+        }
+        return total;
+      }
+      function render(q) {
+        list.textContent = '';
+        var words = norm(q).split(/\s+/).filter(Boolean);
+        if (!words.length) { status.textContent = labels.hint; return; }
+        var hits = data
+          .map(function (i) { return { i: i, s: score(i, words) }; })
+          .filter(function (h) { return h.s > 0; })
+          .sort(function (a, b) { return b.s - a.s || (a.i.d < b.i.d ? 1 : -1); });
+        status.textContent = hits.length ? labels.count.replace('{n}', hits.length) : labels.none;
+        hits.forEach(function (h) {
+          var li = document.createElement('li');
+          var meta = document.createElement('p');
+          meta.className = 'sr-meta';
+          meta.textContent = (h.i.k === 'l' ? labels.lab : labels.news) + ' · ' + h.i.d;
+          var h3 = document.createElement('h3');
+          var a = document.createElement('a');
+          a.href = h.i.u;
+          a.textContent = h.i.t;
+          h3.appendChild(a);
+          var p = document.createElement('p');
+          p.textContent = h.i.s;
+          li.appendChild(meta); li.appendChild(h3); li.appendChild(p);
+          list.appendChild(li);
+        });
+      }
+      function run() {
+        var q = input.value;
+        load().then(function () { render(q); }).catch(function () { status.textContent = labels.none; });
+        try {
+          var url = new URL(location.href);
+          if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+          history.replaceState(null, '', url);
+        } catch (e) {}
+      }
+      var initial = new URLSearchParams(location.search).get('q') || '';
+      input.value = initial;
+      input.addEventListener('input', run);
+      if (initial) run(); else status.textContent = labels.hint;
+    })();
+  </script>
+</Base>

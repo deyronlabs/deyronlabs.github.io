@@ -42,6 +42,20 @@ const others = alternates.filter((a) => a.lang !== lang && ENABLED_LANGS.include
           </a>
         ))
       }
+      {
+        path !== `/${lang}/search/` && (
+          <form class="nav-search" role="search" action={`/${lang}/search/`} method="get">
+            <label class="sr-only" for="nav-q">{t('search.label')}</label>
+            <input id="nav-q" name="q" type="search" placeholder={t('search.button')} autocomplete="off" />
+            <button type="submit" aria-label={t('search.button')}>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4" />
+                <path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+              </svg>
+            </button>
+          </form>
+        )
+      }
       <a class="support-pill" href={`/${lang}/support/`} aria-current={path === `/${lang}/support/` ? 'page' : undefined}>
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d={HEART_ICON} fill="currentColor"></path></svg>
         <span class="support-pill-label">{t('nav.support')}</span>

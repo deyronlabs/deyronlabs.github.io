@@ -981,3 +981,107 @@ ul.plain {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Căutare ---------- */
+
+.nav-search {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface);
+  padding-left: 0.8rem;
+}
+.nav-search:focus-within {
+  border-color: var(--accent);
+}
+.nav-search input {
+  width: 6.5rem;
+  background: none;
+  border: 0;
+  outline: 0;
+  color: var(--ink);
+  font: inherit;
+  font-size: var(--step--1);
+  padding-block: 0.3rem;
+}
+.nav-search input::placeholder {
+  color: var(--ink-2);
+}
+.nav-search button {
+  display: inline-flex;
+  background: none;
+  border: 0;
+  color: var(--ink-2);
+  padding: 0.35rem 0.65rem 0.35rem 0.3rem;
+  cursor: pointer;
+}
+.nav-search button:hover {
+  color: var(--accent);
+}
+.search-form {
+  display: flex;
+  gap: 0.6rem;
+  max-width: 40rem;
+  margin-bottom: 1rem;
+}
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  color: var(--ink);
+  font: inherit;
+  font-size: var(--step-1);
+  padding: 0.7rem 1rem;
+}
+.search-form input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.search-form button {
+  background: var(--accent);
+  color: #0b1f12;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 700;
+  padding: 0 1.2rem;
+  cursor: pointer;
+}
+.search-status {
+  color: var(--ink-2);
+  margin-bottom: 1.5rem;
+}
+.search-results {
+  list-style: none;
+  padding: 0;
+  max-width: 44rem;
+}
+.search-results li {
+  padding-block: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+.search-results h3 {
+  font-size: var(--step-1);
+  margin-block: 0.2rem 0.4rem;
+}
+.search-results p {
+  margin: 0;
+}
+.search-results .sr-meta {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--accent);
+}
+@media (max-width: 40rem) {
+  .nav-search {
+    order: 5;
+    flex: 1 1 100%;
+  }
+  .nav-search input {
+    width: 100%;
+    flex: 1;
+  }
+}
