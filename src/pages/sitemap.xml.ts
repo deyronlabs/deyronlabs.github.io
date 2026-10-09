@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { DEFAULT_LANG, ENABLED_LANGS } from '../site';
 import { getAllEnabledEpisodes, episodeUrlPath } from '../lib/lab';
 import { getAllEnabledArticles, getTranslations, lastChange, pathOf } from '../lib/articles';
+import { getTopicGroups, topicPath } from '../lib/topics';
 import { buildSitemap, type SitemapEntry } from '../lib/feeds';
 
 export const GET: APIRoute = async () => {
@@ -18,6 +19,12 @@ export const GET: APIRoute = async () => {
         alternates,
         lastmod: sub === '' || sub === 'news/' ? newest : undefined,
       });
+    }
+  }
+  for (const lang of ENABLED_LANGS) {
+    entries.push({ lang, path: `/${lang}/topics/`, alternates: ENABLED_LANGS.map((l) => ({ lang: l, path: `/${l}/topics/` })), lastmod: newest });
+    for (const g of await getTopicGroups(lang)) {
+      entries.push({ lang, path: topicPath(lang, g.def.slug), alternates: [{ lang, path: topicPath(lang, g.def.slug) }], lastmod: lastChange(g.articles[0]) });
     }
   }
   for (const a of articles) {

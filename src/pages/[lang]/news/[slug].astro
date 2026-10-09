@@ -17,6 +17,8 @@ import {
   lastChange,
   shareImageOf,
 } from '../../../lib/articles';
+import RelatedStories from '../../../components/RelatedStories.astro';
+import { relatedArticles, topicsOf, getTopicGroups, topicPath } from '../../../lib/topics';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { newsArticleLd, breadcrumbLd } from '../../../lib/seo';
 
@@ -55,6 +57,9 @@ const ld = newsArticleLd({
   videoPublishedAt: d.videoPublishedAt,
   image: shareImageOf(article),
 });
+const related = relatedArticles(article, await getArticles(lang));
+const topicLinks = new Set((await getTopicGroups(lang)).map((g) => g.def.slug));
+const articleTopics = topicsOf(article);
 const crumbs = [
   { name: t('nav.news'), path: `/${lang}/news/` },
   { name: d.title, path },
@@ -126,6 +131,8 @@ const crumbs = [
           }
         </ol>
 
+        <RelatedStories articles={related} lang={lang} />
+
         <NewsletterBox lang={lang} />
         <SupportBox lang={lang} />
       </article>
@@ -157,7 +164,16 @@ const crumbs = [
             d.topics.length > 0 && (
               <>
                 <dt>{t('article.related')}</dt>
-                <dd>{d.topics.join(', ')}</dd>
+                <dd>
+                  {articleTopics.length > 0
+                    ? articleTopics.map((tp, i) => (
+                        <>
+                          {i > 0 && ', '}
+                          {topicLinks.has(tp.slug) ? <a href={topicPath(lang, tp.slug)}>{tp.label[lang]}</a> : tp.label[lang]}
+                        </>
+                      ))
+                    : d.topics.join(', ')}
+                </dd>
               </>
             )
           }

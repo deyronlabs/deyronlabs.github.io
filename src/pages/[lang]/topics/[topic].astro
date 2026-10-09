@@ -1,0 +1,48 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import Timeline from '../../../components/Timeline.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { useTranslations } from '../../../i18n/utils';
+import { getTopicGroups, topicPath } from '../../../lib/topics';
+import { breadcrumbLd } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of ENABLED_LANGS) {
+    for (const group of await getTopicGroups(lang)) {
+      paths.push({ params: { lang, topic: group.def.slug }, props: { group } });
+    }
+  }
+  return paths;
+}
+
+const { group } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const label = group.def.label[lang];
+const path = topicPath(lang, group.def.slug);
+const crumbs = [
+  { name: t('topics.title'), path: `/${lang}/topics/` },
+  { name: label, path },
+];
+const fill = (s: string) => s.replace('{topic}', label).replace('{n}', String(group.articles.length));
+---
+
+<Base
+  title={fill(t('topics.pageSeoTitle'))}
+  description={fill(t('topics.pageDescription'))}
+  lang={lang}
+  path={path}
+  alternates={[{ lang, path }]}
+  jsonLd={[breadcrumbLd(crumbs, lang)]}
+>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
+  </div>
+  <div class="wrap page">
+    <h1>{label}</h1>
+    <p class="lead">{fill(t('topics.pageIntro'))}</p>
+    <Timeline articles={group.articles} lang={lang} />
+  </div>
+</Base>

@@ -12,6 +12,7 @@ export const GET: APIRoute = async () => {
   const body = buildLlms({
     pages: [
       { title: t['nav.news'], path: `/${lang}/news/`, note: 'all stories, newest first' },
+      { title: t['topics.title'], path: `/${lang}/topics/`, note: 'stories grouped by topic: models, open-weight models, policy, safety, security, agents and more' },
       { title: t['lab.title'], path: `/${lang}/lab-sessions/`, note: 'step-by-step video tutorials for AI tools, each with a written guide' },
       { title: t['about.title'], path: `/${lang}/about/`, note: 'how stories are made, corrections policy, contact' },
       { title: t['author.title'], path: `/${lang}/author/deyron-labs/`, note: 'the editorial desk behind every story' },

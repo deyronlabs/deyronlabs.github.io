@@ -1149,3 +1149,52 @@ ul.plain {
   background: var(--accent);
   color: #0b1f12;
 }
+
+/* ---------- Topics + related ---------- */
+
+.topic-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.9rem;
+}
+.topic-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  text-decoration: none;
+}
+.topic-grid a:hover {
+  border-color: var(--accent);
+}
+.topic-grid span {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+.related {
+  margin-top: 2.5rem;
+}
+.related ul {
+  list-style: none;
+  padding: 0;
+}
+.related li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.8rem;
+  border-top: 1px solid var(--rule);
+}
+.related time {
+  flex: none;
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}

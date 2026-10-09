@@ -1,0 +1,47 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations } from '../../../i18n/utils';
+import { getTopicGroups, topicPath } from '../../../lib/topics';
+import { breadcrumbLd, staticAlternates } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const groups = await getTopicGroups(lang);
+const path = `/${lang}/topics/`;
+const crumbs = [{ name: t('topics.title'), path }];
+---
+
+<Base
+  title={t('topics.seoTitle')}
+  description={t('topics.description')}
+  lang={lang}
+  path={path}
+  alternates={staticAlternates(ENABLED_LANGS, 'topics/')}
+  jsonLd={[breadcrumbLd(crumbs, lang)]}
+>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
+  </div>
+  <div class="wrap page">
+    <h1>{t('topics.title')}</h1>
+    <p class="lead">{t('topics.intro')}</p>
+    <ul class="topic-grid">
+      {
+        groups.map((g) => (
+          <li>
+            <a href={topicPath(lang, g.def.slug)}>
+              <strong>{g.def.label[lang]}</strong>
+              <span>{g.articles.length} {t('topics.stories')}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>
