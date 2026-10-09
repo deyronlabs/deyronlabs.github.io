@@ -1,6 +1,8 @@
 ---
 title: "Liquid AI releases d1-3B and d1-omni-600M, open-weight decision models that answer in a single forward pass"
 summary: "On 7 October 2026 Liquid AI released two open-weight decision models on Hugging Face: d1-3B (text and image) and d1-omni-600M, an experimental checkpoint (text with image or audio). Liquid says they produce an answer in a single forward pass, with d1-3B answering in under 50 ms on every measured device. Benchmarks are Liquid's own."
+seoTitle: "Liquid AI d1 open models decide in one pass"
+seoDescription: "On 7 October 2026 Liquid AI released two open-weight decision models on Hugging Face: d1-3B (text and image) and d1-omni-600M, an experimental…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

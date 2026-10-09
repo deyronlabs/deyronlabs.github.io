@@ -44,6 +44,25 @@ export function websiteLd(lang: Lang) {
     name: SITE.name,
     inLanguage: lang,
     publisher: { '@id': ORG_ID },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/${lang}/search/?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+}
+
+/** Breadcrumbs: pagina de start + lista dată (ultima = pagina curentă). */
+export function breadcrumbLd(items: { name: string; path: string }[], lang?: Lang) {
+  const all = [{ name: SITE.name, path: lang ? `/${lang}/` : '/' }, ...items];
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: all.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: absUrl(it.path),
+    })),
   };
 }
 

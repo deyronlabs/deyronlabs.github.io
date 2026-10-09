@@ -1,6 +1,8 @@
 ---
 title: "OpenAI rolls GPT-6 out to ChatGPT Free users and adds interactive answers called Intelligent UI"
 summary: "OpenAI said on 7 October 2026 that GPT-6 is rolling out to ChatGPT's Plus, Pro, Business and Enterprise tiers, with Free and Go following on 8 October. Paid tiers get GPT-6 Sol and free tiers get GPT-6 Luna. Answers can now be interactive interfaces, and the speed figures come from OpenAI."
+seoTitle: "GPT-6 reaches ChatGPT Free, plus Intelligent UI"
+seoDescription: "OpenAI said on 7 October 2026 that GPT-6 is rolling out to ChatGPT's Plus, Pro, Business and Enterprise tiers, with Free and Go following on 8 October."
 lang: en
 publishedAt: 2026-10-08T07:00:00Z
 entities:

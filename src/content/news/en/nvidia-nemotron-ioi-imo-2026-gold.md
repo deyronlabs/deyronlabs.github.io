@@ -1,6 +1,8 @@
 ---
 title: "NVIDIA reports gold-level results at IOI and IMO 2026 with Nemotron-based systems and publishes the models and data"
 summary: "NVIDIA says Nemotron-based systems scored 535.4 of 600 at IOI 2026, in an unofficial unsupervised run, and 30 of 42 at IMO 2026, graded by official IMO graders. It links checkpoints, training datasets and a 200-problem benchmark; the post names no license. The results are NVIDIA's own."
+seoTitle: "NVIDIA Nemotron hits gold at IOI and IMO 2026"
+seoDescription: "NVIDIA says Nemotron-based systems scored 535.4 of 600 at IOI 2026, in an unofficial unsupervised run, and 30 of 42 at IMO 2026, graded by official IMO…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

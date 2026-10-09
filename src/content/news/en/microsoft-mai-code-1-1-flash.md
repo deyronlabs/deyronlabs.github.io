@@ -1,6 +1,8 @@
 ---
 title: "Microsoft releases MAI-Code-1.1-Flash, a coding model it says costs a quarter of MAI-Code-1.0"
 summary: "On 7 October 2026 Microsoft AI released MAI-Code-1.1-Flash, which it says costs a quarter of MAI-Code-1.0 and uses 25% fewer tokens per task. It is live in GitHub Copilot and can be downloaded to run locally, with more than 120 GB of RAM recommended. Microsoft gives no dollar price, license or download location, and all figures are its own."
+seoTitle: "Microsoft MAI-Code-1.1-Flash costs a quarter"
+seoDescription: "On 7 October 2026 Microsoft AI released MAI-Code-1.1-Flash, which it says costs a quarter of MAI-Code-1.0 and uses 25% fewer tokens per task."
 lang: en
 publishedAt: 2026-10-08T16:30:00Z
 entities:

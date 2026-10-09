@@ -10,6 +10,10 @@ const news = defineCollection({
     title: z.string().min(10).max(120),
     // 2-3 propoziții care răspund singure la întrebare; apare sub titlu și în meta description.
     summary: z.string().min(80).max(420),
+    // Titlu pentru Google (title tag): maxim 48 de caractere, pentru ca împreună cu " | Deyron Labs" să încapă în ~62.
+    seoTitle: z.string().min(15).max(48).optional(),
+    // Meta description pentru Google: 70-155 de caractere, scrisă ca fraza de promisiune a articolului.
+    seoDescription: z.string().min(70).max(155).optional(),
     lang: z.enum(['en', 'es']),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date().optional(),

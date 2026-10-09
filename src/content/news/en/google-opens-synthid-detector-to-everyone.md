@@ -1,6 +1,8 @@
 ---
 title: "Google opens its SynthID Detector to everyone to check images, video and audio for AI watermarks"
 summary: "On 7 October 2026 Google made its SynthID Detector available to anyone, globally and in English. The tool checks whether an image, video or audio file carries a SynthID watermark from Google or partners named as OpenAI, NVIDIA and Kakao; Apple is listed as coming soon. The post does not describe limits, so a missing watermark proves nothing."
+seoTitle: "Google opens SynthID Detector to everyone"
+seoDescription: "On 7 October 2026 Google made its SynthID Detector available to anyone, globally and in English."
 lang: en
 publishedAt: 2026-10-08T16:00:00Z
 entities:

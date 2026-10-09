@@ -1,6 +1,8 @@
 ---
 title: "Reflection announces Beam, a 501B open-weight model it says matches GLM-5.2 at 3–4x less compute"
 summary: "Reflection announced Beam on 5 October 2026, a 501-billion-parameter mixture-of-experts model with 23 billion active parameters. The company says it will release the weights under Apache 2.0 later in October. The benchmark scores are Reflection's own, and in its table Beam trails several newer Chinese models."
+seoTitle: "Reflection Beam: 501B open-weight model"
+seoDescription: "Reflection announced Beam on 5 October 2026, a 501-billion-parameter mixture-of-experts model with 23 billion active parameters."
 lang: en
 publishedAt: 2026-10-07T17:00:00Z
 entities:

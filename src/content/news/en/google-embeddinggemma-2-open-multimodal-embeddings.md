@@ -1,6 +1,8 @@
 ---
 title: "Google releases EmbeddingGemma 2, an open 740M-parameter embedding model for text, images, video and audio"
 summary: "Google DeepMind's EmbeddingGemma 2 maps text, code, images, video and audio into one 768-dimension embedding space. It has 740 million parameters in total, is released under Apache 2.0, and its encoders can be loaded selectively. The benchmark scores are Google's own."
+seoTitle: "Google EmbeddingGemma 2 open embedding model"
+seoDescription: "Google DeepMind's EmbeddingGemma 2 maps text, code, images, video and audio into one 768-dimension embedding space."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

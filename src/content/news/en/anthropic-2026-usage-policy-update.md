@@ -1,6 +1,8 @@
 ---
 title: "Anthropic updates its Usage Policy: new rules on surveillance, weapons and hardware control, effective November 12"
 summary: "On 8 October 2026 Anthropic announced an updated Usage Policy that takes effect on 12 November. It adds safety requirements for Claude controlling equipment, bars Claude from deciding who to investigate, arrest or charge, and adds a ban on sustained, needless abuse of its models. Anthropic says most changes clarify existing rules."
+seoTitle: "Anthropic updates its Usage Policy from Nov 12"
+seoDescription: "On 8 October 2026 Anthropic announced an updated Usage Policy that takes effect on 12 November."
 lang: en
 publishedAt: 2026-10-09T05:00:00Z
 entities:

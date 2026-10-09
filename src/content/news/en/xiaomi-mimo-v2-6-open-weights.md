@@ -1,6 +1,8 @@
 ---
 title: "Xiaomi releases MiMo-V2.6 under an MIT license, including a 1-trillion-parameter open-weight Pro model"
 summary: "Xiaomi announced MiMo-V2.6 on 22 September 2026: a 1.02-trillion-parameter Pro model and a 309-billion-parameter Flash model, both multimodal, with weights on Hugging Face tagged MIT. Artificial Analysis lists Pro at 46 on its Intelligence Index; most other scores are Xiaomi's own."
+seoTitle: "Xiaomi MiMo-V2.6: 1T open-weight Pro under MIT"
+seoDescription: "Xiaomi announced MiMo-V2.6 on 22 September 2026: a 1.02-trillion-parameter Pro model and a 309-billion-parameter Flash model, both multimodal, with…"
 lang: en
 publishedAt: 2026-10-08T07:30:00Z
 entities:

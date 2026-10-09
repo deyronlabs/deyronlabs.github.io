@@ -1,6 +1,8 @@
 ---
 title: "OpenAI adds flashcards and quizzes to ChatGPT for Teens and announces a College Planner for US students"
 summary: "On 7 October 2026 OpenAI said ChatGPT for Teens now has flashcards, quizzes and multi-photo note capture, and that a College Planner for US students in grades 10–12 is coming soon with no date. The usage figures it published are OpenAI's own."
+seoTitle: "ChatGPT for Teens: quizzes and College Planner"
+seoDescription: "On 7 October 2026 OpenAI said ChatGPT for Teens now has flashcards, quizzes and multi-photo note capture, and that a College Planner for US students in…"
 lang: en
 publishedAt: 2026-10-08T07:50:00Z
 entities:

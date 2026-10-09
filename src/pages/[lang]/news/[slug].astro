@@ -17,7 +17,8 @@ import {
   lastChange,
   shareImageOf,
 } from '../../../lib/articles';
-import { newsArticleLd } from '../../../lib/seo';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { newsArticleLd, breadcrumbLd } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -54,21 +55,26 @@ const ld = newsArticleLd({
   videoPublishedAt: d.videoPublishedAt,
   image: shareImageOf(article),
 });
+const crumbs = [
+  { name: t('nav.news'), path: `/${lang}/news/` },
+  { name: d.title, path },
+];
 ---
 
 <Base
-  title={d.title}
-  description={d.summary}
+  title={d.seoTitle ?? d.title}
+  description={d.seoDescription ?? d.summary}
   lang={lang}
   path={path}
   alternates={alternates}
   type="article"
-  jsonLd={[ld]}
+  jsonLd={[ld, breadcrumbLd(crumbs, lang)]}
   publishedTime={d.publishedAt}
   modifiedTime={lastChange(article)}
   image={shareImageOf(article)}
 >
   <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
     <header class="article-head">
       <h1>{d.title}</h1>
       <p class="article-summary">{d.summary}</p>

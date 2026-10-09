@@ -1,6 +1,8 @@
 ---
 title: "TII releases Falcon-ASR, a 1.6B speech recognition model for Arabic, including Emirati, plus four other languages"
 summary: "On 7 October 2026 the UAE's Technology Innovation Institute published Falcon-ASR, a 1.6 billion-parameter speech recognition model for Arabic with a focus on Emirati, plus English, French, Spanish and Portuguese in the same weights. TII reports a 20.92% average word error rate on six Arabic test sets; the post names no license."
+seoTitle: "TII Falcon-ASR: speech recognition for Arabic"
+seoDescription: "On 7 October 2026 the UAE's Technology Innovation Institute published Falcon-ASR, a 1.6 billion-parameter speech recognition model for Arabic with a…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

@@ -34,7 +34,7 @@ const t = useTranslations(lang);
                 </span>
               )}
               {a.data.topics.length > 0 && <span>{a.data.topics.join(', ')}</span>}
-              <span>{a.data.sources.length} {t('article.sourcesCount')}</span>
+              <span>{a.data.sources.length} {a.data.sources.length === 1 ? t('article.sourceOne') : t('article.sourcesCount')}</span>
             </p>
           </article>
         </li>

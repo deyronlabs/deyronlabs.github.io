@@ -1,6 +1,8 @@
 ---
 title: "Perplexity releases pplx-embed-v2-late, 9B and 0.6B late-interaction embedding models for text and images"
 summary: "On 7 October 2026 Perplexity published two ColBERT-style late-interaction embedding models, pplx-embed-v2-late-9B and 0.6B, for text and image retrieval with a shared embedding space. Both are on Hugging Face; the post names no license or price. Benchmark numbers are Perplexity's own."
+seoTitle: "Perplexity pplx-embed-v2-late embedding models"
+seoDescription: "On 7 October 2026 Perplexity published two ColBERT-style late-interaction embedding models, pplx-embed-v2-late-9B and 0.6B, for text and image…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

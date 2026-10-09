@@ -1,6 +1,8 @@
 ---
 title: "AI weekly recap: OpenAI scraps GPT-6.1 Astra, Gemini 4 Argon debuts, six labs sign White House accord"
 summary: "Between 28 September and 5 October 2026, OpenAI launched Dots agents and GPT-6.1 Sol but scrapped GPT-6.1 Astra after safety tests. Google released Gemini 4 Argon to cybersecurity partners only, six AI companies signed a voluntary White House accord, and Anthropic's IPO filing was reported."
+seoTitle: "AI weekly recap: GPT-6.1 scrapped, Gemini 4 out"
+seoDescription: "Between 28 September and 5 October 2026, OpenAI launched Dots agents and GPT-6.1 Sol but scrapped GPT-6.1 Astra after safety tests."
 lang: en
 publishedAt: 2026-10-06T18:45:00Z
 entities:

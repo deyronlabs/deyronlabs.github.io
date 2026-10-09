@@ -1,6 +1,8 @@
 ---
 title: "Google launches Playground, an experimental platform for creating and sharing games from text prompts, in the US"
 summary: "On 7 October 2026 Google launched Playground, an experimental browser-based platform where US users aged 18 and over can create, play and share custom games by typing prompts. Creation access depends on the user's Google AI subscription tier. Google does not name the model behind it."
+seoTitle: "Google Playground makes games from text prompts"
+seoDescription: "On 7 October 2026 Google launched Playground, an experimental browser-based platform where US users aged 18 and over can create, play and share custom…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

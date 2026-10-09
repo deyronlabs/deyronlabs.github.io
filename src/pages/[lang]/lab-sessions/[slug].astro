@@ -9,7 +9,8 @@ import { youtubeId } from '../../../lib/video';
 import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
 import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
 import { getEpisodes, episodeSlug, episodePath, episodeUrlPath, toSeconds, videoAt } from '../../../lib/lab';
-import { labEpisodeLd } from '../../../lib/seo';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { labEpisodeLd, breadcrumbLd } from '../../../lib/seo';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -45,6 +46,10 @@ const ld = labEpisodeLd({
 });
 const mins = Math.floor(d.durationSeconds / 60);
 const secs = String(d.durationSeconds % 60).padStart(2, '0');
+const crumbs = [
+  { name: t('lab.title'), path: `/${lang}/lab-sessions/` },
+  { name: d.title, path },
+];
 ---
 
 <Base
@@ -54,12 +59,13 @@ const secs = String(d.durationSeconds % 60).padStart(2, '0');
   path={path}
   alternates={[{ lang, path: episodePath(lang, episodeSlug(episode)) }]}
   type="article"
-  jsonLd={ld}
+  jsonLd={[...(Array.isArray(ld) ? ld : [ld]), breadcrumbLd(crumbs, lang)]}
   publishedTime={d.publishedAt}
   modifiedTime={d.updatedAt ?? d.publishedAt}
   image={d.image}
 >
   <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
     <header class="article-head">
       <p class="lab-kicker"><a href={`/${lang}/lab-sessions/`}>{t('lab.title')}</a> · {t('lab.episode')} {d.episode}</p>
       <h1>{d.title}</h1>

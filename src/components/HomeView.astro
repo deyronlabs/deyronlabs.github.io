@@ -34,7 +34,7 @@ const latest = rest.slice(0, 8);
       <img
         class="hero-banner"
         src="/brand/banner-strip.svg"
-        alt="Deyron Labs: AI tools, workflows, strategies"
+        alt="Deyron Labs: independent AI news with primary sources, plus step-by-step AI tool tutorials"
         width="2560"
         height="720"
         fetchpriority="high"
@@ -57,7 +57,7 @@ const latest = rest.slice(0, 8);
                   {t('article.updated')} {formatDate(lede.data.updatedAt!, lang)}
                 </span>
               )}
-              <span>{lede.data.sources.length} {t('article.sourcesCount')}</span>
+              <span>{lede.data.sources.length} {lede.data.sources.length === 1 ? t('article.sourceOne') : t('article.sourcesCount')}</span>
             </p>
           </article>
         ) : (
@@ -89,7 +89,7 @@ const latest = rest.slice(0, 8);
             {episodes.map((e) => (
               <li class="lab-card">
                 <a class="lab-thumb" href={episodeUrlPath(e)} tabindex="-1" aria-hidden="true">
-                  <img src={e.data.image} alt="" width="1280" height="720" loading="lazy" decoding="async" />
+                  <img src={e.data.image} alt={e.data.imageAlt} width="1280" height="720" loading="lazy" decoding="async" />
                 </a>
                 <div class="lab-info">
                   <p class="lab-kicker">{t('lab.episode')} {e.data.episode}</p>

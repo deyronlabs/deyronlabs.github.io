@@ -1,6 +1,8 @@
 ---
 title: "OpenAI says it banned a Russia-linked and an Iran-linked influence operation, rating the Russian one Category 5"
 summary: "On 8 October 2026 OpenAI reported banning two covert influence operations that used its models: a Russia-origin cluster it calls Dark Clark, and an Iran-origin one it calls Bogus Bylines. OpenAI rates Dark Clark Category 5, the first it has disrupted since it began reporting. The findings and ratings are OpenAI's own."
+seoTitle: "OpenAI bans Russia- and Iran-linked ops"
+seoDescription: "On 8 October 2026 OpenAI reported banning two covert influence operations that used its models: a Russia-origin cluster it calls Dark Clark, and an…"
 lang: en
 publishedAt: 2026-10-09T05:00:00Z
 entities:

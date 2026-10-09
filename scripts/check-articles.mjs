@@ -45,6 +45,14 @@ for (const file of files) {
   for (const k of ['title', 'summary', 'publishedAt']) if (!field(fm, k)) fail(rel, `lipsește ${k}`);
   const summary = field(fm, 'summary') ?? '';
   if (summary && (summary.length < 80 || summary.length > 420)) fail(rel, `summary are ${summary.length} caractere (80-420)`);
+  // SEO (obligatoriu pentru articolele noi): title tag și meta description scrise pentru Google.
+  const seoTitle = field(fm, 'seoTitle');
+  const seoDesc = field(fm, 'seoDescription');
+  if (!seoTitle) fail(rel, 'lipsește seoTitle (15-48 caractere)');
+  else if (seoTitle.length < 15 || seoTitle.length > 48) fail(rel, `seoTitle are ${seoTitle.length} caractere (15-48)`);
+  if (!seoDesc) fail(rel, 'lipsește seoDescription (70-155 caractere)');
+  else if (seoDesc.length < 70 || seoDesc.length > 155) fail(rel, `seoDescription are ${seoDesc.length} caractere (70-155)`);
+  if (!/^topics:/m.test(fm)) fail(rel, 'lipsește topics (cel puțin o temă, pentru paginile de temă și căutare)');
   if (!/^sources:/m.test(fm)) fail(rel, 'lipsește sources');
   if (!/primary:\s*true/.test(fm)) fail(rel, 'nicio sursă cu primary: true');
   const img = field(fm, 'image');

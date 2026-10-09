@@ -1,6 +1,8 @@
 ---
 title: "Example AI Lab releases Model X with a 1M-token context window"
 summary: "Example AI Lab released Model X on 6 October 2026. It accepts up to one million tokens of input and is available through the lab's API from day one. This is a placeholder story that shows the article format and is hidden from the live site."
+seoTitle: "Example AI Lab releases Model X, 1M context"
+seoDescription: "Example AI Lab released Model X on 6 October 2026. It accepts up to one million tokens of input and is available through the lab's API from day one."
 lang: en
 publishedAt: 2026-10-06T14:30:00Z
 updatedAt: 2026-10-06T18:10:00Z

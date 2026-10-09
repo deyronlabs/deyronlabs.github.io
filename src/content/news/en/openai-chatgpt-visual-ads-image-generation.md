@@ -1,6 +1,8 @@
 ---
 title: "OpenAI to test visual ads next to image generation in ChatGPT's Free and Go plans in the US"
 summary: "OpenAI said on 5 October 2026 that it will test a visual ad format that appears during image generation in ChatGPT. The test starts in the US later in October for Free and Go users, with an initial group of advertisers. OpenAI says ads do not influence ChatGPT's answers."
+seoTitle: "OpenAI tests visual ads in ChatGPT images"
+seoDescription: "OpenAI said on 5 October 2026 that it will test a visual ad format that appears during image generation in ChatGPT."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

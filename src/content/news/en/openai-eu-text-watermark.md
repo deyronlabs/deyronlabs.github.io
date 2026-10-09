@@ -1,6 +1,8 @@
 ---
 title: "OpenAI will add an invisible watermark to ChatGPT and Codex text in the EU and opens an opt-in in its API"
 summary: "On 5 October 2026 OpenAI said it will add an invisible statistical watermark to eligible ChatGPT and Codex text output in the European Union over the coming weeks. API customers worldwide can opt in from 5 October; it is off by default. OpenAI says text watermarking has significant limitations."
+seoTitle: "OpenAI adds invisible text watermark in the EU"
+seoDescription: "On 5 October 2026 OpenAI said it will add an invisible statistical watermark to eligible ChatGPT and Codex text output in the European Union over the…"
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:
