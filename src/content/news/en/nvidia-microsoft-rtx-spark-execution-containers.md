@@ -2,7 +2,7 @@
 title: "Microsoft and NVIDIA announce RTX Spark Windows PCs and make Execution Containers for AI agents generally available"
 summary: "At a Microsoft event on 7 October 2026, NVIDIA and Microsoft announced RTX Spark Windows laptops with up to 128GB of unified memory and made Microsoft Execution Containers, OS-level infrastructure for running agents, generally available. Laptops are on preorder with general availability on 16 October; prices were not given."
 seoTitle: "RTX Spark PCs and Execution Containers for AI"
-seoDescription: "At a Microsoft event on 7 October 2026, NVIDIA and Microsoft announced RTX Spark Windows laptops with up to 128GB of unified memory and made Microsoft…"
+seoDescription: "NVIDIA and Microsoft announced RTX Spark laptops, up to 128GB memory, on preorder for 16 October, and Execution Containers for AI agents."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

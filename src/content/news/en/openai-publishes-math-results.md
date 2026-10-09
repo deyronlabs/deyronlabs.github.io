@@ -2,7 +2,7 @@
 title: "OpenAI publishes new math results from an internal model, with Lean proofs for many"
 summary: "On 6 October 2026 OpenAI released a set of mathematical results produced by an internal frontier model, with reasoning summaries and many proofs formalized in Lean. OpenAI says the average result took about three hours of ChatGPT Pro thinking. The results come from OpenAI and have not been independently reviewed."
 seoTitle: "OpenAI publishes new math results, Lean proofs"
-seoDescription: "On 6 October 2026 OpenAI released a set of mathematical results produced by an internal frontier model, with reasoning summaries and many proofs…"
+seoDescription: "OpenAI published math results from an internal model, many with Lean proofs, about three hours of ChatGPT Pro thinking each. Not independently reviewed."
 lang: en
 publishedAt: 2026-10-08T07:00:00Z
 entities:

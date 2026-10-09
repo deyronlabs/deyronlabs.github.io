@@ -2,7 +2,7 @@
 title: "Anthropic releases Claude Haiku 5.5 at $0.10 per million input tokens, 90% below Haiku 4.5"
 summary: "Anthropic released Claude Haiku 5.5 on 7 October 2026. For prompts up to 100,000 tokens it costs $0.10 per million input tokens and $0.50 per million output tokens, the same list price as OpenAI's GPT-6 Luna. The benchmark scores are Anthropic's own."
 seoTitle: "Claude Haiku 5.5 costs $0.10 per million tokens"
-seoDescription: "Anthropic released Claude Haiku 5.5 on 7 October 2026. For prompts up to 100,000 tokens it costs $0.10 per million input tokens and $0.50 per million…"
+seoDescription: "Claude Haiku 5.5 costs $0.10 per million input tokens and $0.50 output, the same list price as GPT-6 Luna. Benchmarks are Anthropic's own."
 lang: en
 publishedAt: 2026-10-08T07:00:00Z
 entities:

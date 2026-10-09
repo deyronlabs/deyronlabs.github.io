@@ -2,7 +2,7 @@
 title: "Anthropic launches the Cyber Mission, with a critical-infrastructure program and a free open-source scanner"
 summary: "On 8 October 2026 Anthropic launched the Anthropic Cyber Mission, starting with a Critical Infrastructure Defense Program with 11 founding partners and OSS Scanner, a free, opt-in service that scans open-source projects with its most capable models. Anthropic says reports are not human-reviewed and it expects a true-positive rate above 90%."
 seoTitle: "Anthropic Cyber Mission and free OSS scanner"
-seoDescription: "On 8 October 2026 Anthropic launched the Anthropic Cyber Mission, starting with a Critical Infrastructure Defense Program with 11 founding partners and…"
+seoDescription: "Anthropic's Cyber Mission starts with 11 founding partners and OSS Scanner, a free service that scans open-source projects."
 lang: en
 publishedAt: 2026-10-09T05:00:00Z
 entities:

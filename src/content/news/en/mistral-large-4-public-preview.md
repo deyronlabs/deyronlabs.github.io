@@ -2,7 +2,7 @@
 title: "Mistral releases Mistral Large 4, a 1-trillion-parameter model, in public preview"
 summary: "Mistral AI released Mistral Large 4 in public preview on 6 October 2026: a natively multimodal mixture-of-experts model with 1 trillion parameters, 49 billion of them active, priced at $1.36 per million input tokens and $4.18 per million output tokens. Mistral says the weights will follow by the end of October."
 seoTitle: "Mistral Large 4: 1T parameters in public preview"
-seoDescription: "Mistral AI released Mistral Large 4 in public preview on 6 October 2026: a natively multimodal mixture-of-experts model with 1 trillion parameters, 49…"
+seoDescription: "Mistral Large 4 is a 1-trillion-parameter multimodal model in public preview at $1.36 and $4.18 per million tokens. Weights due by end of October."
 lang: en
 publishedAt: 2026-10-07T09:20:00Z
 updatedAt: 2026-10-07T14:25:00Z

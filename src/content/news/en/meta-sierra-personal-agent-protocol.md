@@ -2,7 +2,7 @@
 title: "Meta and Sierra announce the Personal Agent Protocol for AI agents dealing with businesses; no specification yet"
 summary: "On 6 October 2026 Sierra announced the Personal Agent Protocol, an open standard it says it is developing with Meta and partners including Shopify, Stripe, Genesys, Rocket and Instinct. It covers authentication, consumer control and company visibility. The v0.1 specification is promised for later in October; no license is stated."
 seoTitle: "Meta and Sierra Personal Agent Protocol"
-seoDescription: "On 6 October 2026 Sierra announced the Personal Agent Protocol, an open standard it says it is developing with Meta and partners including Shopify…"
+seoDescription: "Sierra and Meta announce the Personal Agent Protocol for agents dealing with businesses. A v0.1 spec is promised in October; no license yet."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

@@ -2,7 +2,7 @@
 title: "arXiv limits each submitter to two submissions per calendar month, citing a surge in low-quality and AI-written papers"
 summary: "arXiv announced on 1 October 2026, effective the same day, that each submitter is limited to two submissions per calendar month, on top of an existing cap of three active submissions. It says September brought 40,363 submissions, up from 20,569 a year earlier, and calls the policy a stopgap."
 seoTitle: "arXiv caps submitters at two papers a month"
-seoDescription: "arXiv announced on 1 October 2026, effective the same day, that each submitter is limited to two submissions per calendar month, on top of an existing…"
+seoDescription: "arXiv now limits each submitter to two submissions a month, after September submissions doubled to 40,363 from a year earlier."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

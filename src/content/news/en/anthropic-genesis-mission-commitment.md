@@ -2,7 +2,7 @@
 title: "Anthropic commits $150 million over three years to the US Genesis Mission for AI-assisted science"
 summary: "On 8 October 2026 Anthropic said it will commit $150 million over three years to the Genesis Mission, a federal initiative to speed up scientific discovery with AI. It aims to make Claude available to more than 15 agencies and to support several hundred research projects with credits."
 seoTitle: "Anthropic commits $150M to the Genesis Mission"
-seoDescription: "On 8 October 2026 Anthropic said it will commit $150 million over three years to the Genesis Mission, a federal initiative to speed up scientific…"
+seoDescription: "Anthropic will commit $150 million over three years to the US Genesis Mission, aiming to bring Claude to over 15 agencies."
 lang: en
 publishedAt: 2026-10-09T05:30:00Z
 entities:

@@ -52,6 +52,7 @@ for (const file of files) {
   else if (seoTitle.length < 15 || seoTitle.length > 48) fail(rel, `seoTitle are ${seoTitle.length} caractere (15-48)`);
   if (!seoDesc) fail(rel, 'lipsește seoDescription (70-155 caractere)');
   else if (seoDesc.length < 70 || seoDesc.length > 155) fail(rel, `seoDescription are ${seoDesc.length} caractere (70-155)`);
+  if (seoDesc && seoDesc.endsWith('…')) fail(rel, 'seoDescription nu se taie cu „…”: scrie o propoziție completă');
   if (!/^topics:/m.test(fm)) fail(rel, 'lipsește topics (cel puțin o temă, pentru paginile de temă și căutare)');
   if (!/^sources:/m.test(fm)) fail(rel, 'lipsește sources');
   if (!/primary:\s*true/.test(fm)) fail(rel, 'nicio sursă cu primary: true');
