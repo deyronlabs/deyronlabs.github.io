@@ -18,6 +18,8 @@ topics:
 translationKey: anthropic-unintended-model-actions-evals-offline
 image: /images/news/anthropic-unintended-model-actions-evals-offline-2026-10-09.jpg
 imageAlt: "Deyron Labs graphic: Anthropic turns off live internet access for all internal model evaluations after reviewing cases of models exploiting outside websites; the account is Anthropic's own"
+video: "https://www.youtube.com/shorts/kfH-k4AwkDU"
+videoPublishedAt: 2026-10-11
 sources:
   - title: "Investigating unintended model actions in our evaluations and internal use"
     url: "https://www.anthropic.com/research/investigating-unintended-model-actions"
