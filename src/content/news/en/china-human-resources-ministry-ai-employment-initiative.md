@@ -4,7 +4,7 @@ summary: "At a press conference in Beijing on 10 October 2026, officials of Chin
 seoTitle: "China ministry plans AI employment initiative"
 seoDescription: "China's labor ministry said on 10 October it will address AI's impact on jobs and revise over 200 occupational standards, Xinhua reports."
 lang: en
-publishedAt: 2026-10-12T07:00:00Z
+publishedAt: 2026-10-12T05:32:00Z
 entities:
   - Ministry of Human Resources and Social Security
   - Xinhua
@@ -24,9 +24,9 @@ sources:
 
 ## What happened
 
-On 10 October 2026, officials from China's Ministry of Human Resources and Social Security (MOHRSS) spoke at a press conference in Beijing. Xinhua, China's state news agency, reported that the ministry will launch an initiative on employment amid advances in AI. We read the Xinhua English report; we did not find the ministry's own transcript, so everything below is as reported by Xinhua and attributed to the officials it names.
+On 10 October 2026, officials from China's Ministry of Human Resources and Social Security (MOHRSS) spoke at a press conference in Beijing. Xinhua, China's state news agency, reported that the ministry will launch an initiative on employment amid advances in AI. We read the Xinhua English report; we did not find the ministry's own transcript, so everything below is as reported by Xinhua.
 
-According to Xinhua, vice minister Li Zhong said China "would actively address the impact of AI and other emerging technologies on employment". Ministry official Wu Liduo said the ministry "would establish a regular mechanism for identifying new occupations" and "plans to formulate or revise more than 200 national occupational standards" during the 15th Five-Year Plan period (2026–2030).
+According to Xinhua, vice minister Li Zhong said China would actively address the impact of AI and other emerging technologies on employment, while promoting responsible technology development and quality jobs. Ministry official Wu Liduo said the ministry would set up a regular mechanism for identifying new occupations, in fields such as AI, the digital economy and green development, and plans to formulate or revise more than 200 national occupational standards during the 15th Five-Year Plan period (2026–2030). Xinhua reports these remarks in indirect speech, so they are paraphrased here.
 
 ## Key details
 
@@ -34,7 +34,7 @@ This is a statement of plans, not a published rule or budget. Xinhua's report gi
 
 - **New occupations:** Xinhua says 72 new occupations, including AI trainers, were added over the past five years, and 11 more have been announced since the start of 2026.
 - **Industry figures, in Xinhua's own narrative (no named speaker):** China's core AI industry exceeds 1.2 trillion yuan (about $178 billion) in scale with more than 6,200 enterprises, and the AI adoption rate across key industries has passed 80 percent. We could not check these figures independently.
-- **Hiring data:** Xinhua cites the recruitment platform Maimai as showing new AI-related job postings in the new economy up 789.47 percent year on year.
+- **Hiring data:** Xinhua cites the recruitment platform Maimai as showing new AI-related job postings in the new economy up 789.47 percent year on year for January to July.
 - **Employment statistics, per Xinhua:** 10.52 million new urban jobs were created in the first nine months of 2026, 87.7 percent of the annual target, and the surveyed urban unemployment rate averaged 5.2 percent in the first eight months.
 
 ## Why it matters

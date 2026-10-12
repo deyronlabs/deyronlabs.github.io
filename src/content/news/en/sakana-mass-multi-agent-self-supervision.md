@@ -4,7 +4,7 @@ summary: "On 8 October 2026 researchers from Sakana AI and UC Berkeley posted a 
 seoTitle: "Sakana MASS: one model improves via agent teams"
 seoDescription: "Sakana AI and UC Berkeley's MASS paper reports 1.2–1.6x better score per output token on a 27B model; coding-test transfer was weaker."
 lang: en
-publishedAt: 2026-10-12T06:30:00Z
+publishedAt: 2026-10-12T05:30:00Z
 entities:
   - Sakana AI
   - UC Berkeley
