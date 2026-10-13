@@ -1,67 +1,67 @@
 ---
-title: "Apple's 13 October “Welcome home” event: what is confirmed and what is only rumored (preview, to be updated)"
-summary: "Apple has said it will hold an “Apple Experience” in Tribeca, New York, on 13 October 2026 at 9:00 a.m. ET under the tagline “Welcome home.” It has not said what it will show. Reports point to a smart home hub with Siri AI, but none of that is confirmed. We will update this page after the event."
-seoTitle: "Apple Oct 13 event: confirmed vs rumored"
-seoDescription: "Apple's 13 October “Welcome home” event in Tribeca: what Apple confirmed, what is only rumored about the home hub and Siri AI, updated after."
+title: "Apple announces HomeView, a $299 smart home hub with Siri AI in beta, and says it is not sold in the EU"
+summary: "At its 13 October 2026 “Welcome home” event Apple announced HomeView, a 7-inch smart home hub at $299 that runs Siri AI in beta. Pre-orders opened 13 October and sales start 13 November in seven countries; it is not sold in the EU. Apple says personal-context features need a paired iPhone or iPad."
+seoTitle: "Apple HomeView: $299 hub with Siri AI beta"
+seoDescription: "Apple's HomeView smart home hub costs $299, ships 13 Nov 2026 in seven countries, runs Siri AI in beta and is not sold in the EU."
 lang: en
 publishedAt: 2026-10-12T05:40:00Z
+updatedAt: 2026-10-13T17:10:00Z
 entities:
   - Apple
-  - Siri
+  - HomeView
+  - Siri AI
+  - Apple Intelligence
   - HomePod mini
   - Apple TV
-  - LG
-  - Bloomberg
 topics:
   - Products
   - Hardware
   - Agents
 translationKey: apple-welcome-home-october-13-event-preview
-image: /images/news/apple-welcome-home-october-13-event-preview-2026-10-12.jpg
-imageAlt: "Deyron Labs graphic: Apple's 13 October Welcome home event in Tribeca at 9:00 a.m. ET is confirmed; a touchscreen home hub, HomePod mini and Apple TV are rumored; page to be updated after the event"
+image: /images/news/apple-homeview-siri-ai-2026-10-13.jpg
+imageAlt: "Deyron Labs graphic: Apple HomeView smart home hub, $299, Siri AI in beta, pre-orders 13 October, sales 13 November 2026, not sold in the EU"
 sources:
+  - title: "Meet Apple HomeView, a new way to enjoy entertainment and manage the home"
+    url: "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/"
+    publisher: "Apple Newsroom"
+    primary: true
   - title: "Greg Joswiak (Apple) announces the 13 October “Welcome home” event"
     url: "https://x.com/gregjoz/status/2108226096407994858"
     publisher: "Greg Joswiak, Apple (X)"
     primary: true
-  - title: "Apple announces special event for October 13: “Welcome home”"
-    url: "https://9to5mac.com/2026/10/08/apple-announces-special-event-for-october-13-welcome-home/"
-    publisher: "9to5Mac"
+  - title: "Everything announced at Apple's “Welcome Home” event"
+    url: "https://www.engadget.com/2285079/everything-apple-announced-home-view-homepod-mini-2-event/"
+    publisher: "Engadget"
     primary: false
-  - title: "Apple Confirms October 13 Event as Smart Home Launch Nears"
-    url: "https://www.iphoneincanada.ca/2026/10/08/apple-october-13-welcome-home/"
-    publisher: "iPhone in Canada"
+  - title: "Apple Announces “HomeView” Smart Home Hub"
+    url: "https://www.macrumors.com/2026/10/13/apple-announces-homeview-smart-home-hub/"
+    publisher: "MacRumors"
     primary: false
 ---
 
-> **Preview, not final.** This article was published on 12 October 2026, before the event. After Apple's presentation on 13 October we will replace the rumors below with what Apple actually announced and mark the update date at the top of the page.
+> **Updated 13 October 2026.** This page began on 12 October as a preview of the event. The rumors have been replaced with what Apple announced; the preview text is no longer shown.
 
 ## What happened
 
-On 8 October 2026, Apple marketing chief Greg Joswiak announced an event for Tuesday, 13 October, with the tagline “Welcome home.” Press invitations, shared publicly on X, describe an “Apple Experience” in Tribeca, New York, at 9:00 a.m. ET (6:00 a.m. PT). We could not open the X posts directly, so these details come from Joswiak's post as relayed by 9to5Mac and iPhone in Canada, which agree on the date, time, place and tagline.
-
-Apple has not said which products it will show. Everything about the products below is reporting or speculation, not an Apple statement.
+On 13 October 2026 Apple held its “Welcome home” event in Tribeca, New York, and announced HomeView, a smart home hub with a 7-inch touchscreen. Apple says it runs Siri AI, which is in beta in HomeView software version 27.2. Apple's newsroom post lists $299 for both the tabletop and the wall-mounted versions. Pre-orders opened on 13 October and sales begin on 13 November.
 
 ## Key details
 
-**Confirmed by Apple (via the announcement)**
-- Date and time: 13 October 2026, 9:00 a.m. ET.
-- Place: Tribeca, New York.
-- Format: an “Apple Experience,” not described as a keynote. 9to5Mac says it is unclear whether a full video presentation will be streamed.
-- Tagline: “Welcome home.”
+**From Apple's newsroom post**
+- Price and dates: $299 in the U.S. for the tabletop and wall-mounted models. Sales begin 13 November in Australia, Canada, India, New Zealand, Singapore, the UK and the U.S. Apple says HomeView is not sold in the European Union.
+- Siri AI: available in English in those countries, with Canadian French planned later through a free software update. Personal-context features need a paired iPhone or iPad with Apple Intelligence and Siri AI turned on; without one, HomeView offers broader world knowledge and music discovery.
+- Limits and costs: Apple says some server-side features have daily usage limits and that expanded access will cost a fee in the future. Expressive, customizable Siri voices need specific newer iPhone or iPad models and are English-only.
+- Privacy: Apple says Siri requests can run on-device or in Private Cloud Compute, where data “is not stored nor made accessible to Apple or anyone else.” It also says camera and microphone data handled in “Secure Exclaves” on the A18 chip cannot be accessed by the HomeView software, apps, the user or Apple. These are Apple's statements; we have not tested them.
+- Mounts: Schneider Home mounts are priced at $59.95 and $79.95 in the U.S., with a $129.95 power-over-Ethernet mount planned for early 2027.
 
-**Rumored, not confirmed**
-- **Smart home hub:** iPhone in Canada attributes to Bloomberg's Mark Gurman a hub with a roughly six-inch square display, running Siri AI and recognizing household members by voice or face. Other outlets use the name “HomePad,” a price near $350 and a camera; we found no Apple confirmation of any of these.
-- **HomePod mini:** per Gurman, its first update since 2020, with a faster chip for Siri AI.
-- **Apple TV:** per Gurman, a new set-top box, the first since 2022.
-- **LG-built accessories:** per Gurman, a doorbell, thermostat, smart lock and cameras developed with LG, which may get at most a preview.
-
-Some outlets also expect other products, such as an OLED iPad mini, but we found no firm sourcing and left them out.
+**Reported by other outlets (Engadget, MacRumors), not on the Apple page we read**
+- A new Apple TV 4K at $299 with an A19 chip, with Siri AI available in beta on the 2021 and 2022 Apple TV 4K models, and HomePod mini 2 at $149 with setup from 30 October. Engadget says Siri AI is not available on HomePod mini 2 at launch and will come in a later software update.
+- Which AI model powers Siri AI, and how requests are split between the device and the cloud, was not stated in the sources we read.
 
 ## Why it matters
 
-If the home hub is real, it would be a test of Apple's Siri AI in a shared household device, where several people talk to one assistant. For readers who use AI tools, the points to watch are what the assistant can do on the device, whether it runs locally or in the cloud, and what Apple says about privacy and multiple users.
+HomeView is Apple's first shared-room device built around Siri AI, so it tests an assistant that several people in a household use. The details that affect users are in the fine print: personal context depends on a paired iPhone or iPad, the assistant is labeled beta, and Apple says server-side use will eventually carry a fee.
 
-Until Apple speaks, treat the product list as unconfirmed. We will revisit this page after the event and add Apple's own announcement, prices, availability dates and anything that differs from the reports.
+For readers outside the listed countries, including everyone in the EU, there is no purchase option announced. The privacy claims about on-device processing and Private Cloud Compute are Apple's and will need independent review once the device ships.
 
-> Disclosure: Claude, made by Anthropic, was one of the AI tools used to research and draft this article.
+> Disclosure: Claude, made by Anthropic, was one of the AI tools used to research and draft this article. Details were read from Apple's newsroom post on 13 October 2026 and from the outlets cited above.
