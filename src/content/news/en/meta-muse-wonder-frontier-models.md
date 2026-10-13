@@ -1,5 +1,5 @@
 ---
-title: "Meta releases Muse Wonder and Muse Wonder Full, its first frontier-class models, as closed models with a $4/$20 API price"
+title: "Meta releases Muse Wonder and Muse Wonder Full as closed models; only Wonder is on the API"
 summary: "On 12 October 2026 Meta Superintelligence Labs released Muse Wonder and Muse Wonder Full, two proprietary models with a 1 million token context window. Only the smaller Muse Wonder is on the API, at $4 per million input tokens and $20 per million output tokens; Full is limited to paid Muse Code plans. Weights are not released."
 seoTitle: "Meta Muse Wonder: closed frontier model, $4/$20"
 seoDescription: "Meta released Muse Wonder and Muse Wonder Full on 12 Oct 2026: closed models, 1M context, API at $4/$20 per million tokens, Full only in Muse Code."

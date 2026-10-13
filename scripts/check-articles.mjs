@@ -44,6 +44,8 @@ for (const file of files) {
   else if (lang !== folder) fail(rel, `lang: ${lang} nu se potrivește cu folderul ${folder}/`);
   for (const k of ['title', 'summary', 'publishedAt']) if (!field(fm, k)) fail(rel, `lipsește ${k}`);
   const summary = field(fm, 'summary') ?? '';
+  const titleV = field(fm, 'title');
+  if (titleV && titleV.length > 120) fail(rel, `title are ${titleV.length} caractere (max 120, limita schemei Astro)`);
   if (summary && (summary.length < 80 || summary.length > 420)) fail(rel, `summary are ${summary.length} caractere (80-420)`);
   // SEO (obligatoriu pentru articolele noi): title tag și meta description scrise pentru Google.
   const seoTitle = field(fm, 'seoTitle');
