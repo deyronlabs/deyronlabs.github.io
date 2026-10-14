@@ -17,6 +17,8 @@ topics:
   - Pricing
   - Google
 translationKey: google-gemini-4-argon-general-availability
+video: https://www.youtube.com/shorts/txemCOCsbIk
+videoPublishedAt: 2026-10-14T21:20:00Z
 image: /images/news/google-gemini-4-argon-general-availability-2026-10-14.jpg
 imageAlt: "Deyron Labs graphic: Gemini 4 Argon generally available in the Gemini API from 13 October 2026; $2 input and $10 output per million tokens through 30 November, then $4 and $20; benchmarks are Google's own"
 sources:
