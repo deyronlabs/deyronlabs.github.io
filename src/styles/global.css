@@ -636,22 +636,6 @@ ul.plain {
   .foot {
     grid-template-columns: 1fr 1fr;
   }
-  /* Telefon: sigla sus, meniul pe un rând separat, ca nicio etichetă să nu se rupă sau să iasă din ecran. */
-  .bar {
-    flex-wrap: wrap;
-    row-gap: 0.5rem;
-  }
-  .nav {
-    width: 100%;
-    gap: 0.4rem 1.1rem;
-    flex-wrap: wrap;
-  }
-  .nav a {
-    white-space: nowrap;
-  }
-  .nav .support-pill {
-    margin-left: auto;
-  }
   .langs {
     padding-left: 1rem;
   }
@@ -1111,16 +1095,6 @@ ul.plain {
   font-size: var(--step--1);
   color: var(--accent);
 }
-@media (max-width: 40rem) {
-  .nav-search {
-    order: 5;
-    flex: 1 1 100%;
-  }
-  .nav-search input {
-    width: 100%;
-    flex: 1;
-  }
-}
 
 /* ---------- Breadcrumbs ---------- */
 
@@ -1233,4 +1207,69 @@ ul.plain {
   font-family: var(--mono);
   font-size: var(--step--1);
   color: var(--ink-2);
+}
+
+/* ---------- Telefon: antet compact (la sfârșit, ca să câștige peste regulile de bază) ---------- */
+@media (max-width: 40rem) {
+  /* Telefon: antet compact pe două rânduri. Rândul 1: sigla + căutare + inimă (Support). Rândul 2: cele patru linkuri. */
+  :root {
+    --step-4: 2.05rem;
+  }
+  .bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 0.2rem;
+    column-gap: 0.5rem;
+    padding-block: 0.6rem 0.4rem;
+  }
+  .brand {
+    margin-right: auto;
+  }
+  .nav {
+    display: contents;
+  }
+  .nav a {
+    white-space: nowrap;
+  }
+  .bar::after {
+    content: '';
+    order: 2;
+    flex: 1 0 100%;
+    height: 0;
+  }
+  .nav-search {
+    order: 1;
+    flex: 0 0 auto;
+    padding-left: 0;
+  }
+  .nav-search input,
+  .nav-search label {
+    display: none;
+  }
+  .nav-search button {
+    padding: 0.55rem;
+  }
+  .nav .support-pill {
+    order: 1;
+    padding: 0.5rem;
+  }
+  .support-pill-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .nav > a:not(.support-pill) {
+    order: 3;
+    font-size: 0.88rem;
+    padding-block: 0.4rem;
+    margin-right: 0.3rem;
+  }
+  .langs {
+    order: 3;
+    padding-left: 1rem;
+  }
 }
