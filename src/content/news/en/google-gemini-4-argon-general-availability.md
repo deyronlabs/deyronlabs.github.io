@@ -4,7 +4,7 @@ summary: "Google's API changelog lists Gemini 4 Argon (gemini-4-argon) as genera
 seoTitle: "Gemini 4 Argon is GA: $2/$10 until 30 Nov"
 seoDescription: "Gemini 4 Argon reached general availability in Google's API on 13 Oct 2026 at $2/$10 per million tokens, rising to $4/$20 from 1 December."
 lang: en
-publishedAt: 2026-10-14T17:00:00Z
+publishedAt: 2026-10-14T21:06:00Z
 entities:
   - Google
   - Google DeepMind
