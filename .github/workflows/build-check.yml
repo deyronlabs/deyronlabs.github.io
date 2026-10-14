@@ -1,0 +1,28 @@
+name: Build check
+
+# Construiește site-ul fără să-l publice. Rulează pe pull request-uri, ca modificările mari
+# (rubrici noi, schimbări de schemă) să fie verificate înainte de a ajunge pe main.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check articles
+        run: npm run check
+      - name: Build
+        run: npm run build
+      - name: List generated pages for the new section
+        run: |
+          ls dist/en/ai-infrastructure/ dist/en/ai-infrastructure/colossus/ || true

@@ -15,6 +15,7 @@ const labels = {
   count: t('search.count'),
   news: t('search.kind.news'),
   lab: t('search.kind.lab'),
+  infra: t('search.kind.infra'),
   hint: t('search.hint'),
 };
 ---
@@ -84,7 +85,7 @@ const labels = {
           var li = document.createElement('li');
           var meta = document.createElement('p');
           meta.className = 'sr-meta';
-          meta.textContent = (h.i.k === 'l' ? labels.lab : labels.news) + ' · ' + h.i.d;
+          meta.textContent = (h.i.k === 'l' ? labels.lab : h.i.k === 'i' ? labels.infra : labels.news) + ' · ' + h.i.d;
           var h3 = document.createElement('h3');
           var a = document.createElement('a');
           a.href = h.i.u;

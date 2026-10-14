@@ -170,6 +170,17 @@ ul.plain {
 .nav a[aria-current='page'] {
   border-bottom-color: var(--accent);
 }
+/* Cu patru linkuri în meniu, pe ecrane medii bara trece pe două rânduri în loc să iasă din pagină. */
+@media (max-width: 62rem) {
+  .bar {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.4rem 1.1rem;
+  }
+}
 .langs {
   display: inline-flex;
   gap: 0.8rem;
@@ -975,6 +986,31 @@ ul.plain {
 }
 .home-lab .lab-list {
   margin: 1.5rem 0 0;
+}
+
+/* ---------- AI Infrastructure: jurnal de actualizări ---------- */
+
+.updates-log {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.updates-log li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0.2rem 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.updates-log time {
+  font-family: var(--mono);
+  font-size: var(--step--1);
+  color: var(--accent);
+}
+@media (max-width: 40rem) {
+  .updates-log li {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 40rem) {
   .lab-card {
