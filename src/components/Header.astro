@@ -16,6 +16,7 @@ const t = useTranslations(lang);
 const nav = [
   { href: `/${lang}/news/`, label: t('nav.news') },
   { href: `/${lang}/lab-sessions/`, label: t('nav.lab') },
+  { href: `/${lang}/ai-infrastructure/`, label: t('nav.infra') },
   { href: `/${lang}/about/`, label: t('nav.about') },
 ];
 const current = (href: string) => path === href || (href !== `/${lang}/` && path.startsWith(href));

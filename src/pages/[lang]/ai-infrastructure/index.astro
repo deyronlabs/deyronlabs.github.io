@@ -1,0 +1,63 @@
+---
+import Base from '../../../layouts/Base.astro';
+import NewsletterBox from '../../../components/NewsletterBox.astro';
+import { ENABLED_LANGS, type Lang } from '../../../site';
+import { langPaths, useTranslations, formatDate, isoDate } from '../../../i18n/utils';
+import { getInfraEpisodes, infraUrlPath } from '../../../lib/infra';
+import { staticAlternates, infraSeriesLd } from '../../../lib/seo';
+
+export function getStaticPaths() {
+  return langPaths();
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const episodes = await getInfraEpisodes(lang);
+const path = `/${lang}/ai-infrastructure/`;
+---
+
+<Base
+  title={t('infra.title')}
+  description={t('infra.description')}
+  lang={lang}
+  path={path}
+  alternates={staticAlternates(ENABLED_LANGS, 'ai-infrastructure/')}
+  jsonLd={[infraSeriesLd({ name: t('infra.title'), description: t('infra.description'), lang, path })]}
+>
+  <div class="wrap page">
+    <h1>{t('infra.title')}</h1>
+    <p class="lead">{t('infra.intro')}</p>
+    {
+      episodes.length > 0 ? (
+        <ul class="lab-list">
+          {episodes.map((e) => (
+            <li class="lab-card">
+              <a class="lab-thumb" href={infraUrlPath(e)} tabindex="-1" aria-hidden="true">
+                <img src={e.data.image} alt={e.data.imageAlt} width="1280" height="720" loading="lazy" decoding="async" />
+              </a>
+              <div class="lab-info">
+                <p class="lab-kicker">
+                  {t('infra.episode')} {e.data.episode} ·{' '}
+                  <time datetime={isoDate(e.data.publishedAt)}>{formatDate(e.data.publishedAt, lang)}</time>
+                </p>
+                <h2>
+                  <a href={infraUrlPath(e)}>{e.data.title}</a>
+                </h2>
+                <p>{e.data.summary}</p>
+                <p class="lab-meta">
+                  <span>{Math.round(e.data.durationSeconds / 60)} min</span>
+                  <span>{e.data.sources.length} {t('article.sourcesCount')}</span>
+                  <span>{t('infra.asOf')} {formatDate(e.data.factsAsOf, lang)}</span>
+                </p>
+                <a class="lab-cta" href={infraUrlPath(e)}>{t('infra.read')}</a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="empty">{t('infra.empty')}</p>
+      )
+    }
+    <NewsletterBox lang={lang} idSuffix="-infra" />
+  </div>
+</Base>

@@ -1,0 +1,180 @@
+---
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import ShareLinks from '../../../components/ShareLinks.astro';
+import VideoEmbed from '../../../components/VideoEmbed.astro';
+import SupportBox from '../../../components/SupportBox.astro';
+import NewsletterBox from '../../../components/NewsletterBox.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { youtubeId } from '../../../lib/video';
+import { ENABLED_LANGS, SITE, type Lang } from '../../../site';
+import { useTranslations, formatDate, isoDate } from '../../../i18n/utils';
+import { toSeconds, videoAt } from '../../../lib/lab';
+import { getInfraEpisodes, infraSlug, infraPath, infraUrlPath, infraLastChange } from '../../../lib/infra';
+import { infraEpisodeLd, breadcrumbLd } from '../../../lib/seo';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of ENABLED_LANGS) {
+    for (const episode of await getInfraEpisodes(lang)) {
+      paths.push({ params: { lang, slug: infraSlug(episode) }, props: { episode } });
+    }
+  }
+  return paths;
+}
+
+const { episode } = Astro.props;
+const d = episode.data;
+const lang = d.lang as Lang;
+const t = useTranslations(lang);
+const { Content } = await render(episode);
+const path = infraUrlPath(episode);
+const seriesPath = `/${lang}/ai-infrastructure/`;
+const videoId = youtubeId(d.video)!;
+const chapters = d.chapters.map((c) => ({ at: toSeconds(c.at), label: c.at, title: c.title }));
+const lastChange = infraLastChange(episode);
+const updated = lastChange.getTime() > d.publishedAt.getTime();
+const updates = [...d.updates].sort((a, b) => b.date.getTime() - a.date.getTime());
+const ld = infraEpisodeLd({
+  title: d.title,
+  summary: d.summary,
+  lang,
+  path,
+  seriesName: t('infra.title'),
+  seriesPath,
+  publishedAt: d.publishedAt,
+  updatedAt: updated ? lastChange : undefined,
+  video: d.video,
+  durationSeconds: d.durationSeconds,
+  image: d.image,
+  entities: d.entities,
+  topics: d.topics,
+  sources: d.sources,
+  chapters: chapters.map((c) => ({ at: c.at, title: c.title })),
+});
+const mins = Math.floor(d.durationSeconds / 60);
+const secs = String(d.durationSeconds % 60).padStart(2, '0');
+const crumbs = [
+  { name: t('infra.title'), path: seriesPath },
+  { name: d.title, path },
+];
+---
+
+<Base
+  title={d.title}
+  description={d.summary}
+  lang={lang}
+  path={path}
+  alternates={[{ lang, path: infraPath(lang, infraSlug(episode)) }]}
+  type="article"
+  jsonLd={[...ld, breadcrumbLd(crumbs, lang)]}
+  publishedTime={d.publishedAt}
+  modifiedTime={lastChange}
+  image={d.image}
+  imageAlt={d.imageAlt}
+>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
+    <header class="article-head">
+      <p class="lab-kicker"><a href={seriesPath}>{t('infra.title')}</a> · {t('infra.episode')} {d.episode}</p>
+      <h1>{d.title}</h1>
+      <p class="article-summary">{d.summary}</p>
+      <p class="meta">
+        <span>
+          {t('article.by')} <a href={`/${lang}/author/deyron-labs/`}>{SITE.authorName}</a>
+        </span>
+        <span>
+          {t('article.published')}
+          <time datetime={isoDate(d.publishedAt)}>{formatDate(d.publishedAt, lang)}</time>
+        </span>
+        {
+          updated && (
+            <span>
+              {t('article.updated')}
+              <time datetime={isoDate(lastChange)}>{formatDate(lastChange, lang)}</time>
+            </span>
+          )
+        }
+        <span>
+          {t('infra.asOf')}
+          <time datetime={isoDate(d.factsAsOf)}>{formatDate(d.factsAsOf, lang)}</time>
+        </span>
+      </p>
+    </header>
+
+    <div class="article-grid">
+      <article class="article-body">
+        <VideoEmbed id={videoId} poster={d.image} title={d.title} lang={lang} />
+        <Content />
+
+        <h2 id="sources">{t('article.sources')}</h2>
+        <ol class="sources-list">
+          {
+            d.sources.map((s) => (
+              <li class={s.primary ? 'primary' : undefined}>
+                <a href={s.url} rel="noopener">{s.title}</a>
+                <small>
+                  {s.primary ? `${t('article.primary')}` : ''}
+                  {s.primary && s.publisher ? ', ' : ''}
+                  {s.publisher ?? ''}
+                </small>
+              </li>
+            ))
+          }
+        </ol>
+
+        <h2 id="updates">{t('infra.updates')}</h2>
+        {
+          updates.length > 0 ? (
+            <ol class="updates-log">
+              {updates.map((u) => (
+                <li>
+                  <time datetime={isoDate(u.date)}>{formatDate(u.date, lang)}</time>
+                  <span>{u.note}</span>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p>{t('infra.noUpdates')}</p>
+          )
+        }
+
+        <NewsletterBox lang={lang} />
+        <SupportBox lang={lang} />
+      </article>
+
+      <aside class="article-aside" aria-labelledby="facts-h">
+        <h2 id="facts-h">{t('article.facts')}</h2>
+        <dl>
+          <dt>{t('infra.series')}</dt>
+          <dd><a href={seriesPath}>{t('infra.title')}</a>, {t('infra.episode')} {d.episode}</dd>
+          <dt>{t('lab.length')}</dt>
+          <dd>{mins}:{secs}</dd>
+          <dt>{t('infra.asOf')}</dt>
+          <dd>{formatDate(d.factsAsOf, lang)}</dd>
+          <dt>Video</dt>
+          <dd><a href={d.video} rel="noopener">{t('infra.watch')}</a></dd>
+        </dl>
+        {
+          chapters.length > 0 && (
+            <>
+              <h2 id="chapters-h">{t('lab.chapters')}</h2>
+              <ol class="chapter-list" aria-labelledby="chapters-h">
+                {chapters.map((c) => (
+                  <li>
+                    <a href={videoAt(d.video, c.at)} rel="noopener">
+                      <time>{c.label}</time> {c.title}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )
+        }
+        <ShareLinks url={SITE.url + path} title={d.title} lang={lang} />
+        <p>{t('infra.aiNotice')}</p>
+        <p><a href={`/${lang}/about/`}>{t('article.aiNoticeLink')}</a></p>
+      </aside>
+    </div>
+  </div>
+</Base>

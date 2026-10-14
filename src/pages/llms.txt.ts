@@ -3,6 +3,7 @@ import { DEFAULT_LANG } from '../site';
 import { ui } from '../i18n/ui';
 import { getArticles, pathOf } from '../lib/articles';
 import { getEpisodes, episodeUrlPath } from '../lib/lab';
+import { getInfraEpisodes, infraUrlPath } from '../lib/infra';
 import { buildLlms } from '../lib/feeds';
 
 export const GET: APIRoute = async () => {
@@ -14,6 +15,7 @@ export const GET: APIRoute = async () => {
       { title: t['nav.news'], path: `/${lang}/news/`, note: 'all stories, newest first' },
       { title: t['topics.title'], path: `/${lang}/topics/`, note: 'stories grouped by topic: models, open-weight models, policy, safety, security, agents and more' },
       { title: t['lab.title'], path: `/${lang}/lab-sessions/`, note: 'step-by-step video tutorials for AI tools, each with a written guide' },
+      { title: t['infra.title'], path: `/${lang}/ai-infrastructure/`, note: 'weekly video series on the data centers, power plants and chips behind AI, each episode with a written companion: figures, whose figures they are, sources and an update log' },
       { title: t['about.title'], path: `/${lang}/about/`, note: 'how stories are made, corrections policy, contact' },
       { title: t['author.title'], path: `/${lang}/author/deyron-labs/`, note: 'the editorial desk behind every story' },
       { title: t['sponsors.title'], path: `/${lang}/sponsors/`, note: 'independence rules for sponsors and partners' },
@@ -21,6 +23,7 @@ export const GET: APIRoute = async () => {
       { title: t['privacy.title'], path: `/${lang}/privacy/`, note: 'what the site collects and which third-party services are involved' },
     ],
     articles: [
+      ...(await getInfraEpisodes(lang)).map((e) => ({ title: `AI Infrastructure #${e.data.episode}: ${e.data.title}`, path: infraUrlPath(e), summary: e.data.summary })),
       ...(await getEpisodes(lang)).map((e) => ({ title: `Lab Sessions #${e.data.episode}: ${e.data.title}`, path: episodeUrlPath(e), summary: e.data.summary })),
       ...articles.map((a) => ({ title: a.data.title, path: pathOf(a), summary: a.data.summary })),
     ],

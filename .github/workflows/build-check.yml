@@ -1,0 +1,42 @@
+name: Build check
+
+# Construiește site-ul fără să-l publice. Rulează pe pull request-uri, ca modificările mari
+# (rubrici noi, schimbări de schemă) să fie verificate înainte de a ajunge pe main.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check articles
+        run: npm run check
+      - name: Build
+        run: npm run build
+      - name: Verify the AI Infrastructure section was generated
+        run: |
+          set -e
+          ep=dist/en/ai-infrastructure/colossus/index.html
+          test -f "$ep"
+          test -f dist/en/ai-infrastructure/index.html
+          grep -q "Kw5S87EuwLw" "$ep"
+          grep -q "CreativeWorkSeries" "$ep"
+          grep -q "VideoObject" "$ep"
+          grep -q 'class="updates-log"\|No updates or corrections' "$ep"
+          grep -q "Figures and whose figures they are" "$ep"
+          grep -q "/en/ai-infrastructure/colossus/" dist/sitemap.xml
+          grep -q "/en/ai-infrastructure/colossus/" dist/llms.txt
+          grep -q "/en/ai-infrastructure/" dist/en/news/index.html
+          grep -q "Latest AI Infrastructure" dist/en/index.html
+          grep -q '"k":"i"' dist/en/search-index.json
+          echo "AI Infrastructure section OK"

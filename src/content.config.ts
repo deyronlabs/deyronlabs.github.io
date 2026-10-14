@@ -76,4 +76,48 @@ const lab = defineCollection({
   }),
 });
 
-export const collections = { news, lab };
+// AI Infrastructure: serie video documentară (data center-e, energie, cipuri). Un episod = un fișier în
+// src/content/infra/<limba>/<slug>.md. Pagina scrisă însoțește videoul: cifre cu atribuire, surse, jurnal de actualizări.
+const infra = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/infra' }),
+  schema: z.object({
+    title: z.string().min(10).max(120),
+    summary: z.string().min(80).max(420),
+    lang: z.enum(['en', 'es']),
+    episode: z.number().int().positive(),
+    publishedAt: z.coerce.date(),
+    updatedAt: z.coerce.date().optional(),
+    // Data până la care au fost verificate faptele din pagină (se afișează lângă titlu).
+    factsAsOf: z.coerce.date(),
+    video: z.string().url(),
+    // Durata videoclipului în secunde (pentru schema.org).
+    durationSeconds: z.number().int().positive(),
+    image: z.string().startsWith('/'),
+    imageAlt: z.string(),
+    // Entități menționate (companii, locuri); intră în schema.org "about".
+    entities: z.array(z.string()).default([]),
+    // Capitole: timp "m:ss" + titlu.
+    chapters: z.array(z.object({ at: z.string().regex(/^\d{1,2}:\d{2}$/), title: z.string() })).default([]),
+    // Cel puțin o sursă marcată primary: true.
+    sources: z
+      .array(
+        z.object({
+          title: z.string(),
+          url: z.string().url(),
+          publisher: z.string().optional(),
+          primary: z.boolean().default(false),
+        }),
+      )
+      .min(1)
+      .refine((s) => s.some((x) => x.primary), {
+        message: 'Cel puțin o sursă trebuie să fie primary: true',
+      }),
+    // Jurnal public de actualizări și corecturi (data + ce s-a schimbat).
+    updates: z.array(z.object({ date: z.coerce.date(), note: z.string() })).default([]),
+    topics: z.array(z.string()).default([]),
+    translationKey: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { news, lab, infra };

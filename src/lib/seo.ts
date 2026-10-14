@@ -195,3 +195,91 @@ export function labEpisodeLd(a: LabLd) {
     ...(video ? [video] : []),
   ];
 }
+
+export interface InfraLd {
+  title: string;
+  summary: string;
+  lang: Lang;
+  path: string;
+  seriesName: string;
+  seriesPath: string;
+  publishedAt: Date;
+  updatedAt?: Date;
+  video: string;
+  durationSeconds: number;
+  image: string;
+  entities: string[];
+  topics: string[];
+  sources: { title: string; url: string; publisher?: string; primary?: boolean }[];
+  chapters: { at: number; title: string }[];
+}
+
+/** Episod AI Infrastructure: articol cu surse (citation), parte dintr-o serie, cu VideoObject și capitole. */
+export function infraEpisodeLd(a: InfraLd) {
+  const url = absUrl(a.path);
+  const id = youtubeId(a.video);
+  const m = Math.floor(a.durationSeconds / 60);
+  const duration = `PT${m}M${a.durationSeconds % 60}S`;
+  const video = id
+    ? {
+        '@type': 'VideoObject',
+        '@id': `${url}#video`,
+        name: a.title,
+        description: a.summary,
+        embedUrl: schemaEmbedUrl(id),
+        contentUrl: `https://www.youtube.com/watch?v=${id}`,
+        thumbnailUrl: [absUrl(a.image)],
+        uploadDate: a.publishedAt.toISOString(),
+        duration,
+        inLanguage: a.lang,
+        hasPart: a.chapters.map((c, i) => ({
+          '@type': 'Clip',
+          name: c.title,
+          startOffset: c.at,
+          endOffset: a.chapters[i + 1]?.at ?? a.durationSeconds,
+          url: `https://www.youtube.com/watch?v=${id}&t=${c.at}s`,
+        })),
+      }
+    : null;
+  return [
+    {
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      headline: a.title,
+      description: a.summary,
+      inLanguage: a.lang,
+      datePublished: a.publishedAt.toISOString(),
+      dateModified: (a.updatedAt ?? a.publishedAt).toISOString(),
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      url,
+      image: [absUrl(a.image)],
+      isAccessibleForFree: true,
+      author: { '@id': `${SITE.url}/#editorial-desk` },
+      publisher: { '@id': ORG_ID },
+      isPartOf: { '@type': 'CreativeWorkSeries', name: a.seriesName, url: absUrl(a.seriesPath) },
+      ...(a.topics.length ? { keywords: a.topics.join(', ') } : {}),
+      ...(a.entities.length ? { about: a.entities.map((name) => ({ '@type': 'Thing', name })) } : {}),
+      citation: a.sources.map((s) => ({
+        '@type': 'CreativeWork',
+        name: s.title,
+        url: s.url,
+        ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}),
+      })),
+      ...(video ? { video: { '@id': `${url}#video` } } : {}),
+    },
+    ...(video ? [video] : []),
+  ];
+}
+
+/** Pagina rubricii: seria ca CreativeWorkSeries. */
+export function infraSeriesLd(args: { name: string; description: string; lang: Lang; path: string }) {
+  return {
+    '@type': 'CreativeWorkSeries',
+    '@id': `${absUrl(args.path)}#series`,
+    name: args.name,
+    description: args.description,
+    inLanguage: args.lang,
+    url: absUrl(args.path),
+    publisher: { '@id': ORG_ID },
+  };
+}
