@@ -4,7 +4,7 @@ summary: "On 14 October 2026 xAI (now SpaceXAI) announced Grok Voice 3.0, a spee
 seoTitle: "Grok Voice 3.0: $0.08/min, sub-second latency"
 seoDescription: "xAI's Grok Voice 3.0, announced 14 Oct 2026, is a speech-to-speech API model at $0.08 per minute; it trails GPT-Live-1 on one benchmark, τ-Voice."
 lang: en
-publishedAt: 2026-10-15T16:40:00Z
+publishedAt: 2026-10-15T16:45:00Z
 entities:
   - xAI
   - SpaceXAI
@@ -19,6 +19,8 @@ topics:
   - Voice
   - Pricing
 translationKey: xai-grok-voice-3-speech-to-speech-model
+video: https://www.youtube.com/shorts/Qb10VSSVVpU
+videoPublishedAt: 2026-10-15T16:46:00Z
 image: /images/news/xai-grok-voice-3-speech-to-speech-model-2026-10-15.jpg
 imageAlt: "Deyron Labs graphic: xAI Grok Voice 3.0, speech-to-speech model in the Voice Agent API; $0.08 per minute, same as Grok Voice 2.0; sub-second latency; Artificial Analysis Speech-to-Speech Index 86.9 versus 83.2 for GPT-Live-1; benchmarks are xAI's own"
 sources:
