@@ -1,0 +1,7 @@
+seg-01: xAI has released Grok Voice 3.0, a speech-to-speech model for voice agents.
+seg-02: It takes spoken audio in and gives spoken audio back. It is available now in xAI's Voice Agent API.
+seg-03: The price is eight cents per minute. The same as Grok Voice 2.0.
+seg-04: xAI says latency is under one second, but gives no exact number.
+seg-05: In xAI's own table, it leads most voice benchmarks. For example, eighty-six point nine on the Artificial Analysis speech-to-speech index, against eighty-three point two for GPT-Live-1.
+seg-06: But on tau-Voice, GPT-Live-1 is ahead: seventy-four point five percent, against seventy-one point six. All of these numbers are xAI's.
+seg-07: Why it matters: anyone on the latest alias was upgraded automatically, so re-test your call quality. Sources and details at deyronlabs dot com.

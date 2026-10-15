@@ -1,4 +1,4 @@
-# Postări — xAI Grok Voice 3.0 (nivel B, scor 68) — DE APROBAT, nepostat
+# Postări — xAI Grok Voice 3.0 (nivel A (ridicat de George, 15 oct)) — DE APROBAT, nepostat
 Link articol (după merge în main): https://deyronlabs.com/en/news/xai-grok-voice-3-speech-to-speech-model/
 Etichetă AI unde există. Instagram și Threads nu mai sunt în flux (decizie George). Reddit doar cu OK.
 
