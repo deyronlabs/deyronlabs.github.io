@@ -1,7 +1,7 @@
 ---
 title: "Anthropic says daily code merges grew 12x in four months and it replaced Git with an in-house system called Scion"
 summary: "In an engineering post dated 13 October 2026, Anthropic says its monorepo went from about 2,500 merged code changes a day in May to over 30,000 by September, and that Git could no longer keep up. It built a server-side system called Scion, which it says needs 200x less infrastructure. Anthropic says Scion is not a replacement for Git for general use."
-seoTitle: "Anthropic replaces Git with Scion after 30,000 merges/day"
+seoTitle: "Anthropic swaps Git for Scion at 30K merges/day"
 seoDescription: "Anthropic's 13 Oct 2026 engineering post says daily merges rose from 2,500 to over 30,000 and describes Scion, its in-house replacement for Git."
 lang: en
 publishedAt: 2026-10-15T17:20:00Z
