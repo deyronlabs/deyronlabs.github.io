@@ -4,7 +4,7 @@ summary: "On 14 October 2026 the Allen Institute for AI (Ai2) released HiRO-ACEv
 seoTitle: "Ai2 HiRO-ACEv2: 3 km AI climate, ~1/300 cost"
 seoDescription: "Ai2's HiRO-ACEv2 downscales its ACE climate emulator to 3 km global data. Ai2 reports about 1/300th the cost of X-SHiELD; limits and open questions inside."
 lang: en
-publishedAt: 2026-10-15T06:00:00Z
+publishedAt: 2026-10-15T05:29:00Z
 entities:
   - Allen Institute for AI
   - Ai2
