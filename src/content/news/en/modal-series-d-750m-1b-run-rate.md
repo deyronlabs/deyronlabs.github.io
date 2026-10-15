@@ -4,7 +4,7 @@ summary: "Modal, which sells cloud infrastructure for running AI workloads and a
 seoTitle: "Modal raises $750M Series D at $15.75B valuation"
 seoDescription: "Modal announced a $750M Series D at a $15.75B post-money valuation on 14 Oct 2026, led by Accel, and says it passed $1B in annualized run rate."
 lang: en
-publishedAt: 2026-10-15T17:00:00Z
+publishedAt: 2026-10-15T16:32:00Z
 entities:
   - Modal
   - Accel

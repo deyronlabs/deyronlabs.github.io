@@ -4,7 +4,7 @@ summary: "In an engineering post dated 13 October 2026, Anthropic says its monor
 seoTitle: "Anthropic swaps Git for Scion at 30K merges/day"
 seoDescription: "Anthropic's 13 Oct 2026 engineering post says daily merges rose from 2,500 to over 30,000 and describes Scion, its in-house replacement for Git."
 lang: en
-publishedAt: 2026-10-15T17:20:00Z
+publishedAt: 2026-10-15T16:33:00Z
 entities:
   - Anthropic
   - Scion
