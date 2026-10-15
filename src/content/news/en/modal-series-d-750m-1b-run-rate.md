@@ -1,5 +1,5 @@
 ---
-title: "Modal raises a $750 million Series D at a $15.75 billion valuation and says it has passed $1 billion in annualized run rate"
+title: "Modal raises a $750 million Series D at a $15.75 billion valuation and says it passed $1 billion in annualized run rate"
 summary: "Modal, which sells cloud infrastructure for running AI workloads and agent sandboxes, said on 14 October 2026 that it raised a $750 million Series D at a $15.75 billion post-money valuation, led by Accel. The company says it has crossed $1 billion in annualized run rate, with its Sandboxes product at $300 million. All figures are Modal's own."
 seoTitle: "Modal raises $750M Series D at $15.75B valuation"
 seoDescription: "Modal announced a $750M Series D at a $15.75B post-money valuation on 14 Oct 2026, led by Accel, and says it passed $1B in annualized run rate."
