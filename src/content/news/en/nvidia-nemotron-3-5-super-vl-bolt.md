@@ -4,7 +4,7 @@ summary: "On 15 October 2026 NVIDIA announced Nemotron 3.5 Super VL, a 120-billi
 seoTitle: "NVIDIA Nemotron 3.5 Super VL and Bolt models"
 seoDescription: "NVIDIA released Nemotron 3.5 Super VL (120B) and Bolt 74B-A9B for 24GB on 15 October 2026; Bolt E4B follows on 23 October. Claims are NVIDIA's."
 lang: en
-publishedAt: 2026-10-16T17:30:00Z
+publishedAt: 2026-10-16T16:26:00Z
 entities:
   - NVIDIA
   - Nemotron 3.5 Super VL
