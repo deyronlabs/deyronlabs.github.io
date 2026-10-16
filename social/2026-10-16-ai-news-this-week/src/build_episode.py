@@ -67,10 +67,10 @@ S = {
      ("under one second", "< 1 s", "latency claim, no exact figure", GREY)]),
  6: dict(kicker="ANTHROPIC · DISTILLATION", headline="New anti-distillation defenses", img="anthropic-distillation-defenses-90-99-percent-2026-10-12.jpg",
      src="Anthropic research post (12 Oct)", facts=[
-     ("A disclosure", "Disclosure", "Anthropic makes Claude, which we use to draft our articles", AMBER),
+     ("A disclosure", "Disclosure", "Anthropic makes Claude, our drafting tool", AMBER),
      ("ninety to ninety-nine", "90–99%", "less data harvested (Anthropic's claim)", CYAN),
      ("tens of thousands", "10,000s", "accounts banned", GREEN),
-     ("two Chinese labs", "2 labs accused", "Zhipu · Moonshot — no response in sources we read", AMBER),
+     ("two Chinese labs", "2 labs accused", "Zhipu · Moonshot · no reply seen", AMBER),
      ("no outside party", "Unconfirmed", "no independent verification", GREY)]),
  7: dict(kicker="ANTHROPIC · RED TEAM", headline="Can a small AI copy itself?", img="anthropic-small-models-self-replication-iot-devices-2026-10-12.jpg",
      src="Anthropic Frontier Red Team (12 Oct)", facts=[
@@ -138,9 +138,13 @@ def fit(d, text, path, size, maxw):
     while size > 28 and d.textlength(text, font=font(path, size)) > maxw: size -= 2
     return font(path, size)
 
-TICK = "DEYRON LABS  ·  AI NEWS THIS WEEK  ·  GLOBAL AI, EVERY FRIDAY  ·  "
+TICK_ITEMS = ["DEYRON LABS", "AI NEWS THIS WEEK", "GLOBAL AI, EVERY FRIDAY"]
 _ti = Image.new("RGB", (4, 4)); _td = ImageDraw.Draw(_ti)
-TW = int(_td.textlength(TICK, font=font(XB, 36)))
+GAP = 70
+TPOS = []; _x = 0
+for it in TICK_ITEMS:
+    TPOS.append((_x, it)); _x += int(_td.textlength(it, font=font(XB, 36))) + GAP
+TW = _x
 
 def render_frame(sid, t, dur, cues, imgs):
     sc = S[sid]
@@ -174,11 +178,11 @@ def render_frame(sid, t, dur, cues, imgs):
         d.rectangle((x, y + 14, x + 9, y + ch - 14), fill=col + (a,))
         glow = clamp(1 - (t - st) / 0.7)
         if glow > 0: d.rounded_rectangle((x - 3, y - 3, x + cw + 3, y + ch + 3), 18, outline=WHITE + (int(180 * glow),), width=3)
-        vw = 430 if lead else 620
+        vw = 380 if lead else 620
         d.text((x + 34, y + ch / 2), f[1], font=fit(d, f[1], XB, 58, vw), fill=col + (a,), anchor="lm")
-        lf = font(SB, 29 if lead else 34)
-        for j, ln in enumerate(wrap(d, f[2], lf, cw - vw - 90)[:2]):
-            ly = y + ch / 2 + (j - (len(wrap(d, f[2], lf, cw - vw - 90)[:2]) - 1) / 2) * 38
+        lf = font(SB, 28 if lead else 34)
+        for j, ln in enumerate(wrap(d, f[2], lf, cw - vw - 90)[:3]):
+            ly = y + ch / 2 + (j - (len(wrap(d, f[2], lf, cw - vw - 90)[:3]) - 1) / 2) * 34
             d.text((x + vw + 50, ly), ln, font=lf, fill=(222, 230, 246, a), anchor="lm")
     # image + source
     if lead and cur_img:
@@ -190,13 +194,18 @@ def render_frame(sid, t, dur, cues, imgs):
         img.paste(im, (int(ix), int(iy)), mask)
         d.text((1040, 700), "SOURCES", font=font(BD, 22), fill=AMBER + (int(255 * pi),))
         for j, ln in enumerate(wrap(d, sc["src"], font(SB, 28), 800)[:3]):
-            d.text((1040, 735 + j * 38), ln, font=font(SB, 28), fill=(222, 230, 246, int(255 * pi)))
+            d.text((1040, 735 + j * 34), ln, font=font(SB, 28), fill=(222, 230, 246, int(255 * pi)))
     # ticker
     d.rectangle((0, 990, W, H), fill=AMBER + (255,))
     off = int(t * 140 + sid * 311) % TW
-    x = -off
-    while x < W:
-        d.text((x, 1035), TICK, font=font(XB, 36), fill=NAVY + (255,), anchor="lm"); x += TW
+    k0 = -1
+    while k0 * TW - off < W:
+        for px, it in TPOS:
+            x = k0 * TW + px - off
+            if -700 < x < W:
+                d.text((x, 1035), it, font=font(XB, 36), fill=NAVY + (255,), anchor="lm")
+                d.ellipse((x + int(d.textlength(it, font=font(XB, 36))) + GAP // 2 - 6, 1029, x + int(d.textlength(it, font=font(XB, 36))) + GAP // 2 + 6, 1041), fill=NAVY + (255,))
+        k0 += 1
     if fade < 1:
         d.rectangle((0, 0, W, H), fill=NAVY + (int(255 * (1 - fade)),))
     return img
