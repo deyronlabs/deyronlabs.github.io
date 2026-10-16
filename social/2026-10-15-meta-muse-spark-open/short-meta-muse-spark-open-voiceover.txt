@@ -1,0 +1,6 @@
+seg-01: Meta has released Muse Spark Open, a huge AI model whose weights anyone can download.
+seg-02: Eight hundred sixteen billion parameters, forty-two billion active, and a one million token context.
+seg-03: The catch is the license. Anyone can use and fine-tune it, but a company above twenty million dollars in revenue needs a separate deal with Meta to offer it as a service.
+seg-04: Meta calls it the most capable US open-weight model. But on Meta's own table, Kimi K3 and GLM five point three score higher on the Artificial Analysis index: forty-four and forty-five, against thirty-nine.
+seg-05: And you will not run it on a laptop. The smallest official version needs at least seven hundred gigabytes of GPU memory.
+seg-06: Why it matters: an open model with terms most teams can accept. Independent tests will show how it holds up. Sources and details at deyronlabs dot com.
