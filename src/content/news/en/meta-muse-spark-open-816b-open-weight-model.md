@@ -4,7 +4,7 @@ summary: "On 15 October 2026 Meta Superintelligence Labs released Muse Spark Ope
 seoTitle: "Meta Muse Spark Open: 816B open weights"
 seoDescription: "Meta's Muse Spark Open, released 15 Oct 2026, has 816B parameters (42B active) and open weights under a license with a $20M revenue condition for hosting."
 lang: en
-publishedAt: 2026-10-16T06:00:00Z
+publishedAt: 2026-10-16T06:20:00Z
 entities:
   - Meta
   - Meta Superintelligence Labs
@@ -18,6 +18,8 @@ topics:
   - Models
   - Open-weight
 translationKey: meta-muse-spark-open-816b-open-weight-model
+video: https://www.youtube.com/shorts/nniyyF897gU
+videoPublishedAt: 2026-10-16T06:15:00Z
 image: /images/news/meta-muse-spark-open-816b-open-weight-model-2026-10-15.jpg
 imageAlt: "Deyron Labs graphic: Meta releases Muse Spark Open on 15 October 2026; 816B parameters, 42B active, 1M-token context; open weights under the Muse Model License, separate agreement above $20 million revenue to offer it as a service; Artificial Analysis Intelligence Index 39 versus 45 for GLM 5.3 and 44 for Kimi K3, Meta's own table"
 sources:

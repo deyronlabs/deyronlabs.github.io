@@ -4,7 +4,7 @@ summary: "On 15 October 2026 Mistral AI introduced Timestral, four time-series f
 seoTitle: "Mistral Timestral: forecasting models, 5M-209M"
 seoDescription: "Mistral's Timestral, introduced 15 Oct 2026, is a family of four time-series forecasting models (5M to 209M parameters) under a modified MIT license."
 lang: en
-publishedAt: 2026-10-16T06:00:00Z
+publishedAt: 2026-10-16T06:20:00Z
 entities:
   - Mistral AI
   - Timestral
