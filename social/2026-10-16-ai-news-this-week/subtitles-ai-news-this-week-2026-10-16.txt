@@ -1,0 +1,50 @@
+Welcome to AI News This Week from Deyron Labs.
+Meta shipped two model launches in four days, Google made its newest model available to everyone and put a date on a price hike, and Anthropic says it has cut off most of the data distillers were harvesting.
+Here is what mattered, from the sixth to the sixteenth of October.
+Let's start with Meta.
+On the twelfth, Meta Superintelligence Labs released Muse Wonder and Muse Wonder Full, closed models that take text, images, video and audio, with a one million token context.
+Muse Wonder is on Meta's API now; the Full model is only for Muse Code subscribers.
+Meta published no price.
+Third parties report four dollars per million input tokens and twenty dollars per million output, the same as Claude Opus five point five.
+And on the Artificial Analysis index, Muse Wonder scores fifty-two, below the leaders.
+Meta's own benchmark table is Meta's choice, so wait for independent tests.
+Then on the fifteenth came the opposite move: Muse Spark Open, with weights you can download.
+Eight hundred sixteen billion parameters, forty-two billion active, and a one million token context.
+The license lets you use and fine-tune it, but a company above twenty million dollars in revenue needs a separate deal to offer it as a service.
+Meta calls it the most capable US open-weight model, yet on Meta's own table Kimi K3 and GLM five point three score higher on the Artificial Analysis index.
+And the smallest official version needs about seven hundred gigabytes of GPU memory.
+Google.
+Gemini four Argon reached general availability on the thirteenth.
+It first appeared on the thirtieth of September, only for trusted cyber defenders.
+The headline for developers is the price.
+Two dollars input and ten dollars output per million tokens until the thirtieth of November.
+From the first of December, four and twenty.
+That doubles your bill for the same usage, so budget now.
+Google's benchmarks are mixed: it leads on several tests it chose, and trails GPT-6 Astra and Claude Opus five point five on two others.
+xAI released Grok Voice three point oh, a speech-to-speech model for voice agents, at eight cents a minute, the same price as before.
+Developers calling the latest alias were upgraded automatically.
+xAI's table shows it ahead on most tests, but on the τ-Voice task test GPT-Live-1 scores seventy-four point five against seventy-one point six, and xAI gives no exact latency, only under one second.
+If you run voice agents on that alias, re-test your calls.
+Now Anthropic.
+A disclosure: Anthropic makes Claude, which we use to research and draft our articles.
+On the twelfth it said new defenses cut the data distillers harvest by around ninety to ninety-nine percent, with tens of thousands of accounts banned.
+It also accuses two Chinese labs, Zhipu and Moonshot.
+Neither had responded in the sources we read, and no outside party has confirmed the numbers.
+The same day, Anthropic's red team asked whether a small model could copy itself across cheap internet-of-things devices.
+In a lab network of eight emulated Android devices, a model spread to all eight in four of five trials, using a deliberately trivial entry point, so Anthropic calls it an upper bound.
+It is research, not an attack in the wild, and it points to boring defenses: network monitoring, quarantine, and better default security on cheap devices.
+Open models had a busy week.
+Liquid AI released LFM two point five, twenty-four billion parameters with about two billion active, built to run agents on your own device: one hundred eighty-four tokens per second on an Apple M5 Max, by Liquid's measurements.
+Mistral introduced Timestral, four small models, from five million to two hundred nine million parameters, that forecast time series instead of writing text.
+And Xiaomi's MiMo V two point six Pro, one trillion parameters under an MIT license, scores forty-six on the Artificial Analysis index.
+All benchmarks are the labs' own.
+In China, the Ministry of Human Resources and Social Security said it will launch an employment initiative in response to AI.
+According to Xinhua, it plans to revise or create more than two hundred national occupational standards by twenty-thirty, and eleven new occupations have been announced this year.
+It is a statement of plans, with no budget or timetable yet.
+And on the infrastructure side, at the Open Compute Project summit NVIDIA opened parts of its Vera Rubin data-center designs, including rack designs that support up to two hundred fifty kilowatts.
+NVIDIA gave no release dates or licenses, and several partner items are plans, not products.
+For the data-center story in depth, watch our AI Infrastructure series.
+Next week: NVIDIA's keynote at GTC Berlin on Wednesday the twenty-first, Mistral has promised Large 4 weights by the end of October, and AI Infrastructure episode two comes out Wednesday at eight p.m.
+Romania time.
+Every article, with sources, is at deyronlabs.com.
+If this helped, subscribe, and see you next Friday.
