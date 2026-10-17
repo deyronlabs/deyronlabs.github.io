@@ -4,7 +4,7 @@ summary: "DeepSeek's API changelog for 17 October 2026 says the deepseek-flash m
 seoTitle: "DeepSeek V4.1-Flash-1017: same price, faster"
 seoDescription: "DeepSeek updated deepseek-flash to V4.1-Flash-1017 on 17 October 2026: unchanged pricing, 77.0 on DeepSWE v1.1 (its own figure) and a new search engine."
 lang: en
-publishedAt: 2026-10-17T20:00:00Z
+publishedAt: 2026-10-17T20:28:00Z
 entities:
   - DeepSeek
   - DeepSeek-V4.1-Flash

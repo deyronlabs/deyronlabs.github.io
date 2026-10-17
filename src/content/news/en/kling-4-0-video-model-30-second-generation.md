@@ -4,7 +4,7 @@ summary: "Kling AI announced Kling 4.0 on 16 October 2026: a video model with na
 seoTitle: "Kling 4.0: 30-second AI video, 15 references"
 seoDescription: "Kling AI announced Kling 4.0 on 16 October 2026: native 30-second video, 2-minute extension and 15 references. Live on its website; API to follow."
 lang: en
-publishedAt: 2026-10-17T19:30:00Z
+publishedAt: 2026-10-17T20:28:00Z
 entities:
   - Kling AI
   - Kling 4.0
