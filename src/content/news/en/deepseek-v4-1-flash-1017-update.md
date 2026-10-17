@@ -14,6 +14,8 @@ topics:
   - Models
   - China
 translationKey: deepseek-v4-1-flash-1017-update
+image: /images/news/deepseek-v4-1-flash-1017-update-2026-10-17.jpg
+imageAlt: "Deyron Labs graphic: DeepSeek updates V4.1-Flash to the 1017 snapshot with unchanged prices; DeepSWE v1.1 77.0 is DeepSeek's own figure and 1017 weights are not yet on Hugging Face"
 sources:
   - title: "DeepSeek API docs: updates, entry of 2026-10-17 (DeepSeek-V4.1-Flash-1017)"
     url: "https://api-docs.deepseek.com/updates"
