@@ -16,6 +16,8 @@ topics:
   - Video
   - China
 translationKey: kling-4-0-video-model-30-second-generation
+image: /images/news/kling-4-0-video-model-30-second-generation-2026-10-16.jpg
+imageAlt: "Deyron Labs graphic: Kling 4.0 generates 30-second video natively, extends clips to 2 minutes and takes up to 15 references; figures are Kling's own and no pricing is given"
 sources:
   - title: "Kling AI Launches Kling 4.0 Globally with Professional-Grade Output, Stable Motion and Multimodal Control (company press release, 16 Oct 2026)"
     url: "https://finance.yahoo.com/technology/ai/articles/kling-ai-launches-kling-4-105300062.html"
