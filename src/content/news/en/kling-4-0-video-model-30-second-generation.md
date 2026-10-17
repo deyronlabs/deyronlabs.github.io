@@ -21,6 +21,10 @@ sources:
     url: "https://finance.yahoo.com/technology/ai/articles/kling-ai-launches-kling-4-105300062.html"
     publisher: "Kling AI via GlobeNewswire / Yahoo Finance"
     primary: true
+  - title: "Kling AI: All-New Kling 4.0 (product page)"
+    url: "https://kling.ai/"
+    publisher: "Kling AI"
+    primary: true
   - title: "Kuaishou's Kling Ships Kling 4.0 Flash to Annual Subscribers, 30-Second 4K/HDR AI Video Generation"
     url: "https://aiweekly.co/alerts/kuaishous-kling-ships-kling-40-flash-to-annual-subscribers-30-second-4khdr-ai"
     publisher: "AI Weekly"
@@ -28,7 +32,7 @@ sources:
 
 ## What happened
 
-On 16 October 2026, Kling AI announced the global launch of **Kling 4.0**, its latest video generation model. The announcement is a press release datelined Beijing and distributed through GlobeNewswire; Yahoo Finance labels its copy a paid press release. We could not open Kling's own website for this article, so everything below is what Kling says in that release, not something we tested.
+On 16 October 2026, Kling AI announced the global launch of **Kling 4.0**, its latest video generation model. The announcement is a press release datelined Beijing and distributed through GlobeNewswire; Yahoo Finance labels its copy a paid press release. Kling's website presents the model as "All-New Kling 4.0" but gives no launch date, pricing or API status. The figures below come from the press release and are Kling's claims, not something we tested.
 
 Kling says the model is available now on the Kling AI website. API access for enterprise customers and developers is described as coming "soon", with no date.
 
