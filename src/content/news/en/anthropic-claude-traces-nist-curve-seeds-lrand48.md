@@ -4,7 +4,7 @@ summary: "In a post dated 16 October 2026, Anthropic's Frontier Red Team says Cl
 seoTitle: "Claude traces NIST curve seeds to lrand48"
 seoDescription: "Anthropic's 16 October 2026 post says Claude found how NIST P-curve seeds were made in under 30 minutes; it says this is not a break of ECDSA."
 lang: en
-publishedAt: 2026-10-19T07:20:00Z
+publishedAt: 2026-10-19T05:42:00Z
 entities:
   - Anthropic
   - Claude

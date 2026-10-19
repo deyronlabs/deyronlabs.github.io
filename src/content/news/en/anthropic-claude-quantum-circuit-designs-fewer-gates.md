@@ -4,7 +4,7 @@ summary: "In a post dated 16 October 2026, Anthropic reports that Claude, workin
 seoTitle: "Claude quantum circuits: up to 17x fewer gates"
 seoDescription: "Anthropic's 16 October 2026 post says Claude found quantum circuit designs with up to 17x fewer gates, including a 12x cut for a Google decoder step."
 lang: en
-publishedAt: 2026-10-19T07:10:00Z
+publishedAt: 2026-10-19T05:41:00Z
 entities:
   - Anthropic
   - Claude

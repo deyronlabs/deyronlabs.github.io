@@ -4,7 +4,7 @@ summary: "On 18 October 2026 Anthropic announced it will commit 5% of its shares
 seoTitle: "Anthropic Public Benefit Fund: 5% of shares"
 seoDescription: "Anthropic said on 18 October 2026 it will commit 5% of its shares to a new Public Benefit Fund, pending stockholder approval."
 lang: en
-publishedAt: 2026-10-19T07:00:00Z
+publishedAt: 2026-10-19T05:40:00Z
 entities:
   - Anthropic
   - Anthropic Public Benefit Fund
