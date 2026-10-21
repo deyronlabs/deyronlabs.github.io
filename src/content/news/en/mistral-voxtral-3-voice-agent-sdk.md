@@ -1,7 +1,7 @@
 ---
 title: "Mistral releases Voxtral 3: speech-to-text in 50+ languages, a text-to-speech model and a voice agent SDK"
 summary: "Mistral AI's Voxtral 3 family covers batch and realtime transcription in 50+ languages, a text-to-speech model and a voice agent SDK. Prices start at $0.0035 per minute for transcription; the page does not state a licence or say whether weights are published."
-seoTitle: "Mistral Voxtral 3: speech models, from $0.0035/min"
+seoTitle: "Mistral Voxtral 3: speech from $0.0035/min"
 seoDescription: "Mistral's Voxtral 3 speech and voice-agent family, posted 20 October 2026, transcribes 50+ languages from $0.0035 per minute via an EU-hosted API."
 lang: en
 publishedAt: 2026-10-21T06:00:00Z
