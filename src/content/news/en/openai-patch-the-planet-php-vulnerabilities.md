@@ -1,7 +1,7 @@
 ---
 title: "OpenAI says its Patch the Planet coalition helped fix two critical PHP remote-code-execution flaws"
 summary: "On 21 October 2026 PHP released 8.5.12, 8.4.27, 8.3.36 and 8.2.35 to fix two critical unauthenticated remote-code-execution vulnerabilities. OpenAI says it led a coalition behind the fix, that Calif found one flaw using GPT-5.6 Sol and that Wiz independently reported both. It also released a version checker."
-seoTitle: "PHP critical RCE fixes found with OpenAI's GPT-5.6"
+seoTitle: "PHP critical RCE fixes, found with GPT-5.6 Sol"
 seoDescription: "PHP shipped 8.5.12, 8.4.27, 8.3.36 and 8.2.35 on 21 October 2026 to fix two critical RCE flaws; OpenAI says AI helped find them."
 lang: en
 publishedAt: 2026-10-22T16:50:00Z
