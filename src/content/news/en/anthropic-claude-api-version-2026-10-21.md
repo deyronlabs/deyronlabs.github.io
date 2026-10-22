@@ -1,7 +1,7 @@
 ---
 title: "Anthropic releases Claude API version 2026-10-21 with breaking changes and relicensed SDKs"
 summary: "On 21 October 2026 Anthropic released Claude API version 2026-10-21, its first new version header listed in the docs. It removes the temperature, top_p and top_k parameters, which now return errors, and ships new major SDK versions under the Apache 2.0 licence instead of MIT."
-seoTitle: "Claude API 2026-10-21: removed sampling parameters"
+seoTitle: "Claude API 2026-10-21 drops temperature, top_p"
 seoDescription: "Claude API version 2026-10-21 removes temperature, top_p and top_k and ships new SDK majors under Apache 2.0, Anthropic said on 21 October 2026."
 lang: en
 publishedAt: 2026-10-22T17:00:00Z
