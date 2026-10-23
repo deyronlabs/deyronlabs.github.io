@@ -5,6 +5,7 @@ seoTitle: "NVIDIA DGX Spark 64GB and Recursive Flint"
 seoDescription: "NVIDIA's 21 October 2026 GTC Berlin post: DGX Spark 64GB from 23 October, DGX Station updates and the open Recursive Flint coding model."
 lang: en
 publishedAt: 2026-10-22T06:00:00Z
+updatedAt: 2026-10-22T17:20:00Z
 entities:
   - NVIDIA
   - DGX Spark
@@ -24,6 +25,10 @@ sources:
     url: "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/"
     publisher: "NVIDIA"
     primary: true
+  - title: "Introducing Recursive Flint"
+    url: "https://recursive.com/updates/introducing-recursive-flint"
+    publisher: "Recursive"
+    primary: true
 ---
 
 ## What happened
@@ -37,7 +42,7 @@ All figures below are NVIDIA's, taken from its post.
 - **DGX Spark 64GB:** systems start rolling out from partners on Friday 23 October. NVIDIA lists Nemotron 3.5 Bolt 74B (24GB), Qwen3.8 27B and Gemma 4 26B-A4B among the models they run. Up to eight units can be clustered manually, which NVIDIA says gives 1TB of unified memory. A Model Launcher for NVIDIA Sync is due "later this month".
 - **RTX Spark:** NVIDIA describes it as offering up to 128GB of unified memory and 1 petaflop of AI compute, available since 16 October in laptops from ASUS, Dell Technologies, HP, Lenovo, Microsoft and MSI, with Acer "coming soon".
 - **DGX Station:** 748GB of coherent memory and up to 20 petaflops of AI performance. NVIDIA announced seven new management integrations, such as Microsoft Intune and Splunk by Cisco. DGX Station for Windows is expected in December.
-- **Recursive Flint:** a new local coding model from Recursive Superintelligence. NVIDIA describes a 40-billion-parameter mixture-of-experts model with 2.5 billion active parameters, open weights under Apache 2.0, and "over 220 tokens per second on a 64GB RTX Spark". NVIDIA says optimized kernels raised generation speed on RTX Spark by 55% without changing the weights.
+- **Recursive Flint:** a new local coding model from Recursive Superintelligence. NVIDIA describes a 40-billion-parameter mixture-of-experts model with 2.5 billion active parameters, open weights under Apache 2.0, and "over 220 tokens per second on a 64GB RTX Spark". NVIDIA says optimized kernels raised generation speed on RTX Spark by 55% without changing the weights. Update, 22 October: Recursive's own announcement (recursive.com/updates/introducing-recursive-flint) gives lower figures than NVIDIA's: "more than 125 tokens per second on an M4 Pro MacBook Pro and more than 150 tokens per second on a 64GB NVIDIA RTX Spark at short contexts". It also lists a 512k-token context window (256k recommended), weights on Hugging Face (huggingface.co/RecursiveSI/flint) under Apache 2.0, and a final NVFP4 quantization within 0.7 points of the 16-bit model across its benchmarks. The two speed figures may reflect different software versions or settings; neither has been independently tested, and we did not open the Hugging Face model card.
 - **Day-zero model support:** NVIDIA lists new Nemotron, GLM, DeepSeek, Qwen, MiniMax and FLUX.3 models, including Black Forest Labs' FLUX.3 Klein (5.6 billion parameters, 8GB of VRAM) and Nemotron Bolt E4B, which NVIDIA says needs as little as 4GB of memory and releases on 23 October.
 - **Inference speedups:** NVIDIA reports up to 1.4x for Qwen 3.8 Flash Next in llama.cpp on RTX PRO 6000 Blackwell, up to 1.3x for Qwen3.8 27B in vLLM on DGX Spark, and up to 1.2x for GLM 5.3 Flash on DGX Station.
 
