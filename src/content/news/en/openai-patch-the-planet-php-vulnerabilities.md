@@ -17,6 +17,9 @@ topics:
 translationKey: openai-patch-the-planet-php-vulnerabilities
 image: /images/news/openai-patch-the-planet-php-vulnerabilities-2026-10-22.jpg
 imageAlt: "Deyron Labs graphic: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical remote code execution flaws, CVE-2026-109618 and CVE-2026-109619, CVSS 9.2"
+updatedAt: 2026-10-23T19:38:00Z
+video: "https://www.youtube.com/shorts/Yu5qzInbtfk"
+videoPublishedAt: 2026-10-23
 sources:
   - title: "Patch the Planet: global response coordination as agents uncover critical vulnerabilities"
     url: "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"

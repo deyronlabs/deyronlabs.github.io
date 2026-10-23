@@ -15,6 +15,9 @@ topics:
 translationKey: anthropic-claude-duet-proactive-agent
 image: /images/news/anthropic-claude-duet-proactive-agent-2026-10-22.jpg
 imageAlt: "Deyron Labs graphic: Claude Duet, Anthropic's proactive agent on Opus 5.5, research preview by waitlist for US Pro and Max users, approval required before sending, paying, signing or deleting"
+updatedAt: 2026-10-23T19:38:00Z
+video: "https://www.youtube.com/shorts/S38L1Df2rmQ"
+videoPublishedAt: 2026-10-23
 sources:
   - title: "Claude Duet (announcement)"
     url: "https://claude.com/resources/articles/claude-duet"
