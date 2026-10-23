@@ -4,7 +4,7 @@ summary: "From 16 to 23 October 2026, Anthropic introduced the proactive agent C
 seoTitle: "AI weekly recap: Claude Duet, PHP flaws, 23 Oct"
 seoDescription: "Claude Duet, PHP's two critical flaws, LiteLLM's compromised release, OpenAI's agent-monitoring report, NVIDIA GTC Berlin, Kling 4.0 and more."
 lang: en
-publishedAt: 2026-10-23T20:30:00Z
+publishedAt: 2026-10-23T20:40:00Z
 entities:
   - Anthropic
   - Claude Duet
@@ -24,6 +24,8 @@ topics:
   - AI infrastructure
   - Policy
 translationKey: ai-weekly-recap-2026-10-23
+video: "https://www.youtube.com/watch?v=W7RCwPw8ZG8"
+videoPublishedAt: 2026-10-23
 image: /images/news/ai-weekly-recap-2026-10-23.jpg
 imageAlt: "Deyron Labs AI News This Week, 23 October 2026: Claude Duet, PHP flaws, LiteLLM"
 sources:
