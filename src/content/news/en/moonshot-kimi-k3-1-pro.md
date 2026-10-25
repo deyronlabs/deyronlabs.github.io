@@ -20,6 +20,8 @@ topics:
 translationKey: moonshot-kimi-k3-1-pro
 image: /images/news/moonshot-kimi-k3-1-pro-2026-10-23.jpg
 imageAlt: "Deyron Labs graphic: Kimi K3.1 Pro has 2.8T parameters, costs $2 per million input tokens and scores 55 on Artificial Analysis; weights promised by 4 November"
+video: https://www.youtube.com/shorts/iq00qVIy5PU
+videoPublishedAt: 2026-10-25T22:21:00Z
 sources:
   - title: "Introducing Kimi K3.1 Pro (Moonshot AI blog)"
     url: "https://www.kimi.ai/blog/kimi-k3-1-pro"
