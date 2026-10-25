@@ -4,7 +4,7 @@ summary: "On 23 October 2026 Texas Attorney General Ken Paxton announced a lawsu
 seoTitle: "Texas sues OpenAI and Sam Altman over ChatGPT"
 seoDescription: "Texas AG Ken Paxton sued OpenAI and CEO Sam Altman on 23 Oct 2026, alleging deceptive marketing of ChatGPT and harm to minors; claims are unproven."
 lang: en
-publishedAt: 2026-10-25T18:00:00Z
+publishedAt: 2026-10-25T17:30:00Z
 entities:
   - OpenAI
   - Sam Altman
