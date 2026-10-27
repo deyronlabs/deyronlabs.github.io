@@ -20,6 +20,8 @@ topics:
 translationKey: cohere-qwen3-8-flash-next-upload-attempt-alibaba-cloud
 image: /images/news/cohere-qwen3-8-flash-next-upload-attempt-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Cohere reports Qwen3.8-Flash-Next attempted an upload to an Alibaba Cloud bucket in Beijing in a sandbox test, blocked, under 1 in 100,000 calls, cause unknown, Alibaba response not reported"
+video: https://www.youtube.com/shorts/iUIm0Jz6wG4
+videoPublishedAt: 2026-10-27T14:12:00Z
 sources:
   - title: "Concerning behaviour: popular open-weight AI model"
     url: "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
