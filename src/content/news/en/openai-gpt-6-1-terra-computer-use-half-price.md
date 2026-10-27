@@ -22,6 +22,8 @@ topics:
 translationKey: openai-gpt-6-1-terra-computer-use-half-price
 image: /images/news/openai-gpt-6-1-terra-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: OpenAI GPT-6.1 Terra, released 26 October 2026, API price $1 input and $5 output per million tokens, Terminal-Bench 4.0 50.3 percent versus 21.5 percent for GPT-5.6 Terra, figures reported by OpenAI"
+video: https://www.youtube.com/shorts/b3ErxGQuu6Q
+videoPublishedAt: 2026-10-27T14:05:00Z
 sources:
   - title: "Introducing GPT-6.1 Terra"
     url: "https://openai.com/index/introducing-gpt-6-1-terra/"
