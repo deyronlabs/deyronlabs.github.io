@@ -1,0 +1,5 @@
+seg-01 — Google DeepMind just unveiled Genie 4, a world model that builds an interactive scene in real time, while you move through it.
+seg-02 — The big new feature is sound. DeepMind says it's its first real-time world model to generate audio natively, ambient noise and dialogue, together with the picture.
+seg-03 — A Gemini model acts as a guide behind the scenes. It watches the frames, breaks a goal into steps, and changes the plan when you step in with a new text prompt.
+seg-04 — But there's a catch. It's a research preview for trusted testers only. Google AI Ultra and the Gemini API are described as coming soon, and DeepMind published no resolution, frame rate, or benchmark numbers. It also admits details and object permanence can drift over time.
+seg-05 — So treat it as a preview, not a product. Watch for independent hands-on tests. Full sources are in the article at deyronlabs dot com.
