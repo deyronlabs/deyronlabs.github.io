@@ -1,0 +1,13 @@
+# OpenAI GPT-6.1 Terra — postări (DRAFT, nepostate; nivel A propus)
+Link articol: https://deyronlabs.com/en/news/openai-gpt-6-1-terra-computer-use-half-price/ (după publicare)
+Mențiune: Made with AI assistance (Claude); Anthropic e concurent OpenAI (conflict de interese marcat în articol). Cifrele de performanță = raportate de OpenAI; pagina openai.com NU a putut fi deschisă din sesiune (cifre din Artificial Analysis + presă), de verificat înainte de postare.
+
+**X (post, <280):** OpenAI released GPT-6.1 Terra on 26 Oct: $1 input / $5 output per million tokens, half of GPT-6.1 Sol's rate. OpenAI says Terminal-Bench 4.0 rose to 50.3% from 21.5% and tasks run 3x+ faster. Rated Critical for cyber. Claude drafted this; Anthropic is a rival. https://deyronlabs.com/en/news/openai-gpt-6-1-terra-computer-use-half-price/
+**X (răspuns surse):** Sources: OpenAI's launch post and Deployment Safety Hub page, Artificial Analysis (cost per task $0.40 vs $1.40 for GPT-5.6 Terra at max effort). Speed and benchmark figures are OpenAI's own claims.
+**Threads:** același text ca X.
+**LinkedIn:** On 26 October 2026 OpenAI released GPT-6.1 Terra, replacing GPT-5.6 Terra in ChatGPT Work, Codex and the API (gpt-6.1-terra). API price: $1 per million input tokens and $5 per million output. OpenAI reports Terminal-Bench 4.0 of 50.3% (21.5% for the previous Terra) and says tasks finish 3x+ faster than with Astra and Sol. Artificial Analysis measures $0.40 per task at max effort vs $1.40. OpenAI's safety page rates the model Critical for cybersecurity. Article with sources: <link>. Disclosure: we draft with Claude (Anthropic), an OpenAI competitor.
+**Facebook (fără link în text, link în comentariu):** OpenAI just made its everyday agent model cheaper: GPT-6.1 Terra costs $1 per million input tokens and $5 per million output tokens. OpenAI's own tests show big gains, and independent measurements show lower cost per task, but it also carries a Critical cybersecurity rating. We separate OpenAI's claims from independent numbers. We use Claude, so Anthropic is a disclosed conflict of interest.
+**Instagram:** același text ca Facebook + #AI #OpenAI #ChatGPT #Codex
+**Pinterest:** titlu „GPT-6.1 Terra: what OpenAI claims vs what is measured"; descriere ca LinkedIn scurtat; link articol.
+**Reddit:** doar cu OK de la George.
+**TikTok / Reels / Shorts legendă:** OpenAI's new GPT-6.1 Terra costs half as much: $1 in, $5 out per million tokens. OpenAI claims 3x faster and a big jump on coding tests; Artificial Analysis measures cost per task at $0.40 vs $1.40. It's also rated Critical for cyber. Made with AI assistance (Claude); Anthropic is a competitor. #AI #OpenAI #GPT
