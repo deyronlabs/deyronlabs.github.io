@@ -22,6 +22,8 @@ topics:
 translationKey: google-deepmind-genie-4-world-model-research-preview
 image: /images/news/google-deepmind-genie-4-2026-10-27.jpg
 imageAlt: "Deyron Labs graphic: Google DeepMind announces Genie 4 on 27 October 2026, a real-time world model with native audio, research preview for trusted testers, Google AI Ultra and API access coming soon, no benchmarks published"
+video: https://www.youtube.com/shorts/4WI-M-6SYuI
+videoPublishedAt: 2026-10-27T18:05:00Z
 sources:
   - title: "Genie 4: A new generation of world simulation"
     url: "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation"
