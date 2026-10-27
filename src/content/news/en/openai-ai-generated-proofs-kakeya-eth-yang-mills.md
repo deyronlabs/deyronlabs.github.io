@@ -18,6 +18,8 @@ topics:
 translationKey: openai-ai-generated-proofs-kakeya-eth-yang-mills
 image: /images/news/openai-ai-generated-proofs-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: OpenAI announced on 26 October 2026 three AI-generated results, Kakeya via local smoothing, the Exponential Time Hypothesis false, and QCD existence; expert verification still under way, none peer reviewed"
+video: https://www.youtube.com/shorts/YAOpizm_OR8
+videoPublishedAt: 2026-10-27T14:10:00Z
 sources:
   - title: "Building scientific understanding with academic communities"
     url: "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
