@@ -2,7 +2,7 @@
 title: "Axiom Math publishes a Lean formalization of the classification of finite simple groups, with 43.1 million lines of code"
 summary: "Axiom Math's project page presents a Lean formalization of the first-generation proof of the classification of finite simple groups, with 43.1 million lines and 2.05 million declarations, and says every step is checked by Lean's kernel. The page lists no date or duration, and the work has not been independently reviewed."
 seoTitle: "Axiom Math formalizes finite simple groups"
-seoDescription: "Axiom Math's page presents a 43.1-million-line Lean formalization of the classification of finite simple groups, checked by Lean's kernel (reported 27 October 2026)."
+seoDescription: "Axiom Math presents a 43.1-million-line Lean formalization of the classification of finite simple groups, reported on 27 October 2026."
 lang: en
 publishedAt: 2026-10-28T06:00:00Z
 entities:
