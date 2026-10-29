@@ -1,7 +1,7 @@
 ---
 title: "Anthropic makes smart reports, in-app surveys and pooled group budgets generally available for Claude Enterprise"
 summary: "On 28 October 2026 Anthropic said three Claude Enterprise features are generally available: smart reports that group sampled work into workstreams with spend and friction, in-app surveys, and shared monthly group budgets. Anthropic says the reports are not for evaluating individual performance. This article is about an Anthropic product."
-seoTitle: "Claude Enterprise adds smart reports, pooled budgets"
+seoTitle: "Claude Enterprise adds smart reports"
 seoDescription: "Anthropic said on 28 Oct 2026 that smart reports, surveys and pooled group budgets are generally available for Claude Enterprise."
 lang: en
 publishedAt: 2026-10-29T17:30:00Z
