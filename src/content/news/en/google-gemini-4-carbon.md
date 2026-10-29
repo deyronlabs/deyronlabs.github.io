@@ -1,5 +1,5 @@
 ---
-title: "Google announces Gemini 4 Carbon, ranking it #1 on the Artificial Analysis index, but only cyber defenders can use it for now"
+title: "Google announces Gemini 4 Carbon, ranked #1 on the Artificial Analysis index, but only cyber defenders can use it yet"
 summary: "On 28 October 2026 Google announced Gemini 4 Carbon, which it calls its strongest model, with a score of 59 on Artificial Analysis Intelligence Index v5.0 and 88.2% on SEC-bench Pro. Access starts with a subset of cyber defenders through the Fairwind Program; developers, businesses and consumers have no date yet. All results are Google's own."
 seoTitle: "Gemini 4 Carbon: Google's new frontier model"
 seoDescription: "Google announced Gemini 4 Carbon on 28 Oct 2026, scoring 59 on Artificial Analysis v5.0; access is limited to cyber defenders for now."
