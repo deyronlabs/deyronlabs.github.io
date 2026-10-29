@@ -1,5 +1,5 @@
 ---
-title: "GitHub makes Copilot Fusion generally available and lets Enterprise customers use Copilot without a separate subscription"
+title: "GitHub makes Copilot Fusion generally available and drops the separate subscription for Enterprise"
 summary: "On 28 October 2026 GitHub said Copilot Fusion, which routes coding tasks across several AI models, is generally available on all Copilot plans in VS Code, the Copilot app, the CLI and JetBrains. GitHub also said Enterprise customers can use all Copilot features without a separate subscription, paying for AI credits used. Benchmark and cost figures are GitHub's."
 seoTitle: "GitHub Copilot Fusion now generally available"
 seoDescription: "GitHub said on 28 Oct 2026 that Copilot Fusion is generally available; Enterprise customers can use Copilot features and pay by AI credits."
