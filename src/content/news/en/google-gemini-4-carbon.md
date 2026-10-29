@@ -19,6 +19,8 @@ topics:
 translationKey: google-gemini-4-carbon
 image: /images/news/google-gemini-4-carbon-2026-10-29.jpg
 imageAlt: "Deyron Labs graphic: Gemini 4 Carbon announced 28 October 2026; 59 on Artificial Analysis v5.0, 88.2% on SEC-bench Pro, access limited to cyber defenders; results are Google's own"
+video: https://www.youtube.com/watch?v=IgvrBeM4J-M
+videoPublishedAt: 2026-10-29T08:13:00Z
 sources:
   - title: "Gemini 4 Carbon: our next frontier model"
     url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
