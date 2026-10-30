@@ -1,0 +1,6 @@
+seg-01 — Three weeks ago, Mistral shipped a one-trillion-parameter model you could only rent. Now you can download it.
+seg-02 — Mistral Large 4 has open weights on Hugging Face, under what Mistral calls a modified MIT license.
+seg-03 — The catch: if you run a model-as-a-service business, you need a separate commercial license from Mistral.
+seg-04 — The API got cheaper too. Seventy cents in, two dollars ten out, per million tokens. About half the preview price.
+seg-05 — On coding, Mistral reports forty-one percent on Terminal-Bench four, up from twenty-eight. Those numbers are Mistral's own.
+seg-06 — Before you plan to self-host: the page gives no hardware requirements. Read the license, then test it on your own tasks. Details at deyronlabs dot com.
