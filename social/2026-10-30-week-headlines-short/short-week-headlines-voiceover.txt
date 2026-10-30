@@ -1,0 +1,6 @@
+seg-01 — Anthropic filed to go public, Google built a model only cyber defenders can use, and attackers are running AI agents. Here are this week's headlines in under a minute.
+seg-02 — One. Anthropic filed an S-1 to list on Nasdaq as A N T, reporting sixteen point three billion dollars of revenue in the first half of the year.
+seg-03 — Two. Google says Gemini four Carbon ranks first on a major index, but only a subset of cyber defenders can use it. All figures are Google's own.
+seg-04 — Three. CrowdStrike and Microsoft each report attackers using the open-source ARTEX agent framework. Both are vendor findings, not independently confirmed.
+seg-05 — Four. Mistral released the weights of Large 4, and OpenAI's GPT six point one Terra costs one dollar in, five dollars out, per million tokens.
+seg-06 — The full episode is on the Deyron Labs YouTube channel, and every article, with sources, is at deyronlabs dot com. Disclosure: Claude, made by Anthropic, helps draft our articles, and the voice is AI.
