@@ -23,8 +23,8 @@ topics:
   - Open weights
   - Cybersecurity
 translationKey: mistral-large-4-public-preview
-video: "https://www.youtube.com/shorts/lLlb8gijzTg"
-videoPublishedAt: 2026-10-07
+video: "https://www.youtube.com/shorts/Em9MwL7Hyic"
+videoPublishedAt: 2026-10-30
 image: /images/news/mistral-large-4-open-weights-2026-10-30.jpg
 imageAlt: "Deyron Labs graphic: Mistral Large 4 open weights, 1 trillion parameters, modified MIT license, API at $0.70 and $2.10 per million tokens"
 sources:
