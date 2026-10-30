@@ -33,6 +33,18 @@ export async function getTranslations(article: Article): Promise<Article[]> {
   return all.filter((a) => a.data.translationKey === key && a.data.lang !== article.data.lang);
 }
 
+/** Data după care se ordonează și se afișează în liste: ultima actualizare reală, altfel publicarea. */
+export const activityDate = (a: Article): Date =>
+  a.data.updatedAt && a.data.updatedAt.valueOf() - a.data.publishedAt.valueOf() > 3600_000
+    ? a.data.updatedAt
+    : a.data.publishedAt;
+
+/** Pentru pagini de listare (acasă, /news/, autor): cele mai recent mișcate primele. RSS, llms.txt, căutare și sitemap rămân pe data publicării. */
+export async function getArticlesByActivity(lang: Lang): Promise<Article[]> {
+  const all = await getArticles(lang);
+  return all.sort((a, b) => activityDate(b).valueOf() - activityDate(a).valueOf());
+}
+
 export const lastChange = (a: Article): Date => a.data.updatedAt ?? a.data.publishedAt;
 
 /** Actualizat vizibil doar dacă schimbarea e la cel puțin o oră după publicare. */

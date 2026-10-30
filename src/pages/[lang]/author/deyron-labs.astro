@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import Timeline from '../../../components/Timeline.astro';
 import { ENABLED_LANGS, type Lang } from '../../../site';
 import { langPaths, useTranslations } from '../../../i18n/utils';
-import { getArticles } from '../../../lib/articles';
+import { getArticlesByActivity } from '../../../lib/articles';
 import { staticAlternates } from '../../../lib/seo';
 
 export function getStaticPaths() {
@@ -12,7 +12,7 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
-const articles = await getArticles(lang);
+const articles = await getArticlesByActivity(lang);
 const body = t('author.body');
 ---
 

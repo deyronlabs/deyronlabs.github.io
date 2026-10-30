@@ -6,7 +6,7 @@ import { ENABLED_LANGS, type Lang } from '../site';
 import { useTranslations, formatDate, isoDate } from '../i18n/utils';
 import { getEpisodes, episodeUrlPath } from '../lib/lab';
 import { getInfraEpisodes, infraUrlPath } from '../lib/infra';
-import { getArticles, pathOf, wasUpdated } from '../lib/articles';
+import { getArticlesByActivity, activityDate, pathOf, wasUpdated } from '../lib/articles';
 import { staticAlternates } from '../lib/seo';
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 }
 const { lang, canonicalPath } = Astro.props;
 const t = useTranslations(lang);
-const articles = await getArticles(lang);
+const articles = await getArticlesByActivity(lang);
 const episodes = (await getEpisodes(lang)).slice(0, 1);
 const infraEpisodes = (await getInfraEpisodes(lang)).slice(0, 1);
 const [lede, ...rest] = articles;
@@ -52,12 +52,12 @@ const latest = rest;
             </h2>
             <p class="lede-summary">{lede.data.summary}</p>
             <p class="meta">
-              <time datetime={isoDate(lede.data.publishedAt)}>
-                {formatDate(lede.data.publishedAt, lang)}
+              <time datetime={isoDate(activityDate(lede))}>
+                {formatDate(activityDate(lede), lang)}
               </time>
               {wasUpdated(lede) && (
                 <span>
-                  {t('article.updated')} {formatDate(lede.data.updatedAt!, lang)}
+                  {t('article.published')} {formatDate(lede.data.publishedAt, lang)}
                 </span>
               )}
               <span>{lede.data.sources.length} {lede.data.sources.length === 1 ? t('article.sourceOne') : t('article.sourcesCount')}</span>

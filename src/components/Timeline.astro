@@ -1,6 +1,6 @@
 ---
 import type { Article } from '../lib/articles';
-import { pathOf, wasUpdated } from '../lib/articles';
+import { activityDate, pathOf, wasUpdated } from '../lib/articles';
 import { formatDate, isoDate, useTranslations } from '../i18n/utils';
 import type { Lang } from '../site';
 
@@ -20,8 +20,8 @@ const t = useTranslations(lang);
       const updated = wasUpdated(a);
       return (
         <li class={updated ? 'is-updated' : undefined} hidden={i >= visible} data-more={i >= visible ? '' : undefined}>
-          <time class="tl-date" datetime={isoDate(a.data.publishedAt)}>
-            {formatDate(a.data.publishedAt, lang, 'short')}
+          <time class="tl-date" datetime={isoDate(activityDate(a))}>
+            {formatDate(activityDate(a), lang, 'short')}
           </time>
           <span class="tl-node" aria-hidden="true" />
           <article class="tl-body">
@@ -32,7 +32,7 @@ const t = useTranslations(lang);
             <p class="tl-meta">
               {updated && (
                 <span class="flag">
-                  {t('article.updated')} {formatDate(a.data.updatedAt!, lang, 'short')}
+                  {t('article.updated')} · {t('article.published')} {formatDate(a.data.publishedAt, lang, 'short')}
                 </span>
               )}
               {a.data.topics.length > 0 && <span>{a.data.topics.join(', ')}</span>}
