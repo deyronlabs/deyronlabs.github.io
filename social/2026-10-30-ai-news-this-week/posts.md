@@ -1,10 +1,10 @@
 # Postări — AI News This Week, 30 oct 2026 — DE POSTAT DUPĂ PREMIERĂ (Claude: X, LinkedIn, Pinterest din Chrome-ul lui George)
-Video: <LINK YOUTUBE DE COMPLETAT DUPĂ UPLOAD>
+Video: https://youtu.be/mJ0iH7UjxHE
 Articol recap (după merge în main): https://deyronlabs.com/en/news/ai-weekly-recap-2026-10-30/
 George postează manual: YouTube (comunitate), Facebook, TikTok. Etichetă AI unde există.
 
 ## X (sub 280 caractere) — imagine x-1280x720.png (sau cardul video)
-AI News This Week is live: Anthropic's S-1, Gemini 4 Carbon (cyber defenders only), ARTEX agent attacks, Mistral Large 4 weights and more. <LINK YOUTUBE>
+AI News This Week is live: Anthropic's S-1, Gemini 4 Carbon (cyber defenders only), ARTEX agent attacks, Mistral Large 4 weights and more. https://youtu.be/mJ0iH7UjxHE
 ### Răspuns X (articol + surse)
 Every story with sources: deyronlabs.com/en/news/ai-weekly-recap-2026-10-30/ Most figures are the companies' own. Made with AI assistance (Claude).
 
@@ -17,7 +17,7 @@ AI News This Week, 30 October: what mattered in AI from 24 to 30 October.
 - Mistral released Large 4's weights, with a separate license condition for Model-as-a-Service operators; Moonshot promises Kimi K3.1 Pro weights by 4 November.
 
 Most figures are self-reported, so the video and article mark who says what.
-Video: <LINK YOUTUBE>
+Video: https://youtu.be/mJ0iH7UjxHE
 Article with sources: https://deyronlabs.com/en/news/ai-weekly-recap-2026-10-30/
 Made with AI assistance (Claude, by Anthropic, which is the subject of several items and competes with OpenAI and Google).
 
@@ -27,6 +27,6 @@ Descriere: The week's biggest AI stories explained: Anthropic's S-1, Gemini 4 Ca
 Link: articolul recap.
 
 ## Facebook (George, manual) / TikTok / YouTube comunitate (George)
-Facebook: AI News This Week is live. Anthropic's S-1, Gemini 4 Carbon, the ARTEX attacks, Mistral Large 4 weights and more, with sources. <LINK YOUTUBE>
+Facebook: AI News This Week is live. Anthropic's S-1, Gemini 4 Carbon, the ARTEX attacks, Mistral Large 4 weights and more, with sources. https://youtu.be/mJ0iH7UjxHE
 
 ## Reddit — NU se postează fără OK

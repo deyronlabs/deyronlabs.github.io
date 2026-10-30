@@ -4,7 +4,7 @@ summary: "From 24 to 30 October 2026, Anthropic filed its S-1, Google announced 
 seoTitle: "AI weekly recap: Anthropic S-1, Carbon, 30 Oct"
 seoDescription: "Anthropic's S-1, Gemini 4 Carbon, GPT-6.1 Terra, ARTEX attacks, Mistral Large 4 weights, Kimi K3.1 Pro and more from 24 to 30 October 2026."
 lang: en
-publishedAt: 2026-10-30T20:00:00Z
+publishedAt: 2026-10-30T16:55:00Z
 entities:
   - Anthropic
   - OpenAI
@@ -27,6 +27,8 @@ topics:
   - Policy
   - Science
 translationKey: ai-weekly-recap-2026-10-30
+video: "https://www.youtube.com/watch?v=mJ0iH7UjxHE"
+videoPublishedAt: 2026-10-30
 image: /images/news/ai-weekly-recap-2026-10-30.jpg
 imageAlt: "Deyron Labs AI News This Week, 30 October 2026: Anthropic IPO, Gemini 4 Carbon, ARTEX"
 sources:
