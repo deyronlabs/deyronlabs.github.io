@@ -2,7 +2,7 @@
 title: "Anthropic expands AI for Science to foundations and research institutions"
 summary: "Anthropic has widened its AI for Science program, which gives researchers free Claude credits, to science funders, institutions and research initiatives. The post also describes a research-preview standard for letting AI agents operate lab instruments and says many collaborations are still at an early stage."
 seoTitle: "Anthropic expands AI for Science to institutions"
-seoDescription: "Anthropic widened its AI for Science program on 28 October 2026 to foundations and research institutions, with a research preview for lab-instrument agents."
+seoDescription: "Anthropic widened AI for Science on 28 October 2026 to foundations and research institutions, with a research preview for lab-instrument agents."
 lang: en
 publishedAt: 2026-10-30T07:40:00Z
 entities:
