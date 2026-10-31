@@ -92,7 +92,7 @@ const itemList = {
                       {criteria.map((c) => (
                         <li>
                           <span class="cl">{c.label}</span>
-                          <span class="bar"><i style={`width:${(a.scores[c.key] / 5) * 100}%`}></i></span>
+                          <span class="pbar"><i style={`width:${(a.scores[c.key] / 5) * 100}%`}></i></span>
                           <span class="cp">{fmt(pts(a.scores, c.key, c.weight))}/{c.weight}</span>
                         </li>
                       ))}
@@ -166,8 +166,8 @@ const itemList = {
   .why li { display: grid; grid-template-columns: 9.5rem 1fr 3.2rem; align-items: center; gap: 0.6rem; }
   .why .cl { color: var(--ink-2); }
   .why .cp { font-family: var(--mono); text-align: right; color: var(--ink); }
-  .why .bar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
-  .why .bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .why .pbar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+  .why .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
   .method { min-width: 36rem; margin-bottom: 1.5rem; }
 </style>
 
