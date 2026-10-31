@@ -28,6 +28,7 @@ const en = {
   'lab.share': 'Share this guide',
   'nav.infra': 'AI Infrastructure',
   'nav.agents': 'AI Agents Ranking',
+  'nav.agentsMenu': 'AI Agents',
   'infra.title': 'AI Infrastructure',
   'infra.description':
     'AI Infrastructure is a weekly video series on the data centers, power plants and chips behind AI. Each episode has a written companion with the figures, whose figures they are, and every source.',
@@ -296,6 +297,7 @@ const es: Dict = {
   'lab.share': 'Compartir esta guía',
   'nav.infra': 'AI Infrastructure',
   'nav.agents': 'AI Agents Ranking',
+  'nav.agentsMenu': 'AI Agents',
   'infra.title': 'AI Infrastructure',
   'infra.description':
     'AI Infrastructure es una serie semanal en video sobre los centros de datos, las centrales eléctricas y los chips que hay detrás de la IA. Cada episodio tiene una guía escrita con las cifras, de quién son y todas las fuentes.',

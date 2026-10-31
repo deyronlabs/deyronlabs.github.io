@@ -25,7 +25,10 @@ const ranked = data.agents
   .map((a, i) => ({ ...a, total: total(a.scores), i }))
   .sort((a, b) => b.total - a.total || a.i - b.i)
   .map((a, idx) => ({ ...a, rank: idx + 1 }));
-const categories = [...new Set(ranked.map((a) => a.category))].sort();
+// Filter order: All, then General, then the rest alphabetically.
+const categories = [...new Set(ranked.map((a) => a.category))].sort((a, b) =>
+  a === 'General' ? -1 : b === 'General' ? 1 : a.localeCompare(b),
+);
 const verifiedCount = ranked.filter((a) => a.pricingVerified).length;
 
 const year = data.updated.slice(0, 4);
@@ -130,7 +133,7 @@ const faqLd = {
     <h1>{pageTitle}</h1>
     <p class="lead">
       {ranked.length} agents scored out of 100 on {criteria.length} weighted criteria. Prices come from each vendor's own page and were checked on
-      <time datetime={data.updated}>{data.updated}</time>; {verifiedCount} of {ranked.length} prices are verified, the rest are marked.
+      <time datetime={data.updated}>{data.updated}</time>; {verifiedCount === ranked.length ? 'every price is verified.' : `${verifiedCount} of ${ranked.length} prices are verified, the rest are marked.`}
     </p>
 
     <p class="glance">

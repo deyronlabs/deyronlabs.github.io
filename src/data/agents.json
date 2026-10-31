@@ -210,7 +210,8 @@
       "pricingSource": "https://cursor.com/pricing",
       "pricingVerified": true,
       "verified": "2026-10-31",
-      "why": "Strong daily-driver for developers; governance is the weak spot, and plans have been renamed recently."
+      "why": "Strong daily-driver for developers; governance is the weak spot, and plans have been renamed recently.",
+      "note": "The Plus tier includes Grok models only."
     },
     {
       "id": "m365-copilot",
@@ -249,14 +250,14 @@
         "governance": 2,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "Free, Pro and Team plans are credit-based; the official docs page shows no prices",
-      "pricingSource": "https://manus.im/docs/introduction/plans",
-      "pricingVerified": false,
+      "pricing": "Credit-based plans at $20, $40 and $200 per month on monthly billing; about 17% off annually",
+      "pricingSource": "https://manus.im/pricing",
+      "pricingVerified": true,
       "verified": "2026-10-31",
-      "why": "High autonomy for end-to-end tasks; weaker on governance, and we could not confirm its prices."
+      "why": "High autonomy for end-to-end tasks with public credit-based plans; weaker on governance."
     },
     {
       "id": "perplexity",
@@ -272,14 +273,14 @@
         "governance": 3,
         "integrations": 3,
         "access": 5,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "See the official pricing page",
+      "pricing": "Free; Pro $17/mo and Max $167/mo, both billed annually",
       "pricingSource": "https://www.perplexity.ai/pro",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "verified": "2026-10-31",
-      "why": "Best-in-class citations and easy access; fewer agent controls, and its prices are not confirmed here."
+      "why": "Best-in-class citations and easy access; fewer agent controls than the leaders, with clear public plans."
     },
     {
       "id": "agentforce",
@@ -502,37 +503,14 @@
         "governance": 2,
         "integrations": 2,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "See the official page",
-      "pricingSource": "https://x.ai/grok",
-      "pricingVerified": false,
+      "pricing": "Plus, Premium (4x Plus usage) and Super (15x) tiers; the official page shows prices in local currency",
+      "pricingSource": "https://grok.com/plans",
+      "pricingVerified": true,
       "verified": "2026-10-31",
-      "why": "Unique real-time X data; weaker on governance and integrations, and prices are not confirmed here."
-    },
-    {
-      "id": "atlas",
-      "name": "ChatGPT Atlas",
-      "company": "OpenAI",
-      "category": "Browser",
-      "url": "https://openai.com/",
-      "what": "Browser with a built-in agent.",
-      "scores": {
-        "adoption": 3,
-        "autonomy": 3,
-        "reliability": 3,
-        "governance": 2,
-        "integrations": 3,
-        "access": 4,
-        "transparency": 3,
-        "momentum": 3
-      },
-      "pricing": "See the official page",
-      "pricingSource": "https://openai.com/",
-      "pricingVerified": false,
-      "verified": "2026-10-31",
-      "why": "Agent built into a browser; governance is thin and availability details are not confirmed here."
+      "why": "Unique real-time X data and public tiers; weaker on governance and integrations."
     },
     {
       "id": "servicenow",
