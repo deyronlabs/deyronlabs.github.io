@@ -26,6 +26,14 @@ const ranked = data.agents
   .sort((a, b) => b.total - a.total || a.i - b.i)
   .map((a, idx) => ({ ...a, rank: idx + 1 }));
 // Filter order: All, then General, then the rest alphabetically.
+const isFree = (pricing: string) => /\bfree\b/i.test(pricing) && !/no public prices/i.test(pricing);
+type Snap = { rank: number; name: string };
+const prev = data.history[data.history.length - 1];
+const prevRanks = prev.ranks as Record<string, Snap>;
+const withMove = ranked.map((a) => ({ ...a, free: isFree(a.pricing), move: prevRanks[a.id] ? prevRanks[a.id].rank - a.rank : null as number | null }));
+const movers = withMove.filter((a) => a.move !== null && a.move !== 0).sort((a, b) => Math.abs(b.move!) - Math.abs(a.move!) || a.rank - b.rank);
+const newcomers = withMove.filter((a) => a.move === null);
+const removed = Object.entries(prevRanks).filter(([id]) => !ranked.some((a) => a.id === id)).map(([, v]) => v);
 const categories = [...new Set(ranked.map((a) => a.category))].sort((a, b) =>
   a === 'General' ? -1 : b === 'General' ? 1 : a.localeCompare(b),
 );
@@ -43,7 +51,7 @@ const catLeaders = categories
 const top3 = ranked.slice(0, 3);
 const list = (xs: string[]) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
 const codingTop = ranked.filter((a) => a.category === 'Coding').slice(0, 3);
-const freeNames = ranked.filter((a) => /\bfree\b/i.test(a.pricing) && !/no public prices/i.test(a.pricing)).map((a) => a.name);
+const freeNames = ranked.filter((a) => isFree(a.pricing)).map((a) => a.name);
 
 const faq = [
   {
@@ -139,13 +147,30 @@ const faqLd = {
     <p class="glance">
       <strong>At a glance:</strong>
       {top3.map((a, i) => <><a href={`#${a.id}`}>{a.name}</a> ({a.total}/100){i < top3.length - 1 ? ', ' : '.'}{' '}</>)}
-      Jump to the <a href="#by-category">best agent by category</a>, the <a href="#how-scores-work">scoring method</a> or the <a href="#faq">FAQ</a>.
+      Jump to the <a href="#movers">ranking movers</a>, the <a href="#by-category">best agent by category</a>, the <a href="#how-scores-work">scoring method</a> or the <a href="#faq">FAQ</a>.
     </p>
 
+    <div class="tools">
+      <label class="field">
+        <span>Search</span>
+        <input id="agent-q" type="search" placeholder="Agent, company or feature" autocomplete="off" />
+      </label>
+      <label class="field">
+        <span>Sort by</span>
+        <select id="agent-sort">
+          <option value="rank">Rank (best first)</option>
+          <option value="name">Name (A to Z)</option>
+          <option value="category">Category</option>
+          <option value="score-asc">Score (lowest first)</option>
+        </select>
+      </label>
+      <label class="check"><input id="agent-free" type="checkbox" /> <span>Has a free plan</span></label>
+    </div>
     <div class="chips" role="group" aria-label="Filter by category">
       <button type="button" class="chip on" data-cat="">All</button>
       {categories.map((c) => <button type="button" class="chip" data-cat={c}>{c}</button>)}
     </div>
+    <p id="agent-count" class="count" aria-live="polite">Showing all {ranked.length} agents.</p>
 
     <div class="tablewrap">
       <table class="ranking">
@@ -160,9 +185,14 @@ const faqLd = {
         </thead>
         <tbody>
           {
-            ranked.map((a) => (
-              <tr id={a.id} data-cat={a.category}>
-                <td class="num" data-label="#">{a.rank}</td>
+            withMove.map((a, idx) => (
+              <tr id={a.id} data-cat={a.category} data-rank={a.rank} data-name={a.name.toLowerCase()} data-score={a.total} data-free={a.free ? '1' : '0'} data-q={`${a.name} ${a.company} ${a.what} ${a.category}`.toLowerCase()}>
+                <td class="num" data-label="#">
+                  {a.rank}
+                  {a.move === null && <span class="mv new" title="New since the previous edition">new</span>}
+                  {a.move !== null && a.move > 0 && <span class="mv up" title={`Up ${a.move} since ${prev.label}`}><span aria-hidden="true">▲</span>{a.move}<span class="sr-only"> places up</span></span>}
+                  {a.move !== null && a.move < 0 && <span class="mv down" title={`Down ${-a.move} since ${prev.label}`}><span aria-hidden="true">▼</span>{-a.move}<span class="sr-only"> places down</span></span>}
+                </td>
                 <td>
                   <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>
                   <span class="co">{a.company}</span>
@@ -199,6 +229,22 @@ const faqLd = {
         </tbody>
       </table>
     </div>
+    <p id="agent-empty" hidden>No agents match this search. Clear the filters to see the full ranking.</p>
+
+    <h2 id="movers">Ranking movers</h2>
+    <p>
+      Changes since the {prev.label} ({prev.date}). Arrows in the table show the same movement.
+    </p>
+    <ul class="movers">
+      {movers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
+      {newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
+      {removed.map((r) => <li>{r.name}: removed (was {r.rank})</li>)}
+    </ul>
+
+    <h2 id="changelog">Update log</h2>
+    <ul class="log">
+      {data.changelog.map((c) => <li><time datetime={c.date}>{c.date}</time>: {c.text}</li>)}
+    </ul>
 
     <h2 id="by-category">Best AI agent by category</h2>
     <ul class="leaders">
@@ -245,6 +291,16 @@ const faqLd = {
 
 <style>
   .agents h2 { margin-top: 2.5rem; }
+  .tools { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin-top: 1.5rem; }
+  .field { display: grid; gap: 0.25rem; font-size: var(--step--1); color: var(--ink-2); }
+  .field input, .field select { background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 0.4rem; padding: 0.5rem 0.7rem; font: inherit; min-width: 14rem; }
+  .check { display: flex; align-items: center; gap: 0.4rem; padding-bottom: 0.55rem; font-size: var(--step--1); }
+  .count { color: var(--ink-2); font-size: var(--step--1); margin: 0 0 0.5rem; }
+  .mv { display: block; font-size: 0.7rem; font-family: var(--font); font-weight: 600; margin-top: 0.15rem; }
+  .mv.up { color: var(--accent); }
+  .mv.down { color: #f59e0b; }
+  .mv.new { color: var(--mint); text-transform: uppercase; letter-spacing: 0.04em; }
+  .movers, .log { padding-left: 1.2rem; display: grid; gap: 0.35rem; }
   .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
   .chip { background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; padding: 0.35rem 0.9rem; font: inherit; font-size: var(--step--1); cursor: pointer; }
   .chip.on { background: var(--accent); color: #0b1f12; border-color: var(--accent); }
@@ -271,6 +327,7 @@ const faqLd = {
   .why .pbar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
   .why .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
   .whyline { display: block; margin-top: 0.3rem; font-size: var(--step--1); color: var(--ink); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .glance { margin: 1rem 0 0; }
   .leaders, .related { padding-left: 1.2rem; display: grid; gap: 0.4rem; }
   .agents h3 { margin: 1.5rem 0 0.3rem; font-size: var(--step-0); }
@@ -291,18 +348,52 @@ const faqLd = {
     .ranking td.score .meter { margin-top: 0.3rem; }
     .ranking td.pricecell::before { content: 'Pricing: '; color: var(--ink-2); font-size: var(--step--1); }
     .ranking td.pricecell .price { display: inline; }
+    .field input, .field select { min-width: 0; width: 100%; }
+    .field { flex: 1 1 100%; }
     .why li { grid-template-columns: 7rem 1fr 3rem; }
   }
 </style>
 
 <script>
+  const q = document.getElementById('agent-q') as HTMLInputElement;
+  const sortSel = document.getElementById('agent-sort') as HTMLSelectElement;
+  const freeBox = document.getElementById('agent-free') as HTMLInputElement;
   const chips = document.querySelectorAll<HTMLButtonElement>('.chip');
-  const rows = document.querySelectorAll<HTMLTableRowElement>('tbody tr[data-cat]');
+  const body = document.querySelector('table.ranking tbody') as HTMLTableSectionElement;
+  const rows = Array.from(body.querySelectorAll<HTMLTableRowElement>('tr[data-cat]'));
+  const countEl = document.getElementById('agent-count') as HTMLElement;
+  const emptyEl = document.getElementById('agent-empty') as HTMLElement;
+  let cat = '';
+
+  const num = (r: HTMLElement, k: string) => Number(r.dataset[k]);
+  const sorters: Record<string, (a: HTMLTableRowElement, b: HTMLTableRowElement) => number> = {
+    rank: (a, b) => num(a, 'rank') - num(b, 'rank'),
+    name: (a, b) => (a.dataset.name ?? '').localeCompare(b.dataset.name ?? ''),
+    category: (a, b) => (a.dataset.cat ?? '').localeCompare(b.dataset.cat ?? '') || num(a, 'rank') - num(b, 'rank'),
+    'score-asc': (a, b) => num(a, 'score') - num(b, 'score') || num(b, 'rank') - num(a, 'rank'),
+  };
+
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    let shown = 0;
+    [...rows].sort(sorters[sortSel.value] ?? sorters.rank).forEach((r) => {
+      const ok = (!cat || r.dataset.cat === cat) && (!freeBox.checked || r.dataset.free === '1') && (!term || (r.dataset.q ?? '').includes(term));
+      r.hidden = !ok;
+      if (ok) shown++;
+      body.appendChild(r);
+    });
+    countEl.textContent = shown === rows.length ? `Showing all ${rows.length} agents.` : `Showing ${shown} of ${rows.length} agents.`;
+    emptyEl.hidden = shown !== 0;
+  }
+
   chips.forEach((chip) =>
     chip.addEventListener('click', () => {
       chips.forEach((c) => c.classList.toggle('on', c === chip));
-      const cat = chip.dataset.cat;
-      rows.forEach((r) => (r.hidden = !!cat && r.dataset.cat !== cat));
+      cat = chip.dataset.cat ?? '';
+      apply();
     }),
   );
+  q.addEventListener('input', apply);
+  sortSel.addEventListener('change', apply);
+  freeBox.addEventListener('change', apply);
 </script>

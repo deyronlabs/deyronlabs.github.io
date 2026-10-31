@@ -604,5 +604,127 @@
       "verified": "2026-10-31",
       "why": "Excellent integrations and governance; no public prices and access is via a demo."
     }
+  ],
+  "history": [
+    {
+      "date": "2026-10-31",
+      "label": "first edition",
+      "ranks": {
+        "chatgpt-agent": {
+          "rank": 1,
+          "name": "ChatGPT Agent"
+        },
+        "github-copilot": {
+          "rank": 2,
+          "name": "GitHub Copilot (coding agent)"
+        },
+        "claude-code": {
+          "rank": 3,
+          "name": "Claude Code"
+        },
+        "m365-copilot": {
+          "rank": 4,
+          "name": "Microsoft 365 Copilot"
+        },
+        "gemini-agent": {
+          "rank": 5,
+          "name": "Gemini (Deep Research, Agent Mode)"
+        },
+        "openai-codex": {
+          "rank": 6,
+          "name": "OpenAI Codex"
+        },
+        "copilot-studio": {
+          "rank": 7,
+          "name": "Microsoft Copilot Studio"
+        },
+        "agentforce": {
+          "rank": 8,
+          "name": "Salesforce Agentforce"
+        },
+        "claude-app": {
+          "rank": 9,
+          "name": "Claude (app, agentic tasks)"
+        },
+        "zapier-agents": {
+          "rank": 10,
+          "name": "Zapier Agents"
+        },
+        "cursor": {
+          "rank": 11,
+          "name": "Cursor"
+        },
+        "gemini-enterprise": {
+          "rank": 12,
+          "name": "Gemini Enterprise / Vertex AI Agent Builder"
+        },
+        "n8n": {
+          "rank": 13,
+          "name": "n8n"
+        },
+        "fin": {
+          "rank": 14,
+          "name": "Fin"
+        },
+        "devin": {
+          "rank": 15,
+          "name": "Devin"
+        },
+        "uipath": {
+          "rank": 16,
+          "name": "UiPath AI Agents"
+        },
+        "replit-agent": {
+          "rank": 17,
+          "name": "Replit Agent"
+        },
+        "agentcore": {
+          "rank": 18,
+          "name": "Amazon Bedrock AgentCore"
+        },
+        "perplexity": {
+          "rank": 19,
+          "name": "Perplexity (Comet)"
+        },
+        "servicenow": {
+          "rank": 20,
+          "name": "ServiceNow AI Agents"
+        },
+        "glean": {
+          "rank": 21,
+          "name": "Glean"
+        },
+        "manus": {
+          "rank": 22,
+          "name": "Manus"
+        },
+        "antigravity": {
+          "rank": 23,
+          "name": "Google Antigravity"
+        },
+        "atlas": {
+          "rank": 24,
+          "name": "ChatGPT Atlas"
+        },
+        "grok": {
+          "rank": 25,
+          "name": "Grok"
+        }
+      }
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-10-31",
+      "text": "Removed ChatGPT Atlas: OpenAI discontinued the standalone browser (announced 9 July 2026, deprecation targeted for 9 August 2026) and moved its agent features into the new ChatGPT desktop app."
+    },
+    {
+      "date": "2026-10-31",
+      "text": "Checked every remaining price on the vendors' own pages: Cursor, Manus, Perplexity, Grok and Amazon Bedrock AgentCore now show public prices; Glean and ServiceNow publish none, which lowers their transparency score."
+    },
+    {
+      "date": "2026-10-31",
+      "text": "First edition: 25 agents scored out of 100 on eight weighted criteria."
+    }
   ]
 }
