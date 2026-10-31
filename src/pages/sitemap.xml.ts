@@ -5,6 +5,7 @@ import { getAllEnabledInfraEpisodes, infraUrlPath, infraLastChange } from '../li
 import { getAllEnabledArticles, getTranslations, lastChange, pathOf } from '../lib/articles';
 import { getTopicGroups, topicPath } from '../lib/topics';
 import agentsData from '../data/agents.json';
+import { ranked, hasProfile } from '../lib/agents';
 import { buildSitemap, type SitemapEntry } from '../lib/feeds';
 
 export const GET: APIRoute = async () => {
@@ -21,6 +22,12 @@ export const GET: APIRoute = async () => {
         alternates,
         lastmod: sub === '' || sub === 'news/' ? newest : sub === 'ai-agents/' ? new Date(`${agentsData.updated}T00:00:00Z`) : undefined,
       });
+    }
+  }
+  for (const a of ranked.filter((x) => hasProfile(x.rank))) {
+    const alternates = ENABLED_LANGS.map((lang) => ({ lang, path: `/${lang}/ai-agents/${a.id}/` }));
+    for (const lang of ENABLED_LANGS) {
+      entries.push({ lang, path: `/${lang}/ai-agents/${a.id}/`, alternates, lastmod: new Date(`${agentsData.updated}T00:00:00Z`) });
     }
   }
   for (const lang of ENABLED_LANGS) {

@@ -1,0 +1,183 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { ENABLED_LANGS, SITE, absUrl, type Lang } from '../../../site';
+import { breadcrumbLd, staticAlternates } from '../../../lib/seo';
+import { criteria, ranked, pts, fmt, hasProfile, isFree } from '../../../lib/agents';
+import data from '../../../data/agents.json';
+
+export function getStaticPaths() {
+  return ENABLED_LANGS.flatMap((lang) => ranked.filter((a) => hasProfile(a.rank)).map((a) => ({ params: { lang, id: a.id } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const agent = ranked.find((a) => a.id === Astro.params.id)!;
+const year = data.updated.slice(0, 4);
+const path = `/${lang}/ai-agents/${agent.id}/`;
+const rankingPath = `/${lang}/ai-agents/`;
+const crumbs = [
+  { name: 'AI agents ranking', path: rankingPath },
+  { name: agent.name, path },
+];
+const pageUrl = absUrl(path);
+
+const free = isFree(agent.pricing);
+const sameCat = ranked.filter((a) => a.category === agent.category);
+const catRank = sameCat.findIndex((a) => a.id === agent.id) + 1;
+const alternatives = sameCat.filter((a) => a.id !== agent.id).slice(0, 4);
+const fill = alternatives.length < 3 ? ranked.filter((a) => a.id !== agent.id && !alternatives.some((x) => x.id === a.id)).slice(0, 3 - alternatives.length) : [];
+const alts = [...alternatives, ...fill];
+
+const parts = criteria.map((c) => ({ ...c, score: agent.scores[c.key], points: pts(agent.scores, c.key, c.weight) }));
+const byRatio = [...parts].sort((a, b) => b.score - a.score || b.weight - a.weight);
+const strong = byRatio.filter((p) => p.score >= 4).slice(0, 3);
+const weak = [...parts].sort((a, b) => a.score - b.score || b.weight - a.weight).filter((p) => p.score <= 3).slice(0, 2);
+const lc = (s: string) => s.toLowerCase();
+const list = (xs: string[]) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+
+const pageTitle = `${agent.name}: score, price and alternatives in ${year}`;
+const titles = [`${agent.name}: Score, Price and Alternatives`, `${agent.name}: Score and Price ${year}`, `${agent.name} Review: Score and Price`, `${agent.name}: Score and Price`];
+const seoTitle = titles.find((t) => t.length >= 15 && t.length <= 48) ?? agent.name.slice(0, 48);
+const descBase = `${agent.name} by ${agent.company} scores ${agent.total}/100 and ranks #${agent.rank} of ${ranked.length} AI agents. Official price checked ${agent.verified}, plus alternatives.`;
+const seoDescription = descBase.length <= 155 ? descBase : `${agent.name} scores ${agent.total}/100 and ranks #${agent.rank} of ${ranked.length} AI agents, with its official price and alternatives.`;
+
+const faq = [
+  { q: `How much does ${agent.name} cost?`, a: agent.pricingVerified ? `${agent.pricing}. We checked this on the vendor's official page on ${agent.verified}; prices change often, so confirm there before you buy.` : `We could not confirm the price on the vendor's page yet. What we found: ${agent.pricing}. Check the official page before you decide.` },
+  { q: `Does ${agent.name} have a free plan?`, a: free ? `Yes, its own pages list a free tier or free edition. Limits differ by plan: ${agent.pricing}.` : `We did not find a free plan on the official page. Listed pricing: ${agent.pricing}.` },
+  { q: `What is ${agent.name}?`, a: `${agent.what} It is made by ${agent.company} and sits in our ${agent.category} category.` },
+  { q: `How good is ${agent.name} compared with other AI agents?`, a: `It scores ${agent.total}/100, which is #${agent.rank} of ${ranked.length} agents overall and #${catRank} of ${sameCat.length} in ${agent.category}. ${alts.length ? `Closest alternatives: ${list(alts.slice(0, 3).map((a) => `${a.name} (${a.total}/100)`))}.` : ''}` },
+  { q: 'How is the score calculated?', a: `Each agent gets 1 to 5 on ${criteria.length} weighted criteria; the points add up to a total out of 100. The scores are Deyron Labs editorial judgments, not benchmarks.` },
+];
+
+const jsonLd = [
+  breadcrumbLd(crumbs, lang),
+  {
+    '@type': 'WebPage',
+    '@id': `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: seoTitle,
+    description: seoDescription,
+    inLanguage: lang,
+    datePublished: '2026-10-31',
+    dateModified: data.updated,
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    publisher: { '@id': `${SITE.url}/#organization` },
+    author: { '@id': `${SITE.url}/#editorial-desk` },
+    about: { '@id': `${pageUrl}#software` },
+  },
+  {
+    '@type': 'SoftwareApplication',
+    '@id': `${pageUrl}#software`,
+    name: agent.name,
+    url: agent.url,
+    description: agent.what,
+    applicationCategory: 'BusinessApplication',
+    publisher: { '@type': 'Organization', name: agent.company },
+  },
+  {
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+
+<Base
+  title={seoTitle}
+  description={seoDescription}
+  lang={lang}
+  path={path}
+  alternates={staticAlternates(ENABLED_LANGS, `ai-agents/${agent.id}/`)}
+  jsonLd={jsonLd}
+  image="/og-ai-agents.png"
+  imageAlt={`${agent.name} in the ranking of the best AI agents in ${year}`}
+  imageSize={{ w: 1200, h: 630 }}
+  publishedTime={new Date('2026-10-31T00:00:00Z')}
+  modifiedTime={new Date(`${data.updated}T00:00:00Z`)}
+>
+  <div class="wrap">
+    <Breadcrumbs items={crumbs} lang={lang} />
+  </div>
+  <div class="wrap page profile">
+    <h1>{pageTitle}</h1>
+    <p class="lead">
+      {agent.what} {agent.name} is made by {agent.company} and ranks <strong>#{agent.rank} of {ranked.length}</strong> in our ranking of AI agents,
+      with a score of <strong>{agent.total}/100</strong>.
+    </p>
+
+    <dl class="facts">
+      <div><dt>Score</dt><dd>{agent.total}<small>/100</small></dd></div>
+      <div><dt>Overall rank</dt><dd>#{agent.rank}</dd></div>
+      <div><dt>{agent.category} rank</dt><dd>#{catRank} of {sameCat.length}</dd></div>
+      <div><dt>Company</dt><dd>{agent.company}</dd></div>
+    </dl>
+
+    <h2 id="price">{agent.name} pricing</h2>
+    <p>{agent.pricing}.</p>
+    <p class="small">
+      {agent.pricingVerified ? <>Checked against the vendor's page on <time datetime={agent.verified}>{agent.verified}</time>.</> : <>Not confirmed on the official page yet.</>}
+      <a href={agent.pricingSource} rel="noopener" target="_blank">Official pricing page</a>.
+      {agent.note && <> {agent.note}</>}
+    </p>
+
+    <h2 id="score">How {agent.name} scores</h2>
+    <p>
+      {agent.why}
+      {strong.length > 0 && <> It does best on {list(strong.map((p) => lc(p.label)))}.</>}
+      {weak.length > 0 && <> It loses points on {list(weak.map((p) => lc(p.label)))}.</>}
+    </p>
+    <ul class="bars">
+      {parts.map((p) => (
+        <li>
+          <span class="cl">{p.label}</span>
+          <span class="pbar"><i style={`width:${(p.score / 5) * 100}%`}></i></span>
+          <span class="cp">{fmt(p.points)}/{p.weight}</span>
+        </li>
+      ))}
+    </ul>
+    <p class="small">Scores are editorial judgments on a 1 to 5 scale per criterion, weighted to a total out of 100. <a href={`${rankingPath}#how-scores-work`}>How the scoring works</a>.</p>
+
+    <h2 id="alternatives">{agent.name} alternatives</h2>
+    <ul class="alts">
+      {alts.map((a) => (
+        <li>
+          <a href={hasProfile(a.rank) ? `/${lang}/ai-agents/${a.id}/` : `${rankingPath}#${a.id}`}><strong>{a.name}</strong></a>
+          ({a.total}/100, #{a.rank}): {a.what}
+        </li>
+      ))}
+    </ul>
+    <p><a href={rankingPath}>See the full ranking of {ranked.length} AI agents</a>, with search and filters.</p>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
+
+    <h2>Our independence</h2>
+    <p>
+      Scores and positions are never for sale, and vendors do not review or edit this page. There are no sponsored or affiliate links on it. If that ever changes, the links will be labeled.
+      Spotted a wrong detail?
+      <a href={`mailto:${SITE.contactEmail}?subject=${encodeURIComponent(`AI agents ranking: correction for ${agent.name}`)}`}>Suggest a correction</a>
+      and include the official page that shows it. Visit <a href={agent.url} rel="noopener" target="_blank">{agent.name}'s official site</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .profile h2 { margin-top: 2.5rem; }
+  .profile h3 { margin: 1.5rem 0 0.3rem; font-size: var(--step-0); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 1rem; margin: 1.5rem 0 0; }
+  .facts div { background: var(--surface); border: 1px solid var(--rule); border-radius: 0.5rem; padding: 0.8rem 1rem; }
+  .facts dt { font-size: var(--step--1); color: var(--ink-2); }
+  .facts dd { margin: 0.2rem 0 0; font-size: var(--step-1); font-weight: 700; color: var(--accent); }
+  .facts small { font-size: var(--step--1); font-weight: 500; color: var(--ink-2); }
+  .small { font-size: var(--step--1); color: var(--ink-2); }
+  .bars { list-style: none; margin: 1rem 0; padding: 0; display: grid; gap: 0.5rem; max-width: 34rem; }
+  .bars li { display: grid; grid-template-columns: 10rem 1fr 3.4rem; align-items: center; gap: 0.7rem; }
+  .bars .cl { color: var(--ink-2); }
+  .bars .cp { font-family: var(--mono); text-align: right; }
+  .bars .pbar { height: 6px; background: var(--rule); border-radius: 999px; overflow: hidden; }
+  .bars .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .alts { padding-left: 1.2rem; display: grid; gap: 0.5rem; }
+  @media (max-width: 40rem) {
+    .bars li { grid-template-columns: 7rem 1fr 3rem; }
+  }
+</style>
