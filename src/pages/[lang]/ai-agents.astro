@@ -201,9 +201,14 @@ const faqLd = {
                   {a.move !== null && a.move < 0 && <span class="mv down" title={`Down ${-a.move} since ${prev.label}`}><span aria-hidden="true">▼</span>{-a.move}<span class="sr-only"> places down</span></span>}
                 </td>
                 <td>
-                  {hasProfile(a.rank)
-                    ? <a href={`/${lang}/ai-agents/${a.id}/`}><strong>{a.name}</strong></a>
-                    : <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>}
+                  <span class="namerow">
+                    <span class="logo" data-initial={a.name.charAt(0).toUpperCase()}>
+                      <img src={`https://www.google.com/s2/favicons?domain=${new URL(a.url).hostname.replace(/^www\./, '')}&sz=64`} width="24" height="24" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+                    </span>
+                    {hasProfile(a.rank)
+                      ? <a href={`/${lang}/ai-agents/${a.id}/`}><strong>{a.name}</strong></a>
+                      : <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>}
+                  </span>
                   <span class="co">{a.company}</span>
                   <span class="what">{a.what}</span>
                   <span class="whyline">{a.why}</span>
@@ -372,6 +377,10 @@ const faqLd = {
   .why .cp { font-family: var(--mono); text-align: right; color: var(--ink); }
   .why .pbar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
   .why .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .namerow { display: flex; align-items: center; gap: 0.6rem; }
+  .logo { flex: none; width: 24px; height: 24px; border-radius: 6px; background: #fff; display: grid; place-items: center; overflow: hidden; }
+  .logo img { width: 20px; height: 20px; object-fit: contain; }
+  .logo.fallback { background: var(--accent-dim); color: var(--ink); font: 700 0.8rem var(--font); }
   .prof { display: inline-block; margin-top: 0.3rem; font-size: var(--step--1); }
   .whyline { display: block; margin-top: 0.3rem; font-size: var(--step--1); color: var(--ink); }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -432,6 +441,18 @@ const faqLd = {
     countEl.textContent = shown === rows.length ? `Showing all ${rows.length} agents.` : `Showing ${shown} of ${rows.length} agents.`;
     emptyEl.hidden = shown !== 0;
   }
+
+  // If an icon fails to load, show the agent's initial instead.
+  document.querySelectorAll<HTMLElement>('.logo').forEach((box) => {
+    const img = box.querySelector('img');
+    const fallback = () => {
+      box.classList.add('fallback');
+      box.textContent = box.dataset.initial ?? '';
+    };
+    if (!img) return;
+    img.addEventListener('error', fallback);
+    if (img.complete && img.naturalWidth === 0) fallback();
+  });
 
   chips.forEach((chip) =>
     chip.addEventListener('click', () => {

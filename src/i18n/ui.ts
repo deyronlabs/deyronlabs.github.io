@@ -208,7 +208,7 @@ const en = {
     'What Deyron Labs collects when you visit, what we do not collect and which third-party services are involved.',
   'privacy.lead':
     'We collect as little as we can. We do not run ads, we do not use advertising or tracking cookies, and we do not ask you to create an account.',
-  'privacy.updated': 'Last updated: 8 October 2026',
+  'privacy.updated': 'Last updated: 31 October 2026',
   'privacy.sections': [
     {
       title: 'Visit statistics',
@@ -220,6 +220,12 @@ const en = {
       title: 'Hosting and fonts',
       body: [
         'The site is hosted on GitHub Pages, which, like any web host, processes technical data such as your IP address to serve pages. Page text uses a typeface loaded from Google Fonts, which means your browser contacts Google to download it.',
+      ],
+    },
+    {
+      title: 'Agent icons',
+      body: [
+        'The AI agents ranking shows a small icon for each product. Your browser loads these icons from Google’s favicon service (google.com/s2/favicons), which means your browser contacts Google and Google can see your IP address. The icons are the websites’ own favicons; no cookies are set by us.',
       ],
     },
     {
@@ -480,7 +486,7 @@ const es: Dict = {
     'Qué datos recoge Deyron Labs cuando visitas el sitio, cuáles no recoge y qué servicios de terceros intervienen.',
   'privacy.lead':
     'Recogemos lo mínimo posible. No mostramos anuncios, no usamos cookies publicitarias ni de seguimiento y no te pedimos crear una cuenta.',
-  'privacy.updated': 'Última actualización: 8 de octubre de 2026',
+  'privacy.updated': 'Última actualización: 31 de octubre de 2026',
   'privacy.sections': [
     {
       title: 'Estadísticas de visitas',
@@ -492,6 +498,12 @@ const es: Dict = {
       title: 'Alojamiento y tipografías',
       body: [
         'El sitio está alojado en GitHub Pages que, como cualquier alojamiento web, trata datos técnicos como tu dirección IP para servir las páginas. El texto usa una tipografía cargada desde Google Fonts, por lo que tu navegador contacta con Google para descargarla.',
+      ],
+    },
+    {
+      title: 'Iconos de agentes',
+      body: [
+        'El ranking de agentes de IA muestra un pequeño icono por producto. Tu navegador carga esos iconos desde el servicio de favicons de Google (google.com/s2/favicons), por lo que tu navegador contacta con Google y Google puede ver tu dirección IP. Son los favicons de los propios sitios; nosotros no establecemos cookies.',
       ],
     },
     {
