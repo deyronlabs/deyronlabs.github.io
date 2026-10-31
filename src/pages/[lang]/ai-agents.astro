@@ -183,11 +183,11 @@ const faqLd = {
       <table class="ranking">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Agent</th>
-            <th>Category</th>
-            <th>Score</th>
-            <th>Pricing (USD unless noted)</th>
+            <th class="c-rank">#</th>
+            <th class="c-agent">Agent</th>
+            <th class="c-cat">Category</th>
+            <th class="c-score">Score</th>
+            <th class="c-price">Pricing (USD unless noted)</th>
           </tr>
         </thead>
         <tbody>
@@ -345,6 +345,12 @@ const faqLd = {
   .chip { background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; padding: 0.35rem 0.9rem; font: inherit; font-size: var(--step--1); cursor: pointer; }
   .chip.on { background: var(--accent); color: #0b1f12; border-color: var(--accent); }
   .tablewrap { overflow-x: auto; }
+  /* Fixed layout: opening a score breakdown must not shift the other columns. */
+  .ranking { table-layout: fixed; min-width: 52rem; }
+  .ranking .c-rank { width: 4rem; }
+  .ranking .c-agent { width: 40%; }
+  .ranking .c-cat { width: 8rem; }
+  .ranking .c-score { width: 8rem; }
   table { width: 100%; border-collapse: collapse; min-width: 46rem; }
   th, td { text-align: left; vertical-align: top; padding: 0.75rem 0.6rem; border-bottom: 1px solid var(--rule); }
   th { font-size: var(--step--1); color: var(--ink-2); font-weight: 600; }
@@ -376,7 +382,7 @@ const faqLd = {
   .correct { margin-top: 1.5rem; }
   .method { min-width: 36rem; margin-bottom: 1.5rem; }
   @media (max-width: 40rem) {
-    .ranking { min-width: 0; }
+    .ranking { min-width: 0; table-layout: auto; }
     .ranking thead { position: absolute; left: -9999px; }
     .ranking, .ranking tbody { display: block; }
     .ranking tr { display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.2rem 0.6rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
