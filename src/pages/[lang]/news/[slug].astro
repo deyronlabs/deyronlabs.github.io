@@ -18,6 +18,7 @@ import {
   shareImageOf,
 } from '../../../lib/articles';
 import RelatedStories from '../../../components/RelatedStories.astro';
+import AgentsRankingCallout from '../../../components/AgentsRankingCallout.astro';
 import { relatedArticles, topicsOf, getTopicGroups, topicPath } from '../../../lib/topics';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { newsArticleLd, breadcrumbLd } from '../../../lib/seo';
@@ -132,6 +133,8 @@ const crumbs = [
             ))
           }
         </ol>
+
+        {articleTopics.some((tp) => tp.slug === 'agents') && lang === 'en' && <AgentsRankingCallout lang={lang} />}
 
         <RelatedStories articles={related} lang={lang} />
 
