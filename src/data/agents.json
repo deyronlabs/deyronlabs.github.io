@@ -1433,29 +1433,6 @@
       "verified": "2026-10-31"
     },
     {
-      "id": "sweep",
-      "name": "Sweep",
-      "company": "Sweep",
-      "category": "Coding",
-      "url": "https://sweep.dev",
-      "what": "Coding assistant for JetBrains IDEs with an agent and autocomplete.",
-      "scores": {
-        "adoption": 2,
-        "autonomy": 3,
-        "reliability": 3,
-        "governance": 2,
-        "integrations": 2,
-        "access": 4,
-        "transparency": 2,
-        "momentum": 2
-      },
-      "pricing": "Free to try; no prices shown",
-      "pricingSource": "https://sweep.dev",
-      "pricingVerified": false,
-      "why": "Narrow JetBrains plugin with limited public detail.",
-      "verified": "2026-10-31"
-    },
-    {
       "id": "autogpt",
       "name": "AutoGPT",
       "company": "AutoGPT",
@@ -2351,6 +2328,30 @@
       "pricingVerified": false,
       "why": "Enterprise-friendly governance; prices not confirmed here.",
       "verified": "2026-10-31"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "company": "Cognition",
+      "category": "Coding",
+      "url": "https://windsurf.com",
+      "what": "AI coding IDE with an agent; the official site now redirects to Devin's pages.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "windsurf.com redirects to devin.ai/pricing: Free $0; Pro $20/mo; Max $200/mo; Teams $80/mo plus $40 per dev seat; Enterprise custom",
+      "pricingSource": "https://devin.ai/pricing",
+      "pricingVerified": false,
+      "note": "The plans page lists a Devin Desktop but does not mention Windsurf, so the link between them is not confirmed.",
+      "why": "Widely used agentic IDE; its relationship to Devin's plans is unclear, so prices are marked unverified.",
+      "verified": "2026-10-31"
     }
   ],
   "history": [
@@ -2704,165 +2705,165 @@
           "rank": 60,
           "name": "Junie"
         },
-        "servicenow": {
+        "windsurf": {
           "rank": 61,
+          "name": "Windsurf"
+        },
+        "servicenow": {
+          "rank": 62,
           "name": "ServiceNow AI Agents"
         },
         "sierra": {
-          "rank": 62,
+          "rank": 63,
           "name": "Sierra"
         },
         "decagon": {
-          "rank": 63,
+          "rank": 64,
           "name": "Decagon"
         },
         "kore-ai": {
-          "rank": 64,
+          "rank": 65,
           "name": "Kore.ai"
         },
         "cognigy": {
-          "rank": 65,
+          "rank": 66,
           "name": "Cognigy"
         },
         "qwen": {
-          "rank": 66,
+          "rank": 67,
           "name": "Qwen"
         },
         "north": {
-          "rank": 67,
+          "rank": 68,
           "name": "North"
         },
         "zoom-ai-companion": {
-          "rank": 68,
+          "rank": 69,
           "name": "Zoom AI Companion"
         },
         "antigravity": {
-          "rank": 69,
+          "rank": 70,
           "name": "Google Antigravity"
         },
         "glean": {
-          "rank": 70,
+          "rank": 71,
           "name": "Glean"
         },
         "sana": {
-          "rank": 71,
+          "rank": 72,
           "name": "Sana"
         },
         "kimi": {
-          "rank": 72,
+          "rank": 73,
           "name": "Kimi"
         },
         "meta-ai": {
-          "rank": 73,
+          "rank": 74,
           "name": "Meta AI"
         },
         "stackai": {
-          "rank": 74,
+          "rank": 75,
           "name": "StackAI"
         },
         "writer": {
-          "rank": 75,
+          "rank": 76,
           "name": "Writer"
         },
         "jules": {
-          "rank": 76,
+          "rank": 77,
           "name": "Jules"
         },
         "amp": {
-          "rank": 77,
+          "rank": 78,
           "name": "Amp"
         },
         "tabnine": {
-          "rank": 78,
+          "rank": 79,
           "name": "Tabnine"
         },
         "aider": {
-          "rank": 79,
+          "rank": 80,
           "name": "Aider"
         },
         "bardeen": {
-          "rank": 80,
+          "rank": 81,
           "name": "Bardeen"
         },
         "genspark": {
-          "rank": 81,
+          "rank": 82,
           "name": "Genspark"
         },
         "relevance-ai": {
-          "rank": 82,
+          "rank": 83,
           "name": "Relevance AI"
         },
         "deepseek": {
-          "rank": 83,
+          "rank": 84,
           "name": "DeepSeek"
         },
         "moveworks": {
-          "rank": 84,
+          "rank": 85,
           "name": "Moveworks"
         },
         "le-chat": {
-          "rank": 85,
+          "rank": 86,
           "name": "Le Chat"
         },
         "mindstudio": {
-          "rank": 86,
+          "rank": 87,
           "name": "MindStudio"
         },
         "hebbia": {
-          "rank": 87,
+          "rank": 88,
           "name": "Hebbia"
         },
         "hippocratic-ai": {
-          "rank": 88,
+          "rank": 89,
           "name": "Hippocratic AI"
         },
         "ada": {
-          "rank": 89,
+          "rank": 90,
           "name": "Ada"
         },
         "trae": {
-          "rank": 90,
+          "rank": 91,
           "name": "Trae"
         },
         "grok": {
-          "rank": 91,
+          "rank": 92,
           "name": "Grok"
         },
         "nova-act": {
-          "rank": 92,
+          "rank": 93,
           "name": "Nova Act"
         },
         "autogpt": {
-          "rank": 93,
+          "rank": 94,
           "name": "AutoGPT"
         },
         "moxo": {
-          "rank": 94,
+          "rank": 95,
           "name": "Moxo"
         },
         "artisan": {
-          "rank": 95,
+          "rank": 96,
           "name": "Artisan"
         },
         "liveperson": {
-          "rank": 96,
+          "rank": 97,
           "name": "LivePerson"
         },
         "skywork": {
-          "rank": 97,
+          "rank": 98,
           "name": "Skywork"
         },
         "11x": {
-          "rank": 98,
+          "rank": 99,
           "name": "11x"
         },
         "crescendo": {
-          "rank": 99,
-          "name": "Crescendo"
-        },
-        "sweep": {
           "rank": 100,
-          "name": "Sweep"
+          "name": "Crescendo"
         }
       }
     }

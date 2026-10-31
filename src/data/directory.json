@@ -142,16 +142,6 @@
       "note": "MIT license; the repository is large and maintained."
     },
     {
-      "id": "windsurf",
-      "name": "Windsurf",
-      "company": "Cognition",
-      "category": "Coding",
-      "url": "https://devin.ai/pricing",
-      "what": "AI coding IDE; windsurf.com now redirects to devin.ai, whose plans list a Devin Desktop.",
-      "status": "Merged into Devin",
-      "note": "Verified redirect; the page does not explain the relationship."
-    },
-    {
       "id": "swe-agent",
       "name": "SWE-agent",
       "company": "Princeton and Stanford",
@@ -200,6 +190,16 @@
       "what": "Agent product from MiniMax; the page names it MiniMax Code.",
       "status": "Not checked",
       "note": "Product name and scope unclear on the page."
+    },
+    {
+      "id": "sweep",
+      "name": "Sweep",
+      "company": "Sweep",
+      "category": "Coding",
+      "url": "https://sweep.dev",
+      "what": "Coding assistant for JetBrains IDEs with an agent and autocomplete.",
+      "status": "Active",
+      "note": "Free to try; little public detail on pricing or scope, so it is listed without a score."
     }
   ]
 }
