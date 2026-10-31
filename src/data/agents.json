@@ -1285,12 +1285,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 5,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Not confirmed; the official site blocks automated reading",
-      "pricingSource": "https://www.meta.ai",
-      "pricingVerified": false,
+      "pricing": "Free in the Meta AI app, meta.ai, Instagram, Facebook and WhatsApp; Meta One Core $7.99/mo; Meta One Premium $19.99/mo (higher AI generation limits)",
+      "pricingSource": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
+      "pricingVerified": true,
       "why": "Largest reach through Meta's apps; limited agent autonomy.",
       "verified": "2026-10-31"
     },
@@ -2870,7 +2870,7 @@
   "changelog": [
     {
       "date": "2026-10-31",
-      "text": "Confirmed prices for 16 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion and Jules; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
+      "text": "Confirmed prices for 17 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion, Jules and Meta AI; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
     },
     {
       "date": "2026-10-31",
