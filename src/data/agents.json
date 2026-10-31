@@ -1216,12 +1216,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 5,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "No plans shown on the site",
+      "pricing": "Free; Go RON 14.99/mo; Plus RON 94.99/mo; Pro RON 514.99/mo (prices shown in RON for Romania; they differ by country)",
       "pricingSource": "https://chat.qwen.ai",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Broad model access and free use; agent features are not described clearly.",
       "verified": "2026-10-31"
     },
@@ -2297,12 +2297,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 3,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Free trial with 800 credits per day on sign-up; paid plans are not shown without signing in",
+      "pricing": "Free trial credits on sign-up; Basic $24.99/mo (12,500 credits); Plus $49.99/mo after a $1 7-day trial (28,000 credits); Ultra $249.99/mo (150,000 credits)",
       "pricingSource": "https://www.skywork.ai",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Broad creative agents with limited adoption; prices not shown.",
       "verified": "2026-10-31"
     },
@@ -2870,7 +2870,7 @@
   "changelog": [
     {
       "date": "2026-10-31",
-      "text": "Confirmed prices for 17 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion, Jules and Meta AI; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
+      "text": "Confirmed prices for 19 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion, Jules, Meta AI, Qwen and Skywork; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
     },
     {
       "date": "2026-10-31",
