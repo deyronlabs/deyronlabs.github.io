@@ -1,7 +1,7 @@
 // Clasamentul agenților AI: calcul comun pentru pagina de clasament și paginile de profil.
 import data from '../data/agents.json';
 
-export const PROFILE_COUNT = 20;
+export const PROFILE_COUNT = 100;
 
 type Scores = Record<string, number>;
 export const criteria = data.criteria;
