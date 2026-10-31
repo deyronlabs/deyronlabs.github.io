@@ -1909,9 +1909,9 @@
         "transparency": 3,
         "momentum": 4
       },
-      "pricing": "Plans by daily task limits (15, 100 and 300 tasks/day); no USD amounts on the page",
-      "pricingSource": "https://jules.google",
-      "pricingVerified": false,
+      "pricing": "Free plan with 15 tasks/day; Jules in Pro (100/day) and Jules in Ultra (300/day) come with Google AI Pro and Ultra subscriptions",
+      "pricingSource": "https://jules.google/docs/usage-limits/",
+      "pricingVerified": true,
       "why": "Google-backed autonomous coder with tiered limits; prices not shown.",
       "verified": "2026-10-31"
     },
@@ -2251,12 +2251,12 @@
         "governance": 4,
         "integrations": 4,
         "access": 3,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Included in paid Zoom plans with 2,200 AI credits per user per month; no exact price on the page",
+      "pricing": "ZoomMate plans from €18.40/month/user; AI Companion included in paid Zoom plans",
       "pricingSource": "https://www.zoom.com/en/products/ai-assistant/",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Huge installed base; agent autonomy is limited.",
       "verified": "2026-10-31"
     },
@@ -2870,7 +2870,7 @@
   "changelog": [
     {
       "date": "2026-10-31",
-      "text": "Confirmed prices for 14 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp and AutoGPT; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
+      "text": "Confirmed prices for 16 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion and Jules; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
     },
     {
       "date": "2026-10-31",
