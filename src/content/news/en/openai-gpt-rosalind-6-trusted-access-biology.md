@@ -4,7 +4,7 @@ summary: "OpenAI's system card addendum, published 30 October 2026, describes GP
 seoTitle: "OpenAI GPT-Rosalind-6: biology, approved users"
 seoDescription: "OpenAI's GPT-Rosalind-6 (30 Oct 2026) is a biology and drug-discovery model with fewer refusals, limited to approved customers."
 lang: en
-publishedAt: 2026-10-31T18:30:00Z
+publishedAt: 2026-10-31T17:26:00Z
 entities:
   - OpenAI
   - GPT-Rosalind-6
