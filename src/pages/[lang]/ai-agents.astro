@@ -35,6 +35,8 @@ const withMove = ranked.map((a) => ({ ...a, free: isFree(a.pricing), move: prevR
 const movers = withMove.filter((a) => a.move !== null && a.move !== 0).sort((a, b) => Math.abs(b.move!) - Math.abs(a.move!) || a.rank - b.rank);
 const newcomers = withMove.filter((a) => a.move === null);
 const removed = Object.entries(prevRanks).filter(([id]) => !ranked.some((a) => a.id === id)).map(([, v]) => v);
+const showNew = newcomers.length <= 10;
+const noChanges = movers.length + removed.length + (showNew ? newcomers.length : 0) === 0;
 const categories = [...new Set(ranked.map((a) => a.category))].sort((a, b) =>
   a === 'General' ? -1 : b === 'General' ? 1 : a.localeCompare(b),
 );
@@ -190,7 +192,7 @@ const faqLd = {
               <tr id={a.id} data-cat={a.category} data-rank={a.rank} data-name={a.name.toLowerCase()} data-score={a.total} data-free={a.free ? '1' : '0'} data-q={`${a.name} ${a.company} ${a.what} ${a.category}`.toLowerCase()}>
                 <td class="num" data-label="#">
                   {a.rank}
-                  {a.move === null && newcomers.length <= 10 && <span class="mv new" title="New since the previous edition">new</span>}
+                  {a.move === null && showNew && <span class="mv new" title="New since the previous edition">new</span>}
                   {a.move !== null && a.move > 0 && <span class="mv up" title={`Up ${a.move} since ${prev.label}`}><span aria-hidden="true">▲</span>{a.move}<span class="sr-only"> places up</span></span>}
                   {a.move !== null && a.move < 0 && <span class="mv down" title={`Down ${-a.move} since ${prev.label}`}><span aria-hidden="true">▼</span>{-a.move}<span class="sr-only"> places down</span></span>}
                 </td>
@@ -237,12 +239,12 @@ const faqLd = {
       Changes since the {prev.label} ({prev.date}). Arrows in the table show the same movement.
     </p>
     {
-      movers.length + removed.length + (newcomers.length <= 10 ? newcomers.length : 0) === 0 ? (
+      noChanges ? (
         <p>No changes yet: this is the first update since the {prev.label}.</p>
       ) : (
         <ul class="movers">
           {movers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
-          {newcomers.length <= 10 && newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
+          {showNew && newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
           {removed.map((r) => <li>{r.name}: removed (was {r.rank})</li>)}
         </ul>
       )
