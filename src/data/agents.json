@@ -687,12 +687,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "Free, Pro and Business plans; the official page shows credit costs but plan prices were not readable",
+      "pricing": "Free €0; Pro €25/mo; Business €50/mo (100 monthly credits shown; more on a selector); Enterprise on request",
       "pricingSource": "https://lovable.dev/pricing",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Fast app building with a free start; plan prices could not be confirmed here.",
       "verified": "2026-10-31"
     },
@@ -802,12 +802,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "See the official pricing page (not readable here)",
+      "pricing": "$24.99/mo (10,000 credits); $49.99/mo (21,000 credits); $249.99/mo (125,000 credits); yearly saves 20%",
       "pricingSource": "https://www.genspark.ai/pricing",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Broad task agent with strong momentum; prices could not be confirmed here.",
       "verified": "2026-10-31"
     },
@@ -871,12 +871,12 @@
         "governance": 4,
         "integrations": 5,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Free, Core, Pro, Teams and Enterprise plans; amounts were not readable on the official page",
+      "pricing": "Free $0; Core $9/mo; Pro $16/mo; Teams $29/mo at 10,000 credits and annual billing (about 15% off monthly); Enterprise custom",
       "pricingSource": "https://www.make.com/en/pricing",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Large integration catalog; plan prices could not be confirmed here.",
       "verified": "2026-10-31"
     },
@@ -916,14 +916,14 @@
         "reliability": 3,
         "governance": 3,
         "integrations": 4,
-        "access": 3,
-        "transparency": 3,
+        "access": 2,
+        "transparency": 2,
         "momentum": 3
       },
-      "pricing": "See the official pricing page (only Enterprise was readable here)",
+      "pricing": "No public prices: the pricing page shows only Enterprise, via sales",
       "pricingSource": "https://relevanceai.com/pricing",
-      "pricingVerified": false,
-      "why": "Capable builder for teams; plan prices could not be confirmed here.",
+      "pricingVerified": true,
+      "why": "Capable builder for teams; the pricing page shows only an Enterprise plan via sales.",
       "verified": "2026-10-31"
     },
     {
@@ -1124,12 +1124,12 @@
         "governance": 3,
         "integrations": 4,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 5
       },
-      "pricing": "Platform plans from Free to Business $990/mo; agent-specific rates not shown on the page",
-      "pricingSource": "https://elevenlabs.io/pricing",
-      "pricingVerified": false,
+      "pricing": "Free $0; Starter $6/mo ($1 first month until Nov 8); Creator $22/mo ($11 first month); Pro $99/mo; larger plans on the page",
+      "pricingSource": "https://elevenlabs.io/pricing/agents",
+      "pricingVerified": true,
       "why": "Leading voice quality and momentum; agent rates could not be confirmed here.",
       "verified": "2026-10-31"
     },
@@ -1170,12 +1170,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 5
       },
-      "pricing": "No plans shown on the site",
-      "pricingSource": "https://www.kimi.com",
-      "pricingVerified": false,
+      "pricing": "Plus $15/mo; Pro $31; Max $79; Ultra $159 (annual billing; list prices $19, $39, $99, $199 monthly)",
+      "pricingSource": "https://www.kimi.com/membership/pricing",
+      "pricingVerified": true,
       "why": "Strong momentum and capable agents; prices not shown.",
       "verified": "2026-10-31"
     },
@@ -1193,12 +1193,12 @@
         "governance": 2,
         "integrations": 2,
         "access": 5,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "No consumer plans shown; API priced on a separate page",
-      "pricingSource": "https://www.deepseek.com",
-      "pricingVerified": false,
+      "pricing": "No paid plans for the web chat or app were found; the API is billed per 1M tokens (prices on the official docs page)",
+      "pricingSource": "https://api-docs.deepseek.com/quick_start/pricing",
+      "pricingVerified": true,
       "why": "Huge reach and free access, but limited agent controls.",
       "verified": "2026-10-31"
     },
@@ -1239,12 +1239,12 @@
         "governance": 3,
         "integrations": 3,
         "access": 5,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Free; Pro $14.99/mo; Team $24.99/user/mo; Enterprise contact (page shows these under the Mistral Vibe name)",
+      "pricing": "Free; Pro $14.99/mo; Team $24.99/user/mo; Enterprise custom (the page frames these plans around Mistral's assistant and Vibe coding agent)",
       "pricingSource": "https://mistral.ai/pricing",
-      "pricingVerified": false,
+      "pricingVerified": true,
       "why": "Good access and a European option; the page's plan mapping is unclear.",
       "verified": "2026-10-31"
     },
@@ -1311,7 +1311,7 @@
         "transparency": 3,
         "momentum": 3
       },
-      "pricing": "Not confirmed; the official page was not readable here",
+      "pricing": "Playground requires signing in with an Amazon account; no prices shown",
       "pricingSource": "https://nova.amazon.com/act",
       "pricingVerified": false,
       "why": "Capable browser agent with low adoption so far; details could not be confirmed.",
@@ -1354,13 +1354,13 @@
         "governance": 2,
         "integrations": 3,
         "access": 5,
-        "transparency": 3,
-        "momentum": 3
+        "transparency": 4,
+        "momentum": 2
       },
-      "pricing": "Free open source tool; you pay for model usage (the official page does not state the license)",
-      "pricingSource": "https://aider.chat",
-      "pricingVerified": false,
-      "why": "Popular and open; the page gives limited cost details.",
+      "pricing": "Free and open source (Apache 2.0); you pay your model provider",
+      "pricingSource": "https://github.com/Aider-AI/aider",
+      "pricingVerified": true,
+      "why": "Popular open-source tool under Apache 2.0; the last commit on its main branch was about five months ago.",
       "verified": "2026-10-31"
     },
     {
@@ -1445,14 +1445,14 @@
         "reliability": 2,
         "governance": 2,
         "integrations": 3,
-        "access": 4,
-        "transparency": 3,
+        "access": 3,
+        "transparency": 4,
         "momentum": 2
       },
-      "pricing": "Hosted platform is paid with plans on a separate page; self-hosting is free",
-      "pricingSource": "https://github.com/Significant-Gravitas/AutoGPT",
-      "pricingVerified": false,
-      "why": "A pioneer with a large community; reliability and momentum trail newer agents.",
+      "pricing": "Pro $50/mo (7-day free trial); Max $320/mo (8.5x usage); Team coming soon; yearly saves 15%",
+      "pricingSource": "https://agpt.co/pricing",
+      "pricingVerified": true,
+      "why": "A pioneer with a large community; now a paid hosted platform with a 7-day trial, and reliability trails newer agents.",
       "verified": "2026-10-31"
     },
     {
@@ -1929,12 +1929,12 @@
         "governance": 3,
         "integrations": 3,
         "access": 3,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 5
       },
-      "pricing": "Tiers include agent usage and credits; figures are on the pricing page (not confirmed here)",
-      "pricingSource": "https://ampcode.com",
-      "pricingVerified": false,
+      "pricing": "Hobby free; Individual $20/mo (45,000 orb minutes); Teams no extra charge; Enterprise custom",
+      "pricingSource": "https://ampcode.com/pricing",
+      "pricingVerified": true,
       "why": "Very active product with strong momentum; prices not confirmed.",
       "verified": "2026-10-31"
     },
@@ -2274,12 +2274,12 @@
         "governance": 2,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Free to start; upgrade amounts are on the billing docs, not confirmed here",
-      "pricingSource": "https://www.trae.ai/pricing",
-      "pricingVerified": false,
+      "pricing": "Free $0; Lite $8/mo; Pro $20/mo; Pro+ $60/mo; Ultra $200/mo (cheaper yearly)",
+      "pricingSource": "https://docs.trae.ai/ide/new-plans-and-billing",
+      "pricingVerified": true,
       "why": "Free-to-start AI IDE; prices not confirmed.",
       "verified": "2026-10-31"
     },
@@ -2300,7 +2300,7 @@
         "transparency": 3,
         "momentum": 3
       },
-      "pricing": "No plans shown on the site",
+      "pricing": "Free trial with 800 credits per day on sign-up; paid plans are not shown without signing in",
       "pricingSource": "https://www.skywork.ai",
       "pricingVerified": false,
       "why": "Broad creative agents with limited adoption; prices not shown.",
@@ -2309,7 +2309,7 @@
     {
       "id": "tabnine",
       "name": "Tabnine",
-      "company": "Tabnine",
+      "company": "Tricentis (Tabnine)",
       "category": "Coding",
       "url": "https://www.tabnine.com",
       "what": "Coding assistant with agents that implement Jira issues.",
@@ -2319,23 +2319,23 @@
         "reliability": 4,
         "governance": 5,
         "integrations": 4,
-        "access": 3,
-        "transparency": 3,
+        "access": 2,
+        "transparency": 2,
         "momentum": 2
       },
-      "pricing": "No plans shown on the fetched page",
+      "pricing": "No public prices; contact sales (tabnine.com now redirects to Tricentis)",
       "pricingSource": "https://www.tabnine.com/pricing",
-      "pricingVerified": false,
-      "why": "Enterprise-friendly governance; prices not confirmed here.",
+      "pricingVerified": true,
+      "why": "Enterprise-friendly governance; the site now belongs to Tricentis and sells through sales.",
       "verified": "2026-10-31"
     },
     {
       "id": "windsurf",
-      "name": "Windsurf",
+      "name": "Windsurf (now Devin Desktop)",
       "company": "Cognition",
       "category": "Coding",
       "url": "https://windsurf.com",
-      "what": "AI coding IDE with an agent; the official site now redirects to Devin's pages.",
+      "what": "AI coding IDE with an agent; windsurf.com now serves Devin Desktop.",
       "scores": {
         "adoption": 4,
         "autonomy": 4,
@@ -2343,14 +2343,13 @@
         "governance": 3,
         "integrations": 3,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 3
       },
-      "pricing": "windsurf.com redirects to devin.ai/pricing: Free $0; Pro $20/mo; Max $200/mo; Teams $80/mo plus $40 per dev seat; Enterprise custom",
+      "pricing": "windsurf.com now serves Devin Desktop; plans on devin.ai: Free $0; Pro $20/mo; Max $200/mo; Teams $80/mo plus $40 per dev seat; Enterprise custom",
       "pricingSource": "https://devin.ai/pricing",
-      "pricingVerified": false,
-      "note": "The plans page lists a Devin Desktop but does not mention Windsurf, so the link between them is not confirmed.",
-      "why": "Widely used agentic IDE; its relationship to Devin's plans is unclear, so prices are marked unverified.",
+      "pricingVerified": true,
+      "why": "Widely used agentic IDE; windsurf.com now serves Devin Desktop, so plans follow Devin's pricing.",
       "verified": "2026-10-31"
     }
   ],
@@ -2869,6 +2868,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-10-31",
+      "text": "Confirmed prices for 14 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp and AutoGPT; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
+    },
     {
       "date": "2026-10-31",
       "text": "Expanded the ranking from 24 to 100 agents. Every new agent was checked on its official page; prices that could not be read are marked unverified."

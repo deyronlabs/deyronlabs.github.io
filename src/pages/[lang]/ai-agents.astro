@@ -35,6 +35,9 @@ const withMove = ranked.map((a) => ({ ...a, free: isFree(a.pricing), move: prevR
 const movers = withMove.filter((a) => a.move !== null && a.move !== 0).sort((a, b) => Math.abs(b.move!) - Math.abs(a.move!) || a.rank - b.rank);
 const newcomers = withMove.filter((a) => a.move === null);
 const removed = Object.entries(prevRanks).filter(([id]) => !ranked.some((a) => a.id === id)).map(([, v]) => v);
+const MOVER_LIMIT = 15;
+const topMovers = movers.slice(0, MOVER_LIMIT);
+const moreMovers = movers.length - topMovers.length;
 const showNew = newcomers.length <= 10;
 const noChanges = movers.length + removed.length + (showNew ? newcomers.length : 0) === 0;
 const categories = [...new Set(ranked.map((a) => a.category))].sort((a, b) =>
@@ -45,7 +48,7 @@ const verifiedCount = ranked.filter((a) => a.pricingVerified).length;
 const year = data.updated.slice(0, 4);
 const pageTitle = `Best AI agents in ${year}, ranked and scored`;
 const seoTitle = `Best AI Agents ${year}: Ranked and Scored`;
-const seoDescription = `${ranked.length} AI agents ranked out of 100 on eight weighted criteria, with official prices checked on ${data.updated}. See who leads in coding, enterprise and more.`;
+const seoDescription = `${ranked.length} AI agents, each scored out of 100 on eight weighted criteria, with official prices checked on ${data.updated}. See who leads in coding, enterprise and more.`;
 const pageUrl = absUrl(path);
 
 const catLeaders = categories
@@ -243,9 +246,10 @@ const faqLd = {
         <p>No changes yet: this is the first update since the {prev.label}.</p>
       ) : (
         <ul class="movers">
-          {movers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
+          {topMovers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
           {showNew && newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
           {removed.map((r) => <li>{r.name}: removed (was {r.rank})</li>)}
+          {moreMovers > 0 && <li>and {moreMovers} smaller moves, shown by the arrows in the table</li>}
         </ul>
       )
     }
