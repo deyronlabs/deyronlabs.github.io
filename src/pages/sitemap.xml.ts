@@ -4,6 +4,7 @@ import { getAllEnabledEpisodes, episodeUrlPath } from '../lib/lab';
 import { getAllEnabledInfraEpisodes, infraUrlPath, infraLastChange } from '../lib/infra';
 import { getAllEnabledArticles, getTranslations, lastChange, pathOf } from '../lib/articles';
 import { getTopicGroups, topicPath } from '../lib/topics';
+import agentsData from '../data/agents.json';
 import { buildSitemap, type SitemapEntry } from '../lib/feeds';
 
 export const GET: APIRoute = async () => {
@@ -18,7 +19,7 @@ export const GET: APIRoute = async () => {
         lang,
         path: sub === '' && lang === DEFAULT_LANG ? '/' : `/${lang}/${sub}`,
         alternates,
-        lastmod: sub === '' || sub === 'news/' ? newest : undefined,
+        lastmod: sub === '' || sub === 'news/' ? newest : sub === 'ai-agents/' ? new Date(`${agentsData.updated}T00:00:00Z`) : undefined,
       });
     }
   }
