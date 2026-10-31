@@ -603,6 +603,1754 @@
       "pricingVerified": true,
       "verified": "2026-10-31",
       "why": "Excellent integrations and governance; no public prices and access is via a demo."
+    },
+    {
+      "id": "ibm-watsonx-orchestrate",
+      "name": "IBM watsonx Orchestrate",
+      "company": "IBM",
+      "category": "Enterprise",
+      "url": "https://www.ibm.com/products/watsonx-orchestrate",
+      "what": "Builds, deploys and governs agents that connect a company's systems.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 5,
+        "access": 2,
+        "transparency": 4,
+        "momentum": 3
+      },
+      "pricing": "30-day free trial; Essentials from $530/mo; Standard from $6,360/mo; Premium on request",
+      "pricingSource": "https://www.ibm.com/products/watsonx-orchestrate/pricing",
+      "pricingVerified": true,
+      "why": "Strong governance and integrations, with published entry prices; aimed at large buyers, so access is limited.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "company": "Google",
+      "category": "Coding",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "what": "Open-source command-line agent that brings Gemini to the terminal.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free and open source (Apache 2.0); free tier of 60 requests/min and 1,000/day with a personal Google account",
+      "pricingSource": "https://github.com/google-gemini/gemini-cli",
+      "pricingVerified": true,
+      "why": "Open source with a generous free tier and active maintenance; fewer enterprise controls than paid rivals.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "company": "Cline",
+      "category": "Coding",
+      "url": "https://cline.bot",
+      "what": "Open-source coding agent that runs inside the editor.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free plan (you pay only for model usage); Enterprise on request",
+      "pricingSource": "https://cline.bot/pricing",
+      "pricingVerified": true,
+      "why": "Open and transparent, with free access; governance depends on how a team sets it up.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "company": "Lovable",
+      "category": "App builders",
+      "url": "https://lovable.dev",
+      "what": "Builds apps, internal tools and prototypes from a prompt.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "Free, Pro and Business plans; the official page shows credit costs but plan prices were not readable",
+      "pricingSource": "https://lovable.dev/pricing",
+      "pricingVerified": false,
+      "why": "Fast app building with a free start; plan prices could not be confirmed here.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "company": "StackBlitz",
+      "category": "App builders",
+      "url": "https://bolt.new",
+      "what": "Builds websites, apps and prototypes in the browser from a prompt.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0; Pro $25/mo; Teams $30/member/mo; Enterprise custom",
+      "pricingSource": "https://bolt.new/pricing",
+      "pricingVerified": true,
+      "why": "Clear public pricing and a free tier; limited governance for companies.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "v0",
+      "name": "v0",
+      "company": "Vercel",
+      "category": "App builders",
+      "url": "https://v0.app",
+      "what": "Designs and iterates full-stack web apps from prompts.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Plus $30/user/mo; Business $100/user/mo; Enterprise custom",
+      "pricingSource": "https://v0.app/pricing",
+      "pricingVerified": true,
+      "why": "Backed by a major platform with clear prices; strongest for web interfaces.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "sierra",
+      "name": "Sierra",
+      "company": "Sierra",
+      "category": "Customer support",
+      "url": "https://sierra.ai",
+      "what": "Agents for customer conversations across chat, voice and email.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 4
+      },
+      "pricing": "Outcome-based pricing; no amounts published",
+      "pricingSource": "https://sierra.ai",
+      "pricingVerified": true,
+      "why": "Strong enterprise support agent, but no public prices and access is through sales.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "decagon",
+      "name": "Decagon",
+      "company": "Decagon",
+      "category": "Customer support",
+      "url": "https://decagon.ai",
+      "what": "Customer-service agents across chat, voice and email.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 4
+      },
+      "pricing": "No public prices; demo or sales contact",
+      "pricingSource": "https://decagon.ai",
+      "pricingVerified": true,
+      "why": "Well regarded in support, but prices and trials are not public.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "genspark",
+      "name": "Genspark",
+      "company": "Genspark",
+      "category": "General",
+      "url": "https://www.genspark.ai",
+      "what": "General agent for research, slides, documents and tasks.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "See the official pricing page (not readable here)",
+      "pricingSource": "https://www.genspark.ai/pricing",
+      "pricingVerified": false,
+      "why": "Broad task agent with strong momentum; prices could not be confirmed here.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "company": "Amazon (AWS)",
+      "category": "Coding",
+      "url": "https://kiro.dev",
+      "what": "Agentic IDE that works across IDE, CLI and web.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 4,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Pro $20/mo; Pro+ $40; Pro Max $100; Power $200",
+      "pricingSource": "https://kiro.dev/pricing",
+      "pricingVerified": true,
+      "why": "Spec-driven agentic IDE with AWS governance and full public pricing.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "amazon-q-developer",
+      "name": "Amazon Q Developer",
+      "company": "Amazon (AWS)",
+      "category": "Coding",
+      "url": "https://aws.amazon.com/q/developer/",
+      "what": "AWS coding assistant with agentic requests and code upgrades.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0 (50 agentic requests/mo); Pro $19/user/mo",
+      "pricingSource": "https://aws.amazon.com/q/developer/pricing/",
+      "pricingVerified": true,
+      "why": "Trusted inside AWS with clear prices; momentum is lower than newer coding agents.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "company": "Make",
+      "category": "Automation",
+      "url": "https://www.make.com",
+      "what": "Automation platform with AI agents and an assistant (Maia).",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 5,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Free, Core, Pro, Teams and Enterprise plans; amounts were not readable on the official page",
+      "pricingSource": "https://www.make.com/en/pricing",
+      "pricingVerified": false,
+      "why": "Large integration catalog; plan prices could not be confirmed here.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "lindy",
+      "name": "Lindy",
+      "company": "Lindy",
+      "category": "Productivity",
+      "url": "https://www.lindy.ai",
+      "what": "AI teammates for email, meetings and scheduled tasks.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 5,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0; Team $29.99/user/mo; Enterprise custom",
+      "pricingSource": "https://www.lindy.ai/pricing",
+      "pricingVerified": true,
+      "why": "Broad integrations and clear prices; smaller user base than the leaders.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "relevance-ai",
+      "name": "Relevance AI",
+      "company": "Relevance AI",
+      "category": "Automation",
+      "url": "https://relevanceai.com",
+      "what": "Builds agents and multi-agent teams for business work.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "See the official pricing page (only Enterprise was readable here)",
+      "pricingSource": "https://relevanceai.com/pricing",
+      "pricingVerified": false,
+      "why": "Capable builder for teams; plan prices could not be confirmed here.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "dust",
+      "name": "Dust",
+      "company": "Dust",
+      "category": "Enterprise",
+      "url": "https://dust.tt",
+      "what": "Platform to build agents on a company's data and tools.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 5,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free €0; Pro €30/seat/mo (€24 annual); Max €150 (€120 annual); Enterprise custom",
+      "pricingSource": "https://dust.tt/home/pricing",
+      "pricingVerified": true,
+      "why": "Strong integrations with transparent seat prices (listed in euros).",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "gumloop",
+      "name": "Gumloop",
+      "company": "Gumloop",
+      "category": "Automation",
+      "url": "https://www.gumloop.com",
+      "what": "No-code platform for AI workflows and agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 4,
+        "momentum": 4
+      },
+      "pricing": "Pro from $37/mo; Enterprise custom",
+      "pricingSource": "https://www.gumloop.com/pricing",
+      "pricingVerified": true,
+      "why": "Flexible builder with public entry pricing; no free plan listed.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "sana",
+      "name": "Sana",
+      "company": "Sana",
+      "category": "Enterprise",
+      "url": "https://sana.ai",
+      "what": "Agent for work that searches and acts on company knowledge.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No prices on the site; free account sign-up",
+      "pricingSource": "https://sana.ai",
+      "pricingVerified": true,
+      "why": "Good knowledge agent with an easy start; prices are not public.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "zendesk-ai-agents",
+      "name": "Zendesk AI Agents",
+      "company": "Zendesk",
+      "category": "Customer support",
+      "url": "https://www.zendesk.com/service/ai/ai-agents/",
+      "what": "Support agents billed per automated resolution.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 5,
+        "governance": 5,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 4,
+        "momentum": 3
+      },
+      "pricing": "$1.50 per committed automated resolution; $2.00 pay-as-you-go",
+      "pricingSource": "https://www.zendesk.com/pricing/",
+      "pricingVerified": true,
+      "why": "Reliable and well governed inside Zendesk; price per resolution is public.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "kore-ai",
+      "name": "Kore.ai",
+      "company": "Kore.ai",
+      "category": "Enterprise",
+      "url": "https://kore.ai",
+      "what": "Enterprise agents and workflows for service and employee productivity.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 5,
+        "governance": 5,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo or RFP",
+      "pricingSource": "https://kore.ai",
+      "pricingVerified": true,
+      "why": "Mature enterprise platform; sales-led and no public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "cognigy",
+      "name": "Cognigy",
+      "company": "NiCE",
+      "category": "Customer support",
+      "url": "https://www.cognigy.com",
+      "what": "Enterprise agents for voice, chat and messaging in contact centers.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 5,
+        "governance": 5,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo or free trial request",
+      "pricingSource": "https://www.cognigy.com",
+      "pricingVerified": true,
+      "why": "Strong contact-center fit; branded NiCE Cognigy, with no public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "company": "Ada",
+      "category": "Customer support",
+      "url": "https://www.ada.cx",
+      "what": "Customer-service agents for voice, messaging and email.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; talk to sales",
+      "pricingSource": "https://www.ada.cx",
+      "pricingVerified": true,
+      "why": "Established support agent; access is through sales.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "retell-ai",
+      "name": "Retell AI",
+      "company": "Retell AI",
+      "category": "Voice",
+      "url": "https://www.retellai.com",
+      "what": "Platform for building AI phone agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 3,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Pay as you go: voice agents $0.07 to $0.31/min; $10 free credits; chat agents from $0.002/message",
+      "pricingSource": "https://www.retellai.com/pricing",
+      "pricingVerified": true,
+      "why": "Detailed public pricing and a free start; strong for phone automation.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "elevenlabs-agents",
+      "name": "ElevenLabs Agents",
+      "company": "ElevenLabs",
+      "category": "Voice",
+      "url": "https://elevenlabs.io",
+      "what": "Conversational voice and chat agents.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 3,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 5
+      },
+      "pricing": "Platform plans from Free to Business $990/mo; agent-specific rates not shown on the page",
+      "pricingSource": "https://elevenlabs.io/pricing",
+      "pricingVerified": false,
+      "why": "Leading voice quality and momentum; agent rates could not be confirmed here.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "vapi",
+      "name": "Vapi",
+      "company": "Vapi",
+      "category": "Voice",
+      "url": "https://vapi.ai",
+      "what": "Developer platform for voice agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 5,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "$0 to start; $0.05/min hosting plus provider costs; Core $29/mo; Pro min $999/mo",
+      "pricingSource": "https://vapi.ai/pricing",
+      "pricingVerified": true,
+      "why": "Flexible and fully priced; developer-oriented.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "company": "Moonshot AI",
+      "category": "General",
+      "url": "https://www.kimi.com",
+      "what": "Assistant with deep research, document and programming agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 5
+      },
+      "pricing": "No plans shown on the site",
+      "pricingSource": "https://www.kimi.com",
+      "pricingVerified": false,
+      "why": "Strong momentum and capable agents; prices not shown.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "company": "DeepSeek",
+      "category": "General",
+      "url": "https://www.deepseek.com",
+      "what": "Chat and desktop app with deep-thinking and search; API access.",
+      "scores": {
+        "adoption": 5,
+        "autonomy": 2,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 2,
+        "access": 5,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "No consumer plans shown; API priced on a separate page",
+      "pricingSource": "https://www.deepseek.com",
+      "pricingVerified": false,
+      "why": "Huge reach and free access, but limited agent controls.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen",
+      "company": "Alibaba",
+      "category": "General",
+      "url": "https://chat.qwen.ai",
+      "what": "Chat access to Qwen models with tools and artifacts.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "No plans shown on the site",
+      "pricingSource": "https://chat.qwen.ai",
+      "pricingVerified": false,
+      "why": "Broad model access and free use; agent features are not described clearly.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "le-chat",
+      "name": "Le Chat",
+      "company": "Mistral AI",
+      "category": "General",
+      "url": "https://mistral.ai",
+      "what": "Mistral's assistant with custom agents and scheduled tasks.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Free; Pro $14.99/mo; Team $24.99/user/mo; Enterprise contact (page shows these under the Mistral Vibe name)",
+      "pricingSource": "https://mistral.ai/pricing",
+      "pricingVerified": false,
+      "why": "Good access and a European option; the page's plan mapping is unclear.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "north",
+      "name": "North",
+      "company": "Cohere",
+      "category": "Enterprise",
+      "url": "https://cohere.com/north",
+      "what": "Agent platform for enterprises that runs where the data lives.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; contact sales",
+      "pricingSource": "https://cohere.com/north",
+      "pricingVerified": true,
+      "why": "Governance-first enterprise platform; no public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "company": "Meta",
+      "category": "General",
+      "url": "https://www.meta.ai",
+      "what": "Meta's assistant across its apps.",
+      "scores": {
+        "adoption": 5,
+        "autonomy": 2,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Not confirmed; the official site blocks automated reading",
+      "pricingSource": "https://www.meta.ai",
+      "pricingVerified": false,
+      "why": "Largest reach through Meta's apps; limited agent autonomy.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "nova-act",
+      "name": "Nova Act",
+      "company": "Amazon",
+      "category": "Browser",
+      "url": "https://nova.amazon.com/act",
+      "what": "Amazon's agent for browser tasks.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Not confirmed; the official page was not readable here",
+      "pricingSource": "https://nova.amazon.com/act",
+      "pricingVerified": false,
+      "why": "Capable browser agent with low adoption so far; details could not be confirmed.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "notion-ai",
+      "name": "Notion AI",
+      "company": "Notion",
+      "category": "Productivity",
+      "url": "https://www.notion.com",
+      "what": "Notion Agent and custom agents inside workspaces.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Plus $10/member/mo; Business $20 (includes Notion Agent); custom agents $10 per 1,000 credits after a free trial",
+      "pricingSource": "https://www.notion.com/pricing",
+      "pricingVerified": true,
+      "why": "Large user base and clear prices; agent features sit in higher plans.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "company": "Aider",
+      "category": "Coding",
+      "url": "https://aider.chat",
+      "what": "Terminal pair-programming tool that works with many models.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Free open source tool; you pay for model usage (the official page does not state the license)",
+      "pricingSource": "https://aider.chat",
+      "pricingVerified": false,
+      "why": "Popular and open; the page gives limited cost details.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "company": "OpenCode",
+      "category": "Coding",
+      "url": "https://opencode.ai",
+      "what": "Open-source coding agent for terminal, desktop and IDE.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 4,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 5
+      },
+      "pricing": "Free and open source (MIT); optional Zen account for tested models",
+      "pricingSource": "https://opencode.ai",
+      "pricingVerified": true,
+      "why": "Open, flexible and fast-growing; governance is up to the user.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "qodo",
+      "name": "Qodo",
+      "company": "Qodo",
+      "category": "Coding",
+      "url": "https://www.qodo.ai",
+      "what": "Code review agent that understands the surrounding codebase.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 4,
+        "momentum": 3
+      },
+      "pricing": "Credits at $0.012 each, pooled by team; 14-day trial; Enterprise on request",
+      "pricingSource": "https://www.qodo.ai/pricing/",
+      "pricingVerified": true,
+      "why": "Focused on review quality; no permanent free tier.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "company": "OpenHands",
+      "category": "Coding",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "what": "Self-hosted control center for coding agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free and open source (MIT); optional cloud and enterprise versions",
+      "pricingSource": "https://github.com/OpenHands/OpenHands",
+      "pricingVerified": true,
+      "why": "Open and actively maintained; good fit for teams that self-host.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "sweep",
+      "name": "Sweep",
+      "company": "Sweep",
+      "category": "Coding",
+      "url": "https://sweep.dev",
+      "what": "Coding assistant for JetBrains IDEs with an agent and autocomplete.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 2,
+        "access": 4,
+        "transparency": 2,
+        "momentum": 2
+      },
+      "pricing": "Free to try; no prices shown",
+      "pricingSource": "https://sweep.dev",
+      "pricingVerified": false,
+      "why": "Narrow JetBrains plugin with limited public detail.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "autogpt",
+      "name": "AutoGPT",
+      "company": "AutoGPT",
+      "category": "General",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "what": "Platform for teams of AI experts, hosted or self-hosted.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 2,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 2
+      },
+      "pricing": "Hosted platform is paid with plans on a separate page; self-hosting is free",
+      "pricingSource": "https://github.com/Significant-Gravitas/AutoGPT",
+      "pricingVerified": false,
+      "why": "A pioneer with a large community; reliability and momentum trail newer agents.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "bardeen",
+      "name": "Bardeen",
+      "company": "Bardeen",
+      "category": "Automation",
+      "url": "https://www.bardeen.ai",
+      "what": "Automation for go-to-market tasks like lead sourcing and CRM entry.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Basic $10/mo; Premium $50/mo; Enterprise custom",
+      "pricingSource": "https://www.bardeen.ai/pricing",
+      "pricingVerified": true,
+      "why": "Useful for sales workflows with clear prices; narrower scope.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "botpress",
+      "name": "Botpress",
+      "company": "Botpress",
+      "category": "Agent builders",
+      "url": "https://botpress.com",
+      "what": "Builds and deploys support agents across channels.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0; Plus $150/mo; Team $750/mo (annual); Enterprise custom",
+      "pricingSource": "https://botpress.com/pricing",
+      "pricingVerified": true,
+      "why": "Solid builder with a free plan and public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "company": "Dify",
+      "category": "Agent builders",
+      "url": "https://dify.ai",
+      "what": "Open-source platform to build and run AI apps and agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 3,
+        "integrations": 5,
+        "access": 5,
+        "transparency": 4,
+        "momentum": 4
+      },
+      "pricing": "Community and Sandbox free (open source, self-hostable); Professional $590/yr; Team $1,590/yr; Enterprise custom",
+      "pricingSource": "https://dify.ai/pricing",
+      "pricingVerified": true,
+      "why": "Open source with strong integrations and published annual prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "mindstudio",
+      "name": "MindStudio",
+      "company": "MindStudio",
+      "category": "Agent builders",
+      "url": "https://www.mindstudio.ai",
+      "what": "No-code builder for AI agents.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0 (plus usage); Individual $20/mo ($16 annual); Business custom",
+      "pricingSource": "https://www.mindstudio.ai/pricing",
+      "pricingVerified": true,
+      "why": "Easy to start with public prices; smaller adoption.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "stackai",
+      "name": "StackAI",
+      "company": "StackAI (Asana)",
+      "category": "Enterprise",
+      "url": "https://www.stackai.com",
+      "what": "No-code platform to build, deploy and govern enterprise agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 4
+      },
+      "pricing": "No public prices",
+      "pricingSource": "https://www.stackai.com/",
+      "pricingVerified": true,
+      "why": "Governance-focused; the site announces its acquisition by Asana.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "moxo",
+      "name": "Moxo",
+      "company": "Moxo",
+      "category": "Enterprise",
+      "url": "https://www.moxo.com",
+      "what": "Workflows where people and AI agents complete business processes together.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 3,
+        "access": 3,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; free trial or demo",
+      "pricingSource": "https://www.moxo.com",
+      "pricingVerified": true,
+      "why": "Process-focused with trial access; limited public detail.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "rasa",
+      "name": "Rasa",
+      "company": "Rasa",
+      "category": "Agent builders",
+      "url": "https://rasa.com",
+      "what": "Agent platform for customer-facing assistants (CALM, voice, chat).",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 4,
+        "momentum": 2
+      },
+      "pricing": "Free Developer Edition (1 bot, 1,000 external conversations/mo); Enterprise on request",
+      "pricingSource": "https://rasa.com/pricing/",
+      "pricingVerified": true,
+      "why": "Long-standing platform with a free edition; momentum is modest.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "atlassian-rovo",
+      "name": "Atlassian Rovo",
+      "company": "Atlassian",
+      "category": "Productivity",
+      "url": "https://www.atlassian.com/software/rovo",
+      "what": "Search, chat and agents across Atlassian and connected tools.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 5,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "Included in Standard, Premium and Enterprise Cloud plans of Jira and Confluence; usage measured in credits",
+      "pricingSource": "https://www.atlassian.com/software/rovo",
+      "pricingVerified": true,
+      "why": "Excellent governance and integrations for Atlassian customers; no separate price.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "company": "Browser Use",
+      "category": "Browser",
+      "url": "https://browser-use.com",
+      "what": "Open-source browser agents and cloud browsers.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Pay as you go: cloud browsers $0.02/hour; web agents model cost +20%; $1 free credit",
+      "pricingSource": "https://browser-use.com/pricing",
+      "pricingVerified": true,
+      "why": "Popular open-source option with transparent usage prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "writer",
+      "name": "Writer",
+      "company": "Writer",
+      "category": "Enterprise",
+      "url": "https://writer.com",
+      "what": "Enterprise platform that automates multi-step work with agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; Starter plan with a 14-day trial; Enterprise via sales",
+      "pricingSource": "https://www.writer.com/pricing/",
+      "pricingVerified": true,
+      "why": "Strong governance for enterprises; prices are not public.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "harvey",
+      "name": "Harvey",
+      "company": "Harvey",
+      "category": "Industry",
+      "url": "https://www.harvey.ai",
+      "what": "Agents for law firms and in-house legal teams.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 5
+      },
+      "pricing": "No public prices; demo",
+      "pricingSource": "https://www.harvey.ai",
+      "pricingVerified": true,
+      "why": "Leading legal agent with strong momentum; sales-only access.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "hebbia",
+      "name": "Hebbia",
+      "company": "Hebbia",
+      "category": "Industry",
+      "url": "https://www.hebbia.com",
+      "what": "Document analysis and research agents for finance.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo",
+      "pricingSource": "https://www.hebbia.com",
+      "pricingVerified": true,
+      "why": "Specialist for finance and legal research; sales-only access.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "company": "Clay",
+      "category": "Sales",
+      "url": "https://www.clay.com",
+      "what": "Prospecting and data enrichment workflows with AI.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 3,
+        "integrations": 5,
+        "access": 4,
+        "transparency": 4,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Launch $167/mo; Growth $446/mo; Enterprise custom (the page FAQ shows different starting prices)",
+      "pricingSource": "https://www.clay.com/pricing",
+      "pricingVerified": true,
+      "why": "Deep integrations and a free tier; page prices are inconsistent, so confirm before buying.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "11x",
+      "name": "11x",
+      "company": "11x",
+      "category": "Sales",
+      "url": "https://www.11x.ai",
+      "what": "Sales agents for outbound (Alice) and inbound (Julian).",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 2,
+        "governance": 3,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo",
+      "pricingSource": "https://www.11x.ai",
+      "pricingVerified": true,
+      "why": "Ambitious autonomous sales agents; limited public proof of reliability.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "artisan",
+      "name": "Artisan",
+      "company": "Artisan",
+      "category": "Sales",
+      "url": "https://www.artisan.co",
+      "what": "AI employee Ava for outbound prospecting and meetings.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; plans sized to lead volume, talk to sales",
+      "pricingSource": "https://www.artisan.co/pricing",
+      "pricingVerified": true,
+      "why": "Autonomous outbound agent; no public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "polyai",
+      "name": "PolyAI",
+      "company": "PolyAI",
+      "category": "Voice",
+      "url": "https://poly.ai",
+      "what": "Voice agents that handle phone calls end to end.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Platform API: 2 cents per connected minute plus tokens; the voice agent platform has no public price",
+      "pricingSource": "https://poly.ai/pricing",
+      "pricingVerified": true,
+      "why": "Strong enterprise voice agent; part of the pricing is public.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "bland",
+      "name": "Bland",
+      "company": "Bland AI",
+      "category": "Voice",
+      "url": "https://www.bland.ai",
+      "what": "Platform for AI phone agents at scale.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Start $0 plus $0.14/min; Build $299/mo plus $0.12/min; Enterprise custom",
+      "pricingSource": "https://www.bland.ai/pricing",
+      "pricingVerified": true,
+      "why": "Simple per-minute pricing and a free start.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "tidio",
+      "name": "Tidio",
+      "company": "Tidio",
+      "category": "Customer support",
+      "url": "https://www.tidio.com",
+      "what": "Customer service with the Lyro AI agent, chat and flows.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 4,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Free $0; Starter $24.17/mo; Growth from $49.17; Plus from $300; Lyro AI Agent from $32.50/mo",
+      "pricingSource": "https://www.tidio.com/pricing/",
+      "pricingVerified": true,
+      "why": "Accessible to small businesses with clear prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "liveperson",
+      "name": "LivePerson",
+      "company": "LivePerson",
+      "category": "Customer support",
+      "url": "https://www.liveperson.com",
+      "what": "Platform for conversations handled by AI bots and human agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 2,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 2
+      },
+      "pricing": "No public prices; Bronze, Silver and Gold tiers by quote",
+      "pricingSource": "https://www.liveperson.com/pricing/",
+      "pricingVerified": true,
+      "why": "Mature platform; prices are by quote and momentum is lower.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "jules",
+      "name": "Jules",
+      "company": "Google",
+      "category": "Coding",
+      "url": "https://jules.google",
+      "what": "Autonomous coding agent for bug fixes, version bumps and tests.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "Plans by daily task limits (15, 100 and 300 tasks/day); no USD amounts on the page",
+      "pricingSource": "https://jules.google",
+      "pricingVerified": false,
+      "why": "Google-backed autonomous coder with tiered limits; prices not shown.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "amp",
+      "name": "Amp",
+      "company": "Sourcegraph",
+      "category": "Coding",
+      "url": "https://ampcode.com",
+      "what": "Coding agent that runs in cloud environments or on your machine.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 5
+      },
+      "pricing": "Tiers include agent usage and credits; figures are on the pricing page (not confirmed here)",
+      "pricingSource": "https://ampcode.com",
+      "pricingVerified": false,
+      "why": "Very active product with strong momentum; prices not confirmed.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "warp",
+      "name": "Warp",
+      "company": "Warp",
+      "category": "Coding",
+      "url": "https://www.warp.dev",
+      "what": "Agentic terminal with coding agents built in.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Build $20/mo ($18 annual); Max $200 ($180); Business $50/user ($45); Enterprise custom",
+      "pricingSource": "https://www.warp.dev/pricing",
+      "pricingVerified": true,
+      "why": "Easy to start with clear prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "factory",
+      "name": "Factory",
+      "company": "Factory",
+      "category": "Coding",
+      "url": "https://factory.com",
+      "what": "Droids: coding agents across desktop, CLI, SDK and cloud.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 4,
+        "integrations": 3,
+        "access": 3,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Pro $20/mo; Plus $100; Max $200; Teams $60/team plus $40/seat; Business and Enterprise on request",
+      "pricingSource": "https://factory.com/pricing",
+      "pricingVerified": true,
+      "why": "Enterprise-minded coding agents with transparent prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "augment-code",
+      "name": "Augment Code",
+      "company": "Augment",
+      "category": "Coding",
+      "url": "https://www.augmentcode.com",
+      "what": "Coding agents with a CLI and cloud agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 4,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Standard $20/mo flat (includes $20 usage); Business $100/mo flat; Enterprise custom",
+      "pricingSource": "https://www.augmentcode.com/pricing",
+      "pricingVerified": true,
+      "why": "Flat team pricing and good integrations.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "base44",
+      "name": "Base44",
+      "company": "Base44",
+      "category": "App builders",
+      "url": "https://www.base44.com",
+      "what": "Builds working apps and websites from plain-language descriptions.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Starter $16/mo; Builder $40; Pro $80; Elite $160 (annual-billing equivalents); Enterprise custom",
+      "pricingSource": "https://www.base44.com/pricing",
+      "pricingVerified": true,
+      "why": "Easy for non-developers with clear prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "hubspot-breeze",
+      "name": "HubSpot Breeze",
+      "company": "HubSpot",
+      "category": "Sales",
+      "url": "https://www.hubspot.com/products/artificial-intelligence/breeze",
+      "what": "Agents for marketing, sales and service built on CRM data.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 5,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 4
+      },
+      "pricing": "Agent Hub is included in Starter, Professional and Enterprise editions; credits as packs or pay as you go (no figures on the page)",
+      "pricingSource": "https://www.hubspot.com/products/artificial-intelligence/breeze",
+      "pricingVerified": true,
+      "why": "Strong CRM grounding for HubSpot customers; credit prices not on the page.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "moveworks",
+      "name": "Moveworks",
+      "company": "ServiceNow",
+      "category": "Enterprise",
+      "url": "https://www.moveworks.com",
+      "what": "Assistant that helps employees find information and automate tasks.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo (the site says ServiceNow acquired Moveworks)",
+      "pricingSource": "https://www.moveworks.com",
+      "pricingVerified": true,
+      "why": "Enterprise assistant now part of ServiceNow; sales-only access.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "emergent",
+      "name": "Emergent",
+      "company": "Emergent",
+      "category": "App builders",
+      "url": "https://emergent.sh",
+      "what": "Agents that design, code and deploy web and mobile apps.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 4
+      },
+      "pricing": "Free $0; Standard $20/mo ($17 annual); Pro $200 ($167 annual); Business and Enterprise custom",
+      "pricingSource": "https://emergent.sh/pricing",
+      "pricingVerified": true,
+      "why": "Fast-moving app builder with public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "hippocratic-ai",
+      "name": "Hippocratic AI",
+      "company": "Hippocratic AI",
+      "category": "Industry",
+      "url": "https://www.hippocraticai.com",
+      "what": "Healthcare agents for health systems, payors and pharma.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 4,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 4
+      },
+      "pricing": "No public prices",
+      "pricingSource": "https://www.hippocraticai.com",
+      "pricingVerified": true,
+      "why": "Safety-focused healthcare agents; limited public access.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "junie",
+      "name": "Junie",
+      "company": "JetBrains",
+      "category": "Coding",
+      "url": "https://junie.jetbrains.com",
+      "what": "JetBrains' coding agent that works with the model you choose.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 4,
+        "momentum": 4
+      },
+      "pricing": "Free (Junie Lite); AI Pro $8.33/user/mo; AI Ultimate $25/user/mo (billing period not stated)",
+      "pricingSource": "https://junie.jetbrains.com/",
+      "pricingVerified": true,
+      "why": "Natural fit for JetBrains users with public prices.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "coderabbit",
+      "name": "CodeRabbit",
+      "company": "CodeRabbit",
+      "category": "Coding",
+      "url": "https://www.coderabbit.ai",
+      "what": "Agentic code review for pull requests.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 4,
+        "momentum": 4
+      },
+      "pricing": "Essentials $24/user/mo; Team $48; Advanced $72; Enterprise custom (billing basis not stated)",
+      "pricingSource": "https://www.coderabbit.ai/pricing",
+      "pricingVerified": true,
+      "why": "Widely used review agent with public prices; narrow scope.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "kilo-code",
+      "name": "Kilo Code",
+      "company": "Kilo",
+      "category": "Coding",
+      "url": "https://kilo.ai",
+      "what": "Open-source coding agent for VS Code, JetBrains, CLI and cloud.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 5,
+        "transparency": 5,
+        "momentum": 5
+      },
+      "pricing": "Free to start (MIT open source); 500+ models with zero inference markup",
+      "pricingSource": "https://kilo.ai",
+      "pricingVerified": true,
+      "why": "Open, flexible and growing fast.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "greptile",
+      "name": "Greptile",
+      "company": "Greptile",
+      "category": "Coding",
+      "url": "https://www.greptile.com",
+      "what": "AI review of pull requests with full-codebase understanding.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 5,
+        "momentum": 3
+      },
+      "pricing": "Starter $0 (1 developer, 50 credits/mo); Pro $1 per credit, no seat fees; Enterprise custom",
+      "pricingSource": "https://www.greptile.com/pricing",
+      "pricingVerified": true,
+      "why": "Free start and simple credit pricing; narrow scope.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "crescendo",
+      "name": "Crescendo",
+      "company": "Crescendo",
+      "category": "Customer support",
+      "url": "https://www.crescendo.ai",
+      "what": "AI-native customer-experience platform replacing chatbot and contact-center tools.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 3,
+        "reliability": 3,
+        "governance": 3,
+        "integrations": 3,
+        "access": 2,
+        "transparency": 2,
+        "momentum": 3
+      },
+      "pricing": "No public prices; demo",
+      "pricingSource": "https://www.crescendo.ai",
+      "pricingVerified": true,
+      "why": "Ambitious platform with limited public information.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "zoom-ai-companion",
+      "name": "Zoom AI Companion",
+      "company": "Zoom",
+      "category": "Productivity",
+      "url": "https://www.zoom.com/en/products/ai-assistant/",
+      "what": "Agentic features inside Zoom, including documents and slides.",
+      "scores": {
+        "adoption": 4,
+        "autonomy": 2,
+        "reliability": 4,
+        "governance": 4,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Included in paid Zoom plans with 2,200 AI credits per user per month; no exact price on the page",
+      "pricingSource": "https://www.zoom.com/en/products/ai-assistant/",
+      "pricingVerified": false,
+      "why": "Huge installed base; agent autonomy is limited.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "company": "ByteDance",
+      "category": "Coding",
+      "url": "https://www.trae.ai",
+      "what": "AI IDE with coding agents.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 4,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "Free to start; upgrade amounts are on the billing docs, not confirmed here",
+      "pricingSource": "https://www.trae.ai/pricing",
+      "pricingVerified": false,
+      "why": "Free-to-start AI IDE; prices not confirmed.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "skywork",
+      "name": "Skywork",
+      "company": "Skywork",
+      "category": "General",
+      "url": "https://www.skywork.ai",
+      "what": "Workspace agents for design, video, slides, documents and spreadsheets.",
+      "scores": {
+        "adoption": 2,
+        "autonomy": 4,
+        "reliability": 3,
+        "governance": 2,
+        "integrations": 3,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 3
+      },
+      "pricing": "No plans shown on the site",
+      "pricingSource": "https://www.skywork.ai",
+      "pricingVerified": false,
+      "why": "Broad creative agents with limited adoption; prices not shown.",
+      "verified": "2026-10-31"
+    },
+    {
+      "id": "tabnine",
+      "name": "Tabnine",
+      "company": "Tabnine",
+      "category": "Coding",
+      "url": "https://www.tabnine.com",
+      "what": "Coding assistant with agents that implement Jira issues.",
+      "scores": {
+        "adoption": 3,
+        "autonomy": 3,
+        "reliability": 4,
+        "governance": 5,
+        "integrations": 4,
+        "access": 3,
+        "transparency": 3,
+        "momentum": 2
+      },
+      "pricing": "No plans shown on the fetched page",
+      "pricingSource": "https://www.tabnine.com/pricing",
+      "pricingVerified": false,
+      "why": "Enterprise-friendly governance; prices not confirmed here.",
+      "verified": "2026-10-31"
     }
   ],
   "history": [
@@ -711,9 +2459,423 @@
           "name": "Grok"
         }
       }
+    },
+    {
+      "date": "2026-10-31",
+      "label": "expanded edition (100 agents)",
+      "ranks": {
+        "chatgpt-agent": {
+          "rank": 1,
+          "name": "ChatGPT Agent"
+        },
+        "github-copilot": {
+          "rank": 2,
+          "name": "GitHub Copilot (coding agent)"
+        },
+        "claude-code": {
+          "rank": 3,
+          "name": "Claude Code"
+        },
+        "m365-copilot": {
+          "rank": 4,
+          "name": "Microsoft 365 Copilot"
+        },
+        "gemini-agent": {
+          "rank": 5,
+          "name": "Gemini (Deep Research, Agent Mode)"
+        },
+        "openai-codex": {
+          "rank": 6,
+          "name": "OpenAI Codex"
+        },
+        "copilot-studio": {
+          "rank": 7,
+          "name": "Microsoft Copilot Studio"
+        },
+        "agentforce": {
+          "rank": 8,
+          "name": "Salesforce Agentforce"
+        },
+        "claude-app": {
+          "rank": 9,
+          "name": "Claude (app, agentic tasks)"
+        },
+        "zapier-agents": {
+          "rank": 10,
+          "name": "Zapier Agents"
+        },
+        "notion-ai": {
+          "rank": 11,
+          "name": "Notion AI"
+        },
+        "cursor": {
+          "rank": 12,
+          "name": "Cursor"
+        },
+        "zendesk-ai-agents": {
+          "rank": 13,
+          "name": "Zendesk AI Agents"
+        },
+        "atlassian-rovo": {
+          "rank": 14,
+          "name": "Atlassian Rovo"
+        },
+        "clay": {
+          "rank": 15,
+          "name": "Clay"
+        },
+        "gemini-enterprise": {
+          "rank": 16,
+          "name": "Gemini Enterprise / Vertex AI Agent Builder"
+        },
+        "retell-ai": {
+          "rank": 17,
+          "name": "Retell AI"
+        },
+        "n8n": {
+          "rank": 18,
+          "name": "n8n"
+        },
+        "agentcore": {
+          "rank": 19,
+          "name": "Amazon Bedrock AgentCore"
+        },
+        "cline": {
+          "rank": 20,
+          "name": "Cline"
+        },
+        "v0": {
+          "rank": 21,
+          "name": "v0"
+        },
+        "amazon-q-developer": {
+          "rank": 22,
+          "name": "Amazon Q Developer"
+        },
+        "make": {
+          "rank": 23,
+          "name": "Make"
+        },
+        "dust": {
+          "rank": 24,
+          "name": "Dust"
+        },
+        "elevenlabs-agents": {
+          "rank": 25,
+          "name": "ElevenLabs Agents"
+        },
+        "vapi": {
+          "rank": 26,
+          "name": "Vapi"
+        },
+        "opencode": {
+          "rank": 27,
+          "name": "OpenCode"
+        },
+        "dify": {
+          "rank": 28,
+          "name": "Dify"
+        },
+        "hubspot-breeze": {
+          "rank": 29,
+          "name": "HubSpot Breeze"
+        },
+        "coderabbit": {
+          "rank": 30,
+          "name": "CodeRabbit"
+        },
+        "kilo-code": {
+          "rank": 31,
+          "name": "Kilo Code"
+        },
+        "fin": {
+          "rank": 32,
+          "name": "Fin"
+        },
+        "harvey": {
+          "rank": 33,
+          "name": "Harvey"
+        },
+        "gemini-cli": {
+          "rank": 34,
+          "name": "Gemini CLI"
+        },
+        "kiro": {
+          "rank": 35,
+          "name": "Kiro"
+        },
+        "lindy": {
+          "rank": 36,
+          "name": "Lindy"
+        },
+        "openhands": {
+          "rank": 37,
+          "name": "OpenHands"
+        },
+        "botpress": {
+          "rank": 38,
+          "name": "Botpress"
+        },
+        "browser-use": {
+          "rank": 39,
+          "name": "Browser Use"
+        },
+        "warp": {
+          "rank": 40,
+          "name": "Warp"
+        },
+        "augment-code": {
+          "rank": 41,
+          "name": "Augment Code"
+        },
+        "base44": {
+          "rank": 42,
+          "name": "Base44"
+        },
+        "perplexity": {
+          "rank": 43,
+          "name": "Perplexity (Comet)"
+        },
+        "devin": {
+          "rank": 44,
+          "name": "Devin"
+        },
+        "uipath": {
+          "rank": 45,
+          "name": "UiPath AI Agents"
+        },
+        "replit-agent": {
+          "rank": 46,
+          "name": "Replit Agent"
+        },
+        "ibm-watsonx-orchestrate": {
+          "rank": 47,
+          "name": "IBM watsonx Orchestrate"
+        },
+        "bolt": {
+          "rank": 48,
+          "name": "Bolt"
+        },
+        "bland": {
+          "rank": 49,
+          "name": "Bland"
+        },
+        "factory": {
+          "rank": 50,
+          "name": "Factory"
+        },
+        "greptile": {
+          "rank": 51,
+          "name": "Greptile"
+        },
+        "manus": {
+          "rank": 52,
+          "name": "Manus"
+        },
+        "polyai": {
+          "rank": 53,
+          "name": "PolyAI"
+        },
+        "tidio": {
+          "rank": 54,
+          "name": "Tidio"
+        },
+        "lovable": {
+          "rank": 55,
+          "name": "Lovable"
+        },
+        "gumloop": {
+          "rank": 56,
+          "name": "Gumloop"
+        },
+        "qodo": {
+          "rank": 57,
+          "name": "Qodo"
+        },
+        "rasa": {
+          "rank": 58,
+          "name": "Rasa"
+        },
+        "emergent": {
+          "rank": 59,
+          "name": "Emergent"
+        },
+        "junie": {
+          "rank": 60,
+          "name": "Junie"
+        },
+        "servicenow": {
+          "rank": 61,
+          "name": "ServiceNow AI Agents"
+        },
+        "sierra": {
+          "rank": 62,
+          "name": "Sierra"
+        },
+        "decagon": {
+          "rank": 63,
+          "name": "Decagon"
+        },
+        "kore-ai": {
+          "rank": 64,
+          "name": "Kore.ai"
+        },
+        "cognigy": {
+          "rank": 65,
+          "name": "Cognigy"
+        },
+        "qwen": {
+          "rank": 66,
+          "name": "Qwen"
+        },
+        "north": {
+          "rank": 67,
+          "name": "North"
+        },
+        "zoom-ai-companion": {
+          "rank": 68,
+          "name": "Zoom AI Companion"
+        },
+        "antigravity": {
+          "rank": 69,
+          "name": "Google Antigravity"
+        },
+        "glean": {
+          "rank": 70,
+          "name": "Glean"
+        },
+        "sana": {
+          "rank": 71,
+          "name": "Sana"
+        },
+        "kimi": {
+          "rank": 72,
+          "name": "Kimi"
+        },
+        "meta-ai": {
+          "rank": 73,
+          "name": "Meta AI"
+        },
+        "stackai": {
+          "rank": 74,
+          "name": "StackAI"
+        },
+        "writer": {
+          "rank": 75,
+          "name": "Writer"
+        },
+        "jules": {
+          "rank": 76,
+          "name": "Jules"
+        },
+        "amp": {
+          "rank": 77,
+          "name": "Amp"
+        },
+        "tabnine": {
+          "rank": 78,
+          "name": "Tabnine"
+        },
+        "aider": {
+          "rank": 79,
+          "name": "Aider"
+        },
+        "bardeen": {
+          "rank": 80,
+          "name": "Bardeen"
+        },
+        "genspark": {
+          "rank": 81,
+          "name": "Genspark"
+        },
+        "relevance-ai": {
+          "rank": 82,
+          "name": "Relevance AI"
+        },
+        "deepseek": {
+          "rank": 83,
+          "name": "DeepSeek"
+        },
+        "moveworks": {
+          "rank": 84,
+          "name": "Moveworks"
+        },
+        "le-chat": {
+          "rank": 85,
+          "name": "Le Chat"
+        },
+        "mindstudio": {
+          "rank": 86,
+          "name": "MindStudio"
+        },
+        "hebbia": {
+          "rank": 87,
+          "name": "Hebbia"
+        },
+        "hippocratic-ai": {
+          "rank": 88,
+          "name": "Hippocratic AI"
+        },
+        "ada": {
+          "rank": 89,
+          "name": "Ada"
+        },
+        "trae": {
+          "rank": 90,
+          "name": "Trae"
+        },
+        "grok": {
+          "rank": 91,
+          "name": "Grok"
+        },
+        "nova-act": {
+          "rank": 92,
+          "name": "Nova Act"
+        },
+        "autogpt": {
+          "rank": 93,
+          "name": "AutoGPT"
+        },
+        "moxo": {
+          "rank": 94,
+          "name": "Moxo"
+        },
+        "artisan": {
+          "rank": 95,
+          "name": "Artisan"
+        },
+        "liveperson": {
+          "rank": 96,
+          "name": "LivePerson"
+        },
+        "skywork": {
+          "rank": 97,
+          "name": "Skywork"
+        },
+        "11x": {
+          "rank": 98,
+          "name": "11x"
+        },
+        "crescendo": {
+          "rank": 99,
+          "name": "Crescendo"
+        },
+        "sweep": {
+          "rank": 100,
+          "name": "Sweep"
+        }
+      }
     }
   ],
   "changelog": [
+    {
+      "date": "2026-10-31",
+      "text": "Expanded the ranking from 24 to 100 agents. Every new agent was checked on its official page; prices that could not be read are marked unverified."
+    },
+    {
+      "date": "2026-10-31",
+      "text": "Added a directory of frameworks and other tools that are not ready-to-use agents, such as LangChain, CrewAI and the vendor SDKs."
+    },
     {
       "date": "2026-10-31",
       "text": "Removed ChatGPT Atlas: OpenAI discontinued the standalone browser (announced 9 July 2026, deprecation targeted for 9 August 2026) and moved its agent features into the new ChatGPT desktop app."

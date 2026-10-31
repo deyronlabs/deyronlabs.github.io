@@ -5,6 +5,7 @@ import { ENABLED_LANGS, SITE, absUrl, type Lang } from '../../site';
 import { langPaths } from '../../i18n/utils';
 import { breadcrumbLd, staticAlternates } from '../../lib/seo';
 import data from '../../data/agents.json';
+import directory from '../../data/directory.json';
 
 export function getStaticPaths() {
   return langPaths();
@@ -64,7 +65,7 @@ const faq = [
   },
   {
     q: 'Which AI agents have a free plan?',
-    a: `According to the vendors' own pages, these list a free tier or a free edition: ${list(freeNames)}. Limits differ, so confirm on each pricing page.`,
+    a: `${freeNames.length} of the ${ranked.length} agents list a free tier or a free edition on their own pages, including ${list(freeNames.slice(0, 8))}. Use the "Has a free plan" filter above to see them all; limits differ, so confirm on each pricing page.`,
   },
   {
     q: 'How are the AI agents scored?',
@@ -147,7 +148,7 @@ const faqLd = {
     <p class="glance">
       <strong>At a glance:</strong>
       {top3.map((a, i) => <><a href={`#${a.id}`}>{a.name}</a> ({a.total}/100){i < top3.length - 1 ? ', ' : '.'}{' '}</>)}
-      Jump to the <a href="#movers">ranking movers</a>, the <a href="#by-category">best agent by category</a>, the <a href="#how-scores-work">scoring method</a> or the <a href="#faq">FAQ</a>.
+      Jump to the <a href="#movers">ranking movers</a>, the <a href="#directory">directory of frameworks</a>, the <a href="#by-category">best agent by category</a>, the <a href="#how-scores-work">scoring method</a> or the <a href="#faq">FAQ</a>.
     </p>
 
     <div class="tools">
@@ -189,7 +190,7 @@ const faqLd = {
               <tr id={a.id} data-cat={a.category} data-rank={a.rank} data-name={a.name.toLowerCase()} data-score={a.total} data-free={a.free ? '1' : '0'} data-q={`${a.name} ${a.company} ${a.what} ${a.category}`.toLowerCase()}>
                 <td class="num" data-label="#">
                   {a.rank}
-                  {a.move === null && <span class="mv new" title="New since the previous edition">new</span>}
+                  {a.move === null && newcomers.length <= 10 && <span class="mv new" title="New since the previous edition">new</span>}
                   {a.move !== null && a.move > 0 && <span class="mv up" title={`Up ${a.move} since ${prev.label}`}><span aria-hidden="true">▲</span>{a.move}<span class="sr-only"> places up</span></span>}
                   {a.move !== null && a.move < 0 && <span class="mv down" title={`Down ${-a.move} since ${prev.label}`}><span aria-hidden="true">▼</span>{-a.move}<span class="sr-only"> places down</span></span>}
                 </td>
@@ -235,11 +236,17 @@ const faqLd = {
     <p>
       Changes since the {prev.label} ({prev.date}). Arrows in the table show the same movement.
     </p>
-    <ul class="movers">
-      {movers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
-      {newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
-      {removed.map((r) => <li>{r.name}: removed (was {r.rank})</li>)}
-    </ul>
+    {
+      movers.length + removed.length + (newcomers.length <= 10 ? newcomers.length : 0) === 0 ? (
+        <p>No changes yet: this is the first update since the {prev.label}.</p>
+      ) : (
+        <ul class="movers">
+          {movers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: {a.move! > 0 ? 'up' : 'down'} {Math.abs(a.move!)} ({prevRanks[a.id].rank} to {a.rank})</li>)}
+          {newcomers.length <= 10 && newcomers.map((a) => <li><a href={`#${a.id}`}>{a.name}</a>: new at {a.rank}</li>)}
+          {removed.map((r) => <li>{r.name}: removed (was {r.rank})</li>)}
+        </ul>
+      )
+    }
 
     <h2 id="changelog">Update log</h2>
     <ul class="log">
@@ -276,6 +283,29 @@ const faqLd = {
       <a href={`mailto:${SITE.contactEmail}?subject=${encodeURIComponent('AI agents ranking: suggested correction')}`}>Suggest a correction</a>
       and include the official page that shows it.
     </p>
+
+    <h2 id="directory">Directory: frameworks and other tools</h2>
+    <p>
+      These are real, widely used projects that are not ready-to-use agents (frameworks and SDKs for building them), or that we could not fully
+      verify yet. They are listed without a score. Each entry links to the official page we checked on {directory.updated}.
+    </p>
+    <div class="tablewrap">
+      <table class="method">
+        <thead>
+          <tr><th>Name</th><th>Category</th><th>What it is</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {directory.entries.map((e) => (
+            <tr id={`dir-${e.id}`}>
+              <td><a href={e.url} rel="noopener" target="_blank"><strong>{e.name}</strong></a><span class="co">{e.company}</span></td>
+              <td>{e.category}</td>
+              <td>{e.what}{e.note && <span class="what">{e.note}</span>}</td>
+              <td>{e.status}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
 
     <h2 id="faq">Frequently asked questions</h2>
     {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}

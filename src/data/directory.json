@@ -1,0 +1,205 @@
+{
+  "updated": "2026-10-31",
+  "entries": [
+    {
+      "id": "langchain-langgraph",
+      "name": "LangChain / LangGraph",
+      "company": "LangChain",
+      "category": "Framework",
+      "url": "https://www.langchain.com",
+      "what": "Open-source frameworks for building agents, with the LangSmith platform for tracing and evaluation.",
+      "status": "Active",
+      "note": "LangGraph gives low-level control over agent workflows."
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "company": "CrewAI",
+      "category": "Framework",
+      "url": "https://www.crewai.com",
+      "what": "Multi-agent platform for building, running and governing enterprise agents.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "name": "Microsoft Agent Framework (AutoGen)",
+      "company": "Microsoft",
+      "category": "Framework",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/",
+      "what": "Framework for building agentic solutions; its docs include migration guides from AutoGen and Semantic Kernel.",
+      "status": "Active",
+      "note": "Appears to succeed AutoGen and Semantic Kernel; the page does not say so explicitly."
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Semantic Kernel",
+      "company": "Microsoft",
+      "category": "Framework",
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "what": "SDK for building AI agents.",
+      "status": "Superseded",
+      "note": "The repository calls Microsoft Agent Framework its enterprise-ready successor."
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "company": "LlamaIndex",
+      "category": "Framework",
+      "url": "https://www.llamaindex.ai",
+      "what": "Document parsing and extraction tools (LlamaParse) for agents.",
+      "status": "Active",
+      "note": "The company now centers on document processing."
+    },
+    {
+      "id": "openai-agents-sdk",
+      "name": "OpenAI Agents SDK",
+      "company": "OpenAI",
+      "category": "Framework",
+      "url": "https://openai.github.io/openai-agents-python/",
+      "what": "Python toolkit for agents that use tools, hand off work to other agents and run guardrail checks.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "claude-agent-sdk",
+      "name": "Claude Agent SDK",
+      "company": "Anthropic",
+      "category": "Framework",
+      "url": "https://code.claude.com/docs/en/agent-sdk/overview",
+      "what": "SDK for building agents on the same agent loop that powers Claude Code.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "google-adk",
+      "name": "Agent Development Kit (ADK)",
+      "company": "Google",
+      "category": "Framework",
+      "url": "https://adk.dev/",
+      "what": "Google's open-source kit for building and deploying agents.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "smolagents",
+      "name": "smolagents",
+      "company": "Hugging Face",
+      "category": "Framework",
+      "url": "https://github.com/huggingface/smolagents",
+      "what": "Barebones library for agents that think in code.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "haystack",
+      "name": "Haystack",
+      "company": "deepset",
+      "category": "Framework",
+      "url": "https://haystack.deepset.ai",
+      "what": "Open-source framework for LLM-driven agents and applications.",
+      "status": "Active",
+      "note": "The site announces Haystack 3.4."
+    },
+    {
+      "id": "pydantic-ai",
+      "name": "Pydantic AI",
+      "company": "Pydantic",
+      "category": "Framework",
+      "url": "https://pydantic.dev/docs/ai/overview/",
+      "what": "Python framework for building agents with typed outputs.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "mastra",
+      "name": "Mastra",
+      "company": "Mastra",
+      "category": "Framework",
+      "url": "https://mastra.ai",
+      "what": "Open-source TypeScript framework for AI agents and applications.",
+      "status": "Active",
+      "note": "Supports MCP 2.0 as of October 2026."
+    },
+    {
+      "id": "letta",
+      "name": "Letta",
+      "company": "Letta",
+      "category": "Framework",
+      "url": "https://www.letta.com",
+      "what": "Research lab and platform for agents that keep memory and learn from experience.",
+      "status": "Active",
+      "note": ""
+    },
+    {
+      "id": "metagpt",
+      "name": "MetaGPT",
+      "company": "Open source",
+      "category": "Framework",
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "what": "Multi-agent framework that assigns roles to models so they work like a software team.",
+      "status": "Active",
+      "note": "MIT license; the repository is large and maintained."
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "company": "Cognition",
+      "category": "Coding",
+      "url": "https://devin.ai/pricing",
+      "what": "AI coding IDE; windsurf.com now redirects to devin.ai, whose plans list a Devin Desktop.",
+      "status": "Merged into Devin",
+      "note": "Verified redirect; the page does not explain the relationship."
+    },
+    {
+      "id": "swe-agent",
+      "name": "SWE-agent",
+      "company": "Princeton and Stanford",
+      "category": "Coding",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "what": "Research tool that attempts to fix GitHub issues with a model of your choice.",
+      "status": "Superseded",
+      "note": "Maintainers recommend mini-swe-agent instead."
+    },
+    {
+      "id": "agentgpt",
+      "name": "AgentGPT",
+      "company": "Reworkd",
+      "category": "General",
+      "url": "https://agentgpt.reworkd.ai",
+      "what": "Browser-based platform to assemble and deploy autonomous agents.",
+      "status": "Beta, status unclear",
+      "note": "The page shows a Beta label; we could not confirm recent activity."
+    },
+    {
+      "id": "roo-code",
+      "name": "Roo Code",
+      "company": "Roo",
+      "category": "Coding",
+      "url": "https://roomote.dev/",
+      "what": "Coding agent; roocode.com now redirects to roomote.dev.",
+      "status": "Redirected",
+      "note": "Not checked further."
+    },
+    {
+      "id": "carly",
+      "name": "Carly",
+      "company": "Carly",
+      "category": "Assistant",
+      "url": "https://www.getcarly.ai",
+      "what": "AI executive assistant.",
+      "status": "Not checked",
+      "note": "The site blocks automated reading; not yet verified."
+    },
+    {
+      "id": "minimax-agent",
+      "name": "MiniMax Agent",
+      "company": "MiniMax",
+      "category": "General",
+      "url": "https://agent.minimax.io",
+      "what": "Agent product from MiniMax; the page names it MiniMax Code.",
+      "status": "Not checked",
+      "note": "Product name and scope unclear on the page."
+    }
+  ]
+}
