@@ -99,11 +99,11 @@
     },
     {
       "id": "gemini-agent",
-      "name": "Gemini (Deep Research, Agent Mode)",
+      "name": "Gemini Agent",
       "company": "Google",
       "category": "General",
       "url": "https://gemini.google/",
-      "what": "Cited deep research and agentic browsing tied into Google Workspace.",
+      "what": "Deep Research and Agent Mode: cited research and agentic browsing tied into Google Workspace.",
       "scores": {
         "adoption": 5,
         "autonomy": 3,
@@ -422,11 +422,11 @@
     },
     {
       "id": "gemini-enterprise",
-      "name": "Gemini Enterprise / Vertex AI Agent Builder",
+      "name": "Gemini Enterprise",
       "company": "Google",
       "category": "Enterprise",
       "url": "https://cloud.google.com/gemini-enterprise",
-      "what": "Agents grounded in company data with multi-agent orchestration.",
+      "what": "Includes Vertex AI Agent Builder: agents grounded in company data with multi-agent orchestration.",
       "scores": {
         "adoption": 3,
         "autonomy": 3,
