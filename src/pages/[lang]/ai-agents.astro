@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { ENABLED_LANGS, SITE, type Lang } from '../../site';
+import { ENABLED_LANGS, SITE, absUrl, type Lang } from '../../site';
 import { langPaths } from '../../i18n/utils';
 import { breadcrumbLd, staticAlternates } from '../../lib/seo';
 import data from '../../data/agents.json';
@@ -28,9 +28,47 @@ const ranked = data.agents
 const categories = [...new Set(ranked.map((a) => a.category))].sort();
 const verifiedCount = ranked.filter((a) => a.pricingVerified).length;
 
+const year = data.updated.slice(0, 4);
+const pageTitle = `Best AI agents in ${year}, ranked and scored`;
+const seoTitle = `Best AI Agents ${year}: Ranked and Scored`;
+const seoDescription = `${ranked.length} AI agents ranked out of 100 on eight weighted criteria, with official prices checked on ${data.updated}. See who leads in coding, enterprise and more.`;
+const pageUrl = absUrl(path);
+
+const catLeaders = categories
+  .map((c) => ranked.find((a) => a.category === c)!)
+  .sort((a, b) => b.total - a.total || a.rank - b.rank);
+const top3 = ranked.slice(0, 3);
+const list = (xs: string[]) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+const codingTop = ranked.filter((a) => a.category === 'Coding').slice(0, 3);
+const freeNames = ranked.filter((a) => /\bfree\b/i.test(a.pricing) && !/no public prices/i.test(a.pricing)).map((a) => a.name);
+
+const faq = [
+  {
+    q: `What is the best AI agent in ${year}?`,
+    a: `By our scoring out of 100, the top three are ${top3.map((a) => `${a.name} (${a.total}/100)`).join(', ')}. The score combines ${criteria.length} weighted criteria: ${criteria.map((c) => c.label.toLowerCase()).join(', ')}.`,
+  },
+  {
+    q: 'Which AI agent is best for coding?',
+    a: `In the Coding category, ${codingTop.map((a) => `${a.name} (${a.total}/100)`).join(', ')} lead the ranking. Coding agents differ in autonomy and in how much control a team keeps, so check the score breakdown for each.`,
+  },
+  {
+    q: 'Which AI agents have a free plan?',
+    a: `According to the vendors' own pages, these list a free tier or a free edition: ${list(freeNames)}. Limits differ, so confirm on each pricing page.`,
+  },
+  {
+    q: 'How are the AI agents scored?',
+    a: `Each agent gets 1 to 5 on ${criteria.length} criteria (${criteria.map((c) => `${c.label.toLowerCase()} ${c.weight}`).join(', ')}). Scores convert to points in proportion to the weight and add up to a total out of 100. They are editorial judgments, not benchmarks.`,
+  },
+  {
+    q: 'How current are the prices?',
+    a: `Every row shows the date its price was checked against the official vendor page. This edition is dated ${data.updated}. Rows we could not confirm are marked instead of guessed.`,
+  },
+];
+
 const itemList = {
   '@type': 'ItemList',
-  name: 'Top AI agents',
+  '@id': `${pageUrl}#ranking`,
+  name: pageTitle,
   dateModified: data.updated,
   itemListOrder: 'https://schema.org/ItemListOrderDescending',
   numberOfItems: ranked.length,
@@ -38,27 +76,67 @@ const itemList = {
     '@type': 'ListItem',
     position: a.rank,
     name: a.name,
-    url: a.url,
+    url: `${pageUrl}#${a.id}`,
+    item: {
+      '@type': 'SoftwareApplication',
+      name: a.name,
+      url: a.url,
+      description: a.what,
+      applicationCategory: 'BusinessApplication',
+      publisher: { '@type': 'Organization', name: a.company },
+    },
   })),
+};
+
+const webPage = {
+  '@type': 'CollectionPage',
+  '@id': `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: seoTitle,
+  description: seoDescription,
+  inLanguage: lang,
+  datePublished: '2026-10-31',
+  dateModified: data.updated,
+  isPartOf: { '@id': `${SITE.url}/#website` },
+  publisher: { '@id': `${SITE.url}/#organization` },
+  author: { '@id': `${SITE.url}/#editorial-desk` },
+  mainEntity: { '@id': `${pageUrl}#ranking` },
+};
+
+const faqLd = {
+  '@type': 'FAQPage',
+  '@id': `${pageUrl}#faq`,
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 };
 ---
 
 <Base
-  title="Top AI agents, ranked and verified"
-  description={`${ranked.length} AI agents scored out of 100 on eight weighted criteria, with official links and pricing checked on ${data.updated}.`}
+  title={seoTitle}
+  description={seoDescription}
   lang={lang}
   path={path}
   alternates={staticAlternates(ENABLED_LANGS, 'ai-agents/')}
-  jsonLd={[breadcrumbLd(crumbs, lang), itemList]}
+  jsonLd={[breadcrumbLd(crumbs, lang), webPage, itemList, faqLd]}
+  image="/og-ai-agents.png"
+  imageAlt={`Ranking of the best AI agents in ${year}, each scored out of 100 on eight criteria`}
+  imageSize={{ w: 1200, h: 630 }}
+  publishedTime={new Date('2026-10-31T00:00:00Z')}
+  modifiedTime={new Date(`${data.updated}T00:00:00Z`)}
 >
   <div class="wrap">
     <Breadcrumbs items={crumbs} lang={lang} />
   </div>
   <div class="wrap page agents">
-    <h1>Top AI agents, ranked and verified</h1>
+    <h1>{pageTitle}</h1>
     <p class="lead">
       {ranked.length} agents scored out of 100 on {criteria.length} weighted criteria. Prices come from each vendor's own page and were checked on
       <time datetime={data.updated}>{data.updated}</time>; {verifiedCount} of {ranked.length} prices are verified, the rest are marked.
+    </p>
+
+    <p class="glance">
+      <strong>At a glance:</strong>
+      {top3.map((a, i) => <><a href={`#${a.id}`}>{a.name}</a> ({a.total}/100){i < top3.length - 1 ? ', ' : '.'}{' '}</>)}
+      Jump to the <a href="#by-category">best agent by category</a>, the <a href="#how-scores-work">scoring method</a> or the <a href="#faq">FAQ</a>.
     </p>
 
     <div class="chips" role="group" aria-label="Filter by category">
@@ -80,7 +158,7 @@ const itemList = {
         <tbody>
           {
             ranked.map((a) => (
-              <tr data-cat={a.category}>
+              <tr id={a.id} data-cat={a.category}>
                 <td class="num" data-label="#">{a.rank}</td>
                 <td>
                   <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>
@@ -119,7 +197,12 @@ const itemList = {
       </table>
     </div>
 
-    <h2>How the scores work</h2>
+    <h2 id="by-category">Best AI agent by category</h2>
+    <ul class="leaders">
+      {catLeaders.map((a) => <li><strong>{a.category}:</strong> <a href={`#${a.id}`}>{a.name}</a> ({a.total}/100), {a.what.charAt(0).toLowerCase() + a.what.slice(1)}</li>)}
+    </ul>
+
+    <h2 id="how-scores-work">How the scores work</h2>
     <p>
       Each agent gets 1 to 5 on {criteria.length} criteria. A score converts to points in proportion to the criterion's weight, and the points add
       up to a total out of 100. The scores are Deyron Labs editorial judgments based on public rankings and the vendors' own pages; they are not
@@ -144,6 +227,16 @@ const itemList = {
       <a href={`mailto:${SITE.contactEmail}?subject=${encodeURIComponent('AI agents ranking: suggested correction')}`}>Suggest a correction</a>
       and include the official page that shows it.
     </p>
+
+    <h2 id="faq">Frequently asked questions</h2>
+    {faq.map((f) => (<><h3>{f.q}</h3><p>{f.a}</p></>))}
+
+    <h2>Keep reading</h2>
+    <ul class="related">
+      <li><a href={`/${lang}/topics/agents/`}>AI agents: latest stories and analysis</a></li>
+      <li><a href={`/${lang}/news/`}>All AI news, newest first</a></li>
+      <li><a href={`/${lang}/about/`}>How Deyron Labs reports and corrects stories</a></li>
+    </ul>
   </div>
 </Base>
 
@@ -175,6 +268,10 @@ const itemList = {
   .why .pbar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
   .why .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
   .whyline { display: block; margin-top: 0.3rem; font-size: var(--step--1); color: var(--ink); }
+  .glance { margin: 1rem 0 0; }
+  .leaders, .related { padding-left: 1.2rem; display: grid; gap: 0.4rem; }
+  .agents h3 { margin: 1.5rem 0 0.3rem; font-size: var(--step-0); }
+  tr { scroll-margin-top: 5rem; }
   .correct { margin-top: 1.5rem; }
   .method { min-width: 36rem; margin-bottom: 1.5rem; }
   @media (max-width: 40rem) {
