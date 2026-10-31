@@ -71,7 +71,8 @@
       "pricing": "Plus $20/mo; Pro from $100/mo",
       "pricingSource": "https://learn.chatgpt.com/docs/pricing.md",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Top on reach and access: it sits inside the most used AI app, with public plan prices."
     },
     {
       "id": "claude-code",
@@ -93,7 +94,8 @@
       "pricing": "Pro $20/mo ($17 billed annually); Max $100/mo; Ultra $200/mo",
       "pricingSource": "https://claude.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Highest autonomy among coding tools, with permission gates and public pricing; momentum is strong."
     },
     {
       "id": "gemini-agent",
@@ -115,7 +117,8 @@
       "pricing": "Free tier; AI Plus $4.99/mo; AI Pro $19.99/mo; AI Ultra from $99.99/mo. Agent Mode is named only for Ultra",
       "pricingSource": "https://gemini.google/subscriptions/",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Huge reach and a free tier, but agent mode is named only for the top plan, so autonomy is capped."
     },
     {
       "id": "github-copilot",
@@ -137,7 +140,8 @@
       "pricing": "Pro $10/mo; Pro+ $39/mo; Max $100/mo; Business $19/seat; Enterprise $39/seat. Coding agent on paid plans",
       "pricingSource": "https://docs.github.com/en/copilot/get-started/plans",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Best governance and reliability score among coding agents for teams; public per-seat pricing."
     },
     {
       "id": "openai-codex",
@@ -159,7 +163,8 @@
       "pricing": "Included in Plus $20/mo; Pro from $100/mo; Business $20/user/mo billed annually",
       "pricingSource": "https://learn.chatgpt.com/docs/pricing.md",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Strong autonomy and momentum, bundled into plans many teams already pay for."
     },
     {
       "id": "claude-app",
@@ -181,7 +186,8 @@
       "pricing": "Free; Pro $20/mo; Max $100/mo; Team from $20/seat/mo billed annually",
       "pricingSource": "https://claude.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Balanced across criteria; long-running file and code work with a free tier and clear plans."
     },
     {
       "id": "cursor",
@@ -197,14 +203,14 @@
         "governance": 3,
         "integrations": 4,
         "access": 4,
-        "transparency": 3,
+        "transparency": 4,
         "momentum": 4
       },
-      "pricing": "See the official pricing page",
+      "pricing": "Free; Plus $8/mo; Premium $30/mo; Super $100/mo; Ultra $200/mo; Teams from $30/user",
       "pricingSource": "https://cursor.com/pricing",
-      "pricingVerified": false,
-      "note": "Plans changed recently; confirm current prices on the official page.",
-      "verified": "2026-10-31"
+      "pricingVerified": true,
+      "verified": "2026-10-31",
+      "why": "Strong daily-driver for developers; governance is the weak spot, and plans have been renamed recently."
     },
     {
       "id": "m365-copilot",
@@ -226,7 +232,8 @@
       "pricing": "Copilot Business add-on $21/user/mo ($18 promo through Dec 31, 2026, annual commitment)",
       "pricingSource": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Top on governance and integrations inside Microsoft 365; access is limited to licensed organizations."
     },
     {
       "id": "manus",
@@ -248,7 +255,8 @@
       "pricing": "Free, Pro and Team plans are credit-based; the official docs page shows no prices",
       "pricingSource": "https://manus.im/docs/introduction/plans",
       "pricingVerified": false,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "High autonomy for end-to-end tasks; weaker on governance, and we could not confirm its prices."
     },
     {
       "id": "perplexity",
@@ -270,7 +278,8 @@
       "pricing": "See the official pricing page",
       "pricingSource": "https://www.perplexity.ai/pro",
       "pricingVerified": false,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Best-in-class citations and easy access; fewer agent controls, and its prices are not confirmed here."
     },
     {
       "id": "agentforce",
@@ -292,7 +301,8 @@
       "pricing": "$2 per conversation; Flex Credits $500 per 100k; employee add-ons $125/user/mo",
       "pricingSource": "https://www.salesforce.com/agentforce/pricing/",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Strong governance and reliability on CRM data; access is limited to Salesforce customers."
     },
     {
       "id": "copilot-studio",
@@ -314,7 +324,8 @@
       "pricing": "Pay-as-you-go $0.01 per credit; capacity pack $200/mo for 25,000 credits (annual billing)",
       "pricingSource": "https://www.microsoft.com/licensing/guidance/Microsoft-Copilot-Studio",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Excellent governance and integrations for building agents in Microsoft environments; metered pricing."
     },
     {
       "id": "zapier-agents",
@@ -336,7 +347,8 @@
       "pricing": "Free 400 activities/mo; Pro $33.33/mo billed annually (1,500 activities)",
       "pricingSource": "https://zapier.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Widest app catalog and clear pricing; autonomy and momentum are moderate."
     },
     {
       "id": "devin",
@@ -358,7 +370,8 @@
       "pricing": "Free; Pro $20/mo; Max $200/mo; Teams usage-based, $80/mo minimum",
       "pricingSource": "https://cognition.com/blog/new-self-serve-plans-for-devin",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Very autonomous software engineer; reliability and breadth are lower than the leaders."
     },
     {
       "id": "antigravity",
@@ -380,7 +393,8 @@
       "pricing": "Free for individuals; paid tiers are not itemized on the official page",
       "pricingSource": "https://antigravity.google/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Interesting parallel-agent design, free for individuals; paid tiers are not itemized."
     },
     {
       "id": "replit-agent",
@@ -402,7 +416,8 @@
       "pricing": "Core $20/mo ($18 annual); Pro $100/mo ($90 annual)",
       "pricingSource": "https://replit.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Lets non-engineers ship apps and has clear pricing; reliability and governance are middling."
     },
     {
       "id": "gemini-enterprise",
@@ -424,7 +439,8 @@
       "pricing": "Business $21/seat/mo; Standard/Plus $30/seat/mo",
       "pricingSource": "https://gemini.google/subscriptions/",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Strong governance on company data; adoption and momentum are still catching up."
     },
     {
       "id": "fin",
@@ -446,7 +462,8 @@
       "pricing": "From $0.99 per outcome; no seats for the standalone product",
       "pricingSource": "https://www.intercom.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Reliable support agent with a transparent per-outcome price; narrow in scope."
     },
     {
       "id": "n8n",
@@ -468,7 +485,8 @@
       "pricing": "Cloud Starter €20/mo and Pro €50/mo billed annually; Community Edition free to self-host",
       "pricingSource": "https://n8n.io/pricing/",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Open source and self-hostable with transparent pricing; autonomy and adoption are moderate."
     },
     {
       "id": "grok",
@@ -490,7 +508,8 @@
       "pricing": "See the official page",
       "pricingSource": "https://x.ai/grok",
       "pricingVerified": false,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Unique real-time X data; weaker on governance and integrations, and prices are not confirmed here."
     },
     {
       "id": "atlas",
@@ -512,7 +531,8 @@
       "pricing": "See the official page",
       "pricingSource": "https://openai.com/",
       "pricingVerified": false,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Agent built into a browser; governance is thin and availability details are not confirmed here."
     },
     {
       "id": "servicenow",
@@ -528,13 +548,14 @@
         "governance": 5,
         "integrations": 4,
         "access": 2,
-        "transparency": 3,
+        "transparency": 2,
         "momentum": 3
       },
-      "pricing": "Not verified",
-      "pricingSource": "https://www.servicenow.com/",
-      "pricingVerified": false,
-      "verified": "2026-10-31"
+      "pricing": "No public prices; quote or demo only",
+      "pricingSource": "https://www.servicenow.com/products/ai-agents.html",
+      "pricingVerified": true,
+      "verified": "2026-10-31",
+      "why": "Reliable and well governed for IT and HR; no public prices and access is via sales only."
     },
     {
       "id": "agentcore",
@@ -550,13 +571,14 @@
         "governance": 5,
         "integrations": 4,
         "access": 3,
-        "transparency": 3,
+        "transparency": 5,
         "momentum": 4
       },
-      "pricing": "Not verified",
-      "pricingSource": "https://aws.amazon.com/bedrock/agentcore/",
-      "pricingVerified": false,
-      "verified": "2026-10-31"
+      "pricing": "Usage-based: Runtime $0.0895 per vCPU-hour; Gateway $0.005 per 1,000 calls; up to $200 credits for new AWS customers",
+      "pricingSource": "https://aws.amazon.com/bedrock/agentcore/pricing/",
+      "pricingVerified": true,
+      "verified": "2026-10-31",
+      "why": "Strong governance on AWS with fully published unit prices; adoption is still developing."
     },
     {
       "id": "uipath",
@@ -578,7 +600,8 @@
       "pricing": "Community free; Basic from $25/mo; Standard and Enterprise on request",
       "pricingSource": "https://www.uipath.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31"
+      "verified": "2026-10-31",
+      "why": "Reliable, governed automation for existing UiPath customers; enterprise tiers are on request."
     },
     {
       "id": "glean",
@@ -594,13 +617,14 @@
         "governance": 5,
         "integrations": 5,
         "access": 2,
-        "transparency": 3,
+        "transparency": 2,
         "momentum": 3
       },
-      "pricing": "Not verified",
-      "pricingSource": "https://www.glean.com/",
-      "pricingVerified": false,
-      "verified": "2026-10-31"
+      "pricing": "No public prices; quote or demo only",
+      "pricingSource": "https://www.glean.com/pricing",
+      "pricingVerified": true,
+      "verified": "2026-10-31",
+      "why": "Excellent integrations and governance; no public prices and access is via a demo."
     }
   ]
 }

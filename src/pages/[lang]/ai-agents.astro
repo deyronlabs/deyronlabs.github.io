@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { ENABLED_LANGS, type Lang } from '../../site';
+import { ENABLED_LANGS, SITE, type Lang } from '../../site';
 import { langPaths } from '../../i18n/utils';
 import { breadcrumbLd, staticAlternates } from '../../lib/seo';
 import data from '../../data/agents.json';
@@ -67,7 +67,7 @@ const itemList = {
     </div>
 
     <div class="tablewrap">
-      <table>
+      <table class="ranking">
         <thead>
           <tr>
             <th>#</th>
@@ -81,11 +81,12 @@ const itemList = {
           {
             ranked.map((a) => (
               <tr data-cat={a.category}>
-                <td class="num">{a.rank}</td>
+                <td class="num" data-label="#">{a.rank}</td>
                 <td>
                   <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>
                   <span class="co">{a.company}</span>
                   <span class="what">{a.what}</span>
+                  <span class="whyline">{a.why}</span>
                   <details class="why">
                     <summary>Score breakdown</summary>
                     <ul>
@@ -99,12 +100,12 @@ const itemList = {
                     </ul>
                   </details>
                 </td>
-                <td>{a.category}</td>
-                <td class="score">
+                <td class="cat" data-label="Category">{a.category}</td>
+                <td class="score" data-label="Score">
                   <span class="big">{a.total}<small>/100</small></span>
                   <span class="meter" aria-hidden="true"><i style={`width:${a.total}%`}></i></span>
                 </td>
-                <td>
+                <td class="pricecell" data-label="Pricing">
                   <span class:list={['price', { unv: !a.pricingVerified }]}>{a.pricing}</span>
                   <a class="src" href={a.pricingSource} rel="noopener" target="_blank">
                     {a.pricingVerified ? `source, ${a.verified}` : 'unverified, official page'}
@@ -138,6 +139,11 @@ const itemList = {
       Links go to company domains and official pricing pages. Prices change often: every row shows the date it was checked, and rows we could
       not confirm say so instead of guessing.
     </p>
+    <p class="correct">
+      Spotted a wrong price or a score you disagree with?
+      <a href={`mailto:${SITE.contactEmail}?subject=${encodeURIComponent('AI agents ranking: suggested correction')}`}>Suggest a correction</a>
+      and include the official page that shows it.
+    </p>
   </div>
 </Base>
 
@@ -168,7 +174,25 @@ const itemList = {
   .why .cp { font-family: var(--mono); text-align: right; color: var(--ink); }
   .why .pbar { height: 5px; background: var(--rule); border-radius: 999px; overflow: hidden; }
   .why .pbar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .whyline { display: block; margin-top: 0.3rem; font-size: var(--step--1); color: var(--ink); }
+  .correct { margin-top: 1.5rem; }
   .method { min-width: 36rem; margin-bottom: 1.5rem; }
+  @media (max-width: 40rem) {
+    .ranking { min-width: 0; }
+    .ranking thead { position: absolute; left: -9999px; }
+    .ranking, .ranking tbody { display: block; }
+    .ranking tr { display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.2rem 0.6rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+    .ranking tr[hidden] { display: none; }
+    .ranking td { display: block; padding: 0; border: 0; }
+    .ranking td.num { grid-row: 1 / span 4; font-size: var(--step-1); }
+    .ranking td.cat { display: none; }
+    .ranking td.score { min-width: 0; }
+    .ranking td.score .big { display: inline; font-size: var(--step-1); }
+    .ranking td.score .meter { margin-top: 0.3rem; }
+    .ranking td.pricecell::before { content: 'Pricing: '; color: var(--ink-2); font-size: var(--step--1); }
+    .ranking td.pricecell .price { display: inline; }
+    .why li { grid-template-columns: 7rem 1fr 3rem; }
+  }
 </style>
 
 <script>

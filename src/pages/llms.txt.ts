@@ -16,6 +16,7 @@ export const GET: APIRoute = async () => {
       { title: t['topics.title'], path: `/${lang}/topics/`, note: 'stories grouped by topic: models, open-weight models, policy, safety, security, agents and more' },
       { title: t['lab.title'], path: `/${lang}/lab-sessions/`, note: 'step-by-step video tutorials for AI tools, each with a written guide' },
       { title: t['infra.title'], path: `/${lang}/ai-infrastructure/`, note: 'weekly video series on the data centers, power plants and chips behind AI, each episode with a written companion: figures, whose figures they are, sources and an update log' },
+      { title: t['nav.agents'], path: `/${lang}/ai-agents/`, note: 'AI agents scored out of 100 on eight weighted criteria, with pricing checked against official pages and dated' },
       { title: t['about.title'], path: `/${lang}/about/`, note: 'how stories are made, corrections policy, contact' },
       { title: t['author.title'], path: `/${lang}/author/deyron-labs/`, note: 'the editorial desk behind every story' },
       { title: t['sponsors.title'], path: `/${lang}/sponsors/`, note: 'independence rules for sponsors and partners' },
