@@ -506,8 +506,8 @@
         "transparency": 4,
         "momentum": 3
       },
-      "pricing": "Plus, Premium (4x Plus usage) and Super (15x) tiers; the official page shows prices in local currency",
-      "pricingSource": "https://grok.com/plans",
+      "pricing": "Free; Plus $8/mo; Premium $30/mo (4x Plus usage); Super $100/mo (15x)",
+      "pricingSource": "https://x.ai/pricing",
       "pricingVerified": true,
       "verified": "2026-10-31",
       "why": "Unique real-time X data and public tiers; weaker on governance and integrations."
