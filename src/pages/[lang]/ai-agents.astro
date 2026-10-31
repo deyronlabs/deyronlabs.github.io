@@ -201,11 +201,13 @@ const faqLd = {
                   {a.move !== null && a.move < 0 && <span class="mv down" title={`Down ${-a.move} since ${prev.label}`}><span aria-hidden="true">▼</span>{-a.move}<span class="sr-only"> places down</span></span>}
                 </td>
                 <td>
-                  <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>
+                  {hasProfile(a.rank)
+                    ? <a href={`/${lang}/ai-agents/${a.id}/`}><strong>{a.name}</strong></a>
+                    : <a href={a.url} rel="noopener" target="_blank"><strong>{a.name}</strong></a>}
                   <span class="co">{a.company}</span>
                   <span class="what">{a.what}</span>
                   <span class="whyline">{a.why}</span>
-                  {hasProfile(a.rank) && <a class="prof" href={`/${lang}/ai-agents/${a.id}/`}>Full profile: price, score, alternatives</a>}
+                  {hasProfile(a.rank) && <span class="prof"><a href={`/${lang}/ai-agents/${a.id}/`}>Full profile</a> · <a href={a.url} rel="noopener" target="_blank">Official site</a></span>}
                   <details class="why">
                     <summary>Score breakdown</summary>
                     <ul>
