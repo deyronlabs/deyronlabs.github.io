@@ -1,0 +1,5 @@
+seg-01 — Apple has confirmed that Alibaba's Qwen model will run inside Apple Intelligence in China. The announcement came on October thirty-first.
+seg-02 — Qwen will appear in three places: Siri, Writing Tools, and Visual Intelligence. Users reach it with a Qwen account, or with Sign in with Apple.
+seg-03 — A developer beta opens on November fourth. The public release follows in December with iOS twenty-seven point three, on iPhone fifteen Pro and newer.
+seg-04 — What is not known: Apple's release does not say how Qwen requests are processed, or what data goes to Alibaba. Alibaba, as reported by Xinhua, says it will not train on user requests.
+seg-05 — Outside China, nothing changes. Findings are Apple's. Deyron Labs uses Claude, from Anthropic. Details at deyronlabs dot com. The voice is AI-generated.
