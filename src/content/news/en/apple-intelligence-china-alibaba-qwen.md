@@ -18,6 +18,8 @@ topics:
 translationKey: apple-intelligence-china-alibaba-qwen
 image: /images/news/apple-intelligence-china-alibaba-qwen-2026-10-31.jpg
 imageAlt: "Deyron Labs graphic: Apple Intelligence reaches China in December with iOS 27.3, with Alibaba's Qwen inside Siri, Writing Tools and Visual Intelligence; developer beta from 4 November"
+video: https://www.youtube.com/shorts/jQje6W4hWqY
+videoPublishedAt: 2026-11-01T18:10:00Z
 sources:
   - title: "Apple Intelligence is coming to China (Apple China newsroom, press release dated 31 October 2026, in Chinese)"
     url: "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/"
