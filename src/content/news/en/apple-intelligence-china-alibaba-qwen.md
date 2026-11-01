@@ -4,7 +4,7 @@ summary: "Apple announced on 31 October 2026 that Apple Intelligence reaches use
 seoTitle: "Apple Intelligence in China adds Alibaba Qwen"
 seoDescription: "Apple said on 31 October 2026 that Apple Intelligence reaches China in December with iOS 27.3, with Alibaba's Qwen inside Siri and Writing Tools."
 lang: en
-publishedAt: 2026-11-01T17:30:00Z
+publishedAt: 2026-11-01T17:26:00Z
 entities:
   - Apple
   - Apple Intelligence
