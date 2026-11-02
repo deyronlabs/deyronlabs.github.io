@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-02",
   "criteria": [
     {
       "key": "adoption",
@@ -172,7 +172,7 @@
       "company": "Anthropic",
       "category": "General",
       "url": "https://claude.com/",
-      "what": "Long-running work on files, documents and code with tool use.",
+      "what": "Long-running work on files, documents and code with tool use. Claude Duet, a proactive background agent, is in research preview on a waitlist.",
       "scores": {
         "adoption": 4,
         "autonomy": 4,
@@ -183,10 +183,10 @@
         "transparency": 5,
         "momentum": 4
       },
-      "pricing": "Free; Pro $20/mo; Max $100/mo; Team from $20/seat/mo billed annually",
+      "pricing": "Free; Pro $20/mo ($17/mo billed annually); Max $100/mo; Ultra $200/mo; Team from $20/seat/mo billed annually",
       "pricingSource": "https://claude.com/pricing",
       "pricingVerified": true,
-      "verified": "2026-10-31",
+      "verified": "2026-11-02",
       "why": "Balanced across criteria; long-running file and code work with a free tier and clear plans."
     },
     {
@@ -1990,7 +1990,7 @@
       "company": "Augment",
       "category": "Coding",
       "url": "https://www.augmentcode.com",
-      "what": "Coding agents with a CLI and cloud agents.",
+      "what": "Coding agents with a CLI and cloud agents. Cosmos, Auggie CLI and the Context Engine were acquired by Harness on 2026-10-08.",
       "scores": {
         "adoption": 3,
         "autonomy": 4,
@@ -2005,7 +2005,7 @@
       "pricingSource": "https://www.augmentcode.com/pricing",
       "pricingVerified": true,
       "why": "Flat team pricing and good integrations.",
-      "verified": "2026-10-31"
+      "verified": "2026-11-02"
     },
     {
       "id": "base44",
@@ -2868,6 +2868,10 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-11-02",
+      "text": "Augment Code: Harness acquired Cosmos, the Auggie CLI and the Context Engine on 2026-10-08. Claude: added the Ultra plan ($200/mo) and a note on Claude Duet, a research preview on a waitlist. Prices checked on the official pages."
+    },
     {
       "date": "2026-10-31",
       "text": "Confirmed prices for 19 more agents from their official pricing pages, including Lovable, Genspark, Make, Kimi, Trae, Amp, AutoGPT, Zoom AI Companion, Jules, Meta AI, Qwen and Skywork; Tabnine now redirects to Tricentis and Windsurf to Devin Desktop."
