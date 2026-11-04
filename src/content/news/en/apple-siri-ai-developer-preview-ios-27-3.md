@@ -4,7 +4,7 @@ summary: "On 3 November 2026 Apple released a Siri AI developer preview in the i
 seoTitle: "Apple opens Siri AI to all app developers"
 seoDescription: "Apple's iOS 27.3 beta, released 3 Nov 2026, lets any developer connect an app to Siri AI through App Intents and teach it multi-step skills."
 lang: en
-publishedAt: 2026-11-03T21:00:00Z
+publishedAt: 2026-11-04T00:33:00Z
 entities:
   - Apple
   - Siri AI
@@ -16,6 +16,8 @@ topics:
   - Agents
   - Policy
 translationKey: apple-siri-ai-developer-preview-ios-27-3
+video: https://www.youtube.com/shorts/ReSHMmXTxfI
+videoPublishedAt: 2026-11-04T00:30:00Z
 image: /images/news/apple-siri-ai-developer-preview-ios-27-3-2026-11-03.jpg
 imageAlt: "Deyron Labs graphic: Apple opens Siri AI to any app in the iOS 27.3 developer preview, with skills that chain actions; not available in the EU; ships in a few months"
 sources:
