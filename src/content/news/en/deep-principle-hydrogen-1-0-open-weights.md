@@ -4,7 +4,7 @@ summary: "Deep Principle published Hydrogen-1.0, a model post-trained from GLM-5
 seoTitle: "Deep Principle Hydrogen-1.0: 753B, MIT license"
 seoDescription: "Deep Principle's Hydrogen-1.0, post-trained from GLM-5.3, lists 753B parameters and MIT-licensed weights; benchmark claims are its own."
 lang: en
-publishedAt: 2026-11-04T06:15:00Z
+publishedAt: 2026-11-04T06:33:00Z
 entities:
   - Deep Principle
   - Hydrogen-1.0

@@ -4,7 +4,7 @@ summary: "Marvell said on 2 November 2026 it will acquire Lumentum for 4.500 Mar
 seoTitle: "Marvell to buy Lumentum for $115B in stock"
 seoDescription: "Marvell will acquire Lumentum in an all-stock deal valued at $115B (4.500 shares each), announced 2 Nov 2026, with closing expected in H1 2028."
 lang: en
-publishedAt: 2026-11-04T06:05:00Z
+publishedAt: 2026-11-04T06:31:00Z
 entities:
   - Marvell
   - Lumentum

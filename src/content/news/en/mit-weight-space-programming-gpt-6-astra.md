@@ -4,7 +4,7 @@ summary: "In a 2 November 2026 post, four MIT CSAIL researchers report that GPT-
 seoTitle: "MIT: GPT-6 Astra edits weights, no training"
 seoDescription: "MIT CSAIL authors report GPT-6 Astra edited 0.016% of Qwen3.5-0.8B's weights without training, lifting MATH-500 from 7.9% to 48.1% (2 Nov 2026)."
 lang: en
-publishedAt: 2026-11-04T06:00:00Z
+publishedAt: 2026-11-04T06:30:00Z
 entities:
   - MIT CSAIL
   - GPT-6 Astra

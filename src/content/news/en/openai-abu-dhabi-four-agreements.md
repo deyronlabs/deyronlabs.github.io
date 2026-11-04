@@ -4,7 +4,7 @@ summary: "On 2 November 2026 the Abu Dhabi Media Office said four agreements wer
 seoTitle: "OpenAI signs four Abu Dhabi agreements"
 seoDescription: "Abu Dhabi Media Office says OpenAI signed four agreements on 2 Nov 2026 with ADNOC, the Abu Dhabi Government, Mubadala and Inception42; no amounts given."
 lang: en
-publishedAt: 2026-11-04T06:10:00Z
+publishedAt: 2026-11-04T06:32:00Z
 entities:
   - OpenAI
   - ADNOC
