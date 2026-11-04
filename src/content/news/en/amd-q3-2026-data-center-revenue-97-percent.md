@@ -4,7 +4,7 @@ summary: "AMD said on 3 November 2026 that third-quarter revenue was $13,377 mil
 seoTitle: "AMD Q3 2026: $13.4B revenue, Data Center up 97%"
 seoDescription: "AMD's Q3 2026 results (3 Nov): revenue $13.4B, up 45%; Data Center $8.5B, up 97%; Q4 guidance about $17B plus or minus 3%."
 lang: en
-publishedAt: 2026-11-04T17:45:00Z
+publishedAt: 2026-11-04T17:26:00Z
 entities:
   - AMD
   - Lisa Su

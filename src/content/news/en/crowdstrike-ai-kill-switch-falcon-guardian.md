@@ -4,7 +4,7 @@ summary: "CrowdStrike announced AI Kill Switch on 3 November 2026. It is availab
 seoTitle: "CrowdStrike AI Kill Switch for rogue AI agents"
 seoDescription: "CrowdStrike's AI Kill Switch (3 Nov 2026) blocks an agent's model access via an AI gateway; wider containment across endpoints and cloud is 'coming soon'."
 lang: en
-publishedAt: 2026-11-04T17:35:00Z
+publishedAt: 2026-11-04T17:26:00Z
 entities:
   - CrowdStrike
   - Falcon Guardian

@@ -4,7 +4,7 @@ summary: "In a 3 November 2026 post, Google's education team said access to Gemi
 seoTitle: "Google turns AI and Search off for K-12 students"
 seoDescription: "Google (3 Nov 2026): Gemini and Search stay off for K-12 student accounts until admins enable them; Guided Learning arrives in Classroom."
 lang: en
-publishedAt: 2026-11-04T17:40:00Z
+publishedAt: 2026-11-04T17:26:00Z
 entities:
   - Google
   - Gemini

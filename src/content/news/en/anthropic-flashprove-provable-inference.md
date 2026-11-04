@@ -4,7 +4,7 @@ summary: "Anthropic and researchers from EPFL and MIT published FlashProve on 2 
 seoTitle: "Anthropic FlashProve proves which model answered"
 seoDescription: "Anthropic's FlashProve (2 Nov 2026) is an Apache 2.0 prototype that proves a Llama 4 Maverick output, at 70-95x the GPU time of normal serving."
 lang: en
-publishedAt: 2026-11-04T17:30:00Z
+publishedAt: 2026-11-04T17:26:00Z
 entities:
   - Anthropic
   - FlashProve
