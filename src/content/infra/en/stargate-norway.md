@@ -3,7 +3,7 @@ title: "Narvik data center: why Stargate Norway lost its name"
 summary: "Episode 4 of AI Infrastructure follows the Narvik campus in northern Norway, announced as Stargate Norway: who builds it, what has been built, what the 230 MW and 100,000 GPU figures mean, how Microsoft took OpenAI's place as anchor customer, and why Nscale's separate Glomfjord delays are not Narvik's. Every number is labeled by source."
 lang: en
 episode: 4
-publishedAt: 2026-11-04T16:00:00Z
+publishedAt: 2026-11-04T04:00:00Z
 factsAsOf: 2026-10-31
 video: "https://youtu.be/IGNTEhx5yKU"
 durationSeconds: 485
