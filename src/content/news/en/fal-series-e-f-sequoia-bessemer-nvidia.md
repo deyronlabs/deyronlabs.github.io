@@ -4,7 +4,7 @@ summary: "fal, which runs image, video and audio models for developers through a
 seoTitle: "fal announces Series E and F funding"
 seoDescription: "fal announced Series E (Sequoia) and Series F (Bessemer, NVIDIA) in November 2026; TechCrunch reports $1.3B at a $16B valuation."
 lang: en
-publishedAt: 2026-11-04T18:00:00Z
+publishedAt: 2026-11-04T17:45:00Z
 entities:
   - fal
   - Sequoia Capital

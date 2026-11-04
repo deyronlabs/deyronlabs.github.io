@@ -4,7 +4,7 @@ summary: "On 2 November 2026 OpenAI said it is planning its next internal securi
 seoTitle: "OpenAI security sprint with Cathedral"
 seoDescription: "OpenAI said on 2 November 2026 it will run a new security sprint with Cathedral and more than quadruple bug bounty rewards for critical findings."
 lang: en
-publishedAt: 2026-11-04T17:50:00Z
+publishedAt: 2026-11-04T17:45:00Z
 entities:
   - OpenAI
   - Cathedral

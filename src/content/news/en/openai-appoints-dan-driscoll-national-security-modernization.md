@@ -4,7 +4,7 @@ summary: "On 2 November 2026 OpenAI announced that Dan Driscoll, the 26th Secret
 seoTitle: "OpenAI hires ex-Army Secretary Dan Driscoll"
 seoDescription: "OpenAI named Dan Driscoll, the 26th US Secretary of the Army, Senior Counselor for National Security Modernization on 2 November 2026."
 lang: en
-publishedAt: 2026-11-04T17:55:00Z
+publishedAt: 2026-11-04T17:45:00Z
 entities:
   - OpenAI
   - Dan Driscoll
