@@ -1,7 +1,7 @@
 ---
-title: "MIT CSAIL authors say GPT-6 Astra can read and write neural network weights directly, lifting a small Qwen model from 7.9% to 48.1% on MATH-500"
+title: "MIT authors say GPT-6 Astra can edit neural network weights, lifting Qwen3.5-0.8B on MATH-500 from 7.9% to 48.1%"
 summary: "In a 2 November 2026 post, four MIT CSAIL researchers report that GPT-6 Astra edited the weights of small networks with no gradient descent. Changing 0.016% of Qwen3.5-0.8B's weights raised MATH-500 from 7.9% to 48.1%, but the same edit approach could not improve Gemma. The authors call the results early and limited."
-seoTitle: "MIT: GPT-6 Astra edits model weights, no training"
+seoTitle: "MIT: GPT-6 Astra edits weights, no training"
 seoDescription: "MIT CSAIL authors report GPT-6 Astra edited 0.016% of Qwen3.5-0.8B's weights without training, lifting MATH-500 from 7.9% to 48.1% (2 Nov 2026)."
 lang: en
 publishedAt: 2026-11-04T06:00:00Z
