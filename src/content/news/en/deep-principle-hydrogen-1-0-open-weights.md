@@ -2,7 +2,7 @@
 title: "Deep Principle releases Hydrogen-1.0, a 753B science model post-trained from GLM-5.3, with MIT-licensed weights"
 summary: "Deep Principle published Hydrogen-1.0, a model post-trained from GLM-5.3 on chemistry, materials and life-science data. The Hugging Face card lists 753B parameters, a 1M-token context and an MIT license for the weights. The company says it beats GPT-6 Astra on one science benchmark; those results are its own."
 seoTitle: "Deep Principle Hydrogen-1.0: 753B, MIT license"
-seoDescription: "Deep Principle's Hydrogen-1.0, post-trained from GLM-5.3, lists 753B parameters and MIT-licensed weights; its science benchmark claims are the company's own."
+seoDescription: "Deep Principle's Hydrogen-1.0, post-trained from GLM-5.3, lists 753B parameters and MIT-licensed weights; benchmark claims are its own."
 lang: en
 publishedAt: 2026-11-04T06:15:00Z
 entities:
