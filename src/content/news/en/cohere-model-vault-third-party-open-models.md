@@ -4,7 +4,7 @@ summary: "On 3 November 2026 Cohere said it is launching third-party open models
 seoTitle: "Cohere Model Vault adds DeepSeek, GLM, Gemma"
 seoDescription: "Cohere's 3 Nov 2026 launch puts third-party open models such as DeepSeek V4.1 Flash and GLM 5.3 Flash in Model Vault with zero data retention."
 lang: en
-publishedAt: 2026-11-03T21:10:00Z
+publishedAt: 2026-11-04T00:24:00Z
 entities:
   - Cohere
   - Model Vault

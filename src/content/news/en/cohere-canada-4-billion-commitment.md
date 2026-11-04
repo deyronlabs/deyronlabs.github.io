@@ -4,7 +4,7 @@ summary: "On 30 October 2026 Cohere said it will invest more than C$4 billion in
 seoTitle: "Cohere commits C$4B to Canada AI by 2031"
 seoDescription: "Cohere said on 30 Oct 2026 it will invest over C$4 billion in Canadian R&D and AI infrastructure by 2031 and add 1,500+ roles; figures are its own."
 lang: en
-publishedAt: 2026-11-03T22:10:00Z
+publishedAt: 2026-11-04T00:30:00Z
 entities:
   - Cohere
   - Bell AI Fabric

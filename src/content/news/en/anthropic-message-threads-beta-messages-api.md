@@ -4,7 +4,7 @@ summary: "On 2 November 2026 Anthropic put message threads into beta on the Clau
 seoTitle: "Claude API message threads beta"
 seoDescription: "Anthropic's message threads beta (2 Nov 2026) keeps a conversation on the server so API requests send only new messages; threads expire in 5 minutes."
 lang: en
-publishedAt: 2026-11-03T22:00:00Z
+publishedAt: 2026-11-04T00:29:00Z
 entities:
   - Anthropic
   - Claude API

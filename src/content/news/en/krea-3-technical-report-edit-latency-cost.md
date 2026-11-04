@@ -4,7 +4,7 @@ summary: "On 3 November 2026 Krea published the technical report for Krea 3, its
 seoTitle: "Krea 3 report: 8-second edits, #4 on arenas"
 seoDescription: "Krea's 3 Nov 2026 technical report says Krea 3 Ultra debuted #4 on image arenas and edits in 8.0 s versus 22.3 s for Nano Banana Pro; figures are Krea's."
 lang: en
-publishedAt: 2026-11-03T21:20:00Z
+publishedAt: 2026-11-04T00:25:00Z
 entities:
   - Krea
   - Krea 3

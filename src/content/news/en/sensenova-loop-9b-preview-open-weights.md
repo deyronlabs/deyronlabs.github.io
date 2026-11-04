@@ -4,7 +4,7 @@ summary: "SenseNova-Loop-9B-Preview, released on 30 October 2026 under the OpenS
 seoTitle: "SenseNova-Loop-9B-Preview: looped 9B, Apache 2.0"
 seoDescription: "SenseNova-Loop-9B-Preview, released 30 Oct 2026 under Apache 2.0, reuses 24 decoder layers twice and supports a 262,144-token training context."
 lang: en
-publishedAt: 2026-11-03T21:40:00Z
+publishedAt: 2026-11-04T00:27:00Z
 entities:
   - SenseTime
   - SenseNova

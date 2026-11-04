@@ -4,7 +4,7 @@ summary: "Anthropic's platform release notes for 3 November 2026 say text from C
 seoTitle: "Anthropic adds Claude text watermark to models"
 seoDescription: "Anthropic's 3 Nov 2026 API note says Mythos 5, Opus 4.7 and Sonnet 4.6 text carries its watermark; its support table disagrees. Detection is private."
 lang: en
-publishedAt: 2026-11-03T21:30:00Z
+publishedAt: 2026-11-04T00:26:00Z
 entities:
   - Anthropic
   - Claude

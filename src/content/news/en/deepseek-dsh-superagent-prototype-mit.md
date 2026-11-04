@@ -4,7 +4,7 @@ summary: "A DeepSeek team has published dsh-superagent on GitHub under the MIT l
 seoTitle: "DeepSeek dsh-superagent: proactive coding agent"
 seoDescription: "DeepSeek's dsh-superagent prototype, open-sourced under MIT around 2 Nov 2026, is a proactive coding agent for one GitHub repo, not an official product."
 lang: en
-publishedAt: 2026-11-03T21:50:00Z
+publishedAt: 2026-11-04T00:28:00Z
 entities:
   - DeepSeek
   - DeepSeek Harness
