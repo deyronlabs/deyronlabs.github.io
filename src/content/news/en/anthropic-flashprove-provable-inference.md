@@ -1,5 +1,5 @@
 ---
-title: "Anthropic releases FlashProve, an open-source prototype that proves which model produced an output, at 70-95x the GPU time"
+title: "Anthropic releases FlashProve, an open-source prototype that proves which model produced an output, at 70-95x the GPU cost"
 summary: "Anthropic and researchers from EPFL and MIT published FlashProve on 2 November 2026, a zkSNARK research prototype that proves a specific Llama 4 Maverick model generated a given output. Anthropic reports about 110 tokens per second on one H100 and roughly 19 MB per proof, at 70-95 times the GPU time of ordinary serving. Code is Apache 2.0; it is a research prototype with a 1,024-token limit."
 seoTitle: "Anthropic FlashProve proves which model answered"
 seoDescription: "Anthropic's FlashProve (2 Nov 2026) is an Apache 2.0 prototype that proves a Llama 4 Maverick output, at 70-95x the GPU time of normal serving."
