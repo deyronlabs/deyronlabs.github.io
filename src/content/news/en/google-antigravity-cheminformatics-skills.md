@@ -4,7 +4,7 @@ summary: "On 3 November 2026 Google DeepMind published a suite of Cheminformatic
 seoTitle: "Google Antigravity Cheminformatics Skills"
 seoDescription: "Google DeepMind adds Cheminformatics Skills to Antigravity (3 Nov 2026) using RDKit, ChEMBL and PubChem, with free top usage for 10,000 scientists."
 lang: en
-publishedAt: 2026-11-05T06:30:00Z
+publishedAt: 2026-11-05T21:19:00Z
 entities:
   - Google DeepMind
   - Google Antigravity
