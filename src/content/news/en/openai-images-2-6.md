@@ -16,6 +16,7 @@ topics:
 translationKey: openai-images-2-6
 image: /images/news/openai-images-2-6-2026-11-04.jpg
 imageAlt: "Deyron Labs graphic: OpenAI launches Images 2.6 with animated GIFs and two API models; OpenAI says generation is 50% faster; figures are OpenAI's"
+video: https://www.youtube.com/shorts/v1alsLdtcas
 sources:
   - title: "Introducing Images 2.6"
     url: "https://openai.com/index/introducing-images-2-6/"
