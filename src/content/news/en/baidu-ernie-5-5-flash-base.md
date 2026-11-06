@@ -4,7 +4,7 @@ summary: "On 5 November 2026 Baidu published ERNIE 5.5 Flash Base, a base checkp
 seoTitle: "Baidu ERNIE 5.5 Flash Base: 280B open MoE"
 seoDescription: "Baidu released ERNIE 5.5 Flash Base on 5 Nov 2026: a 280B-parameter MoE base model with 14B active, on Hugging Face under a custom license."
 lang: en
-publishedAt: 2026-11-06T19:50:00Z
+publishedAt: 2026-11-06T19:36:00Z
 entities:
   - Baidu
   - ERNIE 5.5 Flash Base
