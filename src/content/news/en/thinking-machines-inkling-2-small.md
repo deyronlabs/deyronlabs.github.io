@@ -4,7 +4,7 @@ summary: "On 5 November 2026 Thinking Machines Lab released Inkling 2 Small, a m
 seoTitle: "Inkling 2 Small: 594B, weights due next week"
 seoDescription: "Thinking Machines Lab released Inkling 2 Small on 5 Nov 2026: 594B parameters, 17B active, closed on Tinker now, Apache 2.0 weights promised next week."
 lang: en
-publishedAt: 2026-11-06T17:30:00Z
+publishedAt: 2026-11-06T18:41:00Z
 entities:
   - Thinking Machines Lab
   - Inkling 2 Small
@@ -18,6 +18,8 @@ topics:
   - Open-weight
   - Coding
 translationKey: thinking-machines-inkling-2-small
+video: https://www.youtube.com/shorts/LXQ0kPo4sig
+videoPublishedAt: 2026-11-06T18:35:00Z
 image: /images/news/thinking-machines-inkling-2-small-2026-11-05.jpg
 imageAlt: "Deyron Labs graphic: Inkling 2 Small has 594B total and 17B active parameters, scores 31 on the Artificial Analysis Intelligence Index, closed on Tinker now with Apache 2.0 weights promised next week"
 sources:
