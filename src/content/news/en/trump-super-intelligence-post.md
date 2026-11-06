@@ -1,5 +1,5 @@
 ---
-title: "Trump writes on Truth Social that he is “100% in favor of Super Intelligence” and will work with states that want its “riches”"
+title: "Trump writes on Truth Social that he is “100% in favor of Super Intelligence” and will work with states on it"
 summary: "On 6 November 2026 at 7:01 AM Eastern, President Donald Trump posted on Truth Social that he is “100% in favor of Super Intelligence (SI)” and will work with US states that want to benefit from it. The post announces no policy, order or rule. We read it through an independent archive because Truth Social could not be opened by our tools."
 seoTitle: "Trump: “100% in favor of Super Intelligence”"
 seoDescription: "President Trump wrote on Truth Social on 6 Nov 2026 that he is 100% in favor of Super Intelligence; the post names no policy or executive order."
