@@ -4,7 +4,7 @@ summary: "On 5 November 2026 Google released Gemini Omni 1.2 Flash, a video gene
 seoTitle: "Gemini Omni 1.2 Flash: 15-second video, $0.07/s"
 seoDescription: "Google released Gemini Omni 1.2 Flash on 5 Nov 2026: native 15-second video clips and $0.07 per second at 720p, a 30% price cut from Omni 1.1."
 lang: en
-publishedAt: 2026-11-06T19:45:00Z
+publishedAt: 2026-11-06T19:36:00Z
 entities:
   - Google
   - Google DeepMind
