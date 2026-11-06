@@ -27,6 +27,8 @@ topics:
   - Business
   - Policy
 translationKey: ai-weekly-recap-2026-11-06
+video: "https://www.youtube.com/watch?v=dsNVwNi3a2w"
+videoPublishedAt: 2026-11-06
 image: /images/news/ai-weekly-recap-2026-11-06.jpg
 imageAlt: "Deyron Labs AI News This Week, 6 November 2026: GPT-6 Cyber, Siri AI, Inkling 2"
 sources:
