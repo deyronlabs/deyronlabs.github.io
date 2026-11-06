@@ -5,7 +5,7 @@ seoTitle: "Kimi K3.1 Pro: weights now on Hugging Face"
 seoDescription: "Moonshot AI released Kimi K3.1 Pro on 23 Oct 2026; its weights are now on Hugging Face under a custom license, per the HF API and TechNode."
 lang: en
 publishedAt: 2026-10-24T17:30:00Z
-updatedAt: 2026-11-06T20:10:00Z
+updatedAt: 2026-11-06T19:36:00Z
 entities:
   - Moonshot AI
   - Kimi K3.1 Pro
