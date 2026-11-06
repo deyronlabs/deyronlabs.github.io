@@ -4,7 +4,7 @@ summary: "On 6 November 2026 at 7:01 AM Eastern, President Donald Trump posted o
 seoTitle: "Trump: “100% in favor of Super Intelligence”"
 seoDescription: "President Trump wrote on Truth Social on 6 Nov 2026 that he is 100% in favor of Super Intelligence; the post names no policy or executive order."
 lang: en
-publishedAt: 2026-11-06T20:00:00Z
+publishedAt: 2026-11-06T19:36:00Z
 entities:
   - Donald Trump
   - Truth Social
