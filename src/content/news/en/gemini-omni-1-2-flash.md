@@ -20,6 +20,7 @@ topics:
 translationKey: gemini-omni-1-2-flash
 image: /images/news/gemini-omni-1-2-flash-2026-11-05.jpg
 imageAlt: "Deyron Labs graphic: Gemini Omni 1.2 Flash makes native 15-second video clips, lists 720p at $0.07 per second and is 30% cheaper than Omni 1.1"
+video: https://www.youtube.com/shorts/3EmqcXbnYIA
 sources:
   - title: "Introducing Gemini Omni 1.2 Flash"
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"

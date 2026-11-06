@@ -18,6 +18,7 @@ topics:
 translationKey: openai-gpt-6-cyber
 image: /images/news/openai-gpt-6-cyber-2026-11-05.jpg
 imageAlt: "Deyron Labs graphic: OpenAI introduces GPT-6 Cyber; OpenAI reports 48.5% on ExploitGym; access limited to approved customers; figures are OpenAI's"
+video: https://www.youtube.com/shorts/DkfIt9SgW5A
 sources:
   - title: "GPT-6 Cyber: Advancing the frontier of aligned cybersecurity agents"
     url: "https://openai.com/index/introducing-gpt-6-cyber/"
