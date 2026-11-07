@@ -1,5 +1,5 @@
 # Postări — AI News This Week, 6 nov 2026 — DE POSTAT DUPĂ PREMIERĂ (Claude: X, LinkedIn, Pinterest din Chrome-ul lui George)
-Video: https://youtu.be/dsNVwNi3a2w
+Video: https://youtu.be/oO4EwQeTOwE
 Articol recap (după merge în main): https://deyronlabs.com/en/news/ai-weekly-recap-2026-11-06/
 George postează manual: YouTube (comunitate), Facebook, TikTok. Etichetă AI unde există.
 
