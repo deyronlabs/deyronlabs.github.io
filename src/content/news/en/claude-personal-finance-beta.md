@@ -15,6 +15,7 @@ topics:
   - Agents
 translationKey: claude-personal-finance-beta
 image: /images/news/claude-personal-finance-2026-11-05.jpg
+video: https://www.youtube.com/shorts/cetwxf3DV1g
 imageAlt: "Deyron Labs graphic: Claude Personal Finance enters US beta with read-only bank access via Plaid, for Pro, Max and Ultra plans, up to two years of transactions"
 sources:
   - title: "Introducing Personal Finance in Claude"
