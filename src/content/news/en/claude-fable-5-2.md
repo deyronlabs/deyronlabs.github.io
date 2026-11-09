@@ -18,6 +18,8 @@ topics:
   - Safety
 translationKey: claude-fable-5-2
 image: /images/news/claude-fable-5-2-2026-11-09.jpg
+video: https://www.youtube.com/shorts/oJ45RODacsw
+videoPublishedAt: 2026-11-09T20:54:00Z
 imageAlt: "Deyron Labs graphic: Claude Fable 5.2, released 9 November 2026, costs $8 input and $40 output per million tokens versus $10 and $50 for Fable 5.1, with a 1M-token context window"
 sources:
   - title: "Introducing Claude Fable 5.2 and Claude Mythos 5.2"
