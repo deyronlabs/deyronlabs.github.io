@@ -5,7 +5,7 @@ lang: en
 episode: 5
 publishedAt: 2026-11-11T16:00:00Z
 factsAsOf: 2026-11-08
-video: "https://youtu.be/REPLACE_AFTER_UPLOAD"
+video: "https://youtu.be/lsZjhpXKrdM"
 durationSeconds: 467
 image: /images/infra/stargate-michigan-ai-infrastructure-05.jpg
 imageAlt: "AI Infrastructure episode 5 cover: a 4–1 no, Stargate went ahead, Saline Township, Michigan"
