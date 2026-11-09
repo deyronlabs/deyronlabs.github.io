@@ -1,6 +1,6 @@
 ---
 title: "Anthropic releases Claude Fable 5.2 at $8/$40 per million tokens, down from $10/$50, plus a restricted Mythos 5.2"
-summary: "Anthropic's platform documentation lists Claude Fable 5.2 as released on 9 November 2026, priced at $8 per million input tokens and $40 per million output tokens, against $10 and $50 for Fable 5.1. It keeps a 1M-token context window and 128K max output. Claude Mythos 5.2 shares its specifications but is limited to verified organizations. We could not read Anthropic's announcement or system card, so benchmarks are not covered."
+summary: "Anthropic's platform documentation lists Claude Fable 5.2 as released on 9 November 2026, priced at $8 per million input tokens and $40 per million output tokens, against $10 and $50 for Fable 5.1. It keeps a 1M-token context window and 128K max output. Mythos 5.2 shares its specifications but is limited to verified organizations. We could not read the announcement or system card, so benchmarks are not covered."
 seoTitle: "Claude Fable 5.2 released: $8/$40 per 1M tokens"
 seoDescription: "Anthropic's docs list Claude Fable 5.2 as released 9 Nov 2026 at $8/$40 per 1M tokens (Fable 5.1: $10/$50), 1M context; Mythos 5.2 is restricted."
 lang: en
