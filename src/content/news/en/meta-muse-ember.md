@@ -19,6 +19,7 @@ topics:
   - Pricing
   - Agents
 translationKey: meta-muse-ember
+video: https://www.youtube.com/shorts/6y94yjlUL4Y
 image: /images/news/meta-muse-ember-2026-11-09.jpg
 imageAlt: "Deyron Labs graphic: Meta releases Muse Ember on 9 November 2026; API price $0.10 input and $0.50 output per million tokens, 1 million token context, up to 512K output tokens, benchmark results reported by Meta"
 sources:
