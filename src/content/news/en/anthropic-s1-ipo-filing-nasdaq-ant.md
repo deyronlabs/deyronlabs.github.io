@@ -22,7 +22,7 @@ image: /images/news/anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Anthropic S-1 filed 26 October 2026, Nasdaq symbol ANT, first-half 2026 revenue $16,286 million versus $1,163 million, net loss $80,748 million"
 video: https://www.youtube.com/shorts/8EMVdkaIlaI
 videoPublishedAt: 2026-10-26T17:48:00Z
-updatedAt: 2026-11-04T17:45:00Z
+updatedAt: 2026-11-10T09:30:00Z
 sources:
   - title: "Anthropic, PBC — Form S-1 registration statement (SEC EDGAR)"
     url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
@@ -36,6 +36,9 @@ sources:
     url: "https://www.anthropic.com/news/s1-sec"
     publisher: "Anthropic"
     primary: true
+  - title: "Anthropic aims to raise up to $69.3 billion in blockbuster IPO (Reuters exclusive, 10 November 2026)"
+    url: "https://www.reuters.com/business/anthropic-aims-raise-up-693-billion-blockbuster-ipo-2026-11-10/"
+    publisher: "Reuters"
   - title: "Anthropic's IPO: What Its S-1 Reveals About The AI Boom"
     url: "https://www.forbes.com/sites/ronschmelzer/2026/10/26/anthropics-ipo-what-its-s-1-reveals-about-the-ai-boom/"
     publisher: "Forbes"
@@ -51,6 +54,8 @@ Anthropic, PBC, the company that makes Claude, filed a Form S-1 registration sta
 The filing leaves the number of shares and the price range blank, and Anthropic's announcement says the registration statement has not yet become effective and is not an offer to sell securities.
 
 **Update, 4 November 2026:** on 2 November 2026 Anthropic filed Amendment No. 1 (Form S-1/A) to the registration statement. It adds results for the three and nine months ended 30 September 2026 and fills in the total of its compute and infrastructure commitments. The price range and share count are still blank in the amendment.
+
+**Update, 10 November 2026:** Reuters reported, citing emails it saw, that details of the offering circulated briefly to banks and were then withdrawn late on 9 November. Anthropic has not commented, and we have not read an amended filing that contains these figures. They are reported and unconfirmed, and are set out below under "Reuters report, 10 November".
 
 ## Key details
 
@@ -70,12 +75,16 @@ The first group of figures below is from the original S-1, read on 26 October 20
 - **Still blank in the amendment:** the price range and share count, and the run-rate revenue figure as of 31 October 2026.
 - **Reported, not in the filing text we read:** Forbes and PPC Land report a valuation range of $1.5 trillion to $2 trillion, citing press reports, and marketing the week of 9 November with a listing the week of 16 November. Anthropic has not confirmed either in the materials we read.
 
+- **Reuters report, 10 November (unconfirmed):** Reuters says the details sent to banks showed about 867 million shares (866.7 million Class A, including a secondary portion: about 843.3 million from Anthropic and about 23.3 million from existing holders) at $70 to $80 a share, or up to $69.3 billion at the top of the range. It says a second email told recipients the pricing details were inaccurate and that Anthropic would update its filing; the email did not say what was wrong, and Reuters could not establish it.
+- **Reuters report, private placement:** a $26 billion Class N private placement at the IPO price, closing right after the IPO, with Alphabet/Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC named. Reuters expected a roadshow starting Tuesday 10 November and pricing the following week.
+- **What we have not verified:** an amended S-1 on EDGAR with a price range. Because Anthropic reportedly called the pricing inaccurate, the final numbers may differ from those above.
+
 ## Why it matters
 
 The S-1 is the first audited look at the finances of a company whose models many readers use daily. For the AI tools market, it puts hard numbers on how fast one frontier lab's revenue grew and how much of its reported loss comes from accounting for its own rising valuation rather than operations. It also shows the governance model, a public benefit corporation steered by a trust, that investors would be buying into.
 
-For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, so treat the IPO timing as unconfirmed until Anthropic sets a price range.
+For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, and the withdrawal reported on 9 November is a reminder: treat the price range, share count and IPO timing as unconfirmed until Anthropic files an amendment that states them.
 
 The amendment adds one thing the first filing did not show: the size of the obligations behind that growth. A committed spend of about $895.4 billion is large compared with the $33.2 billion of revenue reported for nine months. The filing says some of the underlying agreements carry minimum purchase or take-or-pay terms and that about half is expected to be incurred before the end of 2030, so how much is fixed and when it falls due is something readers of the filing will want to check.
 
-> Disclosure: Claude, made by Anthropic, was one of the AI tools used to research and draft this article, and Anthropic is the subject of it. We have limited ourselves to the filing's own text and clearly attributed reporting. This is not investment advice.
+> Disclosure: Claude, made by Anthropic, was one of the AI tools used to research and draft this article, and Anthropic is the subject of it, so it has a conflict of interest here. We have limited ourselves to the filing's own text and clearly attributed reporting. This is not investment advice.
