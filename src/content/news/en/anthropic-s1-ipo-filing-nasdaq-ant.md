@@ -1,8 +1,8 @@
 ---
-title: "Anthropic files its S-1 for a Nasdaq IPO as ANT, reporting $16.3 billion of revenue in the first half of 2026"
-summary: "Anthropic, PBC filed a Form S-1 with the SEC on 26 October 2026 for an initial public offering of Class A stock, which it has applied to list on Nasdaq as ANT. The filing reports $16,286 million of revenue in the first half of 2026 against $1,163 million a year earlier, and a net loss of $80,748 million. An amendment filed on 2 November adds third-quarter figures; the price range and share count are still blank."
-seoTitle: "Anthropic files S-1 for Nasdaq IPO as ANT"
-seoDescription: "Anthropic filed its S-1 on 26 October 2026: $16.3B first-half revenue, an $80.7B net loss, a Nasdaq listing as ANT and no price range yet."
+title: "Anthropic launches its IPO roadshow: 825 million shares at an expected $70 to $78, Nasdaq symbol ANT"
+summary: "On 10 November 2026 Anthropic, PBC launched the roadshow for its proposed IPO: 825,000,000 Class A shares, of which 801,351,354 are offered by Anthropic and 23,648,646 by existing stockholders, at an expected price of $70.00 to $78.00 a share, on Nasdaq as ANT. The registration statement is filed but not yet effective. Earlier filings reported $16.3 billion of first-half 2026 revenue."
+seoTitle: "Anthropic IPO roadshow: $70-$78, ticker ANT"
+seoDescription: "Anthropic launched its IPO roadshow on 10 Nov 2026: 825M Class A shares at an expected $70-$78, Nasdaq symbol ANT, S-1 not yet effective."
 lang: en
 publishedAt: 2026-10-26T17:30:00Z
 entities:
@@ -22,8 +22,12 @@ image: /images/news/anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Anthropic S-1 filed 26 October 2026, Nasdaq symbol ANT, first-half 2026 revenue $16,286 million versus $1,163 million, net loss $80,748 million"
 video: https://www.youtube.com/shorts/8EMVdkaIlaI
 videoPublishedAt: 2026-10-26T17:48:00Z
-updatedAt: 2026-11-10T09:30:00Z
+updatedAt: 2026-11-10T17:45:00Z
 sources:
+  - title: "Anthropic launches roadshow for proposed initial public offering (Anthropic, 10 November 2026)"
+    url: "https://www.anthropic.com/news/roadshow-launch"
+    publisher: "Anthropic"
+    primary: true
   - title: "Anthropic, PBC — Form S-1 registration statement (SEC EDGAR)"
     url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
     publisher: "U.S. Securities and Exchange Commission"
@@ -36,7 +40,7 @@ sources:
     url: "https://www.anthropic.com/news/s1-sec"
     publisher: "Anthropic"
     primary: true
-  - title: "Anthropic aims to raise up to $69.3 billion in blockbuster IPO (Reuters exclusive, 10 November 2026)"
+  - title: "Anthropic aims to raise up to $69.3 billion in blockbuster IPO (Reuters exclusive, 10 November 2026; figures superseded by the roadshow announcement)"
     url: "https://www.reuters.com/business/anthropic-aims-raise-up-693-billion-blockbuster-ipo-2026-11-10/"
     publisher: "Reuters"
   - title: "Anthropic's IPO: What Its S-1 Reveals About The AI Boom"
@@ -55,7 +59,7 @@ The filing leaves the number of shares and the price range blank, and Anthropic'
 
 **Update, 4 November 2026:** on 2 November 2026 Anthropic filed Amendment No. 1 (Form S-1/A) to the registration statement. It adds results for the three and nine months ended 30 September 2026 and fills in the total of its compute and infrastructure commitments. The price range and share count are still blank in the amendment.
 
-**Update, 10 November 2026:** Reuters reported, citing emails it saw, that details of the offering circulated briefly to banks and were then withdrawn late on 9 November. Anthropic has not commented, and we have not read an amended filing that contains these figures. They are reported and unconfirmed, and are set out below under "Reuters report, 10 November".
+**Update, 10 November 2026 (evening):** Anthropic announced on its website that it launched the roadshow for the proposed offering. It gives the share count and an expected price range for the first time: 825,000,000 Class A shares at an expected $70.00 to $78.00 a share. These numbers replace the figures Reuters reported earlier the same day, which put the range at $70 to $80 (see "Key details"). The registration statement has been filed with the SEC but is not yet effective.
 
 ## Key details
 
@@ -72,18 +76,19 @@ The first group of figures below is from the original S-1, read on 26 October 20
 - **Amendment No. 1, nine months:** revenue of $33,242 million for the nine months ended 30 September 2026, against $2,545 million a year earlier. Operating loss was $1,260 million and net loss $104,039 million, with $94,324 million of the loss coming from the change in fair value of those instruments.
 - **Amendment No. 1, cash:** $131,845 million in cash, cash equivalents and short-term investments at 30 September 2026, with an accumulated deficit of $156,193 million.
 - **Amendment No. 1, commitments:** Anthropic says that as of and after 30 September 2026 it has entered into purchase commitments and lease agreements, including short-term commitments and leases not yet commenced, with an aggregate committed spend of approximately $895.4 billion, substantially all related to compute and infrastructure. About $447.5 billion of that is expected to be incurred before 31 December 2030. The filing says some of these agreements include minimum purchase and take-or-pay terms.
-- **Still blank in the amendment:** the price range and share count, and the run-rate revenue figure as of 31 October 2026.
+- **Still blank in the amendment:** the price range and share count (Anthropic gave both in its 10 November roadshow announcement, below), and the run-rate revenue figure as of 31 October 2026.
 - **Reported, not in the filing text we read:** Forbes and PPC Land report a valuation range of $1.5 trillion to $2 trillion, citing press reports, and marketing the week of 9 November with a listing the week of 16 November. Anthropic has not confirmed either in the materials we read.
 
-- **Reuters report, 10 November (unconfirmed):** Reuters says the details sent to banks showed about 867 million shares (866.7 million Class A, including a secondary portion: about 843.3 million from Anthropic and about 23.3 million from existing holders) at $70 to $80 a share, or up to $69.3 billion at the top of the range. It says a second email told recipients the pricing details were inaccurate and that Anthropic would update its filing; the email did not say what was wrong, and Reuters could not establish it.
-- **Reuters report, private placement:** a $26 billion Class N private placement at the IPO price, closing right after the IPO, with Alphabet/Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC named. Reuters expected a roadshow starting Tuesday 10 November and pricing the following week.
-- **What we have not verified:** an amended S-1 on EDGAR with a price range. Because Anthropic reportedly called the pricing inaccurate, the final numbers may differ from those above.
+- **Roadshow announcement, 10 November (Anthropic):** 825,000,000 shares of Class A common stock, of which 801,351,354 are offered by Anthropic and 23,648,646 by existing stockholders. Anthropic receives no proceeds from the shares sold by existing stockholders. The underwriters are expected to get a 30-day option to buy up to 123,750,000 additional shares. The expected price is $70.00 to $78.00 a share. Anthropic says it has applied to list on the Nasdaq Global Select Market under "ANT", and names Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC for prospectus copies. The registration statement has been filed but has not become effective, and the announcement is not an offer to sell.
+- **Our arithmetic from those numbers (gross, before underwriting fees and the option):** 825,000,000 shares at $70 is $57.75 billion and at $78 is $64.35 billion; Anthropic's own 801,351,354 shares come to about $56.1 billion and about $62.5 billion. These are our calculations, not figures Anthropic published.
+- **Reuters report earlier on 10 November (superseded):** Reuters, citing emails it saw, reported about 867 million shares at $70 to $80, up to $69.3 billion at the top of the range, and a $26 billion Class N private placement named for Alphabet/Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC. It also said a second email told recipients the pricing details were inaccurate. Anthropic's announcement gives a different share count and range, and does not mention a private placement; we have not read an amended S-1 that confirms or rules out the placement.
+- **Not yet confirmed by Anthropic in anything we read:** the pricing date, the listing date, the valuation, and the private placement. Press reports of a listing the week of 16 November have not been confirmed in the announcement we read.
 
 ## Why it matters
 
 The S-1 is the first audited look at the finances of a company whose models many readers use daily. For the AI tools market, it puts hard numbers on how fast one frontier lab's revenue grew and how much of its reported loss comes from accounting for its own rising valuation rather than operations. It also shows the governance model, a public benefit corporation steered by a trust, that investors would be buying into.
 
-For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, and the withdrawal reported on 9 November is a reminder: treat the price range, share count and IPO timing as unconfirmed until Anthropic files an amendment that states them.
+For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, and the pricing details that circulated and were withdrawn on 9 November are a reminder: the roadshow announcement now gives a share count and an expected range, but the price is not final and the offering is not effective, so the numbers can still change before pricing.
 
 The amendment adds one thing the first filing did not show: the size of the obligations behind that growth. A committed spend of about $895.4 billion is large compared with the $33.2 billion of revenue reported for nine months. The filing says some of the underlying agreements carry minimum purchase or take-or-pay terms and that about half is expected to be incurred before the end of 2030, so how much is fixed and when it falls due is something readers of the filing will want to check.
 
