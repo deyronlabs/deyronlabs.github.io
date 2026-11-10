@@ -1,6 +1,6 @@
 ---
 title: "Fireworks AI says an October attack reached billing data and, for some accounts, secrets, datasets and incomplete models"
-summary: "In a security bulletin updated on 9 November 2026, inference provider Fireworks AI said an unauthorized third party reached its development machines on 24 October. It says account and billing information was affected, and for a limited set of accounts also secrets, datasets and incomplete models. Fireworks says payment card numbers are not stored and its inference and training services are zero data retention by default."
+summary: "In a security bulletin updated on 9 November 2026, inference provider Fireworks AI said an unauthorized third party reached its development machines on 24 October. It says account and billing information was affected, and for a limited set of accounts also secrets, datasets and incomplete models. Fireworks says payment card numbers are not stored."
 seoTitle: "Fireworks AI security incident: what it said"
 seoDescription: "Fireworks AI's 9 Nov 2026 bulletin: a 24 Oct breach reached billing data and, for some accounts, secrets, datasets and incomplete models."
 lang: en
