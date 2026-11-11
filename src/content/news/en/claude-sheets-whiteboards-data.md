@@ -4,7 +4,7 @@ summary: "On 10 November 2026 Anthropic introduced Claude Whiteboards and Claude
 seoTitle: "Claude Sheets and Whiteboards launch in beta"
 seoDescription: "Anthropic launched Claude Sheets and Whiteboards in beta on paid plans on 10 Nov 2026; Dashboards is now generally available as Claude Data."
 lang: en
-publishedAt: 2026-11-11T19:00:00Z
+publishedAt: 2026-11-11T18:42:00Z
 entities:
   - Anthropic
   - Claude
