@@ -4,7 +4,7 @@ summary: "On 10 November 2026 OpenAI introduced Businesses in ChatGPT, in beta: 
 seoTitle: "OpenAI Businesses in ChatGPT: Hub and Agents"
 seoDescription: "OpenAI introduced Businesses in ChatGPT on 10 Nov 2026: a beta Business Hub and Business Agents for eligible US ecommerce and online services."
 lang: en
-publishedAt: 2026-11-11T21:30:00Z
+publishedAt: 2026-11-11T18:42:00Z
 entities:
   - OpenAI
   - ChatGPT
