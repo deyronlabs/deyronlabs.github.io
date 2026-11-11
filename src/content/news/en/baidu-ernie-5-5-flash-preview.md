@@ -1,5 +1,5 @@
 ---
-title: "Baidu releases ERNIE 5.5 Flash Preview, a 280B MoE post-training checkpoint, in its Qianfan API with open weights promised"
+title: "Baidu releases ERNIE 5.5 Flash Preview, a 280B MoE checkpoint, in its Qianfan API with open weights promised"
 summary: "On 11 November 2026 Baidu released ERNIE 5.5 Flash Preview, the first post-trained model built on ERNIE 5.5 Flash Base: 280 billion total and 14 billion active parameters, a 1-million-token context and a text-only design. It is available through Baidu's Qianfan platform; Baidu says the weights will be open-sourced under Apache 2.0 soon. Baidu calls it an intermediate checkpoint."
 seoTitle: "Baidu ERNIE 5.5 Flash Preview: 280B MoE"
 seoDescription: "Baidu released ERNIE 5.5 Flash Preview on 11 Nov 2026: a 280B MoE with 14B active, via Qianfan, with Apache 2.0 weights promised."
