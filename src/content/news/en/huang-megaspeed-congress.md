@@ -5,7 +5,7 @@ seoTitle: "House chairs ask Nvidia CEO for a briefing"
 seoDescription: "Three House chairs asked Nvidia CEO Jensen Huang for a closed briefing on Alice Huang, Axios reported 5 Nov 2026; Nvidia cites routine business."
 lang: en
 publishedAt: 2026-11-09T21:45:00Z
-updatedAt: 2026-11-11T21:40:00Z
+updatedAt: 2026-11-11T18:42:00Z
 entities:
   - Nvidia
   - Jensen Huang
