@@ -4,7 +4,7 @@ summary: "On 10 November 2026 Google made Gemini 4 Carbon (gemini-4-carbon) gene
 seoTitle: "Gemini 4 Carbon is GA: $2/$10 until 30 Nov"
 seoDescription: "Google made Gemini 4 Carbon generally available on 10 Nov 2026: $2/$10 per 1M tokens until 30 Nov, then $4/$20. Results are Google's own."
 lang: en
-publishedAt: 2026-11-11T18:30:00Z
+publishedAt: 2026-11-11T18:42:00Z
 entities:
   - Google
   - Google DeepMind
