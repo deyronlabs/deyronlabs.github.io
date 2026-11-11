@@ -4,7 +4,7 @@ summary: "On 11 November 2026 Baidu released ERNIE 5.5 Flash Preview, the first 
 seoTitle: "Baidu ERNIE 5.5 Flash Preview: 280B MoE"
 seoDescription: "Baidu released ERNIE 5.5 Flash Preview on 11 Nov 2026: a 280B MoE with 14B active, via Qianfan, with Apache 2.0 weights promised."
 lang: en
-publishedAt: 2026-11-11T19:30:00Z
+publishedAt: 2026-11-11T18:42:00Z
 entities:
   - Baidu
   - ERNIE 5.5 Flash Preview
