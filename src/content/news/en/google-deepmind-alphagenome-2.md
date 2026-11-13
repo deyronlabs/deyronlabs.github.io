@@ -1,7 +1,7 @@
 ---
 title: "Google DeepMind releases AlphaGenome 2, a conditional DNA model, for non-commercial research use"
 summary: "On 11 November 2026 Google DeepMind introduced AlphaGenome 2, which predicts one cell type or tissue condition at a time from a 1-million-letter DNA sequence. DeepMind says it finds nearly twice as many expression-changing variants as the prior best model. It is available through an API for non-commercial research, with a private preview for commercial research."
-seoTitle: "AlphaGenome 2: DeepMind's DNA model, research API"
+seoTitle: "AlphaGenome 2: DeepMind DNA model, research API"
 seoDescription: "Google DeepMind introduced AlphaGenome 2 on 11 Nov 2026, with an API for non-commercial research. Performance figures are DeepMind's own."
 lang: en
 publishedAt: 2026-11-13T18:00:00Z
