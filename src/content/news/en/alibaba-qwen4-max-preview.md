@@ -16,6 +16,8 @@ topics:
   - China
 translationKey: alibaba-qwen4-max-preview
 image: /images/news/alibaba-qwen4-max-preview-2026-11-11.jpg
+video: "https://www.youtube.com/shorts/fuGPyDGJthM"
+videoPublishedAt: 2026-11-13
 imageAlt: "Deyron Labs graphic: Alibaba Qwen4-Max-Preview opened on 11 November 2026 with a 1M-token context and 393,216-token maximum output, Token Plan only until 25 November; no price, weights or benchmarks published"
 sources:
   - title: "Latest model: Qwen4-Max-Preview"
