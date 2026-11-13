@@ -4,7 +4,7 @@ summary: "On 3 November 2026 India's IT ministry said the IndiaAI Mission launch
 seoTitle: "India launches EKA-1, Dhīr 2B and 5B AI models"
 seoDescription: "India's IndiaAI Mission launched EKA-1 (26.3B parameters) and Dhīr 2B/5B on 3 Nov 2026, per the government; license and benchmarks were not published."
 lang: en
-publishedAt: 2026-11-13T19:00:00Z
+publishedAt: 2026-11-13T19:19:00Z
 entities:
   - IndiaAI Mission
   - Ministry of Electronics and Information Technology
