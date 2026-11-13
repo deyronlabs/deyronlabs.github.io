@@ -4,7 +4,7 @@ summary: "On 12 November 2026 Anthropic said Claude Meetings is rolling out in b
 seoTitle: "Claude Meetings beta: Team, Enterprise, Meet"
 seoDescription: "Anthropic's Claude Meetings entered beta on 12 Nov 2026 for Team and Enterprise plans, on Google Meet first. Claims are Anthropic's own."
 lang: en
-publishedAt: 2026-11-13T18:00:00Z
+publishedAt: 2026-11-13T19:25:00Z
 entities:
   - Anthropic
   - Claude
