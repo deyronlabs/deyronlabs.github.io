@@ -199,7 +199,7 @@ def render_frame(sid, t, dur, cues, imgs):
             pe = ease((t - et) / 0.5); ea = int(255 * pe)
             d.rounded_rectangle((90, 805, 1830, 965), 18, fill=(20, 28, 56, int(235 * pe)), outline=GREEN + (int(220 * pe),), width=3)
             d.text((960, 855), "AI-generated video and voice \u00b7 We use Claude by Anthropic", font=font(XB, 42), fill=WHITE + (ea,), anchor="mm")
-            d.text((960, 922), "Findings are the companies' own. Anthropic, maker of Claude, is covered in two segments and competes with OpenAI and Google.", font=fit(d, "Findings are the companies' own. Anthropic, maker of Claude, is covered in two segments and competes with OpenAI and Google.", SB, 28, 1680), fill=(214, 222, 238, ea), anchor="mm")
+            d.text((960, 922), "Findings are the companies' own. Anthropic, maker of Claude, is covered here and competes with OpenAI and Google.", font=fit(d, "Findings are the companies' own. Anthropic, maker of Claude, is covered here and competes with OpenAI and Google.", SB, 28, 1680), fill=(214, 222, 238, ea), anchor="mm")
     # ticker
     d.rectangle((0, 990, W, H), fill=AMBER + (255,))
     off = int(t * 140 + sid * 311) % TW
