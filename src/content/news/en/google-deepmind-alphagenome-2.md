@@ -4,7 +4,7 @@ summary: "On 11 November 2026 Google DeepMind introduced AlphaGenome 2, which pr
 seoTitle: "AlphaGenome 2: DeepMind DNA model, research API"
 seoDescription: "Google DeepMind introduced AlphaGenome 2 on 11 Nov 2026, with an API for non-commercial research. Performance figures are DeepMind's own."
 lang: en
-publishedAt: 2026-11-13T18:00:00Z
+publishedAt: 2026-11-13T19:21:00Z
 entities:
   - Google DeepMind
   - AlphaGenome 2
