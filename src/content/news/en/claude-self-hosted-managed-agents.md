@@ -4,7 +4,7 @@ summary: "On 12 November 2026 Anthropic said self-hosted Claude Managed Agents i
 seoTitle: "Self-hosted Claude Managed Agents: private beta"
 seoDescription: "Anthropic put self-hosted Claude Managed Agents into private beta on 12 Nov 2026, so agents run inside the customer's own environment."
 lang: en
-publishedAt: 2026-11-13T18:00:00Z
+publishedAt: 2026-11-13T19:22:00Z
 entities:
   - Anthropic
   - Claude
