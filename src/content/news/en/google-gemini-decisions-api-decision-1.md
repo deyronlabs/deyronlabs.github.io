@@ -4,7 +4,7 @@ summary: "On 11 November 2026 Google launched the Gemini Decisions API, powered 
 seoTitle: "Gemini Decision 1: $0.10 per million tokens"
 seoDescription: "Google launched the Gemini Decisions API on 11 Nov 2026: Gemini Decision 1 scores options for $0.10 per 1M input tokens, with free output."
 lang: en
-publishedAt: 2026-11-12T07:30:00Z
+publishedAt: 2026-11-13T19:26:00Z
 entities:
   - Google
   - Google DeepMind
