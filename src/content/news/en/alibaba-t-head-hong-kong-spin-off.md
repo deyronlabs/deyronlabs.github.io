@@ -4,7 +4,7 @@ summary: "On 10 November 2026 Alibaba announced to the Hong Kong stock exchange 
 seoTitle: "Alibaba T-Head chip unit files for Hong Kong IPO"
 seoDescription: "Alibaba said on 10 Nov 2026 that its chip unit T-Head filed for a Hong Kong listing on 11 Sep; size is not final and approval is pending."
 lang: en
-publishedAt: 2026-11-12T08:00:00Z
+publishedAt: 2026-11-13T19:20:00Z
 entities:
   - Alibaba
   - T-Head
