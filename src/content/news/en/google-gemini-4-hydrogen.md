@@ -4,7 +4,7 @@ summary: "On 12 November 2026 Google released Gemini 4 Hydrogen, a model it call
 seoTitle: "Gemini 4 Hydrogen: $1.50/$7.50, 1M context"
 seoDescription: "Google released Gemini 4 Hydrogen on 12 Nov 2026: $1.50/$7.50 per 1M tokens, flat across a 1M context. Benchmark results are Google's own."
 lang: en
-publishedAt: 2026-11-13T18:00:00Z
+publishedAt: 2026-11-13T19:29:00Z
 entities:
   - Google
   - Google DeepMind
