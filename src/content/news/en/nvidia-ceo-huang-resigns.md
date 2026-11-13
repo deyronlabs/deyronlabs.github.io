@@ -4,7 +4,7 @@ summary: "Nvidia announced on 12 November 2026 that Jensen Huang resigned as pre
 seoTitle: "Nvidia CEO Jensen Huang resigns; Kress interim"
 seoDescription: "Nvidia said on 12 Nov 2026 that Jensen Huang resigned as CEO, effective immediately; CFO Colette Kress is interim CEO. No reason was given."
 lang: en
-publishedAt: 2026-11-13T18:00:00Z
+publishedAt: 2026-11-13T19:27:00Z
 entities:
   - Nvidia
   - Jensen Huang
