@@ -4,7 +4,7 @@ summary: "On 11 November 2026 MiniMax released H3-Image, an open-weight image mo
 seoTitle: "MiniMax H3-Image: open-weight 4K in under 10 s"
 seoDescription: "MiniMax released the open-weight H3-Image on 11 Nov 2026, claiming 4096x4096 images in under 10 seconds. Speed and price claims are its own."
 lang: en
-publishedAt: 2026-11-12T07:45:00Z
+publishedAt: 2026-11-13T19:24:00Z
 entities:
   - MiniMax
   - MiniMax H3-Image
