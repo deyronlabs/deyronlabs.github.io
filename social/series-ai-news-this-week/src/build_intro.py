@@ -12,6 +12,9 @@ Needs: numpy, Pillow, ffmpeg, Inter fonts in /usr/share/fonts/opentype/inter/
 import os, math, random, subprocess, wave
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import brand_logo
 
 OUT = os.environ["OUT_DIR"]
 os.makedirs(OUT, exist_ok=True)
@@ -94,10 +97,7 @@ SUB = build_sub()
 
 def build_logo():
     img = Image.new("RGBA", (460, 130), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
-    x, y, a = 66, 62, 42
-    d.polygon([(x, y - a), (x + a * .87, y - a / 2), (x, y), (x - a * .87, y - a / 2)], fill=(134, 239, 172, 255))
-    d.polygon([(x - a * .87, y - a / 2), (x, y), (x, y + a), (x - a * .87, y + a / 2)], fill=GREEN + (255,))
-    d.polygon([(x + a * .87, y - a / 2), (x, y), (x, y + a), (x + a * .87, y + a / 2)], fill=(21, 128, 61, 255))
+    img.alpha_composite(brand_logo.cube(104), (16, 13))   # OFFICIAL cube (pasted, never drawn)
     d.text((130, 36), "DEYRON LABS", font=font(XB, 38), fill=WHITE + (255,))
     d.text((132, 82), "AI NEWS · AI TOOLS, TESTED.", font=font(BD, 20), fill=GREEN + (255,))
     return np.asarray(img).astype(np.float32)

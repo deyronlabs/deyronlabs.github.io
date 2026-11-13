@@ -15,6 +15,8 @@ import os, sys, subprocess, json
 import numpy as np
 from multiprocessing import Pool
 from PIL import Image, ImageDraw, ImageFont
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import brand_logo
 
 MP3 = os.environ["MP3_DIR"]; OUT = os.environ["OUT_DIR"]; INTRO = os.environ["INTRO"]
 IMG_DIR = os.environ.get("IMG_DIR", "/home/claude/deyronlabs.github.io/public/images/news")
@@ -111,12 +113,11 @@ BGA[..., 2] += 14 * np.clip(0.6 - rr * 1.2, 0, 1)
 BGA[(yy % 60 < 2) & (xx % 60 < 2)] += 22          # dot grid
 BASE = Image.fromarray(np.clip(BGA, 0, 255).astype(np.uint8))
 
-def draw_logo(d, x, y):
-    a = 26
-    d.polygon([(x, y - a), (x + a * .87, y - a / 2), (x, y), (x - a * .87, y - a / 2)], fill=(134, 239, 172))
-    d.polygon([(x - a * .87, y - a / 2), (x, y), (x, y + a), (x - a * .87, y + a / 2)], fill=GREEN)
-    d.polygon([(x + a * .87, y - a / 2), (x, y), (x, y + a), (x + a * .87, y + a / 2)], fill=(21, 128, 61))
-    d.text((x + 44, y - 22), "DEYRON LABS", font=font(XB, 30), fill=WHITE)
+def draw_logo(img, x, y):
+    """OFFICIAL cube pasted from public/brand/cube-official.png (never drawn with polygons) + wordmark."""
+    c = brand_logo.cube(66)
+    img.paste(c, (x - 26, y - 33), c)
+    ImageDraw.Draw(img).text((x + 34, y - 20), "DEYRON LABS", font=font(XB, 30), fill=WHITE)
 
 def wrap(d, text, f, maxw):
     lines, cur = [], ""
@@ -144,7 +145,7 @@ def render_frame(sid, t, dur, cues, imgs):
     img = BASE.copy(); d = ImageDraw.Draw(img, "RGBA")
     fade = ease(t / 0.3)
     # header
-    draw_logo(d, 90, 70)
+    draw_logo(img, 90, 70)
     d.text((W - 90, 52), "FRIDAY 6 NOV 2026", font=font(SB, 26), fill=GREY + (255,), anchor="ra")
     # kicker + headline
     k = ease((t - 0.1) / 0.4)
