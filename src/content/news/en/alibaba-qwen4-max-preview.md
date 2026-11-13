@@ -4,7 +4,7 @@ summary: "On 11 November 2026 Alibaba opened a preview of Qwen4-Max, which it ca
 seoTitle: "Alibaba Qwen4-Max-Preview: 1M context, 25 Nov"
 seoDescription: "Alibaba opened Qwen4-Max-Preview on 11 Nov 2026: 1M-token context, Token Plan only until 25 Nov. No price, weights or benchmarks published."
 lang: en
-publishedAt: 2026-11-12T07:30:00Z
+publishedAt: 2026-11-13T19:28:00Z
 entities:
   - Alibaba
   - Qwen
