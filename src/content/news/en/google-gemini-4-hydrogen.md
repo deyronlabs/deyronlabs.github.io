@@ -23,6 +23,8 @@ topics:
   - Agents
 translationKey: google-gemini-4-hydrogen
 image: /images/news/google-gemini-4-hydrogen-2026-11-12.jpg
+video: "https://www.youtube.com/shorts/u1XTX0e_1B0"
+videoPublishedAt: 2026-11-13
 imageAlt: "Deyron Labs graphic: Google released Gemini 4 Hydrogen on 12 November 2026; $1.50 input and $7.50 output per million tokens, 1M-token context, Artificial Analysis Intelligence Index 51 per Google"
 sources:
   - title: "Introducing Gemini 4 Hydrogen"
