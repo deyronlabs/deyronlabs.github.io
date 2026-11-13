@@ -4,7 +4,7 @@ summary: "At the CoRL robotics conference in Austin, NVIDIA presented GR00T 2, w
 seoTitle: "NVIDIA GR00T 2 robot model and Isaac Lab 3.0"
 seoDescription: "NVIDIA unveiled GR00T 2 and Isaac Lab 3.0 at CoRL on 9 Nov 2026; it reports 71% success with one demo per task and up to 2.5x faster training."
 lang: en
-publishedAt: 2026-11-13T19:00:00Z
+publishedAt: 2026-11-13T19:23:00Z
 entities:
   - NVIDIA
   - GR00T 2
