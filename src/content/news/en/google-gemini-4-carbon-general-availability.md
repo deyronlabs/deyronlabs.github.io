@@ -19,6 +19,8 @@ topics:
   - Google
 translationKey: google-gemini-4-carbon-general-availability
 image: /images/news/google-gemini-4-carbon-general-availability-2026-11-10.jpg
+video: "https://www.youtube.com/shorts/5hQpVyXaNO4"
+videoPublishedAt: 2026-11-13
 imageAlt: "Deyron Labs graphic: Gemini 4 Carbon generally available from 10 November 2026; $2 input and $10 output per million tokens through 30 November, then $4 and $20; results are Google's own"
 sources:
   - title: "Gemini 4 Carbon is now available"
