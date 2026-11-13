@@ -23,6 +23,8 @@ topics:
 translationKey: ai-weekly-recap-2026-11-13
 image: /images/news/ai-weekly-recap-2026-11-13.jpg
 imageAlt: "Deyron Labs AI News This Week, 13 November 2026: Fable 5.2, Gemini 4, Nvidia CEO"
+video: "https://www.youtube.com/watch?v=vxxLuRLcPoc"
+videoPublishedAt: 2026-11-14
 sources:
   - title: "Introducing Claude Fable 5.2 and Claude Mythos 5.2"
     url: "https://www.anthropic.com/claude-fable-and-mythos-5-2"
