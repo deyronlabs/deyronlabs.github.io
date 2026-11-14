@@ -4,7 +4,7 @@ summary: "On 13 November 2026 Sierra published version 1.0 of the Personal Agent
 seoTitle: "Sierra Personal Agent Protocol 1.0 released"
 seoDescription: "Sierra released Personal Agent Protocol 1.0 on 13 Nov 2026; it says 100+ companies back it and Shopify enabled it for all merchants."
 lang: en
-publishedAt: 2026-11-14T07:15:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - Sierra
   - Personal Agent Protocol
