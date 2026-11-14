@@ -4,7 +4,7 @@ summary: "On 12 November 2026 Perplexity published Decider v1.3 and a smaller De
 seoTitle: "Perplexity Decider v1.3 open-weight model"
 seoDescription: "Perplexity's Decider v1.3 (12 Nov 2026) scores yes/no and choice questions; weights on Hugging Face under Apache, per Perplexity. Figures are its own."
 lang: en
-publishedAt: 2026-11-14T07:05:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - Perplexity
   - Decider v1.3
