@@ -18,6 +18,8 @@ topics:
   - OpenAI
 translationKey: openai-chatgpt-wallet
 image: /images/news/openai-chatgpt-wallet-2026-11-13.jpg
+video: "https://www.youtube.com/shorts/Tmo5EiWoCEE"
+videoPublishedAt: 2026-11-14
 imageAlt: "Deyron Labs graphic: OpenAI ChatGPT Wallet, 13 Nov 2026; agents pay without access to your actual card details; security check on every purchase; built with Amex, Mastercard and Visa; starts for ChatGPT Pro users in the US"
 sources:
   - title: "Introducing ChatGPT Wallet"
