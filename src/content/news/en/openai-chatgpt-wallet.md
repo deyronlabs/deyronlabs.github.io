@@ -4,7 +4,7 @@ summary: "On 13 November 2026 OpenAI introduced ChatGPT Wallet, which it calls t
 seoTitle: "OpenAI ChatGPT Wallet lets AI agents pay"
 seoDescription: "OpenAI's ChatGPT Wallet (13 Nov 2026) lets agents pay with a token, not your card details; US ChatGPT Pro first, per OpenAI. Claims are OpenAI's."
 lang: en
-publishedAt: 2026-11-14T08:00:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - OpenAI
   - ChatGPT Wallet
