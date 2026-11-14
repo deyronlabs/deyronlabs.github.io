@@ -4,7 +4,7 @@ summary: "TechCrunch reported on 13 November 2026 that researcher Will DePue say
 seoTitle: "Kimi K3, DeepSeek V4 Blackwell claim"
 seoDescription: "TechCrunch reports a researcher's claim that Kimi K3 and DeepSeek V4 show Nvidia Blackwell training traces (13 Nov 2026); unconfirmed, no company response."
 lang: en
-publishedAt: 2026-11-14T18:40:00Z
+publishedAt: 2026-11-14T18:37:00Z
 entities:
   - Nvidia
   - Moonshot AI
