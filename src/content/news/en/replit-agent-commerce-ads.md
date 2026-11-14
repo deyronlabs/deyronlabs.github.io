@@ -4,7 +4,7 @@ summary: "On 12 November 2026 Replit said its Agent gains Agentic Commerce, whic
 seoTitle: "Replit Agent adds purchasing and Google Ads"
 seoDescription: "Replit's 12 Nov 2026 post adds Agentic Commerce (US, Core/Pro) and Agentic Ads (Pro, worldwide) to Replit Agent; claims are Replit's own."
 lang: en
-publishedAt: 2026-11-14T08:05:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - Replit
   - Replit Agent
