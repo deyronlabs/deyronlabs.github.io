@@ -4,7 +4,7 @@ summary: "On 13 November 2026 LangChain announced a $300 million Series C at a $
 seoTitle: "LangChain raises $300M at $3B valuation"
 seoDescription: "LangChain raised $300M at a $3B valuation in a Series C led by CapitalG, announced 13 Nov 2026; it reports 7,000+ LangSmith customers."
 lang: en
-publishedAt: 2026-11-14T18:30:00Z
+publishedAt: 2026-11-14T18:37:00Z
 entities:
   - LangChain
   - LangSmith
