@@ -4,7 +4,7 @@ summary: "On 13 November 2026 Cohere said it has completed the acquisition of AI
 seoTitle: "Cohere completes AISLE deal, adds cubic team"
 seoDescription: "Cohere completed its AISLE acquisition and added the cubic team on 13 Nov 2026 to build Cohere Cyber; no amounts disclosed."
 lang: en
-publishedAt: 2026-11-14T07:20:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - Cohere
   - AISLE
