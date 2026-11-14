@@ -4,7 +4,7 @@ summary: "On 13 November 2026 Google began rolling out a Google Wallet connectio
 seoTitle: "Gemini connects to Google Wallet in the US"
 seoDescription: "Google rolled out a Google Wallet connection for all US Gemini app users on 13 Nov 2026 for spending charts and subscription checks; read-only."
 lang: en
-publishedAt: 2026-11-14T07:00:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - Google
   - Gemini
