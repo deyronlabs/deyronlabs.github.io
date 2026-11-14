@@ -4,7 +4,7 @@ summary: "On 13 November 2026 DeepSeek's API changelog announced the full suite 
 seoTitle: "DeepSeek API adds web search, file input, TTS"
 seoDescription: "DeepSeek's 13 Nov 2026 changelog opens web search, file input, URL reading, OCR, ASR and TTS to developers; prices are on its pricing page."
 lang: en
-publishedAt: 2026-11-14T07:10:00Z
+publishedAt: 2026-11-14T07:57:00Z
 entities:
   - DeepSeek
   - deepseek-flash
