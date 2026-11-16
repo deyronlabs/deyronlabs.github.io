@@ -16,6 +16,8 @@ topics:
   - China
 translationKey: alibaba-qwen4-max-launch
 image: /images/news/alibaba-qwen4-max-launch-2026-11-16.jpg
+video: "https://www.youtube.com/shorts/2O7k6OKdv9w"
+videoPublishedAt: 2026-11-16
 imageAlt: "Deyron Labs graphic: Alibaba launches Qwen4-Max on 16 November 2026 with a 1M-token context; Alibaba reports Work360 52.69 vs 47.74 and cost per task down from $4.43 to $1.67; figures are Alibaba's own"
 sources:
   - title: "Qwen4-Max: Your New Teammate Has Arrived"
