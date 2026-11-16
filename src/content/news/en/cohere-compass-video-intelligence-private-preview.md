@@ -4,7 +4,7 @@ summary: "Cohere introduced Video Intelligence in Compass, its search product, w
 seoTitle: "Cohere Compass Video Intelligence preview"
 seoDescription: "Cohere launched Video Intelligence in Compass in private preview on 16 Nov 2026; it reports a 4.4-point nDCG@10 lead over seven video models."
 lang: en
-publishedAt: 2026-11-16T18:50:00Z
+publishedAt: 2026-11-16T19:34:00Z
 entities:
   - Cohere
   - Compass
