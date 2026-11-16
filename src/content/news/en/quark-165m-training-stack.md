@@ -4,7 +4,7 @@ summary: "On 15 November 2026 Empero published Quark, a small language model of 
 seoTitle: "Empero Quark: 165M model trained for $4,200"
 seoDescription: "Empero released Quark on 15 Nov 2026: a 165M-parameter model trained for about $4,200, four Apache 2.0 checkpoints, results from its own evaluations."
 lang: en
-publishedAt: 2026-11-16T18:47:00Z
+publishedAt: 2026-11-16T19:37:00Z
 entities:
   - Empero
   - Quark
