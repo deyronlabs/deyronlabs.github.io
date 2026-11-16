@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Perplexity announced Perplexity Frontier Research,
 seoTitle: "Perplexity Frontier Research initiative"
 seoDescription: "Perplexity announced Perplexity Frontier Research on 16 Nov 2026, an initiative with compute above 10,000 GPUs and an automatic research scientist goal."
 lang: en
-publishedAt: 2026-11-16T18:40:00Z
+publishedAt: 2026-11-16T19:33:00Z
 entities:
   - Perplexity
   - Perplexity Frontier Research
