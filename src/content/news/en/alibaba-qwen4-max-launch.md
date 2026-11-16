@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Alibaba's Qwen team launched Qwen4-Max, a natively
 seoTitle: "Alibaba Qwen4-Max: 1M context, 62% lower cost"
 seoDescription: "Alibaba launched Qwen4-Max on 16 Nov 2026: 1M-token context, live on QwenCloud. Cost and benchmark figures are Alibaba's own, not independent."
 lang: en
-publishedAt: 2026-11-16T18:45:00Z
+publishedAt: 2026-11-16T19:35:00Z
 entities:
   - Alibaba
   - Qwen
