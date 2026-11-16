@@ -4,7 +4,7 @@ summary: "On 13 November 2026 Thinking Machines Lab published a technical post o
 seoTitle: "Thinking Machines: 4-bit training, 8% faster"
 seoDescription: "Thinking Machines Lab's 13 Nov 2026 post reports 4-bit NVFP4 training of Inkling 2 Small: 8% faster pretraining, 20% faster RL than MXFP8, lab figures."
 lang: en
-publishedAt: 2026-11-16T18:48:00Z
+publishedAt: 2026-11-16T19:38:00Z
 entities:
   - Thinking Machines Lab
   - Inkling 2 Small
