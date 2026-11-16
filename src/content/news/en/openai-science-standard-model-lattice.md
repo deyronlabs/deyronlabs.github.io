@@ -4,7 +4,7 @@ summary: "In a guest post published on 15 November 2026, physicist Nathaniel Cra
 seoTitle: "OpenAI GPT-6 Astra: lattice Standard Model"
 seoDescription: "OpenAI's 15 Nov 2026 guest post says GPT-6 Astra helped physicist Nathaniel Craig build a candidate lattice definition of the Standard Model."
 lang: en
-publishedAt: 2026-11-16T10:00:00Z
+publishedAt: 2026-11-16T07:46:00Z
 entities:
   - OpenAI
   - GPT-6 Astra
