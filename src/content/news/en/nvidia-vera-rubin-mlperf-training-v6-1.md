@@ -4,7 +4,7 @@ summary: "NVIDIA reports that it swept every MLPerf Training v6.1 benchmark and 
 seoTitle: "NVIDIA Vera Rubin in MLPerf Training v6.1"
 seoDescription: "NVIDIA says Vera Rubin NVL72 delivered up to 2x per-GPU performance over GB300 in MLPerf Training v6.1 (16 Nov 2026); results await MLCommons verification."
 lang: en
-publishedAt: 2026-11-16T18:30:00Z
+publishedAt: 2026-11-16T19:32:00Z
 entities:
   - NVIDIA
   - Vera Rubin NVL72
