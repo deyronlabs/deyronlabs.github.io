@@ -4,7 +4,7 @@ summary: "Cognition's official Devin documentation describes Devin Apps: web app
 seoTitle: "Devin Apps: private web apps built by Devin"
 seoDescription: "Cognition's Devin docs describe Devin Apps: private web apps Devin builds and serves at a stable URL; gradual rollout, no price or launch date published."
 lang: en
-publishedAt: 2026-11-16T18:46:00Z
+publishedAt: 2026-11-16T19:36:00Z
 entities:
   - Cognition
   - Devin
