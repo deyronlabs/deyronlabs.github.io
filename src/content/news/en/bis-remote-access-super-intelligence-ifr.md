@@ -4,7 +4,7 @@ summary: "On 16 November 2026 the US Bureau of Industry and Security said it iss
 seoTitle: "BIS rule targets remote access to advanced chips"
 seoDescription: "BIS said on 16 Nov 2026 it issued an interim final rule on remote access to advanced AI chips and servers; Federal Register publication is set for 19 Nov."
 lang: en
-publishedAt: 2026-11-17T21:10:00Z
+publishedAt: 2026-11-17T21:07:00Z
 entities:
   - Bureau of Industry and Security
   - US Department of Commerce
