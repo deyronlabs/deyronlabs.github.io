@@ -4,7 +4,7 @@ summary: "In a 17 November 2026 post, OpenAI says it is working with the NATO Co
 seoTitle: "OpenAI and NATO's NCIA on cyber defense with AI"
 seoDescription: "OpenAI said on 17 Nov 2026 it works with NATO's NCIA and European agencies on cyber defense with its Daybreak tool; figures are OpenAI's own claims."
 lang: en
-publishedAt: 2026-11-17T21:10:00Z
+publishedAt: 2026-11-17T21:07:00Z
 entities:
   - OpenAI
   - NATO
