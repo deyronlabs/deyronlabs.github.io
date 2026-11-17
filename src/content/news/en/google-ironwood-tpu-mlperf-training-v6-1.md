@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Google Cloud reported 10 MLPerf Training v6.1 Clos
 seoTitle: "Google Ironwood TPUs in MLPerf Training v6.1"
 seoDescription: "Google Cloud reported 10 MLPerf Training v6.1 results on 16 Nov 2026, including 8,192 Ironwood TPUs hitting a pre-training target in 1.70 minutes."
 lang: en
-publishedAt: 2026-11-17T06:50:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - Google Cloud
   - Ironwood TPU
