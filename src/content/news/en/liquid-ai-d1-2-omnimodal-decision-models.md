@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Liquid AI released d1.2 and d1.2-ultra, decision m
 seoTitle: "Liquid AI d1.2-ultra tops Decision Index at 75"
 seoDescription: "Liquid AI released d1.2 and d1.2-ultra on 16 Nov 2026; it says d1.2-ultra scores 75 on the Decision Index and both models now accept audio."
 lang: en
-publishedAt: 2026-11-17T06:50:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - Liquid AI
   - d1.2
