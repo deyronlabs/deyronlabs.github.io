@@ -4,7 +4,7 @@ summary: "At SC26 on 16 November 2026 NVIDIA introduced the DGX Spark HPC Develo
 seoTitle: "NVIDIA DGX Spark HPC Developer Kit at SC26"
 seoDescription: "NVIDIA unveiled the DGX Spark HPC Developer Kit at SC26 on 16 Nov 2026: four GB10 nodes, 512GB memory, models up to 700B parameters."
 lang: en
-publishedAt: 2026-11-17T06:50:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - NVIDIA
   - DGX Spark
