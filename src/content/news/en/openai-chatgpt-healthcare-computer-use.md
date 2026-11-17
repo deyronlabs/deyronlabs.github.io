@@ -4,7 +4,7 @@ summary: "On 16 November 2026 OpenAI added computer-use agents, an improved clin
 seoTitle: "ChatGPT for Healthcare adds computer-use agents"
 seoDescription: "OpenAI added computer-use agents, clinical search and 21 plugins to ChatGPT for Healthcare on 16 Nov 2026; physician ratings are OpenAI's own."
 lang: en
-publishedAt: 2026-11-17T08:00:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - OpenAI
   - ChatGPT for Healthcare
