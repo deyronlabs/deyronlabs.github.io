@@ -1,5 +1,5 @@
 ---
-title: "OpenAI says it is helping NATO's NCIA and European agencies with cyber defense using its Daybreak tool, citing up to 300 billion tokens a month"
+title: "OpenAI says it is working with NATO's NCIA and EU agencies on cyber defense using Daybreak"
 summary: "In a 17 November 2026 post, OpenAI says it is working with the NATO Communications and Information Agency to give central NATO institutions access to advanced cyber models, and that NATO has used up to 300 billion tokens a month. OpenAI also reports work with ENISA, France's ANSSI, Germany, Poland and Ukraine. The figures are OpenAI's own."
 seoTitle: "OpenAI and NATO's NCIA on cyber defense with AI"
 seoDescription: "OpenAI said on 17 Nov 2026 it works with NATO's NCIA and European agencies on cyber defense with its Daybreak tool; figures are OpenAI's own claims."
