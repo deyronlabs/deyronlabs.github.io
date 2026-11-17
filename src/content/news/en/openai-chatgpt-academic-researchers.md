@@ -4,7 +4,7 @@ summary: "On 16 November 2026 OpenAI said it is expanding its ChatGPT for Academ
 seoTitle: "OpenAI: free ChatGPT Plus for researchers"
 seoDescription: "OpenAI is opening 50,000 new grants on 23 Nov 2026 giving academic researchers free ChatGPT Plus, with a stated program goal of 200,000 researchers."
 lang: en
-publishedAt: 2026-11-17T08:00:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - OpenAI
   - ChatGPT Plus
