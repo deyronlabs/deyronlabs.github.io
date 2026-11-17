@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Hugging Face said its Inference Providers service 
 seoTitle: "Hugging Face routes Inference via OpenRouter"
 seoDescription: "Hugging Face said on 16 Nov 2026 that language-model Inference Providers now route via OpenRouter, with no markup and no bring-your-own provider keys."
 lang: en
-publishedAt: 2026-11-17T18:30:00Z
+publishedAt: 2026-11-17T21:07:00Z
 entities:
   - Hugging Face
   - OpenRouter
