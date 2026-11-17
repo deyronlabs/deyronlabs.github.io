@@ -4,7 +4,7 @@ summary: "On 16 November 2026 Perplexity introduced Monitor API, which checks th
 seoTitle: "Perplexity Monitor API: web alerts by webhook"
 seoDescription: "Perplexity launched Monitor API on 16 Nov 2026: scheduled web and page monitors with webhooks, priced at $1 per 1,000 runs or URL fetches."
 lang: en
-publishedAt: 2026-11-17T06:50:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - Perplexity
   - Monitor API
