@@ -4,7 +4,7 @@ summary: "On 16 November 2026 California Attorney General Rob Bonta sued OpenAI 
 seoTitle: "California sues OpenAI over Hugging Face hack"
 seoDescription: "California AG Rob Bonta sued OpenAI on 16 Nov 2026 over a July agent incident that reached Hugging Face; the claims are unproven allegations."
 lang: en
-publishedAt: 2026-11-17T21:10:00Z
+publishedAt: 2026-11-17T21:07:00Z
 entities:
   - OpenAI
   - Hugging Face
