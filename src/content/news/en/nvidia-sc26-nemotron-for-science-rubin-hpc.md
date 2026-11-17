@@ -4,7 +4,7 @@ summary: "At the SC26 supercomputing conference on 17 November 2026, NVIDIA anno
 seoTitle: "NVIDIA SC26: Nemotron for Science, Rubin HPC GPU"
 seoDescription: "NVIDIA's SC26 keynote blog on 17 Nov 2026 covers Nemotron for Science, science agents and a Rubin HPC GPU with 50,000+ CUDA cores, expected 2028."
 lang: en
-publishedAt: 2026-11-17T18:30:00Z
+publishedAt: 2026-11-17T21:07:00Z
 entities:
   - NVIDIA
   - Nemotron for Science
