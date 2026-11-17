@@ -1,5 +1,5 @@
 ---
-title: "BIS issues an interim final rule on remote access to advanced chips and servers, citing workarounds through third-country data centers"
+title: "BIS issues an interim final rule on remote access to advanced chips and servers"
 summary: "On 16 November 2026 the US Bureau of Industry and Security said it issued an interim final rule on remote access to advanced \"super intelligence\" chips and servers, written at the direction of Treasury and the National Security Council. The release does not state thresholds, countries or licensing terms; Federal Register publication is scheduled for 19 November."
 seoTitle: "BIS rule targets remote access to advanced chips"
 seoDescription: "BIS said on 16 Nov 2026 it issued an interim final rule on remote access to advanced AI chips and servers; Federal Register publication is set for 19 Nov."
