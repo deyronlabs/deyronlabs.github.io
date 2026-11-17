@@ -4,7 +4,7 @@ summary: "On 16 November 2026 OpenAI announced agreements with Apollo Research, 
 seoTitle: "OpenAI embedded assessments: four evaluators"
 seoDescription: "OpenAI signed Apollo Research, METR, Transluce and Goodfire on 16 Nov 2026 for embedded safety assessments with internal access; no results yet."
 lang: en
-publishedAt: 2026-11-17T08:00:00Z
+publishedAt: 2026-11-17T08:07:00Z
 entities:
   - OpenAI
   - Apollo Research
