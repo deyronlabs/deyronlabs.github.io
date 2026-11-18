@@ -5,6 +5,7 @@ seoTitle: "Microsoft MAI Ignite 2026: seven new models"
 seoDescription: "Microsoft AI announced seven MAI models at Ignite on 17 Nov 2026, from Code 2 to Cyber 2 Flash; benchmark and price claims are Microsoft's own."
 lang: en
 publishedAt: 2026-11-18T09:12:00Z
+updatedAt: 2026-11-18T09:50:00Z
 entities:
   - Microsoft AI
   - MAI Code 2
@@ -19,6 +20,8 @@ topics:
   - Coding
   - Pricing
 translationKey: microsoft-ignite-mai-seven-models
+video: https://youtube.com/shorts/25E2e8ljN-0
+videoPublishedAt: 2026-11-18T09:50:00Z
 image: /images/news/microsoft-ignite-mai-seven-models-2026-11-18.jpg
 imageAlt: "Deyron Labs graphic: Microsoft Ignite 2026, seven new MAI models; MAI Code 2 at 98% of GPT-6.1 Sol coding performance at about 40% of the price, per Microsoft; MAI Cyber 2 Flash 92.3% on CyberGym-E2E; Microsoft's own comparisons"
 sources:
