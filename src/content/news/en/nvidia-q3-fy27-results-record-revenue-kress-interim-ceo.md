@@ -5,6 +5,7 @@ seoTitle: "NVIDIA Q3 FY27: $115.8B revenue, up 103%"
 seoDescription: "NVIDIA's Q3 fiscal 2027 results on 17 Nov 2026: $115.8B revenue, $107.6B Data Center, and a $130.0B Q4 outlook that assumes no China data center compute."
 lang: en
 publishedAt: 2026-11-18T09:13:00Z
+updatedAt: 2026-11-18T09:52:00Z
 entities:
   - NVIDIA
   - Colette Kress
@@ -15,6 +16,8 @@ topics:
   - Hardware
   - Business
 translationKey: nvidia-q3-fy27-results-record-revenue-kress-interim-ceo
+video: https://youtube.com/shorts/Ycxg5RReM4E
+videoPublishedAt: 2026-11-18T09:52:00Z
 image: /images/news/nvidia-q3-fy27-results-record-revenue-kress-interim-ceo-2026-11-18.jpg
 imageAlt: "Deyron Labs graphic: NVIDIA Q3 fiscal 2027 results; revenue $115.8 billion up 103% year over year; Data Center $107.6 billion; Q4 outlook $130.0 billion plus or minus 3%; figures from NVIDIA's release of 17 November 2026"
 sources:
