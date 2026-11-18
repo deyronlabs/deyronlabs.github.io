@@ -4,7 +4,7 @@ summary: "On 17 November 2026 Replit introduced Missions, which has a user set a
 seoTitle: "Replit Missions: budget-capped agent swarms"
 seoDescription: "Replit's Missions, launched 17 Nov 2026, runs swarms of coding agents within a user-set budget; the benchmark figures are Replit's own tests."
 lang: en
-publishedAt: 2026-11-18T18:40:00Z
+publishedAt: 2026-11-18T19:05:00Z
 entities:
   - Replit
   - Replit Missions
