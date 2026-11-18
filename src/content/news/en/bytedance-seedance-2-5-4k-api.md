@@ -4,7 +4,7 @@ summary: "BytePlus, ByteDance's international platform, lists Dreamina Seedance 
 seoTitle: "Seedance 2.5 API: 4K video at $0.914 a second"
 seoDescription: "BytePlus lists Seedance 2.5 as fully available by API in Nov 2026: 4K costs $0.914 per second, 1080p $0.569; the flash model stops at 720p."
 lang: en
-publishedAt: 2026-11-18T18:50:00Z
+publishedAt: 2026-11-18T19:06:00Z
 entities:
   - ByteDance
   - BytePlus
