@@ -4,7 +4,7 @@ summary: "On 17 November 2026 NVIDIA announced that its board of directors has e
 seoTitle: "NVIDIA board adds export control committee"
 seoDescription: "NVIDIA's board created a standing National Security and Export Control Oversight Committee on 17 Nov 2026, chaired by Suzanne Nora Johnson, per NVIDIA."
 lang: en
-publishedAt: 2026-11-18T17:40:00Z
+publishedAt: 2026-11-18T19:07:00Z
 entities:
   - NVIDIA
   - Suzanne Nora Johnson
