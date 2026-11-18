@@ -4,7 +4,7 @@ summary: "NVIDIA reported third-quarter fiscal 2027 revenue of $115.8 billion on
 seoTitle: "NVIDIA Q3 FY27: $115.8B revenue, up 103%"
 seoDescription: "NVIDIA's Q3 fiscal 2027 results on 17 Nov 2026: $115.8B revenue, $107.6B Data Center, and a $130.0B Q4 outlook that assumes no China data center compute."
 lang: en
-publishedAt: 2026-11-18T06:45:00Z
+publishedAt: 2026-11-18T09:13:00Z
 entities:
   - NVIDIA
   - Colette Kress
