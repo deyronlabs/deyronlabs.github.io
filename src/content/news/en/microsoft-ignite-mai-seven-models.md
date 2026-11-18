@@ -4,8 +4,7 @@ summary: "On 17 November 2026 Microsoft AI announced seven new MAI models at Ign
 seoTitle: "Microsoft MAI Ignite 2026: seven new models"
 seoDescription: "Microsoft AI announced seven MAI models at Ignite on 17 Nov 2026, from Code 2 to Cyber 2 Flash; benchmark and price claims are Microsoft's own."
 lang: en
-publishedAt: 2026-11-18T06:40:00Z
-updatedAt: 2026-11-18T09:40:00Z
+publishedAt: 2026-11-18T09:12:00Z
 entities:
   - Microsoft AI
   - MAI Code 2
