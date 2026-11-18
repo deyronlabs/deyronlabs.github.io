@@ -4,7 +4,7 @@ summary: "On 17 November 2026 Perplexity launched Orchestrator, a single API tha
 seoTitle: "Perplexity Orchestrator API and Multiagent mode"
 seoDescription: "Perplexity's 17 Nov 2026 launches: Orchestrator, one API over 85+ models, and Multiagent in Computer for Max subscribers."
 lang: en
-publishedAt: 2026-11-18T06:55:00Z
+publishedAt: 2026-11-18T09:15:00Z
 entities:
   - Perplexity
   - Orchestrator
