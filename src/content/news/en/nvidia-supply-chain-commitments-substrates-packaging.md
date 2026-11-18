@@ -4,7 +4,7 @@ summary: "On 17 November 2026 NVIDIA announced expanded commitments with six sup
 seoTitle: "NVIDIA expands chip supply chain deals"
 seoDescription: "NVIDIA's 17 Nov 2026 supply chain update: Kinsus substrate capacity up 3.5x, Amkor deals near $3 billion, and SPIL packaging expansion, per NVIDIA."
 lang: en
-publishedAt: 2026-11-18T17:45:00Z
+publishedAt: 2026-11-18T19:08:00Z
 entities:
   - NVIDIA
   - TSMC
