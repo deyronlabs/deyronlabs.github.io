@@ -4,7 +4,7 @@ summary: "On 17 November 2026 OpenAI released GPT-6.2 Astra, its top model, and 
 seoTitle: "OpenAI GPT-6.2 Astra and Sol: $8/$40, 20% less"
 seoDescription: "OpenAI released GPT-6.2 Astra and Sol on 17 Nov 2026; Astra costs $8 input and $40 output per million tokens, 20% less. Benchmarks are OpenAI's."
 lang: en
-publishedAt: 2026-11-18T09:00:00Z
+publishedAt: 2026-11-18T09:04:00Z
 entities:
   - OpenAI
   - GPT-6.2 Astra
