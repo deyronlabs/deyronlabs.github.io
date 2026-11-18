@@ -4,7 +4,7 @@ summary: "On 17 November 2026 OpenAI introduced Astra for Law, a configuration o
 seoTitle: "OpenAI Astra for Law: GPT-6.2 for legal work"
 seoDescription: "OpenAI's Astra for Law, a GPT-6.2 Astra setup with a legal index, is on request for ChatGPT Enterprise; legal benchmark results are OpenAI's own claims."
 lang: en
-publishedAt: 2026-11-18T09:20:00Z
+publishedAt: 2026-11-18T09:10:00Z
 entities:
   - OpenAI
   - Astra for Law
