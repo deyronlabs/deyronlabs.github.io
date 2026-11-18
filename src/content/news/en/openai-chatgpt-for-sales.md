@@ -4,7 +4,7 @@ summary: "On 17 November 2026 OpenAI introduced ChatGPT for Sales, a Sales plugi
 seoTitle: "OpenAI ChatGPT for Sales: 30+ partner plugins"
 seoDescription: "OpenAI introduced ChatGPT for Sales on 17 Nov 2026: a Sales plugin and 30+ partner plugins such as Salesforce and HubSpot; price not stated."
 lang: en
-publishedAt: 2026-11-18T09:10:00Z
+publishedAt: 2026-11-18T09:11:00Z
 entities:
   - OpenAI
   - ChatGPT
