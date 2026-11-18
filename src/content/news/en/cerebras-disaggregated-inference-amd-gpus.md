@@ -4,7 +4,7 @@ summary: "Cerebras said on 17 November 2026 that it splits inference between AMD
 seoTitle: "Cerebras disaggregated inference with AMD GPUs"
 seoDescription: "Cerebras's 17 Nov 2026 post claims 5X throughput per megawatt by pairing AMD Instinct GPUs for prefill with CS-3 for decode."
 lang: en
-publishedAt: 2026-11-18T07:00:00Z
+publishedAt: 2026-11-18T09:16:00Z
 entities:
   - Cerebras
   - AMD Instinct
