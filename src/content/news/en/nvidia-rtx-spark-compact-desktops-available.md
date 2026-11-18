@@ -4,7 +4,7 @@ summary: "On 18 November 2026 NVIDIA said RTX Spark compact desktops are availab
 seoTitle: "NVIDIA RTX Spark compact desktops out now"
 seoDescription: "NVIDIA said on 18 Nov 2026 that RTX Spark compact desktops are available from ASUS, Dell and MSI, with up to 128GB unified memory; no prices were given."
 lang: en
-publishedAt: 2026-11-18T17:50:00Z
+publishedAt: 2026-11-18T19:09:00Z
 entities:
   - NVIDIA
   - RTX Spark
