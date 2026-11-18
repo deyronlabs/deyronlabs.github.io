@@ -34,10 +34,11 @@ export const NEWSLETTER = {
 };
 
 // Adresele conturilor oficiale (confirmate de proprietar).
-// Instagram (@deyronlabs) a fost dezactivat de Meta pe 8 oct 2026; Threads e scos temporar. De reverificat duminică 11 oct 2026.
+// Instagram: contul vechi (@deyronlabs) a fost dezactivat de Meta pe 8 oct 2026; contul nou (@deyronlabs.official) a fost refăcut pe 18 nov 2026. Threads rămâne scos.
 export const SOCIALS = [
   { name: 'YouTube', icon: 'youtube', url: 'https://www.youtube.com/@deyronlabs' },
   { name: 'X', icon: 'x', url: 'https://x.com/deyronlabs' },
+  { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/deyronlabs.official/' },
   { name: 'TikTok', icon: 'tiktok', url: 'https://www.tiktok.com/@deyronlabs' },
   { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/deyronlabs/' },
   { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/deyronlabs/' },
