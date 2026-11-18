@@ -4,7 +4,7 @@ summary: "Google said on 17 November 2026 that Tasks in the Gemini app is free i
 seoTitle: "Google Tasks in Gemini free in six countries"
 seoDescription: "Google's 17 Nov 2026 post makes Tasks in Gemini free in six countries, with U.S.-only phone calls, capped purchases and texting."
 lang: en
-publishedAt: 2026-11-18T06:50:00Z
+publishedAt: 2026-11-18T09:14:00Z
 entities:
   - Google
   - Gemini
