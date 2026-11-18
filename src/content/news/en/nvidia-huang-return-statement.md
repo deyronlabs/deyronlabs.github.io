@@ -4,7 +4,7 @@ summary: "CBS News reported on 17 November 2026 that Jensen Huang, who resigned 
 seoTitle: "Huang open to Nvidia CEO return; board says no"
 seoDescription: "Per CBS News on 17 Nov 2026, Jensen Huang said he would be honored to return as Nvidia CEO; chair Harvey Jones said the board does not plan to rehire him."
 lang: en
-publishedAt: 2026-11-18T18:30:00Z
+publishedAt: 2026-11-18T19:03:00Z
 entities:
   - Nvidia
   - Jensen Huang
