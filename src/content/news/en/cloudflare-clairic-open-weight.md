@@ -4,7 +4,7 @@ summary: "On 18 November 2026 Cloudflare published an updated Clairic and a smal
 seoTitle: "Cloudflare releases open-weight Clairic models"
 seoDescription: "Cloudflare released open-weight Clairic (27B) and Clairic-flash (9B) on 18 Nov 2026 under Apache-2.0; input is $0.24 and $0.10 per 1M tokens."
 lang: en
-publishedAt: 2026-11-19T10:50:00Z
+publishedAt: 2026-11-19T11:13:00Z
 entities:
   - Cloudflare
   - Clairic
