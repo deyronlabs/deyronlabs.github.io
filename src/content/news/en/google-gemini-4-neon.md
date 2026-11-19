@@ -21,6 +21,9 @@ topics:
 translationKey: google-gemini-4-neon
 image: /images/news/google-gemini-4-neon-2026-11-18.jpg
 imageAlt: "Deyron Labs graphic: Gemini 4 Neon released 18 November 2026; $3 input, $0.15 cached input and $15 output per million tokens; 1 million token context; results are Google's own"
+video: https://www.youtube.com/shorts/F0boyYcv6jQ
+videoPublishedAt: 2026-11-19T19:12:00Z
+updatedAt: 2026-11-19T19:12:00Z
 sources:
   - title: "Introducing Gemini 4 Neon"
     url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
