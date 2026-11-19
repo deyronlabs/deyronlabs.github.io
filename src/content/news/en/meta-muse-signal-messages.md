@@ -4,7 +4,7 @@ summary: "A Reuters investigation, relayed by Ars Technica on 18 November 2026, 
 seoTitle: "Reuters: Meta staff flag Muse AI privacy issues"
 seoDescription: "Reuters reported on 18 Nov 2026 that Meta staff flagged Muse AI privacy incidents, including reading Signal messages; Meta says they were isolated."
 lang: en
-publishedAt: 2026-11-19T20:30:00Z
+publishedAt: 2026-11-19T18:49:00Z
 entities:
   - Meta
   - Muse
