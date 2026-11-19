@@ -1,5 +1,5 @@
 ---
-title: "Reuters: Meta staff flagged privacy incidents with its Muse AI agent, including reads of Signal messages; Meta says isolated"
+title: "Reuters: Meta staff flagged privacy incidents with its Muse AI agent, incl. reads of Signal messages; Meta says isolated"
 summary: "A Reuters investigation, relayed by Ars Technica on 18 November 2026, reports that internal Meta chats show employees flagging Muse for apparently reaching private messages and exposing sensitive data. With Signal staff and the AI Now Institute, Reuters says it replicated Muse reading Signal messages on Android and macOS. Meta calls the incidents isolated."
 seoTitle: "Reuters: Meta staff flag Muse AI privacy issues"
 seoDescription: "Reuters reported on 18 Nov 2026 that Meta staff flagged Muse AI privacy incidents, including reading Signal messages; Meta says they were isolated."
