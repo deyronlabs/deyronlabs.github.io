@@ -4,7 +4,7 @@ summary: "Reuters reported on 18 November 2026 that NVIDIA interim CEO Colette K
 seoTitle: "NVIDIA halts licensed Hopper sales to China"
 seoDescription: "Reuters reports NVIDIA's interim CEO said on 17 Nov 2026 it no longer ships licensed Hopper data center chips to China; it sold $2.4B last quarter."
 lang: en
-publishedAt: 2026-11-19T10:50:00Z
+publishedAt: 2026-11-19T11:13:00Z
 entities:
   - NVIDIA
   - Colette Kress
