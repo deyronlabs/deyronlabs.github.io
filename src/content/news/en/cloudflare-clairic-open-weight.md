@@ -1,7 +1,7 @@
 ---
-title: "Cloudflare releases open-weight Clairic (27B) and Clairic-flash (9B) extraction models under Apache-2.0, from $0.10 per million input tokens"
+title: "Cloudflare releases open-weight Clairic (27B) and Clairic-flash (9B), Apache-2.0, from $0.10 per million input tokens"
 summary: "On 18 November 2026 Cloudflare published an updated Clairic and a smaller Clairic-flash (9B), open-weight models that extract text from text, images and PDFs, on Workers AI and Hugging Face under Apache-2.0. Input tokens cost $0.24 and $0.10 per million, with a $0.10 promotion until 1 December. The evaluations are Cloudflare's own."
-seoTitle: "Cloudflare Clairic: open-weight extraction models"
+seoTitle: "Cloudflare releases open-weight Clairic models"
 seoDescription: "Cloudflare released open-weight Clairic (27B) and Clairic-flash (9B) on 18 Nov 2026 under Apache-2.0; input is $0.24 and $0.10 per 1M tokens."
 lang: en
 publishedAt: 2026-11-19T10:50:00Z
