@@ -4,7 +4,7 @@ summary: "On 18 November 2026 Palo Alto Networks announced a definitive agreemen
 seoTitle: "Palo Alto Networks to buy Applied Compute, $4.5B"
 seoDescription: "Palo Alto Networks agreed on 18 Nov 2026 to buy Applied Compute, an open-weight AI model platform, in an all-stock deal valued at $4.5 billion."
 lang: en
-publishedAt: 2026-11-19T20:30:00Z
+publishedAt: 2026-11-19T18:49:00Z
 entities:
   - Palo Alto Networks
   - Applied Compute
