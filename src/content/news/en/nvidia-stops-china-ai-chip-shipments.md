@@ -1,7 +1,7 @@
 ---
 title: "Reuters: NVIDIA says it is no longer shipping licensed Hopper data center chips to China"
 summary: "Reuters reported on 18 November 2026 that NVIDIA interim CEO Colette Kress said on the company's earnings call that NVIDIA is no longer shipping licensed Hopper data center products to China. She said NVIDIA sold $2.4 billion of such products to China in the quarter ended 25 October. We have not read NVIDIA's own transcript."
-seoTitle: "NVIDIA stops licensed Hopper chip shipments to China"
+seoTitle: "NVIDIA halts licensed Hopper sales to China"
 seoDescription: "Reuters reports NVIDIA's interim CEO said on 17 Nov 2026 it no longer ships licensed Hopper data center chips to China; it sold $2.4B last quarter."
 lang: en
 publishedAt: 2026-11-19T10:50:00Z
