@@ -4,7 +4,7 @@ summary: "On 18 November 2026 Google released Gemini 4 Neon (gemini-4-neon), a m
 seoTitle: "Gemini 4 Neon launches at $3/$15 per 1M tokens"
 seoDescription: "Google released Gemini 4 Neon on 18 Nov 2026: $3 input and $15 output per 1M tokens, 1M-token context. Benchmark results are Google's own."
 lang: en
-publishedAt: 2026-11-19T08:30:00Z
+publishedAt: 2026-11-19T11:13:00Z
 entities:
   - Google
   - Google DeepMind
