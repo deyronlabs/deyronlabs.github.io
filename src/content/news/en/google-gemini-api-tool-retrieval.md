@@ -4,7 +4,7 @@ summary: "On 19 November 2026 Google announced Tool Retrieval, a preview feature
 seoTitle: "Gemini API Tool Retrieval: load tools on demand"
 seoDescription: "Google's Gemini API Tool Retrieval, in preview from 19 Nov 2026, loads tool schemas on demand to cut tokens; Google gives no measured savings."
 lang: en
-publishedAt: 2026-11-20T20:30:00Z
+publishedAt: 2026-11-20T20:27:00Z
 entities:
   - Google
   - Gemini API
