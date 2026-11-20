@@ -4,7 +4,7 @@ summary: "CNBC reported on 19 November 2026, citing documents published by the H
 seoTitle: "US approved 879,000+ AI chips for China"
 seoDescription: "CNBC reports House documents show US Commerce approved over 879,000 AI chips for Chinese firms through May 2026; Nvidia and AMD say they complied."
 lang: en
-publishedAt: 2026-11-20T14:00:00Z
+publishedAt: 2026-11-20T14:01:00Z
 entities:
   - Bureau of Industry and Security
   - U.S. Department of Commerce
