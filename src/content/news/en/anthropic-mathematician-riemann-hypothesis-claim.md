@@ -4,7 +4,7 @@ summary: "A four-page note on Levent Alpöge's website says the author, working 
 seoTitle: "Riemann Hypothesis proof claimed with Claude"
 seoDescription: "Anthropic mathematician Levent Alpöge posted a four-page note on 20 Nov 2026 claiming a Riemann Hypothesis proof made with Claude; it is unreviewed."
 lang: en
-publishedAt: 2026-11-20T17:45:00Z
+publishedAt: 2026-11-20T20:26:00Z
 entities:
   - Anthropic
   - Claude
