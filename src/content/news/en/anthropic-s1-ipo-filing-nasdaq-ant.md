@@ -22,7 +22,7 @@ image: /images/news/anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Anthropic S-1 filed 26 October 2026, Nasdaq symbol ANT, first-half 2026 revenue $16,286 million versus $1,163 million, net loss $80,748 million"
 video: https://www.youtube.com/shorts/8EMVdkaIlaI
 videoPublishedAt: 2026-10-26T17:48:00Z
-updatedAt: 2026-11-20T14:00:00Z
+updatedAt: 2026-11-20T14:01:00Z
 sources:
   - title: "Anthropic, PBC — Issuer Free Writing Prospectus, pricing, 18 November 2026 (SEC EDGAR)"
     url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm"
