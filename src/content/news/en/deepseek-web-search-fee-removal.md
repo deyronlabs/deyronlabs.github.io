@@ -4,7 +4,7 @@ summary: "DeepSeek's documentation says web searches, image searches and page fe
 seoTitle: "DeepSeek drops separate web search fees"
 seoDescription: "DeepSeek's docs say model-run web searches and page fetches bill only tokens; TechNode reports the change took effect 18 Nov 2026."
 lang: en
-publishedAt: 2026-11-20T14:00:00Z
+publishedAt: 2026-11-20T14:01:00Z
 entities:
   - DeepSeek
   - TechNode
