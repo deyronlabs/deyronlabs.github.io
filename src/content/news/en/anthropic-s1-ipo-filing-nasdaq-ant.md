@@ -22,8 +22,12 @@ image: /images/news/anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Anthropic S-1 filed 26 October 2026, Nasdaq symbol ANT, first-half 2026 revenue $16,286 million versus $1,163 million, net loss $80,748 million"
 video: https://www.youtube.com/shorts/8EMVdkaIlaI
 videoPublishedAt: 2026-10-26T17:48:00Z
-updatedAt: 2026-11-19T08:45:00Z
+updatedAt: 2026-11-20T14:00:00Z
 sources:
+  - title: "Anthropic, PBC — Issuer Free Writing Prospectus, pricing, 18 November 2026 (SEC EDGAR)"
+    url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm"
+    publisher: "U.S. Securities and Exchange Commission"
+    primary: true
   - title: "Anthropic prices initial public offering (Anthropic, 18 November 2026)"
     url: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
     publisher: "Anthropic"
@@ -44,6 +48,9 @@ sources:
     url: "https://www.anthropic.com/news/s1-sec"
     publisher: "Anthropic"
     primary: true
+  - title: "Anthropic IPO live: first trading day of ANT (StockTitan, updated 19 November 2026; trading figures are from this secondary source)"
+    url: "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+    publisher: "StockTitan"
   - title: "Anthropic aims to raise up to $69.3 billion in blockbuster IPO (Reuters exclusive, 10 November 2026; figures superseded by the roadshow announcement)"
     url: "https://www.reuters.com/business/anthropic-aims-raise-up-693-billion-blockbuster-ipo-2026-11-10/"
     publisher: "Reuters"
@@ -67,6 +74,8 @@ The filing leaves the number of shares and the price range blank, and Anthropic'
 
 **Update, 19 November 2026:** on 18 November Anthropic announced on its website that it priced the offering at $83.00 per share, above the $70.00 to $78.00 range it gave when it launched the roadshow. The offering is 980,000,000 Class A shares, up from the 825,000,000 in the roadshow announcement: 956,351,354 sold by Anthropic and 23,648,646 by certain selling stockholders (Anthropic receives none of the proceeds from the latter). The shares are expected to begin trading on the Nasdaq Global Select Market under "ANT" on 19 November 2026, and the closing is expected on 20 November, subject to customary conditions. Underwriters have a 30-day option to buy up to 147,000,000 additional shares. Anthropic says the SEC declared the registration statement effective on 18 November. Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are named in the notice.
 
+**Update, 20 November 2026:** we read the pricing Issuer Free Writing Prospectus that Anthropic filed with the SEC on 18 November. It confirms the offering terms above and adds two details: a public price of $83.00 a share against an underwriters' base price of $82.43878, and a separate $26.0 billion private placement of Class N shares (313,253,007 shares at the $83.00 public price). It gives trading on 19 November and settlement on 20 November. For the first trading day we have only a secondary source: StockTitan's live article says the first trade was at $111.50 and the stock closed at $97.17. Those two prices have not been confirmed against a primary source such as Nasdaq or the final prospectus, which we have not read.
+
 ## Key details
 
 The first group of figures below is from the original S-1, read on 26 October 2026. The group labelled Amendment No. 1 is from the S-1/A filed on 2 November, read on 4 November 2026. Dollar amounts are in millions as the filings present them.
@@ -88,14 +97,17 @@ The first group of figures below is from the original S-1, read on 26 October 20
 - **Roadshow announcement, 10 November (Anthropic):** 825,000,000 shares of Class A common stock, of which 801,351,354 are offered by Anthropic and 23,648,646 by existing stockholders. Anthropic receives no proceeds from the shares sold by existing stockholders. The underwriters are expected to get a 30-day option to buy up to 123,750,000 additional shares. The expected price is $70.00 to $78.00 a share. Anthropic says it has applied to list on the Nasdaq Global Select Market under "ANT", and names Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC for prospectus copies. The registration statement has been filed but has not become effective, and the announcement is not an offer to sell.
 - **Pricing announcement, 18 November (Anthropic):** $83.00 a share for 980,000,000 Class A shares. The post gives no total proceeds and no valuation. Our arithmetic, not a figure Anthropic published: 980,000,000 shares at $83 is about $81.3 billion gross, and Anthropic's own 956,351,354 shares come to about $79.4 billion, before underwriting discounts and the 147,000,000-share option. The post's date is 18 November; it carries no time of day, and we have not confirmed first-day trading.
 - **Our arithmetic from those numbers (gross, before underwriting fees and the option):** 825,000,000 shares at $70 is $57.75 billion and at $78 is $64.35 billion; Anthropic's own 801,351,354 shares come to about $56.1 billion and about $62.5 billion. These are our calculations, not figures Anthropic published.
-- **Reuters report earlier on 10 November (superseded):** Reuters, citing emails it saw, reported about 867 million shares at $70 to $80, up to $69.3 billion at the top of the range, and a $26 billion Class N private placement named for Alphabet/Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC. It also said a second email told recipients the pricing details were inaccurate. Anthropic's announcement gives a different share count and range, and does not mention a private placement; we have not read an amended S-1 that confirms or rules out the placement.
-- **Not stated in Anthropic's pricing announcement:** the valuation and whether the Class N private placement Reuters reported on 10 November went ahead. First-day trading was not available to us when we updated this article.
+- **Reuters report earlier on 10 November (superseded):** Reuters, citing emails it saw, reported about 867 million shares at $70 to $80, up to $69.3 billion at the top of the range, and a $26 billion Class N private placement named for Alphabet/Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC. It also said a second email told recipients the pricing details were inaccurate. Anthropic's announcement gives a different share count and range and does not mention a private placement, but the pricing prospectus of 18 November does list a $26.0 billion Class N placement (see above).
+- **Pricing prospectus, 18 November (SEC filing, read 20 November):** 980,000,000 Class A shares (956,351,354 from Anthropic and 23,648,646 from selling stockholders) at a public price of $83.00, with an underwriters' base price of $82.43878 a share. The filing states the offering size as $81.34 billion before the underwriters' option of up to 147,000,000 additional shares, all of it from Anthropic. The ANT symbol is on the Nasdaq Global Select Market; Goldman Sachs and Morgan Stanley are the lead underwriters; the registration statement was effective on 18 November. Pricing was on 18 November, trading on 19 November and settlement on 20 November. This supersedes our own $81.3 billion arithmetic above.
+- **Class N private placement (SEC filing):** a separate private placement of Class N shares for $26.0 billion, 313,253,007 shares at the public price. This confirms the placement Reuters reported on 10 November.
+- **First trading day, 19 November (StockTitan, secondary, not confirmed against a primary source):** first trade $111.50, which is 34.3% above the $83.00 price by our arithmetic; close $97.17, 17.1% above it. We have not verified these prices with Nasdaq or the final prospectus.
+- **Not stated in the sources we read:** the valuation, and whether the underwriters have exercised their option.
 
 ## Why it matters
 
 The S-1 is the first audited look at the finances of a company whose models many readers use daily. For the AI tools market, it puts hard numbers on how fast one frontier lab's revenue grew and how much of its reported loss comes from accounting for its own rising valuation rather than operations. It also shows the governance model, a public benefit corporation steered by a trust, that investors would be buying into.
 
-For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, and the pricing details that circulated and were withdrawn on 9 November are a reminder: the offering has now priced and become effective, so the share count and price are final, subject to closing on 20 November.
+For people who build on Claude, a public listing means regular financial disclosure, and risk factors the company must publish, including a line in its summary that its "AI models may behave in unintended, misaligned, or autonomous ways." Nothing in the filing changes Claude's products or prices. Terms can still change before the offering becomes effective, and the pricing details that circulated and were withdrawn on 9 November are a reminder: the offering priced and became effective on 18 November, so the share count and price are fixed, with settlement on 20 November.
 
 The amendment adds one thing the first filing did not show: the size of the obligations behind that growth. A committed spend of about $895.4 billion is large compared with the $33.2 billion of revenue reported for nine months. The filing says some of the underlying agreements carry minimum purchase or take-or-pay terms and that about half is expected to be incurred before the end of 2030, so how much is fixed and when it falls due is something readers of the filing will want to check.
 
