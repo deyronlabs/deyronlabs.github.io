@@ -4,7 +4,7 @@ summary: "The Guardian reported on 20 November 2026 that California served Nvidi
 seoTitle: "Report: California subpoenas Nvidia on China"
 seoDescription: "The Guardian reported on 20 Nov 2026 that California subpoenaed Nvidia over whether its chips reached China; no official confirmation yet."
 lang: en
-publishedAt: 2026-11-20T20:40:00Z
+publishedAt: 2026-11-20T20:27:00Z
 entities:
   - Nvidia
   - California
