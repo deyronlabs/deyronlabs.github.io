@@ -38,7 +38,7 @@ def ease(x): x = clamp(x); return 1 - (1 - x) ** 3
 IMG = lambda n: os.path.join(IMG_DIR, n)
 # kicker, headline, image, facts [(cue, value, label, colour)], source
 S = {
- 2: dict(kicker="ANTHROPIC · IPO", headline="Anthropic prices its IPO", img="anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg",
+ 2: dict(kicker="ANTHROPIC · IPO", headline="Anthropic prices its IPO", img="anthropic-ipo-priced-2026-11-18.jpg",
      src="Anthropic announcement (18 Nov) · Nasdaq: ANT · Anthropic makes Claude, which we use", facts=[
      ("eighty-three dollars a share", "$83", "Priced 18 Nov · above the $70–78 range", GREEN),
      ("nine hundred eighty million Class A", "980M shares", "~956M Anthropic · ~24M selling holders", CYAN),
