@@ -4,7 +4,7 @@ summary: "In security advisory PI-SA-2026-001, published 19 November 2026, Prime
 seoTitle: "Prime Intellect: DeepSeek endpoint swapped"
 seoDescription: "Prime Intellect's advisory says an unauthorized party replaced its DeepSeek V4.1 Flash endpoint with an abliterated copy from 8 to 10 Nov 2026."
 lang: en
-publishedAt: 2026-11-20T14:00:00Z
+publishedAt: 2026-11-20T14:01:00Z
 entities:
   - Prime Intellect
   - DeepSeek
