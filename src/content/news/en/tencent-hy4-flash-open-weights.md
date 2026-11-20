@@ -4,7 +4,7 @@ summary: "Tencent launched Hy4 flash on 16 November 2026 and published its weigh
 seoTitle: "Tencent Hy4 flash: 220B open weights, 1M context"
 seoDescription: "Tencent launched Hy4 flash on 16 Nov 2026; Hugging Face weights list 220B parameters, 12B active, 1M-token context. Benchmarks are Tencent's own."
 lang: en
-publishedAt: 2026-11-20T07:30:00Z
+publishedAt: 2026-11-20T09:15:00Z
 entities:
   - Tencent
   - Hy4 flash
