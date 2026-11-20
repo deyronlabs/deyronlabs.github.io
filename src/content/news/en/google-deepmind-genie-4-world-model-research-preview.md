@@ -71,7 +71,7 @@ Genie 4 is a research preview for trusted testers. DeepMind says it is "coming s
 
 World models generate an interactive environment rather than a fixed video clip, which is why they interest game developers, simulation and robotics teams, and anyone who prototypes scenes. Adding native audio and a Gemini agent that plans toward a goal moves Genie from a visual demo toward something closer to a playable prototype.
 
-For most readers nothing is available yet: access is limited to trusted testers, the Ultra and API tiers are only "coming soon", and DeepMind offers no measurable quality figures to compare against Genie 3 or other world models. Treat the announcement as a capability preview, and wait for independent hands-on tests of drift, latency and audio quality before drawing conclusions.
+As of the 27 October announcement, nothing was available to most readers: access is limited to trusted testers, the Ultra and API tiers are only "coming soon", and DeepMind offers no measurable quality figures to compare against Genie 3 or other world models. Treat the announcement as a capability preview, and wait for independent hands-on tests of drift, latency and audio quality before drawing conclusions.
 
 The 19 November post moves Genie 4 from the early-access partners DeepMind described in October to availability for developers through the Gemini API and AI Studio. Because pricing and limits are not on the page we read, the cost of running long interactive sessions remains the open question for anyone planning to use it.
 
