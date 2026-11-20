@@ -1,9 +1,9 @@
 # Postări — AI News This Week, 20 nov 2026 — DE POSTAT DUPĂ PREMIERĂ
-Video: https://youtu.be/<LINK>
+Video: https://youtu.be/RAAEqdrh3kc
 Articol: https://deyronlabs.com/en/news/ai-weekly-recap-2026-11-20/
 
 ## X — x-1280x720.png
-AI News This Week is live: Anthropic's IPO priced at $83, GPT-6.2 Astra and Sol, Nvidia's record quarter and CEO search, Gemini 4 Neon and more. https://youtu.be/<LINK>
+AI News This Week is live: Anthropic's IPO priced at $83, GPT-6.2 Astra and Sol, Nvidia's record quarter and CEO search, Gemini 4 Neon and more. https://youtu.be/RAAEqdrh3kc
 ### Răspuns
 Every story with sources: deyronlabs.com/en/news/ai-weekly-recap-2026-11-20/ Most figures are the companies' own. Not investment advice. Made with AI assistance (Claude, by Anthropic, which is covered in this episode).
 
@@ -16,7 +16,7 @@ AI News This Week, 20 November: what mattered in AI from 13 to 20 November.
 - Also: Gemini 4 Neon, Qwen4-Max, ChatGPT Wallet, a California lawsuit against OpenAI and new chip export news.
 
 Most figures are self-reported, so the video and article mark who says what. Not investment advice.
-Video: https://youtu.be/<LINK>
+Video: https://youtu.be/RAAEqdrh3kc
 Article with sources: https://deyronlabs.com/en/news/ai-weekly-recap-2026-11-20/
 Made with AI assistance (Claude, by Anthropic, which is covered in this episode and competes with OpenAI and Google).
 
@@ -26,4 +26,4 @@ Descriere: The week's biggest AI stories explained: Anthropic's IPO pricing, GPT
 Link: articolul recap.
 
 ## Facebook / TikTok / YouTube comunitate (George)
-AI News This Week is live. Anthropic's IPO, GPT-6.2 Astra, Nvidia's quarter and Gemini 4 Neon, with sources. https://youtu.be/<LINK>
+AI News This Week is live. Anthropic's IPO, GPT-6.2 Astra, Nvidia's quarter and Gemini 4 Neon, with sources. https://youtu.be/RAAEqdrh3kc

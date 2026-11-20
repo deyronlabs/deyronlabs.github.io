@@ -26,6 +26,8 @@ topics:
 translationKey: ai-weekly-recap-2026-11-20
 image: /images/news/ai-weekly-recap-2026-11-20.jpg
 imageAlt: "Deyron Labs AI News This Week, 20 November 2026: Anthropic IPO, GPT-6.2, Nvidia Q3"
+video: "https://www.youtube.com/watch?v=RAAEqdrh3kc"
+videoPublishedAt: 2026-11-20
 sources:
   - title: "Anthropic prices initial public offering (18 Nov 2026)"
     url: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
