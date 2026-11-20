@@ -4,7 +4,7 @@ summary: "In a 19 November 2026 blog post tied to Microsoft Ignite, NVIDIA says 
 seoTitle: "NVIDIA-Microsoft Ignite: Vera Rubin in Azure"
 seoDescription: "NVIDIA's 19 Nov 2026 Ignite post says Vera Rubin NVL72 runs in Azure, which used 10,240 GPUs in MLPerf Training v6.1; Nemotron 3.5 reaches Foundry."
 lang: en
-publishedAt: 2026-11-20T07:45:00Z
+publishedAt: 2026-11-20T09:15:00Z
 entities:
   - NVIDIA
   - Microsoft
