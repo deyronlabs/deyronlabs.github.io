@@ -4,7 +4,7 @@ summary: "OpenAI published a post on defenses against adversarial distillation, 
 seoTitle: "OpenAI cuts distillation attack success to 0.2%"
 seoDescription: "OpenAI's 20 Nov 2026 post says safeguards cut adversarial-distillation attack success on GPT-6.2 Astra from 54.0% to 0.2% in its internal test."
 lang: en
-publishedAt: 2026-11-21T15:30:00Z
+publishedAt: 2026-11-21T15:55:00Z
 entities:
   - OpenAI
   - GPT-6.2 Astra
