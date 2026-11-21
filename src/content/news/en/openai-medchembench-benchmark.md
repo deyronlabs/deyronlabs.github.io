@@ -4,7 +4,7 @@ summary: "OpenAI released MedChemBench, a benchmark of 99 medicinal-chemistry pr
 seoTitle: "OpenAI MedChemBench: GPT-6.2 Astra scores 84.5%"
 seoDescription: "OpenAI's MedChemBench tests 99 medicinal-chemistry problems; GPT-6.2 Astra scored 84.5% at xhigh, a result OpenAI reports about its own models."
 lang: en
-publishedAt: 2026-11-21T15:30:00Z
+publishedAt: 2026-11-21T15:55:00Z
 entities:
   - OpenAI
   - MedChemBench
