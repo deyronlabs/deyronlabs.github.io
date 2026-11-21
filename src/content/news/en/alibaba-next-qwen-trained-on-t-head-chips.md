@@ -4,7 +4,7 @@ summary: "On Alibaba's fiscal Q2 2027 earnings call on 19 November 2026, CEO Edd
 seoTitle: "Alibaba: next Qwen training on T-Head chips"
 seoDescription: "Alibaba CEO Eddie Wu said on 19 Nov 2026 that Qwen's next model is training on T-Head chips, per CLS; no model, chip count or date given."
 lang: en
-publishedAt: 2026-11-21T17:00:00Z
+publishedAt: 2026-11-21T15:55:00Z
 entities:
   - Alibaba
   - Qwen
