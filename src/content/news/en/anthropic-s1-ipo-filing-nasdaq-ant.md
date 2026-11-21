@@ -1,8 +1,8 @@
 ---
-title: "Anthropic prices its IPO at $83 a share: 980 million Class A shares, Nasdaq symbol ANT, trading from 19 November"
-summary: "On 18 November 2026 Anthropic, PBC priced its initial public offering at $83.00 a share: 980,000,000 Class A shares, of which 956,351,354 are sold by Anthropic and 23,648,646 by existing stockholders. The shares are expected to begin trading on Nasdaq as ANT on 19 November, with closing expected 20 November. The price is above the $70 to $78 range given at the roadshow launch."
+title: "Anthropic IPO: priced at $83 a share, 1.127 billion Class A shares after the full option, Nasdaq symbol ANT"
+summary: "Anthropic, PBC priced its initial public offering at $83.00 a share on 18 November 2026 and, after the underwriters exercised their option in full, closed it at 1,127,000,000 Class A shares and about $93.5 billion gross. Trading began on Nasdaq as ANT on 19 November. Reuters reports the stabilization agent has used the option and can no longer buy shares to support the price; ANT fell about 11% on 20 November."
 seoTitle: "Anthropic prices IPO at $83 a share, ticker ANT"
-seoDescription: "Anthropic priced its IPO at $83 a share on 18 Nov 2026: 980M Class A shares, Nasdaq symbol ANT, trading expected from 19 Nov."
+seoDescription: "Anthropic priced its IPO at $83 a share; 1.127B Class A shares sold after the full option, about $93.5B gross. Reuters: stabilization support is gone."
 lang: en
 publishedAt: 2026-10-26T17:30:00Z
 entities:
@@ -22,7 +22,7 @@ image: /images/news/anthropic-s1-ipo-filing-nasdaq-ant-2026-10-26.jpg
 imageAlt: "Deyron Labs graphic: Anthropic S-1 filed 26 October 2026, Nasdaq symbol ANT, first-half 2026 revenue $16,286 million versus $1,163 million, net loss $80,748 million"
 video: https://www.youtube.com/shorts/8EMVdkaIlaI
 videoPublishedAt: 2026-10-26T17:48:00Z
-updatedAt: 2026-11-20T20:10:00Z
+updatedAt: 2026-11-21T15:55:00Z
 sources:
   - title: "Anthropic, PBC — Issuer Free Writing Prospectus, pricing, 18 November 2026 (SEC EDGAR)"
     url: "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm"
@@ -36,6 +36,9 @@ sources:
     url: "https://www.anthropic.com/news/ipo-close"
     publisher: "Anthropic"
     primary: true
+  - title: "Anthropic's IPO bank closed position meant to stabilize stock, removing a source of support (Reuters, Echo Wang, 20 November 2026; read 21 November 2026)"
+    url: "https://www.reuters.com/markets/us/anthropics-ipo-bank-closed-position-meant-stabilize-stock-removing-source-2026-11-20/"
+    publisher: "Reuters"
   - title: "Anthropic launches roadshow for proposed initial public offering (Anthropic, 10 November 2026)"
     url: "https://www.anthropic.com/news/roadshow-launch"
     publisher: "Anthropic"
@@ -85,6 +88,8 @@ The filing leaves the number of shares and the price range blank, and Anthropic'
 
 **Update, 20 November 2026 (evening):** Anthropic announced on its website that it closed the offering. We read the announcement. It says the underwriters exercised in full their option to buy 147,000,000 additional shares, so the offering totals 1,127,000,000 Class A shares at $83.00: 1,103,351,354 sold by Anthropic and 23,648,646 by selling stockholders. Anthropic puts gross proceeds at about $93.5 billion, of which about $91.6 billion went to Anthropic (it receives nothing from the shares sold by stockholders). The shares began trading on the Nasdaq Global Select Market as ANT on 19 November. Alongside the IPO, Anthropic says it sold 313,253,007 Class N shares at $83.00, about $26.0 billion, in a private placement to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners; together the two come to about $119.5 billion gross. For the second trading day we have only a secondary source: The Guardian reported on 20 November that ANT fell by as much as 12%, to $85.12, early in the session, after rising 17% on its first day (at one point about 40% above the offer price). The Guardian placed this inside a broad global sell-off (Nasdaq down 2.9% and the S&P 500 down 1.66% in morning trading, with sharp falls in Asian markets) and quotes analysts at Saxo, IG and Capital.com. Their explanations are opinions; no source we read shows what caused any one move. We have not confirmed the 20 November closing price.
 
+**Update, 21 November 2026:** we read Reuters' 20 November report by Echo Wang. It says Morgan Stanley, the stabilization agent for the offering, exercised the over-allotment option in full: 147,000,000 shares at the $83 IPO price, which matches Anthropic's closing announcement above. Reuters writes that, with the option used, the bank can no longer cover its over-allotment by buying shares in the market if the price falls below $83, removing one source of support. It reports that ANT closed at $97.17 on Thursday 19 November, about 17% above the offer price, and fell about 11% on Friday to roughly $86, with a low of $85 in the session. Berenberg's Carsten Hesse is quoted calling the development "less positive for investors"; Reuters adds that a source said participants had questioned the timing, and that Morgan Stanley declined to comment. Reuters also says the S&P technology sector was down 16% from its 6 October peak. A Reuters video transcript puts the opening price on 19 November at $111.50 and the market value at about $2 trillion during that session. We have not read Anthropic's 8-K, and we do not have a primary-source closing price for 20 November.
+
 ## Key details
 
 The first group of figures below is from the original S-1, read on 26 October 2026. The group labelled Amendment No. 1 is from the S-1/A filed on 2 November, read on 4 November 2026. Dollar amounts are in millions as the filings present them.
@@ -111,6 +116,7 @@ The first group of figures below is from the original S-1, read on 26 October 20
 - **Class N private placement (SEC filing):** a separate private placement of Class N shares for $26.0 billion, 313,253,007 shares at the public price. This confirms the placement Reuters reported on 10 November.
 - **First trading day, 19 November (StockTitan, secondary, not confirmed against a primary source):** first trade $111.50, which is 34.3% above the $83.00 price by our arithmetic; close $97.17, 17.1% above it. We have not verified these prices with Nasdaq or the final prospectus.
 - **Closing announcement, 20 November (Anthropic, read 20 November):** 1,127,000,000 Class A shares at $83.00, including the full 147,000,000-share option; 1,103,351,354 from Anthropic and 23,648,646 from selling stockholders; gross proceeds about $93.5 billion, about $91.6 billion to Anthropic. The concurrent Class N private placement is 313,253,007 shares at $83.00 (about $26.0 billion) to AMD, Broadcom, Google, Micron, Microsoft, NVIDIA and TSMC Partners, for about $119.5 billion in total gross. This supersedes the earlier 980,000,000-share figure and our $81.3 billion arithmetic.
+- **Reuters, 20 November (read 21 November):** the stabilization agent, Morgan Stanley, exercised the 147,000,000-share option in full at $83; Thursday close $97.17 (about 17% above the offer); Friday down about 11% to roughly $86, low $85; Reuters' video transcript gives a $111.50 opening price and a market value of about $2 trillion during Thursday's session. Opinions quoted (Berenberg) are analysts' views, not findings. Prices are Reuters' reporting, not a primary exchange record.
 - **Second trading day, 20 November (The Guardian, secondary):** down as much as 12% to $85.12 early in the session, after a first-day gain of 17% that was about 40% at its intraday peak. The closing price for 20 November is not in the sources we read.
 - **Not stated in the sources we read:** the valuation, and the closing prices of 19 and 20 November from a primary source.
 
