@@ -4,7 +4,7 @@ summary: "At a White House press conference on 20 November 2026, President Donal
 seoTitle: "Trump: “tremendous tax” on overseas data centers"
 seoDescription: "Trump said on 20 Nov 2026 that US firms building data centers abroad will pay a “tremendous tax”, per CNBC; no rate or legal text has been published."
 lang: en
-publishedAt: 2026-11-21T16:30:00Z
+publishedAt: 2026-11-21T15:55:00Z
 entities:
   - Donald Trump
   - Alphabet
