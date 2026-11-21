@@ -4,7 +4,7 @@ summary: "Amazon Threat Intelligence reports that an open-source AI penetration-
 seoTitle: "Cairn AI agents found a zero-day, Amazon says"
 seoDescription: "Amazon's 20 Nov 2026 report says autonomous Cairn AI agents, run by a China-nexus actor, reached a root shell via a zero-day in about 11 minutes."
 lang: en
-publishedAt: 2026-11-21T15:30:00Z
+publishedAt: 2026-11-21T15:55:00Z
 entities:
   - Amazon Threat Intelligence
   - AWS
