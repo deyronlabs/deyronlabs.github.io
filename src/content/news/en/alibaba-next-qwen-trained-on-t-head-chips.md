@@ -14,7 +14,6 @@ entities:
 topics:
   - Models
   - Hardware
-  - China
 translationKey: alibaba-next-qwen-trained-on-t-head-chips
 image: /images/news/alibaba-next-qwen-trained-on-t-head-chips-2026-11-19.jpg
 imageAlt: "Deyron Labs graphic: Alibaba CEO Eddie Wu says next Qwen model trains on in-house T-Head chips, earnings call 19 Nov 2026; no model name, chip count or date"
