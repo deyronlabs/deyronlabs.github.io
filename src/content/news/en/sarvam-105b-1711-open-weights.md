@@ -4,7 +4,7 @@ summary: "India's Sarvam AI published Sarvam-105B-1711 on 22 November 2026, a ne
 seoTitle: "Sarvam-105B-1711: open weights, $0.15/M tokens"
 seoDescription: "Sarvam AI's 22 Nov 2026 Sarvam-105B-1711 reports a 73.9 agent-benchmark average at $0.15 per million tokens; weights are on Hugging Face."
 lang: en
-publishedAt: 2026-11-22T18:30:00Z
+publishedAt: 2026-11-22T19:17:00Z
 entities:
   - Sarvam AI
   - Sarvam-105B-1711
