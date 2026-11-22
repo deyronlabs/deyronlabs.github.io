@@ -4,7 +4,7 @@ summary: "In a 22 November 2026 essay, OpenAI chief scientist Jakub Pachocki arg
 seoTitle: "OpenAI essay: perplexity as a shared yardstick"
 seoDescription: "OpenAI's Jakub Pachocki argued on 22 Nov 2026 for perplexity as a common metric, tying sub-0.8 log-perplexity to emerging cyber and math skills."
 lang: en
-publishedAt: 2026-11-22T18:30:00Z
+publishedAt: 2026-11-22T19:17:00Z
 entities:
   - OpenAI
   - Jakub Pachocki
