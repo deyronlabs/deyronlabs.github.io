@@ -4,7 +4,7 @@ summary: "Reuters reported on 23 November 2026 that Applied Digital leased 150 M
 seoTitle: "Applied Digital $5.4B AI data center lease"
 seoDescription: "Reuters reported on 23 Nov 2026 that Applied Digital signed a $5.4 billion lease for 150 MW of AI data center capacity with an unnamed hyperscaler."
 lang: en
-publishedAt: 2026-11-23T20:40:00Z
+publishedAt: 2026-11-23T17:49:00Z
 entities:
   - Applied Digital
   - Reuters
