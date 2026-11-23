@@ -5,6 +5,7 @@ seoTitle: "Tencent Hy4 flash: 220B open weights, 1M context"
 seoDescription: "Tencent launched Hy4 flash on 16 Nov 2026; Hugging Face weights list 220B parameters, 12B active, 1M-token context. Benchmarks are Tencent's own."
 lang: en
 publishedAt: 2026-11-20T09:15:00Z
+updatedAt: 2026-11-23T20:50:00Z
 entities:
   - Tencent
   - Hy4 flash
@@ -23,6 +24,10 @@ sources:
     url: "https://huggingface.co/tencent/Hy4-flash"
     publisher: "Tencent on Hugging Face (repository created 17 November 2026)"
     primary: true
+  - title: "Tencent touts independent safety assessments of latest AI model Hy4 (SCMP, 22 November 2026; read only the opening because of a paywall; the 82-page report itself was not read)"
+    url: "https://www.scmp.com/tech/tech-trends/article/3375374/tencent-touts-latest-ai-model-hy4s-performance-independent-safety-assessment"
+    publisher: "South China Morning Post"
+    primary: false
   - title: "Tencent says Hunyuan Hy4 flash surpasses 50 trillion tokens in first-day usage"
     url: "https://technode.com/2026/11/19/tencent-says-hunyuan-hy4-flash-surpasses-50-trillion-tokens-in-first-day-usage/"
     publisher: "TechNode, 19 November 2026"
@@ -37,6 +42,8 @@ sources:
 
 Tencent launched Hy4 flash, a model in its Hunyuan family aimed at everyday work tasks, on 16 November 2026 through its apps and cloud API, according to TechNode. The weights are published on Hugging Face under `tencent/Hy4-flash`, with an FP8 version and a base (not chat-tuned) version. We read the model card on 20 November 2026; we have not run the model, and we could not read Tencent's own press release.
 
+Update, 23 November 2026: the South China Morning Post reported on 22 November that Tencent has published a safety report of 82 pages with two outside evaluators, Fangcun AI (China) and Alice (Israel and US), covering the open-weight version of Hy4. The details are in the update bullet below. We read only the opening of the SCMP article, which is behind a paywall, and not the report.
+
 ## Key details
 
 From the model card, unless noted. Benchmark and cost figures are Tencent's own and have not been independently checked.
@@ -48,6 +55,7 @@ From the model card, unless noted. Benchmark and cost figures are Tencent's own 
 - **Blind user test (Tencent):** 85 internal WorkBuddy users, 259 tasks, 27 categories; satisfaction 2.79 out of 4 for Hy4 flash versus 2.81 for Claude Haiku 5.5.
 - **Usage claims (Tencent via TechNode):** more than 50 trillion tokens on the first day, and first place on the OpenRouter daily leaderboard on 17 November. We did not verify either.
 - **Price (TechNode):** 0.5 yuan (about $0.07) per million input tokens and 2 yuan (about $0.30) per million output tokens; we did not confirm this on a Tencent page.
+- **Update, safety assessments (SCMP, Tencent's report not read):** per SCMP, Tencent published the report on Friday 20 November, and this is the first time a major Chinese tech company has named third-party evaluators before a release. The evaluators say the model has "limited" hacking capabilities and a low risk of deception or loss of control. Those conclusions are the evaluators' and Tencent's own; we have not read the report, so we cannot say which Hy4 variant each test covered or how the tests were run.
 - **License:** "Tencent Hy License", a custom license (Hugging Face tag `other`). We have not reviewed its terms, so check them before commercial use.
 
 ## Why it matters
