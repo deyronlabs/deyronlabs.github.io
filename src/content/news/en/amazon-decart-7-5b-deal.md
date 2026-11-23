@@ -4,7 +4,7 @@ summary: "Amazon announced on 23 November 2026 that it signed an agreement to ac
 seoTitle: "Amazon to acquire Decart tech; ~$7.5B reported"
 seoDescription: "Amazon signed a deal on 23 Nov 2026 to acquire Decart's Optimization Stack and team; Calcalist reports about $7.5 billion, which Amazon has not confirmed."
 lang: en
-publishedAt: 2026-11-23T20:40:00Z
+publishedAt: 2026-11-23T17:49:00Z
 entities:
   - Amazon
   - Decart
