@@ -18,6 +18,7 @@ topics:
   - Coding
   - China
 translationKey: glm-5-4-loop-transformer
+video: https://youtube.com/shorts/GLncP1snefo
 image: /images/news/glm-5-4-loop-transformer-2026-11-23.jpg
 imageAlt: "Deyron Labs graphic: Z.ai GLM-5.4, first Loop Transformer flagship, 23 Nov 2026; 28 layers looped for 2 passes; up to 200 tokens/s off-peak per Z.ai; API coming soon, weights planned; claims are Z.ai's own"
 sources:
