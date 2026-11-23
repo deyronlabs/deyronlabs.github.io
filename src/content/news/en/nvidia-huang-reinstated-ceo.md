@@ -5,6 +5,7 @@ seoTitle: "Nvidia reinstates Jensen Huang as CEO"
 seoDescription: "Nvidia's board unanimously reinstated Jensen Huang as CEO on 23 Nov 2026, citing US government input; the probe continues and a compliance chief is sought."
 lang: en
 publishedAt: 2026-11-23T17:49:00Z
+updatedAt: 2026-11-23T20:58:00Z
 entities:
   - Nvidia
   - Jensen Huang
@@ -15,6 +16,7 @@ topics:
   - Hardware
   - Policy
 translationKey: nvidia-huang-reinstated-ceo
+video: https://youtube.com/shorts/agMLy_myWxI
 image: /images/news/nvidia-huang-reinstated-ceo-2026-11-23.jpg
 imageAlt: "Deyron Labs graphic: Nvidia board reinstates Jensen Huang as president, CEO and director on 23 Nov 2026; unanimous vote; Colette Kress continues as CFO; new Chief Compliance Officer to be hired; investigation continues"
 sources:
