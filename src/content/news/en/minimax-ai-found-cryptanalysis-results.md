@@ -4,7 +4,7 @@ summary: "MiniMax's Cyber Team released papers and code on 20 November 2026 desc
 seoTitle: "MiniMax AI-found cryptanalysis results"
 seoDescription: "MiniMax released cryptanalysis papers and Apache 2.0 code on 20 Nov 2026 that it says an internal AI model found, incl. 94 McEliece challenge keys."
 lang: en
-publishedAt: 2026-11-23T18:00:00Z
+publishedAt: 2026-11-23T17:49:00Z
 entities:
   - MiniMax
   - MiniMax Cyber Team
