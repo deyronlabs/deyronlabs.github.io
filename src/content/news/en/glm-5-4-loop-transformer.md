@@ -4,7 +4,7 @@ summary: "Z.ai (Zhipu) announced GLM-5.4 on 23 November 2026, a 750B-scale model
 seoTitle: "Z.ai GLM-5.4: first Loop Transformer flagship"
 seoDescription: "Z.ai announced GLM-5.4 on 23 Nov 2026: a Loop Transformer that reruns 28 layers twice; API is coming soon and no flagship benchmarks are shown."
 lang: en
-publishedAt: 2026-11-23T13:00:00Z
+publishedAt: 2026-11-23T13:12:00Z
 entities:
   - Z.ai
   - Zhipu
