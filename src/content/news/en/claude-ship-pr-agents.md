@@ -4,7 +4,7 @@ summary: "Anthropic launched Claude Ship on 23 November 2026, a set of agents th
 seoTitle: "Claude Ship: Anthropic PR review agents"
 seoDescription: "Anthropic launched Claude Ship on 23 Nov 2026: Code Review (GA) plus PR Steward and Claude Approvals (beta) for Team and Enterprise on GitHub."
 lang: en
-publishedAt: 2026-11-24T07:20:00Z
+publishedAt: 2026-11-24T09:56:00Z
 entities:
   - Anthropic
   - Claude Ship
