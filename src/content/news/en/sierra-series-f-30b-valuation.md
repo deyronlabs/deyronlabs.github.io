@@ -4,7 +4,7 @@ summary: "Sierra, the customer-service AI company led by Bret Taylor, said on 23
 seoTitle: "Sierra raises $1.75B at $30B valuation"
 seoDescription: "Sierra announced a $1.75B Series F at a $30B valuation on 23 Nov 2026, led by Greenoaks and Lightspeed, and reports over $400M in ARR."
 lang: en
-publishedAt: 2026-11-24T07:35:00Z
+publishedAt: 2026-11-24T09:56:00Z
 entities:
   - Sierra
   - Greenoaks
