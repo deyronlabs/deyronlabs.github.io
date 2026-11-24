@@ -4,7 +4,7 @@ summary: "Google DeepMind and Google Quantum AI report that agent teams built on
 seoTitle: "DeepMind Gemini 4 agents cut quantum costs 11.8x"
 seoDescription: "Google DeepMind says Gemini 4 agent teams cut a fusion-related quantum circuit's cost 11.8x and proved each result in Lean (post of 23 Nov 2026)."
 lang: en
-publishedAt: 2026-11-24T18:05:00Z
+publishedAt: 2026-11-24T18:26:00Z
 entities:
   - Google DeepMind
   - Google Quantum AI
