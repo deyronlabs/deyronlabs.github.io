@@ -4,7 +4,7 @@ summary: "Anthropic says Enterprise Frontier Safeguards (EFS) is now in public b
 seoTitle: "Anthropic Enterprise Frontier Safeguards beta"
 seoDescription: "Anthropic put Enterprise Frontier Safeguards in public beta on 23 Nov 2026: misuse monitoring that stays compatible with zero data retention."
 lang: en
-publishedAt: 2026-11-24T18:15:00Z
+publishedAt: 2026-11-24T18:27:00Z
 entities:
   - Anthropic
   - Claude Platform
