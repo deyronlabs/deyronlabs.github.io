@@ -4,7 +4,7 @@ summary: "Virginia and Oregon have filed separate state-court lawsuits against S
 seoTitle: "Virginia, Oregon sue SpaceX over Grok deepfakes"
 seoDescription: "Virginia and Oregon sued SpaceX on 22-23 Nov 2026, alleging Grok and X failed to block explicit deepfakes; the claims are allegations, not findings."
 lang: en
-publishedAt: 2026-11-24T21:30:00Z
+publishedAt: 2026-11-24T18:20:00Z
 entities:
   - SpaceX
   - xAI
