@@ -4,7 +4,7 @@ summary: "On 23 November 2026 Anthropic posted a paper and Lean 4 formalization 
 seoTitle: "Anthropic, OpenAI claim VP ≠ VNP proofs"
 seoDescription: "Anthropic and OpenAI each posted claimed VP versus VNP separation proofs with Lean 4 code on 23 Nov 2026; neither is human-checked or settles P vs NP."
 lang: en
-publishedAt: 2026-11-24T12:00:00Z
+publishedAt: 2026-11-24T09:56:00Z
 entities:
   - Anthropic
   - OpenAI
@@ -15,6 +15,7 @@ topics:
   - Research
   - Models
 translationKey: anthropic-openai-vp-vnp-proofs
+video: https://youtube.com/shorts/INGiWfwBXKk
 image: /images/news/anthropic-openai-vp-vnp-proofs-2026-11-24.jpg
 imageAlt: "Deyron Labs graphic: Anthropic and OpenAI claim VP does not equal VNP proofs with Lean 4 formalizations; Anthropic says no human mathematician has checked its proof; neither settles P vs NP"
 sources:
