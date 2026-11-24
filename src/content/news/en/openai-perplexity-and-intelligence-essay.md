@@ -5,7 +5,7 @@ seoTitle: "OpenAI essay: perplexity as a shared yardstick"
 seoDescription: "OpenAI's Jakub Pachocki argued on 22 Nov 2026 for perplexity as a common metric, tying sub-0.8 log-perplexity to emerging cyber and math skills."
 lang: en
 publishedAt: 2026-11-22T19:17:00Z
-updatedAt: 2026-11-24T12:00:00Z
+updatedAt: 2026-11-24T09:56:00Z
 entities:
   - OpenAI
   - Jakub Pachocki
