@@ -4,7 +4,7 @@ summary: "A Commerce Department (BIS) final rule filed for public inspection on 
 seoTitle: "BIS adds 7 Megaspeed entities to Entity List"
 seoDescription: "BIS filed a rule on 23 Nov 2026 adding seven Megaspeed-linked entities in Malaysia, Singapore and Thailand to the Entity List, with presumption of denial."
 lang: en
-publishedAt: 2026-11-24T18:00:00Z
+publishedAt: 2026-11-24T18:25:00Z
 entities:
   - Megaspeed
   - Bureau of Industry and Security
