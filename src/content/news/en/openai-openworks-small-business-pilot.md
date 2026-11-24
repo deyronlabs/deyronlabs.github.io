@@ -4,7 +4,7 @@ summary: "OpenAI's OpenWorks pilot recruits local partners, paid up to $8,000 a 
 seoTitle: "OpenAI OpenWorks pilot: 20 U.S. communities"
 seoDescription: "OpenAI's OpenWorks pilot pays local partners up to $8,000 a month to help small businesses with AI and offers 3 free months of ChatGPT Business."
 lang: en
-publishedAt: 2026-11-24T18:10:00Z
+publishedAt: 2026-11-24T18:26:00Z
 entities:
   - OpenAI
   - OpenWorks
