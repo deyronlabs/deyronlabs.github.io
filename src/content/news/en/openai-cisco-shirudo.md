@@ -4,7 +4,7 @@ summary: "OpenAI and Cisco introduced Shirudo on 23 November 2026, an open-sourc
 seoTitle: "OpenAI and Cisco release Shirudo"
 seoDescription: "OpenAI and Cisco released Shirudo on 23 Nov 2026: an open-source eBPF runtime that shields running Linux systems before patches or restarts."
 lang: en
-publishedAt: 2026-11-24T07:25:00Z
+publishedAt: 2026-11-24T09:56:00Z
 entities:
   - OpenAI
   - Cisco
