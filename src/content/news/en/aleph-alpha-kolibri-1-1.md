@@ -4,7 +4,7 @@ summary: "Aleph Alpha released Kolibri 1.1 on 23 November 2026, seven weeks afte
 seoTitle: "Aleph Alpha Kolibri 1.1: 75B MoE, Apache 2.0"
 seoDescription: "Aleph Alpha released Kolibri 1.1 on 23 Nov 2026: a 75B/3B-active English-German MoE with 1M context under Apache 2.0; benchmarks are self-reported."
 lang: en
-publishedAt: 2026-11-24T07:30:00Z
+publishedAt: 2026-11-24T09:56:00Z
 entities:
   - Aleph Alpha
   - Kolibri 1.1
