@@ -4,7 +4,7 @@ summary: "OpenAI published a preprint claiming GPT-6-family models can design pr
 seoTitle: "OpenAI GPT-6 protein design: 35 of 322 bound"
 seoDescription: "OpenAI's 24 Nov 2026 preprint reports GPT-6 models designed protein binders; 35 of 322 minibinders bound in lab tests, with caveats on filtering."
 lang: en
-publishedAt: 2026-11-25T07:00:00Z
+publishedAt: 2026-11-25T08:25:00Z
 entities:
   - OpenAI
   - GPT-6
