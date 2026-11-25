@@ -4,7 +4,7 @@ summary: "Ant Group's inclusionAI has published Ling-3.2-air on Hugging Face und
 seoTitle: "Ant Ling-3.2-air: 124B open model, MIT license"
 seoDescription: "Ant Group's Ling-3.2-air is a 124B MoE (5.5B active) multimodal model under MIT; Ant reports AutomationBench-AA at 61%, up from 15.7%."
 lang: en
-publishedAt: 2026-11-25T21:00:00Z
+publishedAt: 2026-11-25T20:40:00Z
 entities:
   - Ant Group
   - inclusionAI
