@@ -5,7 +5,7 @@ seoTitle: "Baidu ERNIE 5.5 Flash: Apache 2.0 weights"
 seoDescription: "Baidu released ERNIE 5.5 Flash Preview weights under Apache 2.0: 280B MoE, 14B active, 1M-token context; scores are Baidu's own evaluations."
 lang: en
 publishedAt: 2026-11-11T18:42:00Z
-updatedAt: 2026-11-25T21:30:00Z
+updatedAt: 2026-11-25T20:40:00Z
 entities:
   - Baidu
   - ERNIE 5.5 Flash Preview
