@@ -4,7 +4,7 @@ summary: "OpenAI published a manuscript dated 24 November 2026 in its openai/mat
 seoTitle: "OpenAI claims matrix multiplication exponent 9/4"
 seoDescription: "OpenAI's 24 Nov 2026 manuscript claims a 9/4 exponent for square matrix multiplication in formal circuits; Lean covers division-free circuits only."
 lang: en
-publishedAt: 2026-11-25T21:00:00Z
+publishedAt: 2026-11-25T20:40:00Z
 entities:
   - OpenAI
   - Lean
