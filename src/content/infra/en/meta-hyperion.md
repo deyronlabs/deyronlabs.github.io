@@ -64,9 +64,11 @@ sources:
   - title: "Entergy Louisiana: statement from Phillip May ($2.65 billion in customer benefits)"
     url: "https://www.entergy.com/news/statement-from-phillip-may-president-and-ceo-entergy-louisiana"
     publisher: "Entergy"
+    primary: true
   - title: "Meta: teachers and local businesses win as Meta expands Louisiana data center"
     url: "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/"
     publisher: "Meta"
+    primary: true
 updates: []
 ---
 
