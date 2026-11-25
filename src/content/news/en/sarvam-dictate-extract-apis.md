@@ -4,7 +4,7 @@ summary: "Sarvam AI released two APIs this week: Dictate (speech recognition plu
 seoTitle: "Sarvam Dictate and Extract APIs launched"
 seoDescription: "Sarvam AI launched Dictate (₹0.50 per minute) and Extract (from ₹1 per page) on 23-24 Nov 2026; benchmark figures come from Sarvam's own runs."
 lang: en
-publishedAt: 2026-11-25T07:10:00Z
+publishedAt: 2026-11-25T08:26:00Z
 entities:
   - Sarvam AI
   - Sarvam Dictate
