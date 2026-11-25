@@ -4,7 +4,7 @@ summary: "Microsoft AI published a technical post on Rocket, its reinforcement-l
 seoTitle: "Microsoft AI Rocket RL framework, MAI Base 2"
 seoDescription: "Microsoft AI's 23 Nov 2026 post details Rocket, its in-house RL framework for the 3T-parameter MAI Base 2; benchmark claims are Microsoft's own."
 lang: en
-publishedAt: 2026-11-25T07:15:00Z
+publishedAt: 2026-11-25T08:26:00Z
 entities:
   - Microsoft AI
   - Rocket
