@@ -4,7 +4,7 @@ summary: "Cognition says its new SWE-2.1 model, trained with reinforcement learn
 seoTitle: "Cognition SWE-2.1: 50.0 on Terminal-Bench 4.1"
 seoDescription: "Cognition's SWE-2.1, trained with RL on Kimi K3, scores 50.0 on Terminal-Bench 4.1 (SWE-2: 24.2), per Cognition; free through 12/8 on Desktop and CLI."
 lang: en
-publishedAt: 2026-11-25T18:00:00Z
+publishedAt: 2026-11-25T20:40:00Z
 entities:
   - Cognition
   - SWE-2.1
