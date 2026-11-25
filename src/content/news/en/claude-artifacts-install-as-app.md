@@ -4,7 +4,7 @@ summary: "Anthropic says Claude artifacts can now be installed as apps on Mac an
 seoTitle: "Claude artifacts can be installed as apps"
 seoDescription: "Anthropic's Claude for Mac and Windows beta lets users install artifacts as apps with their own icon and window, with three permission levels."
 lang: en
-publishedAt: 2026-11-25T18:00:00Z
+publishedAt: 2026-11-25T20:40:00Z
 entities:
   - Anthropic
   - Claude
