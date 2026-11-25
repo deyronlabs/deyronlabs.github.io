@@ -4,7 +4,7 @@ summary: "Google announced general availability of Workspace MCP servers and a W
 seoTitle: "Google Workspace MCP generally available"
 seoDescription: "Google made Workspace MCP servers generally available on 24 Nov 2026; AI agents must use MCP from 1 Feb 2027, with usage billing from 1 Apr 2027."
 lang: en
-publishedAt: 2026-11-25T07:05:00Z
+publishedAt: 2026-11-25T08:26:00Z
 entities:
   - Google
   - Google Workspace
