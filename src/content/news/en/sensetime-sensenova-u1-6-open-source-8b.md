@@ -4,7 +4,7 @@ summary: "SenseTime announced SenseNova U1.6 on 24 November 2026 and says it has
 seoTitle: "SenseNova U1.6: 8B open image model"
 seoDescription: "SenseTime open-sourced the 8B SenseNova U1.6 on 24 Nov 2026; it self-corrects drafts, and SenseTime reports 92.28 on UltraTextBench."
 lang: en
-publishedAt: 2026-11-26T07:00:00Z
+publishedAt: 2026-11-26T07:32:00Z
 entities:
   - SenseTime
   - SenseNova U1.6
