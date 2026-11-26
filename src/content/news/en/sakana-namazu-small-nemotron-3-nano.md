@@ -4,7 +4,7 @@ summary: "Sakana AI announced Namazu Small on 25 November 2026, a 30-billion-par
 seoTitle: "Sakana Namazu Small: 30B on Nemotron 3 Nano"
 seoDescription: "Sakana AI's Namazu Small is a 30B reasoning model built on Nemotron 3 Nano; Sakana reports BrowseComp 73.5 versus 29.3 for Nemotron Nano."
 lang: en
-publishedAt: 2026-11-26T07:00:00Z
+publishedAt: 2026-11-26T07:31:00Z
 entities:
   - Sakana AI
   - Namazu Small
