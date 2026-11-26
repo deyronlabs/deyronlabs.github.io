@@ -4,7 +4,7 @@ summary: "NIO presented NIO WorldModel 3.0 on 25 November 2026, a driving model 
 seoTitle: "NIO WorldModel 3.0: 36x less attention compute"
 seoDescription: "NIO's WorldModel 3.0 driving model cuts on-board attention compute 36x, per NIO; rollout from December 2026 is subject to regulatory clearance."
 lang: en
-publishedAt: 2026-11-26T12:00:00Z
+publishedAt: 2026-11-26T07:32:00Z
 entities:
   - NIO
   - NIO WorldModel 3.0
