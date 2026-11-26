@@ -4,7 +4,7 @@ summary: "JetBrains published Mellum2.1 Instruct on 25 November 2026: a 12B mixt
 seoTitle: "JetBrains Mellum2.1 Instruct: 12B coding model"
 seoDescription: "JetBrains' Mellum2.1 Instruct is a 12B MoE (2.5B active) open-weight coding model under Apache 2.0, announced 25 Nov 2026, with no chain-of-thought."
 lang: en
-publishedAt: 2026-11-26T12:00:00Z
+publishedAt: 2026-11-26T07:32:00Z
 entities:
   - JetBrains
   - Mellum2.1 Instruct
