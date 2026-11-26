@@ -4,7 +4,7 @@ summary: "Sand.ai announced MAGI-2 on 24 November 2026: a mixture-of-experts vid
 seoTitle: "Sand.ai MAGI-2: 480B video model, no weights"
 seoDescription: "Sand.ai's MAGI-2 is a 480B (28B active) video model with native audio, announced 24 Nov 2026; open weights and a report are promised later."
 lang: en
-publishedAt: 2026-11-26T07:00:00Z
+publishedAt: 2026-11-26T07:31:00Z
 entities:
   - Sand.ai
   - MAGI-2
