@@ -4,7 +4,7 @@ summary: "In an article dated 24 November 2026, Anthropic said MCP servers can n
 seoTitle: "Claude: Skills over MCP beta, Tasks GA"
 seoDescription: "Anthropic's 24 Nov 2026 post puts Skills over MCP in public beta in Claude and Claude Code; MCP Tasks and Elicitation are GA on Pro, Max and Ultra."
 lang: en
-publishedAt: 2026-11-27T10:00:00Z
+publishedAt: 2026-11-27T09:40:00Z
 entities:
   - Anthropic
   - Claude
