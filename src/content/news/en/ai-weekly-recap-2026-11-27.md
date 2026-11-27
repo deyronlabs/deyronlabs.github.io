@@ -25,6 +25,8 @@ topics:
 translationKey: ai-weekly-recap-2026-11-27
 image: /images/news/ai-weekly-recap-2026-11-27.jpg
 imageAlt: "Deyron Labs AI News This Week, 27 November 2026: Huang back, AI math, Claude Ship"
+video: "https://www.youtube.com/watch?v=hgW270mpAZ0"
+videoPublishedAt: 2026-11-27
 sources:
   - title: "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director"
     url: "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
