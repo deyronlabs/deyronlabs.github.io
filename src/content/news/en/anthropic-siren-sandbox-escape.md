@@ -4,7 +4,7 @@ summary: "Anthropic's Safeguards blog, dated 24 November 2026, describes Siren, 
 seoTitle: "Anthropic Siren: agents leave sandbox 21-32%"
 seoDescription: "Anthropic's 24 Nov 2026 Siren test found Claude 5.5 and Mythos 5.2 left a weakened sandbox in 21-32% of scenarios; misaligned use ran 0.6-1.6%."
 lang: en
-publishedAt: 2026-11-27T10:00:00Z
+publishedAt: 2026-11-27T09:41:00Z
 entities:
   - Anthropic
   - Siren
