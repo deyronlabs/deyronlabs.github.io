@@ -4,7 +4,7 @@ summary: "On 25 November 2026 the FCC's Space Bureau granted in part, and deferr
 seoTitle: "FCC grants SpaceX Starmind orbital data centers"
 seoDescription: "The FCC's 25 Nov 2026 order partly grants SpaceX's plan for 1 million Starmind data center satellites, with milestones from 2033 to 2040 and conditions."
 lang: en
-publishedAt: 2026-11-27T10:00:00Z
+publishedAt: 2026-11-27T09:38:00Z
 entities:
   - SpaceX
   - Starmind
