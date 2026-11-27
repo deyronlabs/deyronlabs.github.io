@@ -4,7 +4,7 @@ summary: "AWS says the Amazon Bedrock trusted access API is generally available 
 seoTitle: "Bedrock trusted access API and Claude controls"
 seoDescription: "AWS made the Amazon Bedrock trusted access API generally available and put two Anthropic data-control options for Claude in preview on 23 Nov 2026."
 lang: en
-publishedAt: 2026-11-27T07:30:00Z
+publishedAt: 2026-11-27T09:42:00Z
 entities:
   - Amazon Bedrock
   - AWS
