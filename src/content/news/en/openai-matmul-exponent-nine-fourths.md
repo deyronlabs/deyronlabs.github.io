@@ -5,10 +5,12 @@ seoTitle: "OpenAI claims matrix multiplication exponent 9/4"
 seoDescription: "OpenAI's 24 Nov 2026 manuscript claims a 9/4 exponent for square matrix multiplication in formal circuits; Lean covers division-free circuits only."
 lang: en
 publishedAt: 2026-11-25T20:40:00Z
+updatedAt: 2026-11-27T10:00:00Z
 entities:
   - OpenAI
   - Lean
   - Matrix multiplication
+  - Fourier transform
 topics:
   - Research
   - Models
@@ -20,6 +22,10 @@ sources:
     url: "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/README.md"
     publisher: "OpenAI (GitHub openai/math), read 25 November 2026"
     primary: true
+  - title: "The logarithmic exponent of finite Fourier transforms (README, November 24, 2026 edition; paper PDF not read)"
+    url: "https://github.com/openai/math/blob/main/preprints/The-logarithmic-exponent-of-finite-Fourier-transforms-November-24-2026/README.md"
+    publisher: "OpenAI (GitHub openai/math), read 26 November 2026"
+    primary: true
 ---
 
 ## What happened
@@ -28,7 +34,12 @@ OpenAI added a set of mathematics manuscripts and Lean formalizations to its `op
 
 We read the README on 25 November 2026. We did not read the 1 MB paper PDF, which GitHub showed only as a wrapper. Everything below is what OpenAI's README says; we have not checked the mathematics, and no independent review has been reported.
 
+Update, 27 November 2026: the same repository drop includes a second manuscript, "The logarithmic exponent of finite Fourier transforms". We read its README on 26 November 2026 and added the details below; we have not read the PDF or checked the mathematics.
+
 ## Key details
+
+- **Update, second manuscript (Fourier transforms):** the README states that for a finite abelian group of order N, the minimum number of binary linear gates needed for the Fourier transform is N(log N)^(1/2+o(1)). It requires the field to contain a primitive root of unity of order equal to the group's exponent, with N invertible, and says the result holds for the forward and inverse transform and for J independent inputs. It says the same "logarithmic exponent" applies to formal polynomial multiplication over any field. The Lean development includes both the upper and lower bounds, for single transforms and batches; we did not read the PDF or the "formalization scope" sections.
+- **Not in that README:** authors, any AI role, or expert reactions. Newsletter reports of expert reactions were not verified by us.
 
 - **The claim, as the README words it:** the paper "proves the matching lower bound for formal arithmetic circuits". For every side length n ≥ 2, such a circuit needs at least ⌈n^(9/4)/2⌉ non-scalar multiplication or division gates. The README also says the geometric border rank of the square matrix multiplication tensor is at least n^(9/4), and that its asymptotic rank over the base field equals n^(9/4).
 - **Companion paper:** the README mentions a companion paper on tensor geometry.
