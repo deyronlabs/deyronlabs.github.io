@@ -4,7 +4,7 @@ summary: "A 25 November 2026 commit to a Google Research repository adds six pre
 seoTitle: "Google Cogentic: six AI-generated math preprints"
 seoDescription: "Google Research's 25 Nov 2026 commit adds six Cogentic preprints on factoring, discrete logs and Nash equilibria; the Lean proof is not yet released."
 lang: en
-publishedAt: 2026-11-27T10:00:00Z
+publishedAt: 2026-11-27T09:37:00Z
 entities:
   - Google Research
   - Google DeepMind
