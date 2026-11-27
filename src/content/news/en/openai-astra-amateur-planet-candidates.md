@@ -4,7 +4,7 @@ summary: "OpenAI says Kevin Bond, an OpenAI engineer, and Ethan Byrd used Codex 
 seoTitle: "OpenAI Astra and Codex find exoplanet candidates"
 seoDescription: "OpenAI said on 24 Nov 2026 that two amateurs used Codex and Astra to flag planet candidates in public Kepler and TESS data; none is confirmed."
 lang: en
-publishedAt: 2026-11-27T07:45:00Z
+publishedAt: 2026-11-27T09:43:00Z
 entities:
   - OpenAI
   - Astra
