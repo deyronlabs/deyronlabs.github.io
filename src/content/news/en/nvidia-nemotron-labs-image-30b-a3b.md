@@ -4,7 +4,7 @@ summary: "NVIDIA published the weights of Nemotron-Labs-Image-30B-A3B on Hugging
 seoTitle: "NVIDIA Nemotron-Labs-Image-30B-A3B: open weights"
 seoDescription: "NVIDIA's Nemotron-Labs-Image-30B-A3B has 30B parameters (3B active) and non-commercial weights; its GenEval 92.86 trails GPT Image 2 on other tests."
 lang: en
-publishedAt: 2026-11-27T10:00:00Z
+publishedAt: 2026-11-27T09:39:00Z
 entities:
   - NVIDIA
   - Nemotron-Labs-Image-30B-A3B
